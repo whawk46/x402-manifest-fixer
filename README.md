@@ -84,6 +84,9 @@ and the [discovery census][census], and it implements
 [`draft-hawkins-x402-dns-discovery`][draft]. The `_x402` underscored node name
 was registered with IANA on 2026-08-11.
 
+`npm run verify-vendor` diffs the vendored copy against the live canonical
+source, so "same resolver" is a checkable statement rather than a promise.
+
 [draft]: https://datatracker.ietf.org/doc/draft-hawkins-x402-dns-discovery/
 
 MIT. Take it, fork it, wire it into your own tooling.

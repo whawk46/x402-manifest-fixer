@@ -1,3 +1,7 @@
+// GENERATED from src/x402/discovery.ts by scripts/sdk/sync-sdk.ts — do not edit here.
+// The canonical module is the one FlareClaw runs in production; this is a copy so
+// that what we publish and what we run cannot diverge. Edit the canonical file.
+
 /**
  * x402 `discovery` extension — reference implementation.
  *
@@ -239,6 +243,98 @@ export function isWkInDomain(wkUrl: string, domain: string): boolean {
     } catch {
         return false;
     }
+}
+
+// ──────────────────── Which name do you ask? ────────────────────
+//
+// THE AMBIGUITY, AND HOW WE FOUND IT. The spec says the record lives at
+// `_x402.<domain>` and never says which domain a consumer holding a RESOURCE
+// URL should ask for. A census of 1,609 hosts on 2026-08-22 asked
+// `_x402.<exact-host>` and recorded the draft's own author as a non-publisher:
+// our record is at the apex `flareclaw.app` with `wk=` pointing at the
+// subdomain `api.flareclaw.app`. Publishing at the apex is the natural choice
+// for an operator with one DNS zone and several service hosts, and the naive
+// reading makes them invisible.
+//
+// So a consumer must be allowed to walk up. That immediately creates a worse
+// problem: on shared hosting (`*.workers.dev`, `*.up.railway.app`) the ancestor
+// belongs to the PLATFORM, not the tenant, and one record there would make
+// every tenant beneath it discoverable — including tenants who never published
+// anything, and including hosts that do not exist. Our own control demonstrates
+// it: `zzq-...-9931.flareclaw.app` inherits our apex record.
+//
+// A public-suffix list would answer "is this ancestor an operator or a
+// platform", and we deliberately do NOT use one: it is a mutable external
+// dependency, it disagrees with reality on private suffixes, and being wrong
+// silently converts into false adoption claims.
+//
+// THE RULE INSTEAD — the ancestor must NAME the host. An ancestor's manifest
+// speaks for a descendant only if the manifest itself references that host, in
+// `facilitator.baseUrl` or in `resources[]`. That is a positive statement by
+// the party who controls the zone, it needs no external list, and it closes
+// the shared-hosting hole exactly: `workers.dev` publishing a record does not
+// make tenant X discoverable unless the record's manifest names tenant X.
+
+/** How far up a consumer may walk. Two ancestors, never below two labels. */
+export const MAX_ANCESTOR_STEPS = 2;
+
+/**
+ * The `_x402` owner names to query for a host, nearest first.
+ *
+ * The FIRST entry is the host itself and is always authoritative for it. Later
+ * entries are ancestors, and a record found at one is only usable if
+ * `manifestCoversHost` accepts it.
+ */
+export function discoveryNamesFor(hostOrUrl: string): string[] {
+    let host = hostOrUrl.trim().toLowerCase();
+    if (host.includes('://')) {
+        try { host = new URL(host).hostname.toLowerCase(); } catch { return []; }
+    }
+    host = host.replace(/\.$/, '').replace(/:\d+$/, '');
+    if (!host || host.startsWith('.') || host.includes('/') || host.includes(' ')) return [];
+    const labels = host.split('.');
+    if (labels.length < 2 || labels.some(l => l === '')) return [host].filter(Boolean);
+    const names = [host];
+    for (let i = 1; i <= MAX_ANCESTOR_STEPS && labels.length - i >= 2; i++) {
+        names.push(labels.slice(i).join('.'));
+    }
+    return names;
+}
+
+/**
+ * Does a manifest published at `ownerName` speak for `host`?
+ *
+ * Always true when the manifest was found at the host itself. For an ancestor,
+ * the manifest MUST name the host — otherwise a platform's record would vouch
+ * for every tenant under it, which is how a discovery layer manufactures
+ * adopters it does not have.
+ *
+ * Referenced URLs are only counted when they are themselves in-domain of the
+ * owner, so a manifest cannot vouch for a host it does not control either.
+ */
+export function manifestCoversHost(m: unknown, ownerName: string, host: string): boolean {
+    const owner = ownerName.toLowerCase().replace(/\.$/, '');
+    const target = host.toLowerCase().replace(/\.$/, '');
+    if (owner === target) return true;                       // found at the host itself
+    if (!(target === owner || target.endsWith(`.${owner}`))) return false;  // not even below it
+    if (typeof m !== 'object' || m === null) return false;
+
+    const man = m as Record<string, any>;
+    const hostOf = (u: unknown): string | null => {
+        if (typeof u !== 'string') return null;
+        try { return new URL(u).hostname.toLowerCase(); } catch { return null; }
+    };
+    const named: string[] = [];
+    const base = hostOf(man.facilitator?.baseUrl);
+    if (base) named.push(base);
+    if (Array.isArray(man.resources)) {
+        for (const r of man.resources) {
+            const h = hostOf(typeof r === 'string' ? r : r?.url ?? r?.resource);
+            if (h) named.push(h);
+        }
+    }
+    // A named host only counts if the OWNER could legitimately speak for it.
+    return named.some(n => n === target && (n === owner || n.endsWith(`.${owner}`)));
 }
 
 // ──────────────────── Manifest validation ────────────────────
