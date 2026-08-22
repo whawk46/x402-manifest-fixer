@@ -167,11 +167,15 @@ function render(r: Report): string {
     return L.join('\n');
 }
 
-const argv = process.argv.slice(2);
-const domain = argv.find(a => !a.startsWith('--'));
-if (!domain) {
-    console.error('usage: npx tsx fix.ts <domain> [--json]');
-    process.exit(2);
+// CLI only when run directly — batch.ts imports report() and must not
+// trigger an argv parse or a process.exit on import.
+if (import.meta.url === `file://${process.argv[1]}`) {
+    const argv = process.argv.slice(2);
+    const domain = argv.find(a => !a.startsWith('--'));
+    if (!domain) {
+        console.error('usage: npx tsx fix.ts <domain> [--json]');
+        process.exit(2);
+    }
+    const r = await report(domain.replace(/^https?:\/\//, '').replace(/\/.*$/, ''));
+    console.log(argv.includes('--json') ? JSON.stringify(r, null, 2) : render(r));
 }
-const r = await report(domain.replace(/^https?:\/\//, '').replace(/\/.*$/, ''));
-console.log(argv.includes('--json') ? JSON.stringify(r, null, 2) : render(r));
