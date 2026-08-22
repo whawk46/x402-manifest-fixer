@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-business-lab-seller-web-extract.dfly90724.workers.dev",
+  "resources": [
+    {
+      "url": "https://agent-business-lab-seller-web-extract.dfly90724.workers.dev/api/web-extract",
+      "description": "Deterministic bounded HTML structure extraction for a public URL."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "gateway.drillr.ai",
+  "resources": [
+    {
+      "url": "https://gateway.drillr.ai/api/x402/data/company_search",
+      "description": "Natural-language company discovery across US, Japan, Hong Kong, and China A-shares"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ip-geo-api-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://ip-geo-api-production.up.railway.app/lookup/ip",
+      "description": "Geolocate an IPv4/IPv6 address: country, region, city, postcode, lat/lng, timezone, ISP, org, ASN, and a datacenter heuristic."
+    },
+    {
+      "url": "https://ip-geo-api-production.up.railway.app/lookup/distance",
+      "description": "Great-circle distance (km and miles) between two IP addresses, with each endpoint's city/country/lat/lng."
+    },
+    {
+      "url": "https://ip-geo-api-production.up.railway.app/lookup/myip",
+      "description": "Geolocate the caller's own IP (derived from request headers); same fields as /lookup/ip."
+    },
+    {
+      "url": "https://ip-geo-api-production.up.railway.app/lookup/bulk",
+      "description": "Batch geolocation for up to 20 IP addresses in one call; returns a per-IP record matching /lookup/ip."
+    }
+  ]
+}

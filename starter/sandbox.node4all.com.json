@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "sandbox.node4all.com",
+  "resources": [
+    {
+      "url": "https://sandbox.node4all.com/v1/x402-test",
+      "description": "Node4All Fortune — deterministic fortune reading derived from the x402 payment authorization nonce. Flagship demo of the Node4All x402 v2 payment flow. Operator: Node4All (https://node4all.com). Currency: USDC on Base."
+    }
+  ]
+}

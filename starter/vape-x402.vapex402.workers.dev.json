@@ -1,0 +1,79 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "vape-x402.vapex402.workers.dev",
+  "resources": [
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/chain_protocols",
+      "description": "VAPE chain_protocols — Top protocols on a chain by TVL (default Base), each with its real logo, category, and 24h/7d change — the chain-ecosystem view."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/protocol",
+      "description": "VAPE protocol — Full protocol record: per-chain TVL, category, audits, the official logo, Twitter, and description — the 'who is this protocol' snapshot."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/bridges",
+      "description": "VAPE bridges — Tracked bridges ranked by recent daily volume — bridge exploits are a top attack class, and this is the capital-flow data that category needs a source for."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/yields",
+      "description": "VAPE yields — Yield pools filtered by chain/project/symbol, ranked by TVL, with apy/apyBase/ilRisk/exposure — enough to tell a real yield venue from a trap (huge APY + tiny TVL = red flag)."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/stablecoins",
+      "description": "VAPE stablecoins — Stablecoins by circulating supply with live peg price and a computed depeg amount — a de-pegging stablecoin is a live systemic threat signal."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/dex_volumes",
+      "description": "VAPE dex_volumes — DEX trading volume on a chain by venue, each with its logo (default Base) — real trading activity across the chain's exchanges."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/chain_overview",
+      "description": "VAPE chain_overview — A chain's headline TVL and its rank among all tracked chains (default Base)."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/chain_fees",
+      "description": "VAPE chain_fees — Fee-earning protocols on a chain, ranked, each with its logo (default Base) — the chain's real economic activity, not just parked capital."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/scan/market_intel",
+      "description": "VAPE market_intel — Base TVL with 24h/7d change, per-protocol share/category breakdown, concentration risk, 24h DEX volume, top gainers/losers, ETH/BTC prices, Fear & Greed index, global market cap, and a real-data narrative summary. Takes no input -- always a whole-of-Base snapshot, not a per-token lookup. Real on-chain/market data, no simulation."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/scan/rug_pull_alert",
+      "description": "VAPE rug_pull_alert — Owner-power / rug-risk flags (mint, blacklist, pausable transfers, LP concentration). Real on-chain/market data, no simulation."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/scan/dossier_check",
+      "description": "VAPE dossier_check — VAPE's deepest instant verdict: weighted 0-100 risk score, meme-factory-template detection, recent-hack correlation, public web-reputation search, a live check of the project's declared socials, and a frontier-LLM quick read of the verified source. Real on-chain/market data, no simulation."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/token_chart",
+      "description": "VAPE token_chart — Daily price series for a token (default 30d), plus the token's real logo — feeds sparklines and a rule-based volatility read."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/token_intel",
+      "description": "VAPE token_intel — A full independent read on one token: current price + a 0-1 confidence score, first-ever-recorded price (an oracle-derived age signal harder to spoof than a DEX pair timestamp), the token's real logo, and — when a protocol slug is given — fees/revenue, the next unlock event, and treasury own-token share."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/scan/exploit_check",
+      "description": "VAPE exploit_check — Contract verification + proxy-swap surface check. Real on-chain/market data, no simulation."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/treasury",
+      "description": "VAPE treasury — A protocol's on-chain treasury composition — total USD, own-token USD, and the own-token share (a treasury that's ~all its own token is a fragility signal)."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/scan/token_safety_check",
+      "description": "VAPE token_safety_check — Full token safety + liquidity scan with a weighted 0-100 risk score. Real on-chain/market data, no simulation."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/scan/liquidity_check",
+      "description": "VAPE liquidity_check — Liquidity depth + top pair DEX for a Base token. Real on-chain/market data, no simulation."
+    },
+    {
+      "url": "https://vape-x402.vapex402.workers.dev/data/protocol_fees",
+      "description": "VAPE protocol_fees — A protocol's real earned fees + revenue (24h/7d/30d/1y/all-time) with its logo — 'does this actually make money, or is it just parked TVL?', a legitimacy signal raw TVL misses."
+    }
+  ]
+}

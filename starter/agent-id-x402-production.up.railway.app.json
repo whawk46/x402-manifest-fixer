@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-id-x402-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://agent-id-x402-production.up.railway.app/skills/defi-yield-and-looping",
+      "description": "Compare DeFi yield opportunities and model manual lending loops on Kamino Lend and Aave V3."
+    }
+  ]
+}

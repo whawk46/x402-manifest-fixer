@@ -1,0 +1,67 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "omniguchi.0000402.xyz",
+  "resources": [
+    {
+      "url": "https://omniguchi.0000402.xyz/care/feed",
+      "description": "Restore Hunger for an active Omniguchi. Any verified payer may care for any hatched target."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/care/pack",
+      "description": "Restore all four needs in one care action. Any verified payer may care for any hatched target."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/care/play",
+      "description": "Restore Mood for an active Omniguchi. Any verified payer may care for any hatched target."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/care/bathe",
+      "description": "Restore Cleanliness for an active Omniguchi. Any verified payer may care for any hatched target."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/care/rest",
+      "description": "Restore Energy for an active Omniguchi. Any verified payer may care for any hatched target."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/wardrobe/equip",
+      "description": "Equip or clear an unlocked cosmetic on the verified payer's own creature."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/hatch",
+      "description": "Hatch the verified payer wallet's permanent, non-transferable Omniguchi."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/cosmetics/cipher_shades/buy",
+      "description": "Unlock Cipher Shades for a target creature. Gifts are allowed; rank is unchanged."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/cosmetics/settlement_tunnel/buy",
+      "description": "Unlock Settlement Tunnel for a target creature. Gifts are allowed; rank is unchanged."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/cosmetics/packet_specs/buy",
+      "description": "Unlock Packet Specs for a target creature. Gifts are allowed; rank is unchanged."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/cosmetics/operator_cap/buy",
+      "description": "Unlock Operator Cap for a target creature. Gifts are allowed; rank is unchanged."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/cosmetics/fibre_crest/buy",
+      "description": "Unlock Fibre Crest for a target creature. Gifts are allowed; rank is unchanged."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/cosmetics/glitch_shutter/buy",
+      "description": "Unlock Glitch Shutter for a target creature. Gifts are allowed; rank is unchanged."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/cosmetics/mempool_rain/buy",
+      "description": "Unlock Mempool Rain for a target creature. Gifts are allowed; rank is unchanged."
+    },
+    {
+      "url": "https://omniguchi.0000402.xyz/careboard/glow/glow_6h",
+      "description": "Sponsor labelled 6 Hour Glow visibility for a target. Organic rank never changes."
+    }
+  ]
+}

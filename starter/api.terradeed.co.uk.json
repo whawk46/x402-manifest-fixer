@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.terradeed.co.uk",
+  "resources": [
+    {
+      "url": "https://api.terradeed.co.uk/scrape",
+      "description": "Clean, LLM-ready markdown from any URL. JavaScript rendering included. Feed web content directly into agent context without parsing HTML."
+    },
+    {
+      "url": "https://api.terradeed.co.uk/extract/property",
+      "description": "UK commercial property and land intelligence from any listing URL. Structured data: address, price, site area, use class, tenure, frontage, coordinates. Auto-enriched with Environment Agency flood risk, Historic England listed buildings, and DLUHC EPC data. Site acquisition teams use this for initial screening — replaces 30 minutes of manual research per site."
+    },
+    {
+      "url": "https://api.terradeed.co.uk/extract",
+      "description": "Structured JSON from any webpage. Name the fields you want — company data, job listings, product specs, contact details, financial figures — and get them back with confidence scores. No scraper configuration needed."
+    }
+  ]
+}

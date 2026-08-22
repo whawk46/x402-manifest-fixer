@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "anvil-ten-sigma.vercel.app",
+  "resources": [
+    {
+      "url": "https://anvil-ten-sigma.vercel.app/v1/shape",
+      "description": "Shape a messy UI, copy, page or JSON blob into a guaranteed ship | fix | rewrite verdict."
+    }
+  ]
+}

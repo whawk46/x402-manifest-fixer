@@ -1,0 +1,35 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "evidence.regulavita.com",
+  "resources": [
+    {
+      "url": "https://evidence.regulavita.com/v1/ofac/payment-preflight",
+      "description": "Before an autonomous agent sends funds, check whether the exact EVM destination address appears in current official OFAC SDN or Consolidated data. Returns a compact stop/no-exact-match decision, freshness, and the premium evidence path; no clearance or legal advice."
+    },
+    {
+      "url": "https://evidence.regulavita.com/v1/sec/filing-change-signal",
+      "description": "Check whether a company filed a new SEC 8-K, 10-Q, or 10-K after a timestamp. Accepts a ticker or CIK and returns a compact filing decision, accession links, and a next-check cursor; no materiality opinion or investment advice."
+    },
+    {
+      "url": "https://evidence.regulavita.com/v1/gtm/form-d-company-dossier",
+      "description": "Turn one SEC Form D accession into an agent-ready funded-company prospect dossier. Combines the official filing, reported offering facts and related people with fresh web research in one call, then returns source links, hashes, upstream settlement provenance, and a signed receipt. No account or API key."
+    },
+    {
+      "url": "https://evidence.regulavita.com/v1/web/source-snapshot",
+      "description": "Fetch one public HTTPS HTML, JSON, XML, or text source and return normalized agent-ready text, optional literal-match excerpts, a content hash, and an Ed25519-signed receipt. No account or API key."
+    },
+    {
+      "url": "https://evidence.regulavita.com/v1/ofac/exact-identifier-evidence",
+      "description": "Run an exact-match OFAC SDN and Consolidated identifier lookup for crypto wallets, OFAC UIDs, or exact names. Returns versioned U.S. Treasury source hashes and a signed evidence receipt; no fuzzy screening or sanctions clearance."
+    },
+    {
+      "url": "https://evidence.regulavita.com/v1/sec/filing-trigger-delta",
+      "description": "Detect new SEC EDGAR 8-K, 10-Q, and 10-K filings since a known accession and compute selected XBRL fact deltas. Returns official source URLs, hashes, freshness, and a signed evidence receipt; no investment advice."
+    },
+    {
+      "url": "https://evidence.regulavita.com/v1/procure/company-profile",
+      "description": "Procure a current company profile from a pinned search supplier and a pinned schema-normalization supplier. One call handles upstream x402 payments, returns bounded derived fields and source links, surfaces contradictions or partial fulfillment, and signs the result."
+    }
+  ]
+}

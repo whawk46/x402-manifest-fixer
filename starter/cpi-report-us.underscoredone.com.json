@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "cpi-report-us.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://cpi-report-us.underscoredone.com/cpi",
+      "description": "Gives you official United States inflation numbers from the government's BLS Consumer Price Index. Ask for the newest reading, a specific month in the past, or a whole range of months, and get back clear percentages for overall inflation and 'core' inflation (which ignores food and energy prices), plus a plain-English summary sentence."
+    }
+  ]
+}

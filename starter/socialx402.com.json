@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "socialx402.com",
+  "resources": [
+    {
+      "url": "https://socialx402.com/api/sc/facebook/adLibrary/company/ads",
+      "description": "Scrape Creators · Facebook — Company Ads"
+    },
+    {
+      "url": "https://socialx402.com/api/sc/tiktok/song/videos",
+      "description": "Scrape Creators · TikTok — TikToks using Song"
+    }
+  ]
+}

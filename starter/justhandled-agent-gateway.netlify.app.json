@@ -1,0 +1,51 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "justhandled-agent-gateway.netlify.app",
+  "resources": [
+    {
+      "url": "https://justhandled-agent-gateway.netlify.app/api/run/filename-portability-preflight",
+      "description": "Flag reserved names, invalid characters, trailing dots, case collisions, Unicode collisions, and long paths."
+    },
+    {
+      "url": "https://justhandled-agent-gateway.netlify.app/api/run/agent-run-evidence-pack",
+      "description": "Audit one agent-run packet across promises, tool calls, completion evidence, tool descriptions, skill activation, and cost in a consolidated report."
+    },
+    {
+      "url": "https://justhandled-agent-gateway.netlify.app/api/run/calendar-invite-timezone-preflight",
+      "description": "Check normalized iCalendar events for floating time, boundary, DATE, sequence, and recurrence hazards."
+    },
+    {
+      "url": "https://justhandled-agent-gateway.netlify.app/api/run/subtitle-timeline-qa",
+      "description": "Flag invalid cue timing, overlaps, empty captions, and excessive reading speed in normalized subtitle data."
+    },
+    {
+      "url": "https://justhandled-agent-gateway.netlify.app/api/run/redirect-map-preflight",
+      "description": "Check a redirect map for invalid targets, self-redirects, chains, loops, and missing legacy sources."
+    },
+    {
+      "url": "https://justhandled-agent-gateway.netlify.app/api/run/npm-publish-payload-preflight",
+      "description": "Check an npm pack manifest for missing entrypoints, absent runtime output, sensitive files, and baseline drift."
+    },
+    {
+      "url": "https://justhandled-agent-gateway.netlify.app/api/run/one-click-unsubscribe-header-checker",
+      "description": "Check normalized marketing-message evidence for List-Unsubscribe and RFC 8058 one-click headers."
+    },
+    {
+      "url": "https://justhandled-agent-gateway.netlify.app/api/run/gitignore-coverage-preflight",
+      "description": "Check supplied paths and ignore patterns for uncovered or tracked sensitive-looking files."
+    },
+    {
+      "url": "https://justhandled-agent-gateway.netlify.app/api/run/utm-link-consistency-checker",
+      "description": "Check campaign links for missing UTMs, duplicates, case drift, policy violations, and possible PII."
+    },
+    {
+      "url": "https://justhandled-agent-gateway.netlify.app/api/run/image-to-sku-match-checker",
+      "description": "Match supplied image paths to a SKU roster and flag missing, extra, unknown, or colliding assets."
+    },
+    {
+      "url": "https://justhandled-agent-gateway.netlify.app/api/run/shopify-product-csv-preflight",
+      "description": "Check normalized Shopify product rows for missing identity fields, duplicate SKUs, unsafe image URLs, and overwrite hazards."
+    }
+  ]
+}

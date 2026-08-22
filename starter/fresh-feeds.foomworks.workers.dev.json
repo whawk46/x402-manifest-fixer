@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "fresh-feeds.foomworks.workers.dev",
+  "resources": [
+    {
+      "url": "https://fresh-feeds.foomworks.workers.dev/feeds/mcp-registry/changes",
+      "description": "Delta of the MCP registry since a daily baseline: added, removed, and changed (score/status) servers — the cheap habit endpoint for repeat callers."
+    }
+  ]
+}

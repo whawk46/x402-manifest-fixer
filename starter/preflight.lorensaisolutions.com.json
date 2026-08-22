@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "preflight.lorensaisolutions.com",
+  "resources": [
+    {
+      "url": "https://preflight.lorensaisolutions.com/v1/preflight",
+      "description": "Single-fetch URL intelligence, access checks, commerce signals, and risk."
+    }
+  ]
+}

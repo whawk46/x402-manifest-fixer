@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "project-formatter-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://project-formatter-production.up.railway.app/v1/format",
+      "description": "Convert and transform data between formats: CSV to JSON, XML to JSON, and Markdown to HTML. Parse and reshape tabular and structured data. Optional self-validation pass returns structural errors. Built for data and agent pipelines."
+    }
+  ]
+}

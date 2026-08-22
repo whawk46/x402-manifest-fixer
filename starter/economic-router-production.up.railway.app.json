@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "economic-router-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://economic-router-production.up.railway.app/v1/search",
+      "description": "Economic Router verified search route"
+    }
+  ]
+}

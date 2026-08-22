@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.tbs-digital.com",
+  "resources": [
+    {
+      "url": "https://x402.tbs-digital.com/crypto/bundle",
+      "description": "Complete crypto and DeFi snapshot in ONE call for AI agents: spot prices for your tokens, full market data (market cap, 24h volume, supply, 24h change) for the lead token, top-10 chains by TVL, and the best yield pools by APY. Prices, market, TVL and yields together — the most complete crypto+DeFi call per request."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "supplier-risk-api-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://supplier-risk-api-production.up.railway.app/supplier-risk",
+      "description": "Supplier and vendor risk score for any company domain. Returns a 0-100 stability score, risk tier, and named risk flags, with subsignals: domain age/expiry (WHOIS), TLS certificate status, DNS health (A/MX/SPF/DMARC), and 30-day news sentiment. Use for supplier due diligence and third-party domain screening before purchasing from, integrating with, or paying an unfamiliar vendor or counterparty. Call GET /supplier-risk?domain=acme.com. JSON response, no API key, $0.15 USDC per request via x402."
+    }
+  ]
+}

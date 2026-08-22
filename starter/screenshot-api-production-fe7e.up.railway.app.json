@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "screenshot-api-production-fe7e.up.railway.app",
+  "resources": [
+    {
+      "url": "https://screenshot-api-production-fe7e.up.railway.app/capture/pdf",
+      "description": "Render an http(s) URL to a PDF (A4/A3/Letter/Legal/Tabloid) with print emulation; returns a JSON envelope with the PDF base64-encoded under pdf_base64, plus final_url, title, format, and size."
+    },
+    {
+      "url": "https://screenshot-api-production-fe7e.up.railway.app/capture/element",
+      "description": "Capture a PNG screenshot of a single CSS-selected element on an http(s) URL; returns a JSON envelope with the PNG base64-encoded under image_base64, plus selector, final_url, title, viewport, and size."
+    },
+    {
+      "url": "https://screenshot-api-production-fe7e.up.railway.app/capture/fullpage",
+      "description": "Capture a full-page (scrolled) PNG screenshot of an http(s) URL; returns a JSON envelope with the PNG base64-encoded under image_base64, plus final_url, title, viewport, and size."
+    },
+    {
+      "url": "https://screenshot-api-production-fe7e.up.railway.app/capture/screenshot",
+      "description": "Capture a viewport-sized PNG screenshot of an http(s) URL with headless Chromium; returns a JSON envelope with the PNG base64-encoded under image_base64, plus final_url, title, viewport, and size."
+    }
+  ]
+}

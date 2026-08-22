@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "aizamon.com",
+  "resources": [
+    {
+      "url": "https://aizamon.com/x402/v1/bot-fuel",
+      "description": "Bot Fuel — $0.25 entry for spend-capable wallets. Top Polymarket↔Kalshi gap + net-edge. Scale via pack/day."
+    }
+  ]
+}

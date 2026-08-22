@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "skowron-compliance-gateway.mattskowronis.workers.dev",
+  "resources": [
+    {
+      "url": "https://skowron-compliance-gateway.mattskowronis.workers.dev/v1/ai-act",
+      "description": "Screen an AI system or business use case for potential EU AI Act applicability, risk classification, and relevant official-source provisions. Informational screening, not legal advice. $0.25 USDC."
+    },
+    {
+      "url": "https://skowron-compliance-gateway.mattskowronis.workers.dev/v1/lei",
+      "description": "Verify a legal entity or LEI against current GLEIF data before an agent relies on the business identity. $0.02 USDC."
+    },
+    {
+      "url": "https://skowron-compliance-gateway.mattskowronis.workers.dev/v1/ofac",
+      "description": "Screen a person or entity against current official OFAC sanctions data before an agent onboards, pays, or transacts. Returns potential-match candidates and source evidence; not a legal clearance determination. $0.02 USDC."
+    },
+    {
+      "url": "https://skowron-compliance-gateway.mattskowronis.workers.dev/v1/vat",
+      "description": "EU VAT validation via official VIES. $0.01 USDC."
+    }
+  ]
+}

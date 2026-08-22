@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "leetspeak-translator.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://leetspeak-translator.underscoredone.com/translate",
+      "description": "Takes a piece of text and either turns it into leetspeak (swapping some letters for numbers and symbols, like 'hello' becoming 'h3110') or turns leetspeak back into normal, easy-to-read words. The same words always produce the same result, so answers never change unexpectedly."
+    }
+  ]
+}

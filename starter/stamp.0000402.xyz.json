@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "stamp.0000402.xyz",
+  "resources": [
+    {
+      "url": "https://stamp.0000402.xyz/stamp",
+      "description": "Pay $0.01 USDC to create an immutable timestamped statement. The server assigns recorded_at in UTC. Statements are public, permanent, and cannot be edited. Max body size: 10 KB. Network: Base Mainnet. Each request records one statement and returns public proof URLs."
+    }
+  ]
+}

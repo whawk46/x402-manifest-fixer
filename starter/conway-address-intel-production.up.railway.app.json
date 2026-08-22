@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "conway-address-intel-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://conway-address-intel-production.up.railway.app/report/:address",
+      "description": "Base address intel report (markdown). Automated agent; onchain facts only, not an audit, not financial advice."
+    }
+  ]
+}

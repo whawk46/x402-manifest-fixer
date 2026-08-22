@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "safetyincidents.org",
+  "resources": [
+    {
+      "url": "https://safetyincidents.org/api/x402/severe-injuries",
+      "description": "Federal OSHA Severe Injury Reports (hospitalizations, amputations, eye losses), newest first. Filter by state, NAICS sector, employer name, and event date."
+    },
+    {
+      "url": "https://safetyincidents.org/api/x402/employer/:slug",
+      "description": "Employer identity plus aggregate safety totals across SIR, ITA 300/301, and inspections."
+    },
+    {
+      "url": "https://safetyincidents.org/api/x402/feature-request/:featureRequestID/upvote",
+      "description": "Upvote an existing feature request on safetyincidents.org, so the requests agents actually want rise to the top. The cent is a spam gate, not a price."
+    },
+    {
+      "url": "https://safetyincidents.org/api/x402/dossier/:employerSlug",
+      "description": "Compiled federal OSHA safety dossier for one employer: identity, aggregate totals across Severe Injury Reports, ITA 300/301 and inspections, the severe-injury event list WITH narratives, citation totals, and plain-English trend flags (year-over-year direction, amputation share vs sector and national, position within its 4-digit NAICS peer group by severe-injury volume with median and percentile, EPA cross-agency enforcement signal)."
+    },
+    {
+      "url": "https://safetyincidents.org/api/x402/employer/:slug/enforcement-changes",
+      "description": "OSHA enforcement delta feed for one employer: everything that GENUINELY changed in the last N days (default 7) — new inspections, new violations, penalty increases/cuts, vacated citations — content-diffed so DOL's bulk-reload timestamp churn (case_mod_date, load_dt) never shows up as a change. Each change row names the changed columns and old/new penalty values. The only clean change feed over OSHA enforcement data; DOL's own API cannot distinguish new from touched."
+    }
+  ]
+}

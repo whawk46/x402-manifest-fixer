@@ -1,0 +1,143 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.swaphunt.dev",
+  "resources": [
+    {
+      "url": "https://x402.swaphunt.dev/v1/tools/price/multi",
+      "description": "Batch spot prices for up to 20 assets in one call — each with price, 24h change and volume, keyed by symbol. The cost-efficient way to price a basket or portfolio in a single request instead of N calls."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/market/fear-greed",
+      "description": "Current Crypto Fear & Greed Index (0-100) with its label (Extreme Fear → Extreme Greed), updated daily. A single market-mood gauge for risk-on/risk-off context. For trend over time use /fear-greed/compare or /fear-greed/history."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/tools/price",
+      "description": "SwapHunt — a crypto market-context toolkit for trading agents: live prices, market regime, volatility, sentiment, funding, macro events, seasonality and anti-FOMO sanity checks, all pay-per-call. This route returns a single asset's live spot price with 24h context: price, 24h change %, 24h high/low and volume — one clean JSON snapshot (BTC, ETH, SOL, any major). For many assets at once use /price/multi."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/sentiment/news",
+      "description": "Recent crypto news headlines each scored 1-10 for trading impact by an LLM (qwen3:8b), with a bullish/bearish/neutral tag. Filter by category, minimum score and lookback hours. Use to surface market-moving stories; for the aggregate read use /sentiment/summary."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/market/fear-greed/history",
+      "description": "Historical Fear & Greed time series (up to 365 days), each day with value + classification. Use to backtest sentiment, chart mood cycles or correlate fear/greed with price. The raw series, not a summary."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/events/macro/history",
+      "description": "Historical macro events with actual vs estimate values (e.g. CPI came in above/below forecast). Use to study how markets reacted to surprises and to backtest event-driven strategies."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/cycle/weekly-pattern",
+      "description": "Historical performance by day of week (avg return + win rate per weekday) over the lookback. Use to time entries/exits around statistically stronger or weaker days. Seasonality, not a forecast."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/cycle/monthly-pattern",
+      "description": "Historical performance by calendar month (e.g. 'Uptober') — avg return and win rate per month. Use for seasonal positioning. Pattern from history, not a prediction."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/cycle/hourly-pattern",
+      "description": "Historical volatility by hour of day (UTC) plus a session comparison — which hours move most. Use to time entries to active hours and avoid dead zones. Intraday seasonality."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/vol/expected-move",
+      "description": "ATR-based expected price range for the period: the 68% and 95% probability bands around current price. Use to set realistic targets, stops and breakout thresholds. A statistical range, not a directional forecast."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/vol/compression-alert",
+      "description": "Bollinger-Band squeeze detector: is volatility compressing toward a likely expansion? Returns extreme/strong/moderate/none plus bandwidth. Use to anticipate breakouts before they fire. Detects the setup, not the direction."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/sentiment/summary",
+      "description": "Aggregated market sentiment label (strong_bearish → strong_bullish) with a normalized score, computed from LLM-scored news over the window. One-number mood read for an agent that just needs the verdict, not the individual articles."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/sanity/is-this-oversold",
+      "description": "Multi-timeframe RSI oversold check (1h/4h/1d, weighted) returning a boolean + the blended RSI. Use to confirm an oversold condition across timeframes rather than trusting a single chart. RSI-based, not a buy signal on its own."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/sanity/is-this-a-dip",
+      "description": "Is this drop a statistically significant dip or just noise? Compares the move against the asset's ATR and returns a verdict + the drawdown size. Use before 'buy the dip' to check the dip is real."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/regime/chop-detection",
+      "description": "ADX-based chop-vs-trend detector for an asset/timeframe: is price trending or stuck in a range? Returns a boolean + chop score. Use to avoid trend strategies in chop (and range strategies in trends)."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/market/momentum-rank",
+      "description": "Top and bottom momentum coins ranked by return over the chosen period — a leaderboard of what's running and what's bleeding. Use to surface rotation candidates. Returns ranked movers, not full fundamentals."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/market/correlation",
+      "description": "Pearson correlation of a coin's returns vs BTC (-1 to +1) over the period. Use to judge diversification and whether an alt is moving independently or just tracking BTC. A correlation coefficient, not a beta or causation claim."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/market/coin-strength",
+      "description": "Relative strength of a coin vs BTC over a period, returned as a category (very_strong → very_weak) plus a numeric score. Use to rank a coin's momentum against the benchmark before entering. A strength read, not a price target."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/market/alt-season",
+      "description": "Alt-season detector: what % of the top-10 alts have outperformed BTC over the lookback window, with a 0-100 index and a boolean verdict. Use to time BTC↔alt rotation. Complements /dominance (capital location) with relative-performance signal."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/fomo/pump-age",
+      "description": "Active-pump detector: is the asset currently pumping, and for how long vs the historical average pump length? Use to judge whether a move is fresh or exhausted before joining it."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/fomo/how-late-am-i",
+      "description": "FOMO guard: how far has price already run from the recent swing low — in % and ATR multiples — versus the historical average move? Returns an early/mid/late read so an agent doesn't buy the top. Anti-chase context."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/fomo/green-candles-streak",
+      "description": "Counts consecutive green candles on the chosen interval and returns the historical outcome stats after streaks of that length (mean-reversion odds). Use to gauge exhaustion risk before buying a long green run."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/fomo/already-extended",
+      "description": "Is price over-extended? Distance from MA20/MA50, Bollinger-band position and a z-score in one read. Use to avoid entering after price has stretched far from its mean. Mean-reversion context."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/events/macro",
+      "description": "Upcoming macro events (FOMC, CPI, NFP, etc.) with date, country and impact level, filterable to high-impact only. Use to avoid trading into scheduled volatility or to plan around it. Forward calendar; for past actuals use /macro/history."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/vol/silence",
+      "description": "Market-silence score 0-1 — a composite of low volume, low volatility and small price change. High silence often precedes expansion. Use to spot the calm-before-the-move. Pairs with /vol/compression-alert."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/vol/realized",
+      "description": "Realized volatility for an asset: daily and annualized %, plus a low/normal/high/extreme bucket and the 24h high/low/range. Use to size positions and set expectations. Backward-looking (realized), not implied/option vol."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/regime/current",
+      "description": "Current BTC market regime — BULLISH / BEARISH / NEUTRAL — derived from price vs its 20-period EMA on the 12h candle, with the EMA value and slope. The top-level risk filter: trade-with-trend context before any entry. BTC-based; pair with per-asset tools for alts."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/market/global",
+      "description": "Whole-market snapshot: total crypto market cap, total 24h volume, BTC dominance, and counts of active coins and markets. One call for the macro state of crypto — the top-of-funnel context before drilling into an asset."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/market/fear-greed/compare",
+      "description": "Fear & Greed now vs yesterday, 7 days and 30 days ago — with the deltas — so an agent can see whether market sentiment is improving or deteriorating, not just today's number. Use for momentum-of-mood."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/cycle/daily-range-used",
+      "description": "How much of today's expected (ATR) range has already been used — low/moderate/high/extended — with the % consumed. Use to judge remaining room before chasing intraday. Tells you how 'full' the day is."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/market/halving",
+      "description": "BTC or LTC halving countdown: blocks remaining and the estimated date of the next halving. Use for cycle-timing narratives and supply-shock context. Estimate (block-time based), not an exact timestamp."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/market/dominance",
+      "description": "BTC and ETH market-cap dominance (% of total crypto market cap), plus total market cap and active-coin count, refreshed every ~5 min. Use to gauge whether capital sits in majors vs alts. For the alt-rotation read specifically, use /alt-season."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/context/weekend-liquidity",
+      "description": "Is it a weekend / low-liquidity window right now? Returns the current session and a 0-100 liquidity score. Use to widen stops and discount thin-market moves. Lightweight market-condition context."
+    },
+    {
+      "url": "https://x402.swaphunt.dev/v1/context/session",
+      "description": "Current trading session (Asia / London / NY / Off) plus historical volatility for that session. Use to time entries around the most active hours and set session-aware expectations."
+    }
+  ]
+}

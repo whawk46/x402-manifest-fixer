@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.telnyx.com",
+  "resources": [
+    {
+      "url": "https://x402.telnyx.com/v1/chat/completions",
+      "description": "Frontier chat completions via Telnyx Inference (MiniMax M2.7). OpenAI-compatible. $0.002856 USDC per call — no API key, no signup, pay per request."
+    },
+    {
+      "url": "https://x402.telnyx.com/v1/chat/completions/_t/gemma-2b",
+      "description": "Chat completions via Telnyx Inference (google/gemma-2b-it). OpenAI-compatible. $0.002 USDC per call."
+    }
+  ]
+}

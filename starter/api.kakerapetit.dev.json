@@ -1,0 +1,51 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.kakerapetit.dev",
+  "resources": [
+    {
+      "url": "https://api.kakerapetit.dev/v1/text/similarity",
+      "description": "Compute similarity between two texts. Returns Jaccard, Dice, cosine and overlap scores for two strings. Use to deduplicate documents, match names or titles, and detect near-identical text."
+    },
+    {
+      "url": "https://api.kakerapetit.dev/v1/jp-company/snapshot",
+      "description": "Fundamentals of a Japanese listed company from its latest annual securities report (yukashoken hokokusho) filed with EDINET, Japan FSA's disclosure system. Look up by Tokyo Stock Exchange ticker (e.g. 7203) or EDINET code. Returns company profile, IFRS/JGAAP financials — revenue, operating income, net income, total assets, equity, operating cash flow, EPS, ROE — with 5-year history, plus employee headcount, average salary, age and tenure. For fundamentals research and Japan stock screening."
+    },
+    {
+      "url": "https://api.kakerapetit.dev/v2/calendar",
+      "description": "EDINET filing calendar: annual securities reports (yukashoken hokokusho) filed by Japanese listed companies in a date range. Returns company code, EDINET document ID, fiscal period, accounting standard (JGAAP/IFRS/USGAAP) and the exact filing timestamp for each report — track new disclosures, trigger data pipelines, or find which Japanese stocks just reported. Query: /v2/calendar?from=2026-06-20&to=2026-06-30 (max 92 days per request)."
+    },
+    {
+      "url": "https://api.kakerapetit.dev/v2/rankings",
+      "description": "Rank Japanese listed companies by any financial metric from EDINET annual reports: roe, roa, revenue, operating_income, net_income, total_assets, equity_ratio, fcf and 30+ more. Returns the top or bottom N companies on the latest fiscal year, each with the full normalized indicator row and filing provenance. Example: /v2/rankings?metric=roe&order=desc&limit=10. League tables and factor screens for Japanese stocks in an EDGAR-style unified schema."
+    },
+    {
+      "url": "https://api.kakerapetit.dev/v2/screener",
+      "description": "Screen Japanese listed companies by fundamentals from EDINET annual reports. Filter any of 40+ normalized metrics with _gte/_lte query params — revenue, operating income, net income, total assets, roe, roa, operating_margin, equity_ratio (ratio thresholds in percent) — plus sector and accounting standard (JGAAP/IFRS/USGAAP). Returns the latest fiscal year per company with all indicators and ratios. Example: /v2/screener?roe_gte=8&revenue_gte=100000000000. Japan stock screener for agents."
+    },
+    {
+      "url": "https://api.kakerapetit.dev/v1/jp-company/governance",
+      "description": "Corporate governance data for a Japanese listed company from its latest annual securities report filed with EDINET, Japan FSA. Look up by stock ticker (e.g. 7203) or EDINET code. Returns executive compensation by officer category (fixed, bonus, performance-based, stock awards), individual director pay over 100 million yen, top-10 major shareholders with ownership ratios, and cross-shareholdings (policy-held stocks) with issuer, shares and value. For governance screening, proxy and ESG research."
+    },
+    {
+      "url": "https://api.kakerapetit.dev/v1/calendar/ics",
+      "description": "Generate a calendar invite (.ics file) from event details. Returns a valid RFC 5545 iCalendar VEVENT with title, start and end time, timezone, location, and attendees that can be emailed or imported into Google Calendar, Outlook, or Apple Calendar. Use when an agent needs to schedule a meeting or send a calendar invitation."
+    },
+    {
+      "url": "https://api.kakerapetit.dev/v1/find-near-duplicate",
+      "description": "Find near-duplicate images. Computes perceptual hash distance between two image URLs to detect crops, resizes, re-compressions, and slightly edited copies of the same photo. Use for content moderation, copyright checks, and cleaning image datasets."
+    },
+    {
+      "url": "https://api.kakerapetit.dev/v1/verify-reference-image",
+      "description": "Verify that an image matches a reference image. Compares a candidate image URL against a trusted reference and returns whether they show the same content. Use for verifying logos, profile pictures, KYC document photos, or that an uploaded image matches an expected original."
+    },
+    {
+      "url": "https://api.kakerapetit.dev/v1/compare-product-photo",
+      "description": "Compare two product photos for visual similarity. Returns a similarity score between two image URLs. Use when an agent needs to match a product listing photo against a catalog image, detect identical product pictures across stores, or spot re-used ecommerce imagery."
+    },
+    {
+      "url": "https://api.kakerapetit.dev/v1/check-duplicate-image",
+      "description": "Check if two images are duplicates or near-duplicates. Compares two image URLs with perceptual hashing and returns a distance score and a same-image verdict. Use to deduplicate photos, detect reposted or copied images, and verify whether two files show the same picture."
+    }
+  ]
+}

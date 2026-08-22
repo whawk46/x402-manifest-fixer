@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "finance-api.kdlcfa.workers.dev",
+  "resources": [
+    {
+      "url": "https://finance-api.kdlcfa.workers.dev/btc-news",
+      "description": "Latest Bitcoin/crypto news headlines via CoinDesk RSS (titles, short summaries, and links only, not full articles)"
+    },
+    {
+      "url": "https://finance-api.kdlcfa.workers.dev/xrp-price",
+      "description": "Ripple (XRP-USD) spot price, delayed, via Yahoo Finance"
+    },
+    {
+      "url": "https://finance-api.kdlcfa.workers.dev/gold-news",
+      "description": "Latest gold market news headlines via GoldSeek RSS, filtered by keyword (titles, short summaries, and links only)"
+    },
+    {
+      "url": "https://finance-api.kdlcfa.workers.dev/altcoin-news",
+      "description": "Latest major altcoin news (Solana, XRP, Cardano, Dogecoin, BNB, Polkadot, Avalanche), filtered from CoinDesk RSS by keyword match, excluding BTC/ETH-only stories (titles, short summaries, and links only)"
+    },
+    {
+      "url": "https://finance-api.kdlcfa.workers.dev/btc-hashrate",
+      "description": "Bitcoin network hash rate, via Blockchain.info stats API"
+    },
+    {
+      "url": "https://finance-api.kdlcfa.workers.dev/doge-price",
+      "description": "Dogecoin (DOGE-USD) spot price, delayed, via Yahoo Finance"
+    }
+  ]
+}

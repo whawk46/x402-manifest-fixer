@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-hono-api.inraby.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-hono-api.inraby.workers.dev/api/v1/secret-scan",
+      "description": "Secret scan for exposed API keys, tokens, passwords, and credentials in text — returns redacted output without exposing matched secret values. Ideal for agent pre-flight checks before sharing config or logs."
+    },
+    {
+      "url": "https://x402-hono-api.inraby.workers.dev/api/v1/iam-risk-score",
+      "description": "Return a focused AWS IAM risk score and severity summary for a submitted IAM policy document."
+    },
+    {
+      "url": "https://x402-hono-api.inraby.workers.dev/api/v1/cve-lookup",
+      "description": "Look up a CVE ID and return OSV vulnerability summary, severity, affected packages, and reference links for agent-driven security triage."
+    },
+    {
+      "url": "https://x402-hono-api.inraby.workers.dev/api/v1/ssl-certificate-audit",
+      "description": "Audit domain SSL/TLS certificate expiry, HTTPS reachability, HSTS, and HTTP-to-HTTPS redirect posture using certificate transparency and live transport checks."
+    },
+    {
+      "url": "https://x402-hono-api.inraby.workers.dev/api/v1/gdpr-privacy-scan",
+      "description": "Scan a website landing page for GDPR and CCPA privacy signals — privacy policy links, cookie consent language, and compliance keyword coverage for agent audits."
+    },
+    {
+      "url": "https://x402-hono-api.inraby.workers.dev/api/v1/dependency-cve-scan",
+      "description": "Scan package.json or lockfile text for dependency CVE risk signals — outdated lodash/axios, deprecated packages, wildcard pins, risky postinstall scripts, and embedded secrets."
+    }
+  ]
+}

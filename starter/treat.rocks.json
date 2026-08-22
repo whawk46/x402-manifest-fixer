@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "treat.rocks",
+  "resources": [
+    {
+      "url": "https://treat.rocks/api/rock",
+      "description": "A Treat.rocks rock, $2.00 USDC. Fixed price, no refunds once minted, not an investment. Terms: https://treat.rocks/terms - Verify: https://treat.rocks/verify/<id> - Security: https://treat.rocks/SECURITY.md"
+    }
+  ]
+}

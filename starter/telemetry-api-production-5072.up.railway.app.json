@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "telemetry-api-production-5072.up.railway.app",
+  "resources": [
+    {
+      "url": "https://telemetry-api-production-5072.up.railway.app/v1/edge-observations",
+      "description": "Live post-cost edge observations from an autonomous trading organism on Monad + XRPL: per-pair net edge after gas/slippage/fees, cost-shield verdicts, refreshed every ~90s."
+    }
+  ]
+}

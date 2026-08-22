@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "web-production-78e17.up.railway.app",
+  "resources": [
+    {
+      "url": "https://web-production-78e17.up.railway.app/v1/summarize",
+      "description": "Summarize and compress text, Markdown, or JSON into a structured summary. Output as prose, bullets, headline, or TLDR, with optional exact target word count. Built for agent and document pipelines."
+    }
+  ]
+}

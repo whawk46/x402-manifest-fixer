@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "deomath.org",
+  "resources": [
+    {
+      "url": "https://deomath.org/v1/research-checkpoint",
+      "description": "Evaluate whether a mathematical research branch should continue, revise, abstain, or escalate."
+    }
+  ]
+}

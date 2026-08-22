@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "pay-per-demo.vercel.app",
+  "resources": [
+    {
+      "url": "https://pay-per-demo.vercel.app/api/demo",
+      "description": "Pay once for virtual admission to Agentic Commerce Demo Day"
+    },
+    {
+      "url": "https://pay-per-demo.vercel.app/api/overflow",
+      "description": "Unlock a private virtual-overflow prototype room"
+    }
+  ]
+}

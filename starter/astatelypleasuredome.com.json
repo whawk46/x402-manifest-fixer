@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "astatelypleasuredome.com",
+  "resources": [
+    {
+      "url": "https://astatelypleasuredome.com/api/poem/char/:i",
+      "description": "One letter of Kubla Khan, ownable once, ever; price rises with each sale. The letter index goes in the path: /api/poem/char/{i}. GET /api/ledger (free) lists letters already owned; GET /api/poem (free) has metadata."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.jubjubapp.com",
+  "resources": [
+    {
+      "url": "https://api.jubjubapp.com/v2/paid/purchase_metadata",
+      "description": "Unlocks all structured metadata for a single piece of content: full questions answered, complete training caption, cinematographic analysis, provenance score, entity extraction, and chapter markers. Idempotent within 24 hours. Call this before purchase_content. Payment is distributed to the content's rights holders on-chain; JubJub retains a 3% platform fee. Browse the full catalogue and search it for free at JubJub's MCP: https://api.jubjubapp.com/v2/mcp"
+    },
+    {
+      "url": "https://api.jubjubapp.com/v2/paid/purchase_content",
+      "description": "Returns all metadata fields plus the full transcript and rights-holder contact information for licensing. Requires declaring an intended use, which is logged as a licence declaration. Use when you need the full transcript or want to start a licensing conversation with the creator. Payment is distributed to the content's rights holders on-chain; JubJub retains a 3% platform fee. Browse the full catalogue and search it for free at JubJub's MCP: https://api.jubjubapp.com/v2/mcp"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "http-status-checker.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://http-status-checker.underscoredone.com/check",
+      "description": "Give this API a list of up to 10 web addresses and it will visit each one to tell you whether it is working, broken, or redirecting visitors somewhere else. You get back the exact status number (like 200 for OK, 404 for not found, 500 for server error), whether the address redirects, and where it redirects to. Great for finding broken links, verifying website migrations, and running quick SEO audits without writing any code."
+    }
+  ]
+}

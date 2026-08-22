@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "dns-whois-lookup.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://dns-whois-lookup.underscoredone.com/lookup",
+      "description": "Send up to 10 domain names and get back every DNS record type (A, AAAA, MX, CNAME, TXT, NS, PTR, SOA, SRV, CAA, NAPTR, DS, TLSA) plus the full WHOIS registration profile (registrar, dates, contacts, status, nameservers) for each one. URLs are accepted and automatically stripped down to the bare domain. Duplicate domains are quietly removed before processing. Results come back as one flat row per domain, ready to drop into a spreadsheet, database, or pipeline."
+    }
+  ]
+}

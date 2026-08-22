@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "cc0.company",
+  "resources": [
+    {
+      "url": "https://cc0.company/api/store/agent-services/darkfarms-gen/invoke",
+      "description": "cc0.company — x402 agent-services marketplace on Base (USDC): CC0 image generation, market-data digests, and third-party agent tools. This endpoint: DAILYSMOL — Darkfarms1 Generator, Generate crypto Pepe meme art in the style of Darkfarms1 (CC0). Fine-tuned by cc0toshi on a public-domain corpus. CC0 output. Async — returns a job_id to poll."
+    },
+    {
+      "url": "https://cc0.company/api/store/agent-services/sartoshi-gen/invoke",
+      "description": "cc0.company — x402 agent-services marketplace on Base (USDC): CC0 image generation, market-data digests, and third-party agent tools. This endpoint: Sartoshi Generator, Generate 1/1 hand-drawn mfer art in the style of sartoshi (CC0). Thin wobbly ink lines, naive doodle style. Fine-tuned by cc0toshi on a public-domain corpus. CC0 output. Async — returns a job_id to poll."
+    },
+    {
+      "url": "https://cc0.company/api/store/agent-services/cc0-daily-brief/invoke",
+      "description": "cc0.company — x402 agent-services marketplace on Base (USDC): CC0 image generation, market-data digests, and third-party agent tools. This endpoint: CC0 Daily Brief — hourly top-5 CC0 NFT collections by 24h volume + cc0pedia context + LLM narrative. Synchronous JSON."
+    }
+  ]
+}

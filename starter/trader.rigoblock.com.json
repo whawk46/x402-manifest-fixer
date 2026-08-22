@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "trader.rigoblock.com",
+  "resources": [
+    {
+      "url": "https://trader.rigoblock.com/api/quote",
+      "description": "DEX price quote across 7 chains (Ethereum, Base, Arbitrum, Optimism, Polygon, BNB, Unichain). Returns sell/buy amounts, price, routing, and gas estimate."
+    },
+    {
+      "url": "https://trader.rigoblock.com/api/quote/uniswap",
+      "description": "Uniswap Trading API quote with on-chain oracle price comparison. Drop-in proxy for Uniswap /quote — same request body, response includes priceFeedExists, deltaBps, and oracleAmount."
+    },
+    {
+      "url": "https://trader.rigoblock.com/api/tools",
+      "description": "Rigoblock direct DeFi tool invocation. POST to /api/tools?toolName={name} with arguments object."
+    },
+    {
+      "url": "https://trader.rigoblock.com/api/chat",
+      "description": "AI-powered DeFi trading agent for Rigoblock smart vaults. Natural language to safe swap/bridge calldata or delegated execution. Supports Uniswap, 0x, GMX perpetuals, Across bridging, Uniswap v4 LP, GRG staking, and pool deployment across 7 chains. Protected by NAV Shield (10% max loss per trade), Swap Shield (oracle vs DEX price divergence check), slippage protection, delegation verification, and transaction simulation."
+    },
+    {
+      "url": "https://trader.rigoblock.com/api/quote/0x",
+      "description": "0x API v2 quote with on-chain oracle price comparison. Drop-in proxy for 0x /swap/allowance-holder/quote — same query parameters, response includes priceFeedExists, deltaBps, and oracleAmount."
+    },
+    {
+      "url": "https://trader.rigoblock.com/api/oracle/refresh",
+      "description": "Build an unsigned operator EOA transaction that swaps ETH on the on-chain oracle's dedicated Uniswap V4 pool to create a fresh price observation and fix a stale TWAP feed. Use when the Swap Shield blocks a trade due to oracle price divergence."
+    }
+  ]
+}

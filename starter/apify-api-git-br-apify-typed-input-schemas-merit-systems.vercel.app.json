@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "apify-api-git-br-apify-typed-input-schemas-merit-systems.vercel.app",
+  "resources": [
+    {
+      "url": "https://apify-api-git-br-apify-typed-input-schemas-merit-systems.vercel.app/api/actors/apimaestro/linkedin-profile-detail/call",
+      "description": "Start the \"Profile Details Scraper for LinkedIn + EMAIL (No Cookies)\" Apify actor (apimaestro/linkedin-profile-detail). Scrape comprehensive LinkedIn profile data including work experience, education history, certifications, and location details. Get structured information from… Returns a signed token for polling /api/actors/results with SIWX."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "booaip.vercel.app",
+  "resources": [
+    {
+      "url": "https://booaip.vercel.app/api/gas",
+      "description": "Current gas price (gwei) on an EVM chain via on-chain read. Body: { chain }."
+    },
+    {
+      "url": "https://booaip.vercel.app/api/yields",
+      "description": "Top APY yield pools by token symbol and chain, with risk flags (DefiLlama). Body: { symbol?, chain?, limit?, safeOnly? }."
+    },
+    {
+      "url": "https://booaip.vercel.app/api/feargreed",
+      "description": "Current crypto Fear & Greed Index with 1-day change (alternative.me)."
+    },
+    {
+      "url": "https://booaip.vercel.app/api/stablecoins",
+      "description": "Stablecoin circulating supply, price and peg deviation (DefiLlama). Body: { symbol? }."
+    },
+    {
+      "url": "https://booaip.vercel.app/api/chains",
+      "description": "Chain TVL, rank and dominance (DefiLlama). Body: { chain? }."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-portfolio.x402iom.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-portfolio.x402iom.workers.dev/extract",
+      "description": "Fetch a web page and return structured content: title, meta/OpenGraph, canonical, headings, links, readable text (boilerplate stripped)."
+    },
+    {
+      "url": "https://x402-portfolio.x402iom.workers.dev/text/clean",
+      "description": "Clean text: strip HTML, normalise unicode/whitespace, dedupe lines. Returns cleaned text plus stats."
+    },
+    {
+      "url": "https://x402-portfolio.x402iom.workers.dev/rdap/:var1",
+      "description": "Domain registration data (modern WHOIS) via RDAP: registrar, created/expiry dates, status, nameservers, DNSSEC."
+    },
+    {
+      "url": "https://x402-portfolio.x402iom.workers.dev/email-auth/:var1",
+      "description": "Email authentication posture for a domain: DMARC + SPF records fetched, parsed, scored 0-100, with findings and fix recommendations."
+    }
+  ]
+}

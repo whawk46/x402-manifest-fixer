@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api-dev.cueframe.ai",
+  "resources": [
+    {
+      "url": "https://api-dev.cueframe.ai/v1/media",
+      "description": "Paginated library list. Filter with ?kind= (video|audio|image|gif|asset|source|stock), ?source= (upload|generated|import-url|stock), ?tag= (exact tag) so a real library isn't an undifferentiated soup."
+    }
+  ]
+}

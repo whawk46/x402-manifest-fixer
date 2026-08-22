@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "mortgage-amortization.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://mortgage-amortization.underscoredone.com/calculate",
+      "description": "Give this API a loan amount, an interest rate, and a repayment term, and it hands back the precise monthly payment plus a complete schedule showing — for every single month — how much goes to interest, how much reduces the balance, and what you still owe. You can also ask 'what if I pay an extra $300 a month?' or 'what if I make a $10,000 lump payment in month 24?' and it will tell you exactly how many months you save and how much interest you avoid. Every number is computed with banker's rounding and a pinned arithmetic rule so that two correct systems running the same inputs produce identical results, down to the cent. No rate lookups, no market data — you supply the rate, the API does the math."
+    }
+  ]
+}

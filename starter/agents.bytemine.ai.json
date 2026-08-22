@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agents.bytemine.ai",
+  "resources": [
+    {
+      "url": "https://agents.bytemine.ai/functions/v1/api-gateway/contacts/search",
+      "description": "Search the prospect database by job title, seniority, department, industry, company, location, and more. Filters accept a plain string, an array of strings, or { value, included } objects for excludes. Returns masked results. Billed per result returned, up to pageSize."
+    },
+    {
+      "url": "https://agents.bytemine.ai/functions/v1/api-gateway/fraud-check",
+      "description": "Score a signup for fraud risk. Send email only, ip only, or both; at least one is required. Email checks cover disposable and free provider detection, MX validation, gibberish name detection, domain liveness, and known business signals. IP checks cover VPN, proxy, Tor, residential relay, datacenter, and bogon detection. Returns a decision of allow, review, or block with a risk score and itemized signals."
+    }
+  ]
+}

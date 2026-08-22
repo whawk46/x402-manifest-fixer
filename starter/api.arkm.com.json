@@ -1,0 +1,295 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.arkm.com",
+  "resources": [
+    {
+      "url": "https://api.arkm.com/x402/intelligence/address",
+      "description": "Get Arkham intelligence for an address. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/intelligence/entity",
+      "description": "Get Arkham intelligence for an entity. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/balances/address",
+      "description": "Get Arkham token balances for an address. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/intelligence/token",
+      "description": "Get Arkham token intelligence by pricing ID or chain/address. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/intelligence/entity-summary",
+      "description": "Get Arkham summary statistics for an entity. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/transfers",
+      "description": "Get Arkham transfers with filters. Priced per row: $0.40 × limit (default 20, max 1650); pass the smallest useful limit."
+    },
+    {
+      "url": "https://api.arkm.com/x402/history/address",
+      "description": "Get Arkham historical data for an address. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/market",
+      "description": "Get Arkham current market data for a token. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/balance",
+      "description": "Get Arkham token balance by pricing ID or chain/address. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/flow/address",
+      "description": "Get Arkham historical USD flows for an address. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/transfers/unenriched",
+      "description": "Get Arkham unenriched transfers. Priced per row: $0.20 × limit (default 20, max 1650); pass the smallest useful limit."
+    },
+    {
+      "url": "https://api.arkm.com/x402/loans/address",
+      "description": "Get Arkham loan and borrow positions for an address. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/intelligence/entity-predictions",
+      "description": "Get Arkham predictions for an entity. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/intelligence/address-enriched",
+      "description": "Get enriched Arkham intelligence for an address. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/wallet/summary/balance",
+      "description": "Get Arkham Polymarket wallet balance summary. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/networks/history",
+      "description": "Get Arkham historical data for a blockchain network. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/addresses",
+      "description": "Get Arkham chain addresses for a token. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/wallet/summary/biggest-win",
+      "description": "Get Arkham Polymarket wallet biggest win summary. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/market/by-id",
+      "description": "Get Arkham current market data for a token by pricing ID. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/trending/by-id",
+      "description": "Get a single Arkham trending token by ID. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/portfolio/address",
+      "description": "Get Arkham portfolio history for an address. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/intelligence/entity-types",
+      "description": "List supported Arkham entity types. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/balances/entity",
+      "description": "Get Arkham token balances for an entity. $1.00 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/top-flow/by-address",
+      "description": "Get Arkham top token flow by chain/address. $2.00 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/price/history",
+      "description": "Get Arkham token price history by pricing ID or chain/address. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/volume/address",
+      "description": "Get Arkham transfer volume for an address. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/holders/by-address",
+      "description": "Get Arkham top token holders by chain/address. $6.00 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/search",
+      "description": "Search Arkham addresses, entities, tokens, pools, and names. $6.00 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/marketdata/altcoin-index",
+      "description": "Get Arkham Altcoin Index. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/intelligence/address-all",
+      "description": "Get Arkham intelligence for an address across all chains. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/counterparties/address",
+      "description": "Get top Arkham counterparties for an address. $10.00 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/cluster/summary",
+      "description": "Get Arkham cluster summary statistics. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/volume/entity",
+      "description": "Get Arkham transfer volume for an entity. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/top-flow/by-id",
+      "description": "Get Arkham top token flow by pricing ID. $2.00 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/transfers/tx",
+      "description": "Get Arkham transfers for a transaction. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/transfers/histogram",
+      "description": "Get Arkham detailed transfer histogram. $0.80 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/volume/by-id",
+      "description": "Get Arkham token volume by pricing ID. $0.60 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/volume/by-address",
+      "description": "Get Arkham token volume by chain/address. $0.60 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/portfolio/time-series/entity",
+      "description": "Get Arkham daily portfolio time series for an entity token. $0.60 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/portfolio/time-series/address",
+      "description": "Get Arkham daily portfolio time series for an address token. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/swaps",
+      "description": "Get Arkham DEX swap transactions. Priced per row: $0.40 × limit (default 20, max 1649); pass the smallest useful limit."
+    },
+    {
+      "url": "https://api.arkm.com/x402/portfolio/entity",
+      "description": "Get Arkham portfolio history for an entity. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/wallet/summary/stats",
+      "description": "Get Arkham Polymarket wallet stats summary. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/wallet/summary/portfolio",
+      "description": "Get Arkham Polymarket wallet portfolio summary. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/wallet/summary/pnl",
+      "description": "Get Arkham Polymarket wallet PnL summary. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/wallet/prediction-history",
+      "description": "Get Arkham Polymarket wallet prediction history. $0.60 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/top-events-breakdown",
+      "description": "Get Arkham Polymarket top event breakdown. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/prices",
+      "description": "Get Arkham Polymarket prices. Provide at least one of: tokenAddress, conditionID. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/positions",
+      "description": "Get Arkham Polymarket positions for a wallet. $0.60 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/event-positions",
+      "description": "Get Arkham Polymarket event positions. $0.60 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/loans/entity",
+      "description": "Get Arkham loan and borrow positions for an entity. $0.60 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/intelligence/address-enriched-all",
+      "description": "Get enriched Arkham intelligence for an address, all chains. $0.80 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/history/entity",
+      "description": "Get Arkham historical data for an entity. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/flow/entity",
+      "description": "Get Arkham historical USD flows for an entity. $0.60 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/arkham-exchange-tokens",
+      "description": "Get Arkham Exchange tokens. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/ws/session-info",
+      "description": "Get Arkham WebSocket pricing info. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/trending",
+      "description": "Get Arkham trending tokens. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/token/price-change",
+      "description": "Get Arkham token price change since a timestamp. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/intelligence/contract",
+      "description": "Get Arkham contract intelligence. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/tag/summary",
+      "description": "Get Arkham tag summary statistics. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/tx",
+      "description": "Get Arkham transaction details. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/tag/params",
+      "description": "Get Arkham tag parameters. $1.00 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/wallet/tags",
+      "description": "Get Arkham Polymarket wallet tags. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/top-holders",
+      "description": "Get Arkham Polymarket top holders. $0.60 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/pnl/chart",
+      "description": "Get Arkham Polymarket PnL chart. $0.60 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/top-events",
+      "description": "Get Arkham Polymarket top events. $2.00 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/leaderboard",
+      "description": "Get Arkham Polymarket leaderboard. $2.00 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/order-book",
+      "description": "Get Arkham Polymarket order book. $0.40 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/events",
+      "description": "Get Arkham Polymarket events. $0.60 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/activity",
+      "description": "Get Arkham Polymarket activity. $1.00 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/event",
+      "description": "Get an Arkham Polymarket event. $0.20 per call."
+    },
+    {
+      "url": "https://api.arkm.com/x402/polymarket/wallet/event-history",
+      "description": "Get Arkham Polymarket wallet event history. $0.60 per call."
+    }
+  ]
+}

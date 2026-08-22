@@ -1,0 +1,35 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "lookups.nl",
+  "resources": [
+    {
+      "url": "https://lookups.nl/domain/:name",
+      "description": "Look up a domain's registration facts in its registry's own RDAP service: registrar, creation/expiry/update dates, EPP status codes, nameservers and the DNSSEC delegation flag, with retry, cache and a durable audit receipt."
+    },
+    {
+      "url": "https://lookups.nl/holidays/:query",
+      "description": "Public holidays for a country and year, queried as a composite COUNTRY-YEAR code (e.g. NL-2026): each date with its English and local name and whether it applies nationwide. Statutory public holidays only — bank, school and observance days are excluded. Source: Nager.Date, 202 countries, current year -1 to +2."
+    },
+    {
+      "url": "https://lookups.nl/vat-rate/:country",
+      "description": "Current VAT rates for an EU member state: standard, reduced, super-reduced and parking rates, from a hand-verified table of European Commission rate data."
+    },
+    {
+      "url": "https://lookups.nl/lei/:code",
+      "description": "Look up a Legal Entity Identifier in the global GLEIF register: local ISO 17442 checksum prefilter, authoritative GLEIF check with retry and cache, durable audit receipt."
+    },
+    {
+      "url": "https://lookups.nl/eori/:number",
+      "description": "Validate an EU EORI number (customs economic operator ID): structural prefilter, authoritative EOS check with retry and cache, registered name and address where the operator consented, durable audit receipt."
+    },
+    {
+      "url": "https://lookups.nl/iban/:number",
+      "description": "Validate an IBAN offline against the ISO 13616 registry: country and length check, ISO 7064 MOD-97-10 checksum, BBAN extraction, durable audit receipt."
+    },
+    {
+      "url": "https://lookups.nl/vat/:number",
+      "description": "Validate an EU VAT number: local format + check-digit prefilter, authoritative VIES check with retry and cache, durable audit receipt."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402wordoftheday.vercel.app",
+  "resources": [
+    {
+      "url": "https://x402wordoftheday.vercel.app/api/word-of-the-day",
+      "description": "Get today's curated Word of the Day (definition + part of speech)."
+    }
+  ]
+}

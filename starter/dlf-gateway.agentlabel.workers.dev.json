@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "dlf-gateway.agentlabel.workers.dev",
+  "resources": [
+    {
+      "url": "https://dlf-gateway.agentlabel.workers.dev/v1/signup",
+      "description": "DLF agent API key — $0.10 unlocks 10,000 mcents (1:1 starter) + $0.05 activation bonus unlockable by labeling 5 images"
+    }
+  ]
+}

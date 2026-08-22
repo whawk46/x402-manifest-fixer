@@ -1,0 +1,83 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.dripmetrics.ai",
+  "resources": [
+    {
+      "url": "https://api.dripmetrics.ai/metrics/vpin",
+      "description": "DripMetricsAI (api description at https://dripmetrics.ai/) provides on-demand market microstructure and risk metrics for agents and developers. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. VPIN measures volume-synchronized order-flow imbalance (an adverse-selection proxy, not a probability); see excessVpin. Discovery examples use the latest 30m window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/metrics/cvd",
+      "description": "DripMetricsAI (api description at https://dripmetrics.ai/) provides on-demand market microstructure and risk metrics for agents and developers. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Cumulative Volume Delta tracks net buy versus sell volume over a specified window. Discovery examples use the latest 30m window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/market/summary",
+      "description": "DripMetricsAI (https://dripmetrics.ai/) BTC market summary: one x402 call returns deterministic microstructure signals and metrics (including raw, baseline, and excess VPIN) computed from the live trade tape and Deribit chain, plus a concise AI-written explanation. Hedged historical tendencies only - no price targets or trade recommendations."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/metrics/buy-sell-volume-imbalance",
+      "description": "DripMetricsAI (api description at https://dripmetrics.ai/) provides on-demand market microstructure and risk metrics for agents and developers. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Buy-Sell Volume Imbalance measures net buy versus sell volume as a normalized ratio. Discovery examples use the latest 30m window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/metrics/order-flow-hhi",
+      "description": "DripMetricsAI (api description at https://dripmetrics.ai/) provides on-demand market microstructure and risk metrics for agents and developers. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Order Flow HHI measures concentration of signed order flow across the specified window. Discovery examples use the latest 30m window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/metrics/kyle-lambda",
+      "description": "DripMetricsAI (api description at https://dripmetrics.ai/) provides on-demand market microstructure and risk metrics for agents and developers. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Kyle's Lambda estimates price impact per unit of signed order flow for a crypto trading pair over a specified window. Discovery examples use the latest 30m window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/orderbook/imbalance",
+      "description": "DripMetricsAI (https://dripmetrics.ai/) provides on-demand order-book microstructure metrics computed fresh per request from Binance's public depth snapshot. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Imbalance is (bid volume - ask volume) / (bid volume + ask volume) over the top depthLevels on each side."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/metrics/large-trade-share",
+      "description": "DripMetricsAI (api description at https://dripmetrics.ai/) provides on-demand market microstructure and risk metrics for agents and developers. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Large Trade Share measures the share of traded volume attributable to large trades. Discovery examples use the latest 30m window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/metrics/vol-of-vol",
+      "description": "DripMetricsAI (api description at https://dripmetrics.ai/) provides on-demand crypto market microstructure and risk metrics for agents and developers. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Vol of Vol measures the volatility of realized volatility across sub-intervals. Discovery examples use the latest 30m window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/orderbook/snapshot",
+      "description": "DripMetricsAI (https://dripmetrics.ai/) provides on-demand order-book microstructure metrics computed fresh per request from Binance's public depth snapshot. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Snapshot bundles spread, micro-price, imbalance, depth-at-distance, concentration, and execution-impact from one shared book fetch, in a single call."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/metrics/roll-spread",
+      "description": "DripMetricsAI (api description at https://dripmetrics.ai/) provides on-demand market microstructure and risk metrics for agents and developers. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Roll Spread estimates an absolute covariance spread proxy derived from lagged price changes. Discovery examples use the latest 30m window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/metrics/amihud-illiquidity",
+      "description": "DripMetricsAI (api description at https://dripmetrics.ai/) provides on-demand market microstructure and risk metrics for agents and developers. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Amihud Illiquidity estimates returns per unit of dollar volume over the specified window. Discovery examples use the latest 30m window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/options/gex",
+      "description": "DripMetricsAI (https://dripmetrics.ai/) provides on-demand BTC option-derived metrics that combine the Deribit option chain with DripMetrics' own trade-level realized calculations. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. GEX aggregates open-interest-weighted Black-76 gamma across the whole Deribit BTC chain into a strike-level gamma exposure profile, total net GEX, and the gamma flip level."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/metrics/vwap-deviation",
+      "description": "DripMetricsAI (api description at https://dripmetrics.ai/) provides on-demand market microstructure and risk metrics for agents and developers. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. VWAP Deviation measures the latest price deviation from the window VWAP. Discovery examples use the latest 30m window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/options/vrp",
+      "description": "DripMetricsAI (https://dripmetrics.ai/) provides on-demand BTC option-derived metrics that combine the Deribit option chain with DripMetrics' own trade-level realized calculations. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. VRP measures the intraday variance risk premium: shortest-dated Deribit ATM implied variance minus DripMetrics' annualized trade-level realized variance over the requested window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/options/expected-move",
+      "description": "DripMetricsAI (https://dripmetrics.ai/) provides on-demand BTC option-derived metrics that combine the Deribit option chain with DripMetrics' own trade-level realized calculations. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Expected-move consumption measures the share of the nearest-expiry ATM straddle's implied move already consumed by the realized move on DripMetrics' BTC trade tape over the requested window."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/orderbook/concentration",
+      "description": "DripMetricsAI (https://dripmetrics.ai/) provides on-demand order-book microstructure metrics computed fresh per request from Binance's public depth snapshot. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Concentration is a Herfindahl index of how concentrated volume is within the top depthLevels on each side; higher means a thinner, more fragile book."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/orderbook/micro-price",
+      "description": "DripMetricsAI (https://dripmetrics.ai/) provides on-demand order-book microstructure metrics computed fresh per request from Binance's public depth snapshot. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Micro-price is the opposite-side-size-weighted mid price, a better instantaneous fair-price estimate than the naive midpoint."
+    },
+    {
+      "url": "https://api.dripmetrics.ai/orderbook/spread",
+      "description": "DripMetricsAI (https://dripmetrics.ai/) provides on-demand order-book microstructure metrics computed fresh per request from Binance's public depth snapshot. Agents can pay per request via x402 and receive structured JSON metrics without subscriptions or API keys. Spread measures the current best-bid/best-ask gap, in basis points of mid price."
+    }
+  ]
+}

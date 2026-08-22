@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "hash-hmac.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://hash-hmac.underscoredone.com/hash",
+      "description": "Give this API any text or binary data and it instantly returns its fingerprint under whichever hash algorithms you choose — SHA-256, SHA-512, MD5, BLAKE2, CRC32, and more. It also signs data with a secret key (HMAC) and, most importantly, safely verifies whether an incoming signature matches — using a timing-safe comparison that prevents secret-leaking attacks. Language models cannot perform hashing: they produce a string of the right length and character set that looks correct but is simply wrong. Every webhook verification, idempotency key, cache fingerprint, or integrity check that relies on a hallucinated hash is silently broken. This API is the cure."
+    }
+  ]
+}

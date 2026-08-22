@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.commodities.sh",
+  "resources": [
+    {
+      "url": "https://api.commodities.sh/v1/price/CL",
+      "description": "commodities.sh price"
+    }
+  ]
+}

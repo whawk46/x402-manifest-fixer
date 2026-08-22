@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "deepai.pay.zeroclick.io",
+  "resources": [
+    {
+      "url": "https://deepai.pay.zeroclick.io/api/text2img",
+      "description": "Creates an image from scratch from a text description. Choose the quality tier with image_generator_version: hd, genius, or super_genius for the highest detail at 2k output. The genius tier also takes an art style in genius_preference: classic, anime, photography, graphic, or cinematic. Returns a link to the generated image."
+    },
+    {
+      "url": "https://deepai.pay.zeroclick.io/api/background-remover",
+      "description": "Removes the background from an image. Pass the image as a URL. Returns a link to the cutout result."
+    },
+    {
+      "url": "https://deepai.pay.zeroclick.io/api/colorizer",
+      "description": "Adds color to black and white photos and historic images. Pass the image as a URL. Returns a link to the colorized result."
+    },
+    {
+      "url": "https://deepai.pay.zeroclick.io/api/image-editor",
+      "description": "Applies AI edits to an image guided by a text instruction. Pass the image as a URL and the edit as text. Choose the quality tier with image_generator_version: genius or super_genius for the highest detail at 2k output. Returns a link to the edited image."
+    },
+    {
+      "url": "https://deepai.pay.zeroclick.io/api/torch-srgan",
+      "description": "Upscales a low-resolution image using super resolution. Pass the image as a URL. Returns a link to the upscaled result."
+    }
+  ]
+}

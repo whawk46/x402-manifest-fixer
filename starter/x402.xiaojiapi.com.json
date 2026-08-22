@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.xiaojiapi.com",
+  "resources": [
+    {
+      "url": "https://x402.xiaojiapi.com/offers/dustswap-autofarm-skill",
+      "description": "An agent skill that farms DustSwap points on Base mainnet unattended: daily on-chain check-in plus swap-volume quests that actually get credited. 414 lines, language-agnostic. Exact endpoints and payloads, the attribution config a swap must carry or it earns nothing, headless login, official progress reading, spend-capped pacing, pinned addresses, and seven costly pitfalls. Proven with real funds. Under $1. Points have no announced conversion rate — a recipe, not a yield promise."
+    }
+  ]
+}

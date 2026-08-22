@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "mapbox.x402.paywithlocus.com",
+  "resources": [
+    {
+      "url": "https://mapbox.x402.paywithlocus.com/mapbox/directions",
+      "description": "Locus public pay-per-use API"
+    },
+    {
+      "url": "https://mapbox.x402.paywithlocus.com/mapbox/geocode-forward",
+      "description": "Locus public pay-per-use API"
+    }
+  ]
+}

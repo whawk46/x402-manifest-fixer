@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent.memoryapi.org",
+  "resources": [
+    {
+      "url": "https://agent.memoryapi.org/x402/erc8004/agent",
+      "description": "Look up an ERC-8004 AI agent identity on Base mainnet. Returns name, description, services, x402 support, and owner."
+    },
+    {
+      "url": "https://agent.memoryapi.org/x402/erc8004/browse",
+      "description": "Browse ERC-8004 registered AI agents on Base. Filter by x402 payment support."
+    },
+    {
+      "url": "https://agent.memoryapi.org/x402/erc8004/register",
+      "description": "Get ERC-8004 registration JSON for memoryapi.org — a complete example of an AI agent registration file with 28 MCP services and x402 support."
+    }
+  ]
+}

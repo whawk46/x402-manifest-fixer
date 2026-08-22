@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.k8s-dev.blockscout.com",
+  "resources": [
+    {
+      "url": "https://api.k8s-dev.blockscout.com/:chain_id/api/v2/transactions",
+      "description": "Access to api/v2/transactions. List blockchain transactions with filtering options for status, type, and method"
+    }
+  ]
+}

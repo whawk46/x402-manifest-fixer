@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-watcher-api-main.jpgame-intel.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-watcher-api-main.jpgame-intel.workers.dev/latest",
+      "description": "Daily digest and market analysis report of the Japanese game industry: original English-language analysis and news summaries curated from Japanese-only sources, with a link to every original article. Updated once per day. No API keys, no sign-up — pay per call in USDC on Base via x402."
+    }
+  ]
+}

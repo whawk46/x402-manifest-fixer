@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.smartmoney.market",
+  "resources": [
+    {
+      "url": "https://x402.smartmoney.market/congress",
+      "description": "Global US House Periodic Transaction Report activity for stock-backed trades. Supports overview, latest disclosures, focused buys/sells, active tickers, active members, days, view, and limit."
+    },
+    {
+      "url": "https://x402.smartmoney.market/fund-snapshot",
+      "description": "Hedge-fund portfolio snapshot for one tracked manager: current 13-F holdings, position weights, top exposures, sector allocation, and historical position context."
+    },
+    {
+      "url": "https://x402.smartmoney.market/ticker-insider",
+      "description": "Aggregated company insider Form 4 activity for one selected tracked ticker, grouped by reporting owner with buy/sell counts, open-market value, roles, and activity windows. Precheck free coverage with GET /api/insider-tracked-stocks?q={symbol} before paying."
+    }
+  ]
+}

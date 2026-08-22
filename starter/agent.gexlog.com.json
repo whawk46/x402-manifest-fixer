@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent.gexlog.com",
+  "resources": [
+    {
+      "url": "https://agent.gexlog.com/agent/historical",
+      "description": "Full SPX options market briefing for a specific past date. Includes gamma regime, GEX levels, dealer positioning, pivot levels, expected move, trade signal, and AI-generated narrative."
+    }
+  ]
+}

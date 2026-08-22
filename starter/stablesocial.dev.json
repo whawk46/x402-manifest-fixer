@@ -1,0 +1,167 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "stablesocial.dev",
+  "resources": [
+    {
+      "url": "https://stablesocial.dev/api/sc/tiktok/profile",
+      "description": "Scrape Creators · TikTok — Profile"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/youtube/channel",
+      "description": "Scrape Creators · YouTube — Channel Details"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/instagram/user/reels",
+      "description": "Scrape Creators · Instagram — Reels"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/youtube/channel-videos",
+      "description": "Scrape Creators · YouTube — Channel Videos"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/github/user",
+      "description": "Scrape Creators · GitHub — User"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/spotify/podcast/episodes",
+      "description": "Scrape Creators · Spotify — Podcast Episodes"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/reddit/subreddit/details",
+      "description": "Scrape Creators · Reddit — Subreddit Details"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/github/trending/developers",
+      "description": "Scrape Creators · GitHub — Trending Developers"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/facebook/marketplace/item",
+      "description": "Scrape Creators · Facebook — Marketplace Item"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/youtube/channel/community-posts",
+      "description": "Scrape Creators · YouTube — Channel Community Posts"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/tiktok/ad-library/search",
+      "description": "Scrape Creators · TikTok — Ad Library Search"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/github/trending/repositories",
+      "description": "Scrape Creators · GitHub — Trending Repositories"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/linkedin/ads/search",
+      "description": "Scrape Creators · LinkedIn — Search Ads"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/tiktok/song/videos",
+      "description": "Scrape Creators · TikTok — TikToks using Song"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/facebook/profile/posts",
+      "description": "Scrape Creators · Facebook — Profile Posts"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/instagram/reels/trending",
+      "description": "Scrape Creators · Instagram — Trending Reels"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/facebook/adLibrary/company/ads",
+      "description": "Scrape Creators · Facebook — Company Ads"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/youtube/channel/shorts",
+      "description": "Scrape Creators · YouTube — Channel Shorts"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/youtube/channel/playlists",
+      "description": "Scrape Creators · YouTube — Channel Playlists"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/youtube/channel/lives",
+      "description": "Scrape Creators · YouTube — Channel Lives"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/truthsocial/user/posts",
+      "description": "Scrape Creators · Truth Social — User Posts"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/tiktok/user/followers",
+      "description": "Scrape Creators · TikTok — Followers"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/tiktok/shop/product/reviews",
+      "description": "Scrape Creators · TikTok — Product Reviews"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/spotify/podcast",
+      "description": "Scrape Creators · Spotify — Podcast"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/spotify/artist",
+      "description": "Scrape Creators · Spotify — Artist"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/spotify/album",
+      "description": "Scrape Creators · Spotify — Album"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/soundcloud/artist/tracks",
+      "description": "Scrape Creators · SoundCloud — Artist Tracks"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/soundcloud/artist",
+      "description": "Scrape Creators · SoundCloud — Artist"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/kwai/user/posts",
+      "description": "Scrape Creators · Kwai — User Posts"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/instagram/user/highlights",
+      "description": "Scrape Creators · Instagram — Story Highlights"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/github/user/repositories",
+      "description": "Scrape Creators · GitHub — Repositories"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/github/user/following",
+      "description": "Scrape Creators · GitHub — Following"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/github/user/followers",
+      "description": "Scrape Creators · GitHub — Followers"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/github/user/contributions",
+      "description": "Scrape Creators · GitHub — Contributions"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/github/user/activity",
+      "description": "Scrape Creators · GitHub — Activity"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/youtube/shorts/trending",
+      "description": "Scrape Creators · YouTube — Trending Shorts"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/rumble/channel/videos",
+      "description": "Scrape Creators · Rumble — Channel Videos"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/facebook/event/details",
+      "description": "Scrape Creators · Facebook — Event Details"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/bluesky/user/posts",
+      "description": "Scrape Creators · Bluesky — Posts"
+    },
+    {
+      "url": "https://stablesocial.dev/api/sc/instagram/basic-profile",
+      "description": "Scrape Creators · Instagram — Basic Profile"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "machine-relics-api-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://machine-relics-api-production.up.railway.app/buy/:recipient",
+      "description": "Buy the next Machine Relics Genesis ERC-721 on Base Sepolia. Pay test USDC over x402; the NFT is minted exactly once per accepted payment signature."
+    }
+  ]
+}

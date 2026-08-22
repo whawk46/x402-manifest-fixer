@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ontopx402.com",
+  "resources": [
+    {
+      "url": "https://ontopx402.com/api/bid",
+      "description": "Rank on ontopx402.com for example.com"
+    }
+  ]
+}

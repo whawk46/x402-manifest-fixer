@@ -1,0 +1,35 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.compliapi.com",
+  "resources": [
+    {
+      "url": "https://api.compliapi.com/api/v1/screen/id/:government_id",
+      "description": "Screen a government-issued identifier (passport, national ID, tax ID) against OFAC SDN and other global sanctions lists, with exact and substring matching ranked by similarity. Call during KYC/KYB identity verification. Returns per-list matches with source URLs."
+    },
+    {
+      "url": "https://api.compliapi.com/api/v1/geo/:ip_address",
+      "description": "Geolocate an IP address (city, region, country) and flag whether the country carries sanctions designations. Call for geo-compliance checks before serving restricted content, payments or shipments."
+    },
+    {
+      "url": "https://api.compliapi.com/api/v1/vpn/:ip_address",
+      "description": "Detect whether an IP address is using a VPN, proxy or other anonymization service. Call before trusting an IP's geolocation for compliance rules, fraud checks or access gating. Returns vpn true/false, or \"unknown\" when no privacy data exists for the IP."
+    },
+    {
+      "url": "https://api.compliapi.com/api/v1/screen/country/:country",
+      "description": "Check whether a country or region carries sanctions designations, such as comprehensive OFAC embargoes. Call to gate signups, shipments or transactions by country. Accepts a country name or ISO code; returns the designating lists with source URLs."
+    },
+    {
+      "url": "https://api.compliapi.com/api/v1/screen/website",
+      "description": "Screen a website URL or domain against OFAC SDN and other global sanctions lists. Call before paying, advertising on, or integrating with a website to check for sanctions associations. Returns per-list matches with source URLs."
+    },
+    {
+      "url": "https://api.compliapi.com/api/v1/screen/crypto/:address",
+      "description": "Screen a cryptocurrency wallet address (EVM, Bitcoin, Tron, Solana or any chain) or ENS name against OFAC SDN, OFAC Consolidated and 10+ global sanctions, crime and risk lists. Call before accepting a deposit, sending a withdrawal, or onboarding a wallet. Returns per-list matches with source URLs; `sanctioned` means a sanctions-list hit, `flagged` also covers crime and risk lists."
+    },
+    {
+      "url": "https://api.compliapi.com/api/v1/screen/email/:email",
+      "description": "Screen an email address against OFAC SDN and other global sanctions lists. Call during onboarding or KYC review to check whether an email is associated with a sanctioned entity. Returns per-list matches with source URLs."
+    }
+  ]
+}

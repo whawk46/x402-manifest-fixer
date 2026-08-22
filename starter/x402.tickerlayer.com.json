@@ -1,0 +1,167 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.tickerlayer.com",
+  "resources": [
+    {
+      "url": "https://x402.tickerlayer.com/v1/markets/holidays",
+      "description": "Get the market holiday and early-close calendar for a requested market and year or date range."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/markets/sessions",
+      "description": "Get timezone-aware trading sessions for a market or symbol on a requested calendar date."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/markets/status",
+      "description": "Check whether a market, asset class, or symbol is open, closed, in pre-market, or in post-market, with timezone-aware session context."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/bond/last/:symbol",
+      "description": "Get the latest validated government bond yield or rate for a requested bond symbol as pay-per-request JSON market data."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/etfs/agg/:symbol/:multiplier/:timespan/:from/:to",
+      "description": "Get validated historical ETF OHLCV bars for one symbol and date range, with intervals from one minute to one day and up to 1,000 results."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/etfs/agg/:symbol/prev",
+      "description": "Get the previous completed OHLCV bar for one ETF symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/etfs/snapshot/:symbol",
+      "description": "Get a compact ETF market snapshot with quote, last trade, previous close, and change fields for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/etfs/trade/last/:symbol",
+      "description": "Get the latest validated ETF trade price, size, and observation timestamp for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/etfs/quote/:symbol",
+      "description": "Get the latest validated ETF bid, ask, sizes, and observation timestamp for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/etfs/symbols",
+      "description": "Discover the current TickerLayer ETF symbol catalog. Stock symbols are market-qualified in COUNTRY_OR_MARKET:SYMBOL form such as US:AAPL."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/indices/agg/:symbol/:multiplier/:timespan/:from/:to",
+      "description": "Get validated historical Indices OHLCV bars for one symbol and date range, with intervals from one minute to one day and up to 1,000 results."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/indices/agg/:symbol/prev",
+      "description": "Get the previous completed OHLCV bar for one Indices symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/indices/snapshot/:symbol",
+      "description": "Get a compact Indices market snapshot with quote, last trade, previous close, and change fields for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/indices/trade/last/:symbol",
+      "description": "Get the latest validated Indices trade price, size, and observation timestamp for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/indices/quote/:symbol",
+      "description": "Get the latest validated Indices bid, ask, sizes, and observation timestamp for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/indices/symbols",
+      "description": "Discover the current TickerLayer Indices symbol catalog. Stock symbols are market-qualified in COUNTRY_OR_MARKET:SYMBOL form such as US:AAPL."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/commodities/agg/:symbol/:multiplier/:timespan/:from/:to",
+      "description": "Get validated historical Commodities OHLCV bars for one symbol and date range, with intervals from one minute to one day and up to 1,000 results."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/commodities/agg/:symbol/prev",
+      "description": "Get the previous completed OHLCV bar for one Commodities symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/commodities/snapshot/:symbol",
+      "description": "Get a compact Commodities market snapshot with quote, last trade, previous close, and change fields for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/commodities/trade/last/:symbol",
+      "description": "Get the latest validated Commodities trade price, size, and observation timestamp for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/commodities/quote/:symbol",
+      "description": "Get the latest validated Commodities bid, ask, sizes, and observation timestamp for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/commodities/symbols",
+      "description": "Discover the current TickerLayer Commodities symbol catalog. Stock symbols are market-qualified in COUNTRY_OR_MARKET:SYMBOL form such as US:AAPL."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/crypto/agg/:symbol/:multiplier/:timespan/:from/:to",
+      "description": "Get validated historical Crypto OHLCV bars for one symbol and date range, with intervals from one minute to one day and up to 1,000 results."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/crypto/agg/:symbol/prev",
+      "description": "Get the previous completed OHLCV bar for one Crypto symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/crypto/snapshot/:symbol",
+      "description": "Get a compact Crypto market snapshot with quote, last trade, previous close, and change fields for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/crypto/trade/last/:symbol",
+      "description": "Get the latest validated Crypto trade price, size, and observation timestamp for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/crypto/quote/:symbol",
+      "description": "Get the latest validated Crypto bid, ask, sizes, and observation timestamp for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/crypto/symbols",
+      "description": "Discover the current TickerLayer Crypto symbol catalog. Stock symbols are market-qualified in COUNTRY_OR_MARKET:SYMBOL form such as US:AAPL."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/forex/agg/:symbol/:multiplier/:timespan/:from/:to",
+      "description": "Get validated historical Forex OHLCV bars for one symbol and date range, with intervals from one minute to one day and up to 1,000 results."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/forex/agg/:symbol/prev",
+      "description": "Get the previous completed OHLCV bar for one Forex symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/forex/snapshot/:symbol",
+      "description": "Get a compact Forex market snapshot with quote, last trade, previous close, and change fields for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/forex/trade/last/:symbol",
+      "description": "Get the latest validated Forex trade price, size, and observation timestamp for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/forex/quote/:symbol",
+      "description": "Get the latest validated Forex bid, ask, sizes, and observation timestamp for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/forex/symbols",
+      "description": "Discover the current TickerLayer Forex symbol catalog. Stock symbols are market-qualified in COUNTRY_OR_MARKET:SYMBOL form such as US:AAPL."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/stocks/agg/:symbol/:multiplier/:timespan/:from/:to",
+      "description": "Get validated historical Stocks OHLCV bars for one symbol and date range, with intervals from one minute to one day and up to 1,000 results."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/stocks/agg/:symbol/prev",
+      "description": "Get the previous completed OHLCV bar for one Stocks symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/stocks/snapshot/:symbol",
+      "description": "Get a compact Stocks market snapshot with quote, last trade, previous close, and change fields for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/stocks/trade/last/:symbol",
+      "description": "Get the latest validated Stocks trade price, size, and observation timestamp for one symbol."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/stocks/symbols",
+      "description": "Discover the current TickerLayer Stocks symbol catalog. Stock symbols are market-qualified in COUNTRY_OR_MARKET:SYMBOL form such as US:AAPL."
+    },
+    {
+      "url": "https://x402.tickerlayer.com/v1/stocks/quote/:symbol",
+      "description": "Get the latest validated Stocks bid, ask, sizes, and observation timestamp for one symbol."
+    }
+  ]
+}

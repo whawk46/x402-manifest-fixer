@@ -1,0 +1,10 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "www.basehelper.fun",
+  "resources": [
+    {
+      "url": "https://www.basehelper.fun/api/x402-xp"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "global-alpha-flow-oracle.vercel.app",
+  "resources": [
+    {
+      "url": "https://global-alpha-flow-oracle.vercel.app/api/oracle",
+      "description": "Live crypto market intelligence from Binance spot data: price, 24h volume, RSI/MACD/EMA/ATR indicators, order block levels and volume-profile metrics."
+    }
+  ]
+}

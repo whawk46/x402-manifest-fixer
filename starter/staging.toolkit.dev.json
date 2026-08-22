@@ -1,0 +1,15 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "staging.toolkit.dev",
+  "resources": [
+    {
+      "url": "https://staging.toolkit.dev/api/tool/e2b/run-code",
+      "description": "Run Python code in a secure sandbox environment using E2B. Supports Jupyter Notebook syntax and returns execution results and logs."
+    },
+    {
+      "url": "https://staging.toolkit.dev/api/tool/memory/add-memory",
+      "description": "Add a new memory. This method is called every time the user informs anything about themselves, their preferences, or anything that has any relevant information which can be useful in the future conversation. This can also be called when the user asks you to remember something."
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.donnyautomation.com",
+  "resources": [
+    {
+      "url": "https://x402.donnyautomation.com/base/liquidity",
+      "description": "DEX liquidity, market depth and TVL by venue for a trading pair on Base - how deep is this pool, and where is the liquidity. Per-venue liquidity in USD across BaseSwap, SushiSwap and Uniswap v3, both pool reserves, each venue share of total depth, and the deepest venue to trade against. Live onchain pool state for WETH, cbBTC, USDC, DAI, including stablecoin liquidity. For slippage estimation and order routing agents on Base L2 / Coinbase L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/gas",
+      "description": "Live gas prices across BNB Chain, Polygon, Arbitrum, Base, Avalanche and Optimism, converted to USD and sorted cheapest-first. Returns gas price in gwei, base fee, and the actual USD cost of a transfer, an ERC-20 transfer and a swap on each chain. Gwei is NOT comparable across chains because the gas token differs in price; pricing in USD is the only ranking that answers where a transaction really costs least. For bridging, routing and execution-timing agents."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/base/price",
+      "description": "Live token price in USD by ticker symbol or contract address on Base - any ERC-20, not a fixed list. Real-time spot price read from BaseSwap, SushiSwap and Uniswap v3 pools at call time. What is this token worth right now. Returns priceUsd, the pair used, the USD liquidity backing the quote and a confidence rating, so a thin-pool number is never passed off as a market price. Onchain market data for trading bots and price oracles on Base L2 / Coinbase L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/arbitrum/liquidity",
+      "description": "DEX liquidity, market depth and TVL by venue for a trading pair on Arbitrum One - how deep is this pool, and where is the liquidity. Per-venue liquidity in USD across SushiSwap and Uniswap v3 fee tiers, both pool reserves, each venue share of total depth, and the deepest venue to trade against. Live onchain pool state for WETH, ARB, WBTC, USDC, USDT, LINK, including stablecoin liquidity. For slippage estimation and order routing agents on Arbitrum / ARB L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/arbitrum/price",
+      "description": "Live token price in USD by ticker symbol or contract address on Arbitrum One - any ERC-20, not a fixed list. Real-time spot price read from SushiSwap and Uniswap v3 fee tiers pools at call time. What is this token worth right now. Returns priceUsd, the pair used, the USD liquidity backing the quote and a confidence rating, so a thin-pool number is never passed off as a market price. Onchain market data for trading bots and price oracles on Arbitrum / ARB L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/polygon/liquidity",
+      "description": "DEX liquidity, market depth and TVL by venue for a trading pair on Polygon PoS - how deep is this pool, and where is the liquidity. Per-venue liquidity in USD across QuickSwap, SushiSwap and Uniswap v3, both pool reserves, each venue share of total depth, and the deepest venue to trade against. Live onchain pool state for WMATIC, WETH, WBTC, USDC, USDT, DAI, LINK, including stablecoin liquidity. For slippage estimation and order routing agents on Polygon / MATIC / POL."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/polygon/price",
+      "description": "Live token price in USD by ticker symbol or contract address on Polygon PoS - any ERC-20, not a fixed list. Real-time spot price read from QuickSwap, SushiSwap and Uniswap v3 pools at call time. What is this token worth right now. Returns priceUsd, the pair used, the USD liquidity backing the quote and a confidence rating, so a thin-pool number is never passed off as a market price. Onchain market data for trading bots and price oracles on Polygon / MATIC / POL."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/base/risk",
+      "description": "Thin liquidity warning for a Base trading pair before you trade it. Classifies market depth DEEP, MODERATE, SHALLOW or VERY_THIN from live pool TVL across BaseSwap, SushiSwap and Uniswap v3, counts how many venues can actually route the trade, measures concentration in the largest venue, and flags single-venue markets and wide spreads. Pre-trade depth check. Depth analysis only - not a contract audit or honeypot check."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/base/route",
+      "description": "Best execution price across DEXs on Base - which DEX is cheapest to buy on and which pays most to sell into. Compares live prices across BaseSwap, SushiSwap and Uniswap v3 and returns the buy venue, the sell venue, the cross-exchange spread in bps, the fee-adjusted gross arbitrage spread and an optimal trade size. Smart order routing and cross-DEX arbitrage data for trading and execution agents on Base L2 / Coinbase L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/base/reserves",
+      "description": "Raw AMM pool reserves and live pool state for a trading pair on Base. Constant-product and concentrated-liquidity (Uniswap v3 style) pools across BaseSwap, SushiSwap and Uniswap v3: both reserves, pool mid price, fee tier in bps, and USD TVL per venue at a stated block. The underlying onchain numbers for computing your own quotes, price impact, slippage or arbitrage math on Base L2 / Coinbase L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/arbitrum/risk",
+      "description": "Thin liquidity warning for a Arbitrum One trading pair before you trade it. Classifies market depth DEEP, MODERATE, SHALLOW or VERY_THIN from live pool TVL across SushiSwap and Uniswap v3 fee tiers, counts how many venues can actually route the trade, measures concentration in the largest venue, and flags single-venue markets and wide spreads. Pre-trade depth check. Depth analysis only - not a contract audit or honeypot check."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/arbitrum/route",
+      "description": "Best execution price across DEXs on Arbitrum One - which DEX is cheapest to buy on and which pays most to sell into. Compares live prices across SushiSwap and Uniswap v3 fee tiers and returns the buy venue, the sell venue, the cross-exchange spread in bps, the fee-adjusted gross arbitrage spread and an optimal trade size. Smart order routing and cross-DEX arbitrage data for trading and execution agents on Arbitrum / ARB L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/arbitrum/reserves",
+      "description": "Raw AMM pool reserves and live pool state for a trading pair on Arbitrum One. Constant-product and concentrated-liquidity (Uniswap v3 style) pools across SushiSwap and Uniswap v3 fee tiers: both reserves, pool mid price, fee tier in bps, and USD TVL per venue at a stated block. The underlying onchain numbers for computing your own quotes, price impact, slippage or arbitrage math on Arbitrum / ARB L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/polygon/risk",
+      "description": "Thin liquidity warning for a Polygon PoS trading pair before you trade it. Classifies market depth DEEP, MODERATE, SHALLOW or VERY_THIN from live pool TVL across QuickSwap, SushiSwap and Uniswap v3, counts how many venues can actually route the trade, measures concentration in the largest venue, and flags single-venue markets and wide spreads. Pre-trade depth check. Depth analysis only - not a contract audit or honeypot check."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/polygon/route",
+      "description": "Best execution price across DEXs on Polygon PoS - which DEX is cheapest to buy on and which pays most to sell into. Compares live prices across QuickSwap, SushiSwap and Uniswap v3 and returns the buy venue, the sell venue, the cross-exchange spread in bps, the fee-adjusted gross arbitrage spread and an optimal trade size. Smart order routing and cross-DEX arbitrage data for trading and execution agents on Polygon / MATIC / POL."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/polygon/reserves",
+      "description": "Raw AMM pool reserves and live pool state for a trading pair on Polygon PoS. Constant-product and concentrated-liquidity (Uniswap v3 style) pools across QuickSwap, SushiSwap and Uniswap v3: both reserves, pool mid price, fee tier in bps, and USD TVL per venue at a stated block. The underlying onchain numbers for computing your own quotes, price impact, slippage or arbitrage math on Polygon / MATIC / POL."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/random",
+      "description": "Cryptographically secure random number generator API - CSPRNG randomness for AI agents that are deterministic or sandboxed and cannot generate their own. Uniform random integers in any min-max range (rejection-sampled, so no modulo bias) or raw random bytes returned as hex and base64. For nonces, session tokens, unique IDs, sampling, shuffling, lotteries and simulations. Generated server-side; the response states its source and limits plainly."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/optimism/price",
+      "description": "Live token price in USD by ticker symbol or contract address on OP Mainnet - any ERC-20, not a fixed list. Real-time spot price read from SushiSwap and Uniswap v3 fee tiers pools at call time. What is this token worth right now. Returns priceUsd, the pair used, the USD liquidity backing the quote and a confidence rating, so a thin-pool number is never passed off as a market price. Onchain market data for trading bots and price oracles on Optimism / OP L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/avalanche/slippage",
+      "description": "Price impact and slippage for a specific trade size on Avalanche C-Chain - what will my trade actually get, not just the spot price. Simulates the swap against live reserves across Trader Joe, Pangolin and Uniswap v3 and returns the best execution venue, amount out, price impact in bps, the pool fee separately, and what correct routing saves versus picking the best quoted price. Pre-trade execution check for trading bots and DEX aggregators on Avalanche / AVAX C-Chain."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/avalanche/route",
+      "description": "Best execution price across DEXs on Avalanche C-Chain - which DEX is cheapest to buy on and which pays most to sell into. Compares live prices across Trader Joe, Pangolin and Uniswap v3 and returns the buy venue, the sell venue, the cross-exchange spread in bps, the fee-adjusted gross arbitrage spread and an optimal trade size. Smart order routing and cross-DEX arbitrage data for trading and execution agents on Avalanche / AVAX C-Chain."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/avalanche/reserves",
+      "description": "Raw AMM pool reserves and live pool state for a trading pair on Avalanche C-Chain. Constant-product and concentrated-liquidity (Uniswap v3 style) pools across Trader Joe, Pangolin and Uniswap v3: both reserves, pool mid price, fee tier in bps, and USD TVL per venue at a stated block. The underlying onchain numbers for computing your own quotes, price impact, slippage or arbitrage math on Avalanche / AVAX C-Chain."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/avalanche/liquidity",
+      "description": "DEX liquidity, market depth and TVL by venue for a trading pair on Avalanche C-Chain - how deep is this pool, and where is the liquidity. Per-venue liquidity in USD across Trader Joe, Pangolin and Uniswap v3, both pool reserves, each venue share of total depth, and the deepest venue to trade against. Live onchain pool state for WAVAX, WETH, WBTC, USDC, USDT, including stablecoin liquidity. For slippage estimation and order routing agents on Avalanche / AVAX C-Chain."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/avalanche/price",
+      "description": "Live token price in USD by ticker symbol or contract address on Avalanche C-Chain - any ERC-20, not a fixed list. Real-time spot price read from Trader Joe, Pangolin and Uniswap v3 pools at call time. What is this token worth right now. Returns priceUsd, the pair used, the USD liquidity backing the quote and a confidence rating, so a thin-pool number is never passed off as a market price. Onchain market data for trading bots and price oracles on Avalanche / AVAX C-Chain."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/base/slippage",
+      "description": "Price impact and slippage for a specific trade size on Base - what will my trade actually get, not just the spot price. Simulates the swap against live reserves across BaseSwap, SushiSwap and Uniswap v3 and returns the best execution venue, amount out, price impact in bps, the pool fee separately, and what correct routing saves versus picking the best quoted price. Pre-trade execution check for trading bots and DEX aggregators on Base L2 / Coinbase L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/arbitrum/slippage",
+      "description": "Price impact and slippage for a specific trade size on Arbitrum One - what will my trade actually get, not just the spot price. Simulates the swap against live reserves across SushiSwap and Uniswap v3 fee tiers and returns the best execution venue, amount out, price impact in bps, the pool fee separately, and what correct routing saves versus picking the best quoted price. Pre-trade execution check for trading bots and DEX aggregators on Arbitrum / ARB L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/polygon/slippage",
+      "description": "Price impact and slippage for a specific trade size on Polygon PoS - what will my trade actually get, not just the spot price. Simulates the swap against live reserves across QuickSwap, SushiSwap and Uniswap v3 and returns the best execution venue, amount out, price impact in bps, the pool fee separately, and what correct routing saves versus picking the best quoted price. Pre-trade execution check for trading bots and DEX aggregators on Polygon / MATIC / POL."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/scan",
+      "description": "Live cross-DEX arbitrage scanner for BSC / BNB Chain. Scans every liquid pair across PancakeSwap v2 and v3 fee tiers, Biswap and ApeSwap and returns ranked cross-venue spreads: where to buy, where to sell, spread in bps, optimal trade size and gross USD at that size. GROSS, before gas and MEV. Venues below a liquidity floor are excluded, so a spread against a dust pool is never reported as an opportunity. For arbitrage bots and DeFi execution agents."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/sanctions",
+      "description": "OFAC sanctions screening. Checks a person or company against the US Treasury SDN and Consolidated lists - 19,600+ designated parties, 40,000+ names including every alias - and returns the matched record with its sanctions programs, designation remarks and a match score. Word order does not matter, because OFAC stores people as \"SURNAME, Given\" and your caller will not. A list that cannot be loaded returns 503, never a clear. For KYC, payments and compliance agents."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/treasury",
+      "description": "US Treasury par yield curve API - every constant-maturity rate from 1 month to 30 years for any published business day, plus the spreads nobody wants to compute themselves. 2s10s, 3m10y and 5s30s are returned with an explicit inversion flag, because the real question is whether the curve is inverted, not what fourteen numbers are. A tenor Treasury did not publish that day is null, never zero. For macro, rates, credit and risk agents."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/lei",
+      "description": "Legal Entity Identifier (LEI) lookup from the GLEIF golden copy. Search by company NAME, not just by identifier - knowing the LEI already is the hard part. Returns the LEI, registered legal name, previous names, legal form, jurisdiction, legal and headquarters addresses, and the registration record. Status comes back as a lapsed flag: LAPSED, RETIRED and ANNULLED entities are returned rather than hidden, because a filtered record and no record look identical. For KYC and compliance agents."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/ip",
+      "description": "IP geolocation API - country, region, city, postcode, coordinates, timezone and network for any public IPv4 or IPv6 address, plus the field that decides whether to believe any of it. Datacentre, VPN, proxy and Tor detection is returned first, and when the upstream does not supply it the answer says unknown rather than clean - a missing signal is never reported as a negative one. ASN, org, ISP and domain are included so a hosting provider stays visible."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/feed",
+      "description": "RSS, Atom and RDF feed to clean JSON. Any public feed URL returns the feed title, link, description and last-updated, plus items with title, real destination link, id, author, categories and the published date both verbatim and normalised to ISO 8601. Each summary comes back twice: the feed HTML as published, and a plain-text rendering an agent can put straight into a prompt. An unparseable date is null rather than an invented timestamp. Private and internal hosts are refused."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/holidays",
+      "description": "Public and bank holiday API for 100+ countries, and the business-day answer behind it. Returns every holiday for a country and year with local and English names, whether it is nationwide, and which regions observe it. Pass a date and it also answers directly: is this a business day, and if not, what are the next and previous ones - weekends and holidays both counted, walked across year boundaries. For settlement, SLA, payroll, scheduling and logistics agents."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/suggest",
+      "description": "Search autocomplete and keyword research API - what people actually type into a search box for any topic. Returns live Google Autocomplete completions, expanded across question modifiers (how, what, why, is, can, does) and comparison modifiers (vs, or), then split into suggestions, questions and comparisons. Off-topic rows that drop the original term are filtered out and counted, so the list stays about your query. Demand signal for SEO, content planning and market research agents."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/search",
+      "description": "Web search API - free-text query to ranked organic results, each with title, real destination URL, display URL and snippet. Sponsored rows are excluded. Returns up to 25 results; count is a maximum, not a guarantee, because a row whose destination cannot be resolved is dropped rather than guessed at. Results are not fetched or verified, and the response says so. Pair with /markdown to turn any result URL into clean Markdown."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/weather",
+      "description": "Weather API - current conditions and up to a 7-day forecast for any coordinates worldwide. Returns temperature, feels-like, humidity, precipitation, wind speed, gusts and direction now, plus daily highs, lows, precipitation totals and probability. Every condition carries both the standard WMO code and a plain-text description, with units stated explicitly. Model forecast, and the response says so. Pair with /geocode to go from a place name to coordinates."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/markdown",
+      "description": "Web article and PDF to Markdown converter API - fetch any public URL and get clean Markdown plus title, byline, site name, excerpt and word count. HTML is extracted with Firefox reader-mode rules (Readability); PDFs return their text layer with page count. Honest failures: image-only PDFs return no_text_layer, client-rendered app shells return not_extractable - never an empty page passed off as the article. For AI agents, research pipelines, summarizers and content ingestion."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/reverse-geocode",
+      "description": "Reverse geocoding API - convert latitude and longitude coordinates to a street address and place name. Worldwide coverage via OpenStreetMap Nominatim. Returns the display name and structured address (road, city, state, postcode, country) at that point, plus place type and category. Coordinates in the ocean or unmapped return 404, never a fabricated address. For mapping, logistics, delivery tracking, geofencing and location-aware AI agents."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/geocode",
+      "description": "Forward geocoding API - convert a street address, city or place name to latitude and longitude coordinates. Worldwide coverage via OpenStreetMap Nominatim. Returns lat, lon, display name, structured address parts, bounding box and an importance score, so an ambiguous match is visible instead of silently wrong. Results ranked by confidence; no match returns 404, never a guessed coordinate. For mapping, logistics, delivery, travel and location-aware AI agents."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/liquidity",
+      "description": "DEX liquidity, market depth and TVL by venue for a trading pair - how deep is this pool, and where is the liquidity. Per-venue liquidity in USD, both pool reserves, each venue share of total depth, and the deepest venue to trade against. Live onchain pool state at call time, including stablecoin liquidity. For slippage estimation, order routing, market-making and liquidity analytics agents. BSC / BNB Chain: PancakeSwap v2, PancakeSwap v3 fee tiers, Biswap, ApeSwap."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/price",
+      "description": "Live token price in USD by ticker symbol or contract address - any ERC-20, not a fixed list. Real-time spot price read from DEX pools at call time, current market data an LLM cannot know from training. What is this token worth right now. Returns priceUsd, the pair it was priced through, the USD liquidity backing that quote and a confidence rating, so a thin-pool number is never passed off as a market price. Onchain market data for trading bots, price oracles and DeFi agents. BSC / BNB Chain."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/v4hooks",
+      "description": "Uniswap v4 hook security scanner & rug-check API (Base mainnet). Pre-trade safety gate for DEX routers, token scanners and trading bots: decodes all 14 hook permission bits from the address (v4-core Hooks.sol), flags swap custody, fee-taking and EIP-1967 upgradeable hooks, verifies source via Basescan/Sourcify/Blockscout consensus. Returns custody class (PASSIVE|FLOW_CONTROL|FEE_TAKING|SWAP_CUSTODY|OPAQUE), risk flags, verification state. Capability analysis - never outputs SAFE. $0.01/call."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/risk",
+      "description": "Thin liquidity warning for a trading pair before you trade it. Classifies market depth DEEP, MODERATE, SHALLOW or VERY_THIN from live pool TVL, counts how many venues can actually route the trade, measures how concentrated liquidity is in the largest venue, and flags single-venue markets and wide cross-venue spreads. Pre-trade depth check on BSC / BNB Chain. Liquidity depth analysis only - not a contract audit or honeypot check."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/route",
+      "description": "Best execution price across DEXs - which DEX is cheapest to buy on and which pays most to sell into. Compares live prices across every venue quoting the pair and returns the buy venue, the sell venue, the cross-exchange spread in bps, the fee-adjusted gross arbitrage spread and an optimal trade size. Smart order routing and cross-DEX arbitrage data for trading bots and DeFi execution agents. BSC / BNB Chain: PancakeSwap v2 and v3, Biswap, ApeSwap."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/reserves",
+      "description": "Raw AMM pool reserves and live pool state for a trading pair. Constant-product and concentrated-liquidity (Uniswap v3 style) pools: both reserves, pool mid price, fee tier in bps, and USD TVL per venue at a stated block. The underlying onchain numbers for anyone computing their own quotes, price impact, slippage or arbitrage math. BSC / BNB Chain across PancakeSwap v2, PancakeSwap v3, Biswap and ApeSwap."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/call",
+      "description": "Real-time DEX market data & cross-exchange arbitrage spread API for BSC/BNB Chain. Live on-chain token pair prices, liquidity/TVL and best buy-sell quotes across PancakeSwap v2, PancakeSwap v3 (all fee tiers), Biswap and ApeSwap in one call. Returns per-venue price feed, gross arbitrage spread (bps + USD), optimal trade size and block number. For trading bots, DeFi agents, price oracles and market monitoring. GET; pair=SYM/SYM (e.g. WBNB/USDC), optional fee=v3 tier. $0.01/call."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/optimism/scan",
+      "description": "Live cross-DEX arbitrage scanner for OP Mainnet. Scans every liquid pair across SushiSwap and Uniswap v3 fee tiers and returns ranked cross-venue spreads: where to buy, where to sell, spread in bps, optimal trade size and gross USD at that size. GROSS, before gas and MEV. Venues below a liquidity floor are excluded, so a spread against a dust pool is never reported as an opportunity. For arbitrage bots on Optimism / OP L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/optimism/slippage",
+      "description": "Price impact and slippage for a specific trade size on OP Mainnet - what will my trade actually get, not just the spot price. Simulates the swap against live reserves across SushiSwap and Uniswap v3 fee tiers and returns the best execution venue, amount out, price impact in bps, the pool fee separately, and what correct routing saves versus picking the best quoted price. Pre-trade execution check for trading bots and DEX aggregators on Optimism / OP L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/optimism/risk",
+      "description": "Thin liquidity warning for a OP Mainnet trading pair before you trade it. Classifies market depth DEEP, MODERATE, SHALLOW or VERY_THIN from live pool TVL across SushiSwap and Uniswap v3 fee tiers, counts how many venues can actually route the trade, measures concentration in the largest venue, and flags single-venue markets and wide spreads. Pre-trade depth check. Depth analysis only - not a contract audit or honeypot check."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/optimism/route",
+      "description": "Best execution price across DEXs on OP Mainnet - which DEX is cheapest to buy on and which pays most to sell into. Compares live prices across SushiSwap and Uniswap v3 fee tiers and returns the buy venue, the sell venue, the cross-exchange spread in bps, the fee-adjusted gross arbitrage spread and an optimal trade size. Smart order routing and cross-DEX arbitrage data for trading and execution agents on Optimism / OP L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/optimism/reserves",
+      "description": "Raw AMM pool reserves and live pool state for a trading pair on OP Mainnet. Constant-product and concentrated-liquidity (Uniswap v3 style) pools across SushiSwap and Uniswap v3 fee tiers: both reserves, pool mid price, fee tier in bps, and USD TVL per venue at a stated block. The underlying onchain numbers for computing your own quotes, price impact, slippage or arbitrage math on Optimism / OP L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/optimism/liquidity",
+      "description": "DEX liquidity, market depth and TVL by venue for a trading pair on OP Mainnet - how deep is this pool, and where is the liquidity. Per-venue liquidity in USD across SushiSwap and Uniswap v3 fee tiers, both pool reserves, each venue share of total depth, and the deepest venue to trade against. Live onchain pool state for WETH, OP, WBTC, USDC, USDT, DAI, including stablecoin liquidity. For slippage estimation and order routing agents on Optimism / OP L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/avalanche/scan",
+      "description": "Live cross-DEX arbitrage scanner for Avalanche C-Chain. Scans every liquid pair across Trader Joe, Pangolin and Uniswap v3 and returns ranked cross-venue spreads: where to buy, where to sell, spread in bps, optimal trade size and gross USD at that size. GROSS, before gas and MEV. Venues below a liquidity floor are excluded, so a spread against a dust pool is never reported as an opportunity. For arbitrage bots on Avalanche / AVAX C-Chain."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/avalanche/risk",
+      "description": "Thin liquidity warning for a Avalanche C-Chain trading pair before you trade it. Classifies market depth DEEP, MODERATE, SHALLOW or VERY_THIN from live pool TVL across Trader Joe, Pangolin and Uniswap v3, counts how many venues can actually route the trade, measures concentration in the largest venue, and flags single-venue markets and wide spreads. Pre-trade depth check. Depth analysis only - not a contract audit or honeypot check."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/base/scan",
+      "description": "Live cross-DEX arbitrage scanner for Base. Scans every liquid pair across BaseSwap, SushiSwap and Uniswap v3 and returns ranked cross-venue spreads: where to buy, where to sell, spread in bps, optimal trade size and gross USD at that size. GROSS, before gas and MEV. Venues below a liquidity floor are excluded, so a spread against a dust pool is never reported as an opportunity. For arbitrage bots on Base L2 / Coinbase L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/arbitrum/scan",
+      "description": "Live cross-DEX arbitrage scanner for Arbitrum One. Scans every liquid pair across SushiSwap and Uniswap v3 fee tiers and returns ranked cross-venue spreads: where to buy, where to sell, spread in bps, optimal trade size and gross USD at that size. GROSS, before gas and MEV. Venues below a liquidity floor are excluded, so a spread against a dust pool is never reported as an opportunity. For arbitrage bots on Arbitrum / ARB L2."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/polygon/scan",
+      "description": "Live cross-DEX arbitrage scanner for Polygon PoS. Scans every liquid pair across QuickSwap, SushiSwap and Uniswap v3 and returns ranked cross-venue spreads: where to buy, where to sell, spread in bps, optimal trade size and gross USD at that size. GROSS, before gas and MEV. Venues below a liquidity floor are excluded, so a spread against a dust pool is never reported as an opportunity. For arbitrage bots on Polygon / MATIC / POL."
+    },
+    {
+      "url": "https://x402.donnyautomation.com/slippage",
+      "description": "Price impact and slippage for a specific trade size on BSC / BNB Chain - what will my trade actually get, not just the spot price. Simulates the swap against live pool reserves on every venue and returns the best execution venue, amount out, price impact in bps, the pool fee separately, and what correct routing saves versus picking the best quoted price. Pre-trade execution check for trading bots, DEX aggregators and DeFi execution agents."
+    }
+  ]
+}

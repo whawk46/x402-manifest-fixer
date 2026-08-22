@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "roastx402endpoint.vercel.app",
+  "resources": [
+    {
+      "url": "https://roastx402endpoint.vercel.app/api/roast",
+      "description": "Pay for a lighthearted developer roast generated on-demand."
+    }
+  ]
+}

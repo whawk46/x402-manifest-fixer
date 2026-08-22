@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.miniup.io",
+  "resources": [
+    {
+      "url": "https://www.miniup.io/api/x402/apps",
+      "description": "Create a MiniUp app from complete HTML supplied by an agent."
+    }
+  ]
+}

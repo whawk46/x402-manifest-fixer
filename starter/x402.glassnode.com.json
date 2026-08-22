@@ -1,0 +1,123 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.glassnode.com",
+  "resources": [
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/market/mvrv",
+      "description": "Market Value to Realized Value Ratio (MVRV) — Market Value to Realized Value (MVRV) is the ratio between market cap and realized cap. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metadata/metrics",
+      "description": "Metrics Catalog — Lists all available metric paths. Use the optional filter parameters (asset, exchange, interval, currency, etc.) to narrow the catalog to metrics that support a given combination. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/market/price_usd_close",
+      "description": "Price — The closing price of the asset in USD, aggregated from both centralised and decentralised exchanges. Strictly immutable data points are available in the point-in-time variant of this metric. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metadata/metric",
+      "description": "Metric Metadata — Returns metadata for a single metric: its supported parameters and allowed values, available time range, documentation and Studio links, and descriptors such as name, group, and tags. Requires the path parameter. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/indicators/net_unrealized_profit_loss",
+      "description": "Net Unrealized Profit/Loss (NUPL) — Net Unrealized Profit/Loss (NUPL) is the difference between Relative Unrealized Profit and Relative Unrealized Loss. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/indicators/nvt",
+      "description": "Network Value to Transactions Ratio (NVT) — Network Value to Transactions Ratio (NVT) is market cap divided by the transferred on-chain volume measured in USD. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/derivatives/futures_open_interest_sum",
+      "description": "Futures Open Interest — The total amount of funds allocated in open futures contracts. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/market/mvrv_less_155",
+      "description": "Short Term Holder MVRV — Short Term Holder MVRV (STH-MVRV) is the MVRV ratio computed using only UTXOs younger than 155 days, serving as an indicator of short-term investor behaviour. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/indicators/net_realized_profit_loss",
+      "description": "Net Realized Profit/Loss — Net Realized Profit/Loss is the net profit or loss of all moved coins, defined as Realized Profit minus Realized Loss. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/indicators/sopr",
+      "description": "Spent Output Profit Ratio (SOPR) — Spent Output Profit Ratio (SOPR) is the ratio of realized value to creation value across spent outputs. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/derivatives/futures_funding_rate_perpetual",
+      "description": "Futures Perpetual Funding Rate — The average funding rate (in %) set by exchanges for perpetual futures contracts. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/addresses/active_count",
+      "description": "Number of Active Addresses — The number of unique addresses active in the network as a sender or receiver. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metadata/assets",
+      "description": "Assets Metadata — Lists all assets known to Glassnode and their metadata, including symbol, name, type, supported blockchains, external IDs, and semantic tags. Use the optional CEL filter to narrow results. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/institutions/us_spot_etf_balances_all",
+      "description": "US Spot ETF Balances — The most recent holdings of the leading U.S.-listed spot Crypto ETFs, typically reflecting balances at the end of the previous trading day (T+1). Covers major Bitcoin ETFs (e.g. IBIT, GBTC, FBTC, ARKB, BITB) and Ethereum ETFs (e.g. ETHA, ETHE, FETH, ETHV, QETH) from issuers such as BlackRock, Grayscale, Fidelity, Bitwise, and VanEck. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/supply/hodl_waves",
+      "description": "HODL Waves — A bundle of all active supply age bands. Each colored band shows the percentage of supply in existence that was last moved within the time period denoted in the legend, so every vertical slice sums to 100%. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/indicators/cdd",
+      "description": "Coin Days Destroyed (CDD) — Coin Days Destroyed (CDD) measures the volume-weighted age of coins spent on a given day. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/distribution/balance_exchanges_relative",
+      "description": "Percent Balance on Exchanges — The percentage of supply held on exchange addresses. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/indicators/utxo_realized_price_distribution_ath",
+      "description": "UTXO Realized Price Distribution (URPD): ATH-Partitioned — A histogram of Bitcoin supply by the price bucket in which each coin last moved on-chain. Each bar is the share of supply whose last movement fell in that bucket, with the x-axis price being the bucket's lower bound. ATH-partitioned splits the range from 0 to the current all-time high into 100 equal buckets. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/market/realized_volatility_1_month",
+      "description": "Annualized Realized Volatility (1 Month) — Annualized Realized Volatility (1 Month) is the standard deviation of returns from the mean return of the market, measured over a rolling 1-month window and annualized. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/market/price_realized_usd",
+      "description": "Realized Price — Realized Price is Realized Cap divided by current supply. It represents the volume-weighted average price at which every unit of circulating supply last moved on-chain. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/supply/sth_sum",
+      "description": "Total Supply Held by Short-Term Holders — The total circulating supply held by short-term holders. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/supply/lth_sum",
+      "description": "Total Supply Held by Long-Term Holders — The total amount of circulating supply held by long-term holders. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/supply/profit_relative",
+      "description": "Percent Supply in Profit — The percentage of circulating supply in profit, meaning the share of existing coins whose price at the time they last moved was lower than the current price. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/indicators/reserve_risk",
+      "description": "Reserve Risk — Reserve Risk is defined as price divided by HODL Bank, used to assess the confidence of long-term holders relative to the price of the native coin at any given point in time. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/indicators/rhodl_ratio",
+      "description": "Realized HODL Ratio — Realized HODL Ratio (RHODL) is a market indicator built as a ratio of bands from the Realized Cap HODL Waves stack. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/transactions/transfers_volume_from_exchanges_sum",
+      "description": "Total Transfer Volume from Exchanges — The total amount of coins transferred from exchange addresses. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/transactions/transfers_volume_sum",
+      "description": "Total Transfer Volume — The total amount of coins transferred on-chain. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/distribution/balance_exchanges",
+      "description": "Balance on Exchanges (Total) — The total amount of coins held on exchange addresses. Data by Glassnode."
+    },
+    {
+      "url": "https://x402.glassnode.com/v1/metrics/supply/active_3m_6m",
+      "description": "Total Supply Last Active 3m-6m — The amount of circulating supply last moved between 3 months and 6 months ago. Data by Glassnode."
+    }
+  ]
+}

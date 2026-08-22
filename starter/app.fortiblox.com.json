@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "app.fortiblox.com",
+  "resources": [
+    {
+      "url": "https://app.fortiblox.com/api/tx/build",
+      "description": "Build an unsigned, simulated X1 swap transaction (base64 v0) for the given payer through the on-chain FortiBlox Router — routed, impact-capped, simulated before return; the 25 bps protocol fee is enforced in-program. Sign it with the payer key and broadcast via POST /api/tx/send (free). Amounts are raw base units. Requires a prior quote."
+    },
+    {
+      "url": "https://app.fortiblox.com/api/quote",
+      "description": "Best swap route on X1 across XDEX and Degen pools for exact-in or exact-out, with live-verified reserves, price impact, dynamic slippage, fee disclosure (25 bps taken on-chain by the FortiBlox Router), route legs, alternatives and a quote expiry slot. Amounts are raw base units. Call before /api/tx/build."
+    },
+    {
+      "url": "https://app.fortiblox.com/api/router/volume",
+      "description": "Daily on-chain FortiBlox Router swap volume on X1 (UTC buckets, USD totals, fee totals, distinct users per day) from FortiBlox's own indexer, plus the FORTI usage-gate verdict. Use for X1 DEX activity analytics; query param days (1-365, default 90)."
+    },
+    {
+      "url": "https://app.fortiblox.com/api/token/:mint",
+      "description": "Detail for one X1 token by mint: price, 24h change, market cap / FDV (circulating = total minus incinerated), TVL, 52-week USD range, Metaplex about/links, trust tier. Use after /api/tokens when an agent needs fundamentals for a single mint."
+    },
+    {
+      "url": "https://app.fortiblox.com/api/tokens",
+      "description": "List every token FortiSwap routes on the X1 blockchain (XDEX + Degen launchpad): mint, symbol, name, decimals, logo, USD price, 24h volume, TVL, trust tier. Call this first to resolve a symbol to a mint before quoting or building an X1 swap."
+    }
+  ]
+}

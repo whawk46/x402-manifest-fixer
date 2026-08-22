@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.prismnetwork.tech",
+  "resources": [
+    {
+      "url": "https://api.prismnetwork.tech/inference/v1/inference",
+      "description": "One LLM generation on a rented GPU, priced per request."
+    },
+    {
+      "url": "https://api.prismnetwork.tech/x402/run",
+      "description": "One shell command on a rented GPU, charged only if it succeeds."
+    }
+  ]
+}

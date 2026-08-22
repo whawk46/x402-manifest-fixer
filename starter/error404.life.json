@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "error404.life",
+  "resources": [
+    {
+      "url": "https://error404.life/toll/402/",
+      "description": "one machine thought — error404.life, the house of missing things, answers its sibling status code. pay a penny, the door opens with a receipt. door 402 of the toll booth."
+    }
+  ]
+}

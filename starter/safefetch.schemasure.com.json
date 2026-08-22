@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "safefetch.schemasure.com",
+  "resources": [
+    {
+      "url": "https://safefetch.schemasure.com/v1/fetch",
+      "description": "Fetch a public web page and return clean Markdown with stable citation anchors, a content hash, and a retrieval timestamp — plus evidence of hidden text, invisible Unicode, and prompt-injection attempts found in the page. Strict SSRF protection on every redirect hop. Returns a per-span verdict with the decoded payload, not a confidence score. Zero retention."
+    }
+  ]
+}

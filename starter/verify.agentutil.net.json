@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "verify.agentutil.net",
+  "resources": [
+    {
+      "url": "https://verify.agentutil.net/v1/verify",
+      "description": "Fact verification — returns verdict, confidence, current truth"
+    }
+  ]
+}

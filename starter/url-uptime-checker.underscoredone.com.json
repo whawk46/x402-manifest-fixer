@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "url-uptime-checker.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://url-uptime-checker.underscoredone.com/check",
+      "description": "Checks whether a website or web address is currently reachable and reports how fast it responded."
+    }
+  ]
+}

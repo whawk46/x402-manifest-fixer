@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "curl-http-request.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://curl-http-request.underscoredone.com/curl",
+      "description": "Send an HTTP request to any URL from our servers and receive the full response — including the status code, all response headers, and the body content. Supports GET, POST, PUT, PATCH, DELETE, and HEAD. Automatically follows up to 3 redirects. Useful for testing endpoints, verifying servers are responding correctly, debugging redirect chains, or fetching raw data without needing a local setup."
+    }
+  ]
+}

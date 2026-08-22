@@ -1,0 +1,19 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "ccs-seller.bbrysonelite.workers.dev",
+  "resources": [
+    {
+      "url": "https://ccs-seller.bbrysonelite.workers.dev/v1/lookup/lei/00EHHQ2ZHDCFXJCPCL46",
+      "description": "single-fact lei lookup. Answers from a bundled CC0 subset of GLEIF Level 1 data, vintage 2026-08-15: 20000 ACTIVE, ISSUED records cut in ascending LEI order from a 1953582-record pool. The range is not dense, so a valid LEI can sort inside it and still be absent; absence here is absence from THIS snapshot, never from the Global LEI System. An unknown or malformed LEI is refused by name, never guessed. The full bound is stated free in the discovery declaration on this challenge."
+    },
+    {
+      "url": "https://ccs-seller.bbrysonelite.workers.dev/v1/lookup/naics/513210",
+      "description": "single-fact naics lookup. Complete for the bundled 2022 vintage: all 2129 NAICS 2022 codes at levels 2 through 6, titles verbatim from the Census workbook, with the three range-spelled sectors (31-33, 44-45, 48-49) expanded to one entry per member sector. NAICS is a closed set, so a well-formed code absent from this snapshot is absent from the 2022 vintage. Refresh is a redeploy, never a live fetch."
+    },
+    {
+      "url": "https://ccs-seller.bbrysonelite.workers.dev/v1/lookup/naics/722513",
+      "description": "single-fact naics lookup. Complete for the bundled 2022 vintage: all 2129 NAICS 2022 codes at levels 2 through 6, titles verbatim from the Census workbook, with the three range-spelled sectors (31-33, 44-45, 48-49) expanded to one entry per member sector. NAICS is a closed set, so a well-formed code absent from this snapshot is absent from the 2022 vintage. Refresh is a redeploy, never a live fetch."
+    }
+  ]
+}

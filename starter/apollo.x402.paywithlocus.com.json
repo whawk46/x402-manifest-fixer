@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "apollo.x402.paywithlocus.com",
+  "resources": [
+    {
+      "url": "https://apollo.x402.paywithlocus.com/apollo/people-search",
+      "description": "Locus public pay-per-use API"
+    }
+  ]
+}

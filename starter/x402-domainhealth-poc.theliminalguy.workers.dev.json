@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-domainhealth-poc.theliminalguy.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-domainhealth-poc.theliminalguy.workers.dev/domain-health/:var1",
+      "description": "Combined domain health verdict in one sub-second call: authoritative RDAP registration status and expiry (per-TLD registry, IANA-bootstrapped) plus live HTTPS/TLS reachability, weighted into a single 0-100 score with per-component confidence. Returns 502 without charging if every upstream check fails."
+    }
+  ]
+}

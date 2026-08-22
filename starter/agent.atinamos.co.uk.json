@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent.atinamos.co.uk",
+  "resources": [
+    {
+      "url": "https://agent.atinamos.co.uk/agent/render-check",
+      "description": "Independent website QA and pre-handover verification for AI agents. Submit one public website URL. Atinamos loads the real site in desktop and mobile Chromium, checks HTTP and browser failures, failed requests, console errors and warnings, captures screenshots, and returns machine-readable evidence. Poll the returned status_url for results."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.x402card.org",
+  "resources": [
+    {
+      "url": "https://api.x402card.org/api/esim/purchase",
+      "description": "Buy a prepaid Freeland travel eSIM and privately receive its installation QR and activation data. Pay native USDC on Base through x402; no API key or provider account is required."
+    }
+  ]
+}

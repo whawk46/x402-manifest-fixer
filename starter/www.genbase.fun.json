@@ -1,0 +1,19 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "www.genbase.fun",
+  "resources": [
+    {
+      "url": "https://www.genbase.fun/api/image/create",
+      "description": "Create image using GPT-Image-1 AI model"
+    },
+    {
+      "url": "https://www.genbase.fun/api/video/create",
+      "description": "Create video using Veo AI model"
+    },
+    {
+      "url": "https://www.genbase.fun/api/video/create-sora2",
+      "description": "Create video using Sora 2 AI model"
+    }
+  ]
+}

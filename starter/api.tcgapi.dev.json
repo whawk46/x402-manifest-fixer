@@ -1,0 +1,51 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "api.tcgapi.dev",
+  "resources": [
+    {
+      "url": "https://api.tcgapi.dev/v1/sets/100001/prices",
+      "description": "TCGPlayer current prices for every card in a set — useful for set value tracking and sealed Pokemon / Magic / Yu-Gi-Oh product pricing."
+    },
+    {
+      "url": "https://api.tcgapi.dev/v1/cards/tcgplayer/475980",
+      "description": "Look up a TCG card by its TCGPlayer product ID — Pokemon, Magic: The Gathering, Yu-Gi-Oh, Lorcana, and 85+ more trading card games."
+    },
+    {
+      "url": "https://api.tcgapi.dev/v1/sets",
+      "description": "List every card set across 89+ trading card games — Pokemon expansions, Magic: The Gathering blocks, Yu-Gi-Oh core sets, Lorcana chapters."
+    },
+    {
+      "url": "https://api.tcgapi.dev/v1/export/set/100001",
+      "description": "Full set export with every card, image URL, and current price in one JSON file — Pokemon, Magic: The Gathering, Yu-Gi-Oh, Lorcana, and 85+ more TCGs."
+    },
+    {
+      "url": "https://api.tcgapi.dev/v1/sets/100001/cards",
+      "description": "All cards in a TCG set — Pokemon boosters, Magic: The Gathering expansions, Yu-Gi-Oh structure decks, Lorcana chapters, One Piece sets."
+    },
+    {
+      "url": "https://api.tcgapi.dev/v1/cards/33831",
+      "description": "Single card details (name, set, image, rarity, TCGPlayer ID) for Pokemon, Magic: The Gathering, Yu-Gi-Oh, Lorcana, and 85+ other trading card games."
+    },
+    {
+      "url": "https://api.tcgapi.dev/v1/cards/5846/history/detailed",
+      "description": "Full price history with daily TCGPlayer sales volume for a TCG card — ideal for Pokemon / Magic / Yu-Gi-Oh pricing bots and market analytics."
+    },
+    {
+      "url": "https://api.tcgapi.dev/v1/sets/100001",
+      "description": "Card set details (release date, card count, game, image) for any Pokemon, Magic: The Gathering, Yu-Gi-Oh, or Lorcana set."
+    },
+    {
+      "url": "https://api.tcgapi.dev/v1/cards/5846",
+      "description": "Single card details (name, set, image, rarity, TCGPlayer ID) for Pokemon, Magic: The Gathering, Yu-Gi-Oh, Lorcana, and 85+ other trading card games."
+    },
+    {
+      "url": "https://api.tcgapi.dev/v1/bulk/conditions",
+      "description": "Bulk per-condition prices (Near Mint, Lightly Played, Moderately Played, Heavily Played, Damaged) for up to 500 trading cards in one request — price entire Pokemon, Magic: The Gathering, Yu-Gi-Oh, or Lorcana collections and store inventories by condition."
+    },
+    {
+      "url": "https://api.tcgapi.dev/v1/cards/5846/prices/conditions",
+      "description": "Per-condition card prices — Near Mint, Lightly Played, Moderately Played, Heavily Played, Damaged — with lowest listing, shipping-inclusive floor, and median for Pokemon, Magic: The Gathering, Yu-Gi-Oh, Lorcana, and 85+ TCGs. Price played and graded inventory accurately."
+    }
+  ]
+}

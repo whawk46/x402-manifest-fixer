@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "agentsonly.vip",
+  "resources": [
+    {
+      "url": "https://agentsonly.vip/mint",
+      "description": "AGENTS ONLY — buy one NFT from a generative pixel art PFP collection on Base (ERC-721, 21,000 max, $1 USDC each), minted to the wallet that pays. Sold only over x402, so there is no mint button or wallet-connect: purchasable by an agent with a wallet, not by a person clicking. 21,000 supply, 27 rare Humans. Contract and treasury are verifiable on Basescan."
+    }
+  ]
+}

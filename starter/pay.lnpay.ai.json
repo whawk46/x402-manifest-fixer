@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "pay.lnpay.ai",
+  "resources": [
+    {
+      "url": "https://pay.lnpay.ai/resource",
+      "description": "Access to protected resource"
+    }
+  ]
+}

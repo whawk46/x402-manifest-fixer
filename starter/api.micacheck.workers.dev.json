@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.micacheck.workers.dev",
+  "resources": [
+    {
+      "url": "https://api.micacheck.workers.dev/noncompliant",
+      "description": "Lists entities publicly flagged as non-compliant under MiCA by EU national competent authorities. Query parameter: country (string, optional; 2-letter EU member-state code, e.g. IT). JSON response: count (number) and entities[] with legal_name, commercial_name, lei, home_member_state, competent_authority, website, infringement, reason, decision_date (ISO date), record_updated. Data source: ESMA Interim MiCA Register, official EU data; refreshed daily from weekly ESMA publications."
+    },
+    {
+      "url": "https://api.micacheck.workers.dev/check",
+      "description": "Is this crypto entity MiCA-authorised in the EU/EEA, in which register, with what status? Query params: name (string) OR lei (20-character LEI). JSON: match_confidence (exact|strong|weak|none), authorised (boolean), flagged_noncompliant (boolean), matches[] with register, legal_name, lei, home_member_state, competent_authority, status, services[], authorisation_date. Data source: ESMA Interim MiCA Register, official EU data; refreshed daily from weekly ESMA publications."
+    }
+  ]
+}

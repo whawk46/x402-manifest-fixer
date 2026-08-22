@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "money-agent-production-736f.up.railway.app",
+  "resources": [
+    {
+      "url": "https://money-agent-production-736f.up.railway.app/v1/extract",
+      "description": "Call when you need the text of one public http(s) page. Required query url. SSRF-gated. Not a search engine and not a GitHub clone."
+    },
+    {
+      "url": "https://money-agent-production-736f.up.railway.app/v1/radar",
+      "description": "Call when you need open GitHub issues with a parsed USD bounty (Algora/$/USD in title or labels). Optional minUsd and q filter the list. Not a generic GitHub search clone."
+    }
+  ]
+}

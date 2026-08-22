@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "sqlpermit.schemasure.com",
+  "resources": [
+    {
+      "url": "https://sqlpermit.schemasure.com/v1/guard/sql",
+      "description": "Decide whether an agent-authored PostgreSQL statement complies with an execution policy, using PostgreSQL's own parser rather than pattern matching. Detects statement stacking, data-modifying CTEs, COPY PROGRAM, privilege changes, and dangerous functions that read as ordinary SELECTs. Returns reason codes and an optional short-lived signed permit bound to the exact normalized statement. Never connects to your database."
+    }
+  ]
+}

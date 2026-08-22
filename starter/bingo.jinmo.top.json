@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "bingo.jinmo.top",
+  "resources": [
+    {
+      "url": "https://bingo.jinmo.top/api/check-id",
+      "description": "中国身份证号码查询（演示）：根据 18 位中国居民身份证号码返回模拟身份信息（姓名、地区、出生日期、年龄、性别）。Chinese national ID card number lookup (demo): submit an 18-digit PRC ID number; returns simulated identity JSON. Price 0.001 USDT or USDC on Solana mainnet via x402."
+    }
+  ]
+}

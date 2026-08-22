@@ -1,0 +1,475 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-factory.com",
+  "resources": [
+    {
+      "url": "https://x402-factory.com/v1/ping",
+      "description": "Cheapest endpoint: liveness plus x402 payment pipeline check — Returns ok with the server time and whether this call was paid. Use it to verify your x402 client end to end before spending on data endpoints."
+    },
+    {
+      "url": "https://x402-factory.com/v1/evergreen/presidential-election-winner-party",
+      "description": "Live probability: Which party wins the next US presidential election? — Stable evergreen URL for a recurring question: Which party wins the next US presidential election? Auto-resolves to the current market instance and rolls forward on resolution, so the answer is always about the next occurrence. Response adds current_slug and rolls_to_next_at to the standard probability shape."
+    },
+    {
+      "url": "https://x402-factory.com/v1/contracts/awards/gsa",
+      "description": "Latest General Services Administration contract awards — Latest federal contract awards from General Services Administration: recipient, value, NAICS, and award dates from USAspending, newest first. Same shape as /v1/contracts/awards, pre-filtered to General Services Administration."
+    },
+    {
+      "url": "https://x402-factory.com/v1/resolution/:slug",
+      "description": "Final outcome and settlement details for a resolved market — Outcome, per-venue settlement, source link where available, and the blended probability 24h before resolution (calibration signal). Unresolved markets return 404 with a pointer to the live probability endpoint."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/sports-soccer",
+      "description": "Biggest soccer probability moves (1h/6h/24h) — The fastest way to see where news is landing in soccer: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to soccer markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/sports-nfl",
+      "description": "Biggest NFL football probability moves (1h/6h/24h) — The fastest way to see where news is landing in NFL football: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to NFL football markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/sports-nba",
+      "description": "Biggest NBA basketball probability moves (1h/6h/24h) — The fastest way to see where news is landing in NBA basketball: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to NBA basketball markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/sports-mlb",
+      "description": "Biggest MLB baseball probability moves (1h/6h/24h) — The fastest way to see where news is landing in MLB baseball: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to MLB baseball markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/science-tech",
+      "description": "Biggest science and technology probability moves (1h/6h/24h) — The fastest way to see where news is landing in science and technology: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to science and technology markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/politics-world",
+      "description": "Biggest world politics probability moves (1h/6h/24h) — The fastest way to see where news is landing in world politics: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to world politics markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/politics-us",
+      "description": "Biggest US politics probability moves (1h/6h/24h) — The fastest way to see where news is landing in US politics: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to US politics markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/fed",
+      "description": "Biggest Federal Reserve probability moves (1h/6h/24h) — The fastest way to see where news is landing in Federal Reserve: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to Federal Reserve markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/entertainment",
+      "description": "Biggest entertainment probability moves (1h/6h/24h) — The fastest way to see where news is landing in entertainment: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to entertainment markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/crypto",
+      "description": "Biggest crypto probability moves (1h/6h/24h) — The fastest way to see where news is landing in crypto: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to crypto markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/evergreen/senate-control-next-election",
+      "description": "Live probability: Who controls the Senate after the next election? — Stable evergreen URL for a recurring question: Who controls the Senate after the next election? Auto-resolves to the current market instance and rolls forward on resolution, so the answer is always about the next occurrence. Response adds current_slug and rolls_to_next_at to the standard probability shape."
+    },
+    {
+      "url": "https://x402-factory.com/v1/evergreen/next-gdp-print-positive",
+      "description": "Live probability: Will the next US GDP print show growth? — Stable evergreen URL for a recurring question: Will the next US GDP print show growth? Auto-resolves to the current market instance and rolls forward on resolution, so the answer is always about the next occurrence. Response adds current_slug and rolls_to_next_at to the standard probability shape."
+    },
+    {
+      "url": "https://x402-factory.com/v1/evergreen/nba-finals-winner",
+      "description": "Live probability: Who wins the next NBA Finals? — Stable evergreen URL for a recurring question: Who wins the next NBA Finals? Auto-resolves to the current market instance and rolls forward on resolution, so the answer is always about the next occurrence. Response adds current_slug and rolls_to_next_at to the standard probability shape."
+    },
+    {
+      "url": "https://x402-factory.com/v1/evergreen/house-control-next-election",
+      "description": "Live probability: Who controls the House after the next election? — Stable evergreen URL for a recurring question: Who controls the House after the next election? Auto-resolves to the current market instance and rolls forward on resolution, so the answer is always about the next occurrence. Response adds current_slug and rolls_to_next_at to the standard probability shape."
+    },
+    {
+      "url": "https://x402-factory.com/v1/evergreen/fed-next-meeting-hike",
+      "description": "Live probability: Will the Fed hike rates at its next FOMC meeting? — Stable evergreen URL for a recurring question: Will the Fed hike rates at its next FOMC meeting? Auto-resolves to the current market instance and rolls forward on resolution, so the answer is always about the next occurrence. Response adds current_slug and rolls_to_next_at to the standard probability shape."
+    },
+    {
+      "url": "https://x402-factory.com/v1/evergreen/fed-chair-change-this-year",
+      "description": "Live probability: Will the Fed chair change this year? — Stable evergreen URL for a recurring question: Will the Fed chair change this year? Auto-resolves to the current market instance and rolls forward on resolution, so the answer is always about the next occurrence. Response adds current_slug and rolls_to_next_at to the standard probability shape."
+    },
+    {
+      "url": "https://x402-factory.com/v1/evergreen/btc-above-100k-eoy",
+      "description": "Live probability: Will Bitcoin trade above $100k at year end? — Stable evergreen URL for a recurring question: Will Bitcoin trade above $100k at year end? Auto-resolves to the current market instance and rolls forward on resolution, so the answer is always about the next occurrence. Response adds current_slug and rolls_to_next_at to the standard probability shape."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/sports-soccer",
+      "description": "Upcoming soccer event resolutions — Upcoming soccer market resolutions in date order with current blended probabilities — the forward calendar of soccer events an agent can position around. Same shape as /v1/calendar, pre-filtered to soccer markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/sports-nfl",
+      "description": "Upcoming NFL football event resolutions — Upcoming NFL football market resolutions in date order with current blended probabilities — the forward calendar of NFL football events an agent can position around. Same shape as /v1/calendar, pre-filtered to NFL football markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/sports-nba",
+      "description": "Upcoming NBA basketball event resolutions — Upcoming NBA basketball market resolutions in date order with current blended probabilities — the forward calendar of NBA basketball events an agent can position around. Same shape as /v1/calendar, pre-filtered to NBA basketball markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/sports-mlb",
+      "description": "Upcoming MLB baseball event resolutions — Upcoming MLB baseball market resolutions in date order with current blended probabilities — the forward calendar of MLB baseball events an agent can position around. Same shape as /v1/calendar, pre-filtered to MLB baseball markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/science-tech",
+      "description": "Upcoming science and technology event resolutions — Upcoming science and technology market resolutions in date order with current blended probabilities — the forward calendar of science and technology events an agent can position around. Same shape as /v1/calendar, pre-filtered to science and technology markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/politics-world",
+      "description": "Upcoming world politics event resolutions — Upcoming world politics market resolutions in date order with current blended probabilities — the forward calendar of world politics events an agent can position around. Same shape as /v1/calendar, pre-filtered to world politics markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/politics-us",
+      "description": "Upcoming US politics event resolutions — Upcoming US politics market resolutions in date order with current blended probabilities — the forward calendar of US politics events an agent can position around. Same shape as /v1/calendar, pre-filtered to US politics markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/fed",
+      "description": "Upcoming Federal Reserve event resolutions — Upcoming Federal Reserve market resolutions in date order with current blended probabilities — the forward calendar of Federal Reserve events an agent can position around. Same shape as /v1/calendar, pre-filtered to Federal Reserve markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/entertainment",
+      "description": "Upcoming entertainment event resolutions — Upcoming entertainment market resolutions in date order with current blended probabilities — the forward calendar of entertainment events an agent can position around. Same shape as /v1/calendar, pre-filtered to entertainment markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/economics",
+      "description": "Upcoming economics event resolutions — Upcoming economics market resolutions in date order with current blended probabilities — the forward calendar of economics events an agent can position around. Same shape as /v1/calendar, pre-filtered to economics markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/crypto",
+      "description": "Upcoming crypto event resolutions — Upcoming crypto market resolutions in date order with current blended probabilities — the forward calendar of crypto events an agent can position around. Same shape as /v1/calendar, pre-filtered to crypto markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar/climate",
+      "description": "Upcoming climate and weather event resolutions — Upcoming climate and weather market resolutions in date order with current blended probabilities — the forward calendar of climate and weather events an agent can position around. Same shape as /v1/calendar, pre-filtered to climate and weather markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/sports-soccer",
+      "description": "All active soccer markets with live probabilities in one call — One-call board of the most active soccer prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of soccer at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/sports-nfl",
+      "description": "All active NFL football markets with live probabilities in one call — One-call board of the most active NFL football prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of NFL football at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/sports-nba",
+      "description": "All active NBA basketball markets with live probabilities in one call — One-call board of the most active NBA basketball prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of NBA basketball at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/sports-mlb",
+      "description": "All active MLB baseball markets with live probabilities in one call — One-call board of the most active MLB baseball prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of MLB baseball at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/science-tech",
+      "description": "All active science and technology markets with live probabilities in one call — One-call board of the most active science and technology prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of science and technology at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/politics-world",
+      "description": "All active world politics markets with live probabilities in one call — One-call board of the most active world politics prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of world politics at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/politics-us",
+      "description": "All active US politics markets with live probabilities in one call — One-call board of the most active US politics prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of US politics at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/fed",
+      "description": "All active Federal Reserve markets with live probabilities in one call — One-call board of the most active Federal Reserve prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of Federal Reserve at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/entertainment",
+      "description": "All active entertainment markets with live probabilities in one call — One-call board of the most active entertainment prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of entertainment at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/crypto",
+      "description": "All active crypto markets with live probabilities in one call — One-call board of the most active crypto prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of crypto at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/recalls/vehicle",
+      "description": "Latest vehicle recalls (FDA/USDA/CPSC normalized) — Latest vehicle recalls across FDA, USDA FSIS, and CPSC in one normalized schema, with severity classing and product details. Same shape as /v1/recalls, pre-filtered to the vehicle category."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/watch/proxy-watch",
+      "description": "New DEF 14A proxy statement filings feed (metadata + links) — Rolling feed of newly filed DEF 14A proxy statement documents: filer, filing date, accession number, and direct EDGAR links — metadata only, no deep parse. The watch feed for agents tracking DEF 14A proxy statement activity."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/watch/offering-watch",
+      "description": "New 424B securities offering filings feed (metadata + links) — Rolling feed of newly filed 424B securities offering documents: filer, filing date, accession number, and direct EDGAR links — metadata only, no deep parse. The watch feed for agents tracking 424B securities offering activity."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/watch/ipo-watch",
+      "description": "New S-1 IPO registration filings feed (metadata + links) — Rolling feed of newly filed S-1 IPO registration documents: filer, filing date, accession number, and direct EDGAR links — metadata only, no deep parse. The watch feed for agents tracking S-1 IPO registration activity."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/watch/delisting-watch",
+      "description": "New Form 25/15 delisting and deregistration filings feed (metadata + links) — Rolling feed of newly filed Form 25/15 delisting and deregistration documents: filer, filing date, accession number, and direct EDGAR links — metadata only, no deep parse. The watch feed for agents tracking Form 25/15 delisting and deregistration activity."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/watch/annual-watch",
+      "description": "New 10-K annual report filings feed (metadata + links) — Rolling feed of newly filed 10-K annual report documents: filer, filing date, accession number, and direct EDGAR links — metadata only, no deep parse. The watch feed for agents tracking 10-K annual report activity."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/watch/activist-watch",
+      "description": "New SC 13D activist stake filings feed (metadata + links) — Rolling feed of newly filed SC 13D activist stake documents: filer, filing date, accession number, and direct EDGAR links — metadata only, no deep parse. The watch feed for agents tracking SC 13D activist stake activity."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/events/results",
+      "description": "Latest results of operations 8-K events as structured JSON — Latest 8-K filings classified as results of operations (Item 2.02) across covered companies, parsed into structured JSON with extractive summaries and filing links. Same shape as /v1/edgar/events, pre-filtered to Item 2.02 events."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/events/restatement",
+      "description": "Latest restatement and non-reliance 8-K events as structured JSON — Latest 8-K filings classified as restatement and non-reliance (Item 4.02) across covered companies, parsed into structured JSON with extractive summaries and filing links. Same shape as /v1/edgar/events, pre-filtered to Item 4.02 events."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/events/reg-fd",
+      "description": "Latest Regulation FD disclosure 8-K events as structured JSON — Latest 8-K filings classified as Regulation FD disclosure (Item 7.01) across covered companies, parsed into structured JSON with extractive summaries and filing links. Same shape as /v1/edgar/events, pre-filtered to Item 7.01 events."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/events/other-events",
+      "description": "Latest other material event 8-K events as structured JSON — Latest 8-K filings classified as other material event (Item 8.01) across covered companies, parsed into structured JSON with extractive summaries and filing links. Same shape as /v1/edgar/events, pre-filtered to Item 8.01 events."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/events/material-agreement",
+      "description": "Latest material definitive agreement 8-K events as structured JSON — Latest 8-K filings classified as material definitive agreement (Item 1.01) across covered companies, parsed into structured JSON with extractive summaries and filing links. Same shape as /v1/edgar/events, pre-filtered to Item 1.01 events."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/events/leadership-change",
+      "description": "Latest executive and board leadership change 8-K events as structured JSON — Latest 8-K filings classified as executive and board leadership change (Item 5.02) across covered companies, parsed into structured JSON with extractive summaries and filing links. Same shape as /v1/edgar/events, pre-filtered to Item 5.02 events."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/events/bankruptcy",
+      "description": "Latest bankruptcy and receivership 8-K events as structured JSON — Latest 8-K filings classified as bankruptcy and receivership (Item 1.03) across covered companies, parsed into structured JSON with extractive summaries and filing links. Same shape as /v1/edgar/events, pre-filtered to Item 1.03 events."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/events/acquisitions",
+      "description": "Latest acquisition and disposition 8-K events as structured JSON — Latest 8-K filings classified as acquisition and disposition (Item 2.01) across covered companies, parsed into structured JSON with extractive summaries and filing links. Same shape as /v1/edgar/events, pre-filtered to Item 2.01 events."
+    },
+    {
+      "url": "https://x402-factory.com/v1/contracts/awards/va",
+      "description": "Latest Department of Veterans Affairs contract awards — Latest federal contract awards from Department of Veterans Affairs: recipient, value, NAICS, and award dates from USAspending, newest first. Same shape as /v1/contracts/awards, pre-filtered to Department of Veterans Affairs."
+    },
+    {
+      "url": "https://x402-factory.com/v1/contracts/awards/usda",
+      "description": "Latest Department of Agriculture contract awards — Latest federal contract awards from Department of Agriculture: recipient, value, NAICS, and award dates from USAspending, newest first. Same shape as /v1/contracts/awards, pre-filtered to Department of Agriculture."
+    },
+    {
+      "url": "https://x402-factory.com/v1/contracts/awards/nasa",
+      "description": "Latest NASA contract awards — Latest federal contract awards from NASA: recipient, value, NAICS, and award dates from USAspending, newest first. Same shape as /v1/contracts/awards, pre-filtered to NASA."
+    },
+    {
+      "url": "https://x402-factory.com/v1/contracts/awards/hhs",
+      "description": "Latest Department of Health and Human Services contract awards — Latest federal contract awards from Department of Health and Human Services: recipient, value, NAICS, and award dates from USAspending, newest first. Same shape as /v1/contracts/awards, pre-filtered to Department of Health and Human Services."
+    },
+    {
+      "url": "https://x402-factory.com/v1/contracts/awards/dot",
+      "description": "Latest Department of Transportation contract awards — Latest federal contract awards from Department of Transportation: recipient, value, NAICS, and award dates from USAspending, newest first. Same shape as /v1/contracts/awards, pre-filtered to Department of Transportation."
+    },
+    {
+      "url": "https://x402-factory.com/v1/contracts/awards/dod",
+      "description": "Latest Department of Defense contract awards — Latest federal contract awards from Department of Defense: recipient, value, NAICS, and award dates from USAspending, newest first. Same shape as /v1/contracts/awards, pre-filtered to Department of Defense."
+    },
+    {
+      "url": "https://x402-factory.com/v1/contracts/awards/doc",
+      "description": "Latest Department of Commerce contract awards — Latest federal contract awards from Department of Commerce: recipient, value, NAICS, and award dates from USAspending, newest first. Same shape as /v1/contracts/awards, pre-filtered to Department of Commerce."
+    },
+    {
+      "url": "https://x402-factory.com/v1/contracts/awards/dhs",
+      "description": "Latest Department of Homeland Security contract awards — Latest federal contract awards from Department of Homeland Security: recipient, value, NAICS, and award dates from USAspending, newest first. Same shape as /v1/contracts/awards, pre-filtered to Department of Homeland Security."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edge/:slug",
+      "description": "Deep model-vs-market breakdown for one weather market — Full divergence picture for a single weather market: model probability with the discretized model distribution, divergence history from stored signals, a half-Kelly sizing hint, and explicit risk notes (including model labeling). Find slugs via /v1/edge/weather-markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/unemployment",
+      "description": "Unemployment rate (BLS, monthly): latest print, revisions, surprise — Latest Unemployment rate print from the BLS via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next monthly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to unemployment."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/treasury-2y",
+      "description": "2-year Treasury yield (Fed, daily): latest print, revisions, surprise — Latest 2-year Treasury yield print from the Fed via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next daily release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to treasury-2y."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/treasury-10y",
+      "description": "10-year Treasury yield (Fed, daily): latest print, revisions, surprise — Latest 10-year Treasury yield print from the Fed via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next daily release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to treasury-10y."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/retail-sales",
+      "description": "Advance retail sales (Census, monthly): latest print, revisions, surprise — Latest Advance retail sales print from the Census via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next monthly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to retail-sales."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/pce-inflation",
+      "description": "PCE inflation (BEA, monthly): latest print, revisions, surprise — Latest PCE inflation print from the BEA via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next monthly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to pce-inflation."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/payrolls",
+      "description": "Nonfarm payrolls (BLS, monthly): latest print, revisions, surprise — Latest Nonfarm payrolls print from the BLS via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next monthly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to payrolls."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/initial-claims",
+      "description": "Initial jobless claims (DOL, weekly): latest print, revisions, surprise — Latest Initial jobless claims print from the DOL via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next weekly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to initial-claims."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/housing-starts",
+      "description": "Housing starts (Census, monthly): latest print, revisions, surprise — Latest Housing starts print from the Census via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next monthly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to housing-starts."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/gdp-growth",
+      "description": "Real GDP growth (BEA, quarterly): latest print, revisions, surprise — Latest Real GDP growth print from the BEA via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next quarterly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to gdp-growth."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/fed-funds",
+      "description": "Effective fed funds rate (Fed, monthly): latest print, revisions, surprise — Latest Effective fed funds rate print from the Fed via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next monthly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to fed-funds."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/cpi",
+      "description": "CPI inflation (BLS, monthly): latest print, revisions, surprise — Latest CPI inflation print from the BLS via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next monthly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to cpi."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/core-pce",
+      "description": "Core PCE inflation (BEA, monthly): latest print, revisions, surprise — Latest Core PCE inflation print from the BEA via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next monthly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to core-pce."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/core-cpi",
+      "description": "Core CPI inflation (BLS, monthly): latest print, revisions, surprise — Latest Core CPI inflation print from the BLS via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next monthly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to core-cpi."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/building-permits",
+      "description": "Building permits (Census, monthly): latest print, revisions, surprise — Latest Building permits print from the Census via FRED/ALFRED: first-release vs latest value with a revised flag (revisions never pose as print-day numbers), surprise vs a labeled expectation (market-implied when a matching prediction market exists, else trend-model), next monthly release date, and a 12-observation mini-series. Same shape as /v1/econ/:series bound to building-permits."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/:series",
+      "description": "US economic series: latest print, revisions, surprise vs labeled expectation — One tracked US economic series (BLS/BEA/Fed/Census via FRED/ALFRED): the latest print with first-release vs latest value (revisions never masquerade as print-day numbers), surprise against a labeled expectation — market-implied when a matching prediction market exists, else a trend model — the next scheduled release date, and a 12-observation mini-series. Public-domain federal data only."
+    },
+    {
+      "url": "https://x402-factory.com/v1/forecast/window",
+      "description": "One-call answer for a specific time window: rain odds, temps, comfort, verdict — Summarizes a ≤12-hour window at a coordinate into decision-ready numbers (rain probability, expected precip, temp range in °C, max gust, comfort index) plus a one-sentence plain-English verdict. Built for agents planning events, deliveries, and travel."
+    },
+    {
+      "url": "https://x402-factory.com/v1/energy/:region",
+      "description": "Degree-days, load signal, and renewables indexes for a US ISO region — Daily heating/cooling degree-days (°F-days), a normalized peak-load signal, and solar/wind generation indexes computed from load-weighted city forecasts for CAISO, ERCOT, PJM, MISO, SPP, NYISO, or ISONE, with extreme-risk flags."
+    },
+    {
+      "url": "https://x402-factory.com/v1/aviation/delay-risk/:iata",
+      "description": "Weather-driven delay risk for a US airport in 6-hour blocks — Next-24h delay risk for a top-100 US airport, scored per 6-hour block from model wind gusts, convective potential, winter precip, and ceilings, with the drivers named and a one-line verdict."
+    },
+    {
+      "url": "https://x402-factory.com/v1/probability/search",
+      "description": "Find prediction markets by free-text query; returns slugs for other endpoints — Full-text search over the canonical market catalog (Postgres FTS + trigram in live mode). Returns slugs, blended probabilities, and match confidence. Empty result sets return 200 with a suggestion listing valid categories."
+    },
+    {
+      "url": "https://x402-factory.com/v1/odds/compare/:slug",
+      "description": "Per-venue implied vs vig-adjusted odds with summarized depth for one market — Venue-by-venue comparison for a market: implied probability, vig-adjusted probability (overround removed via the quoted book), summarized depth near the touch, plus the cross-venue spread and a disagreement flag when it exceeds 5 points."
+    },
+    {
+      "url": "https://x402-factory.com/v1/liquidity/:slug",
+      "description": "Summarized depth, spread, and 24h volume profile for one market — Execution-quality summary per venue: depth within 1c/5c of the touch, spread in cents, and an hourly 24h volume profile. Pass notional_usd for a slippage estimate. Derived analytics only — raw order books are never mirrored."
+    },
+    {
+      "url": "https://x402-factory.com/v1/probability/:slug",
+      "description": "Blended event probability across Kalshi and Polymarket for one market — Liquidity-weighted blend of venue implied probabilities for a canonical market slug, with per-venue detail, cross-venue divergence, and the last 1h move. Resolved markets return 410 RESOLVED with the outcome. Find slugs via /v1/probability/search."
+    },
+    {
+      "url": "https://x402-factory.com/v1/evergreen/world-series-winner",
+      "description": "Live probability: Who wins the next World Series? — Stable evergreen URL for a recurring question: Who wins the next World Series? Auto-resolves to the current market instance and rolls forward on resolution, so the answer is always about the next occurrence. Response adds current_slug and rolls_to_next_at to the standard probability shape."
+    },
+    {
+      "url": "https://x402-factory.com/v1/evergreen/next-cpi-above-consensus",
+      "description": "Live probability: Will the next CPI print come in above consensus? — Stable evergreen URL for a recurring question: Will the next CPI print come in above consensus? Auto-resolves to the current market instance and rolls forward on resolution, so the answer is always about the next occurrence. Response adds current_slug and rolls_to_next_at to the standard probability shape."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/insider/:ticker",
+      "description": "Normalized insider transactions (Form 4) with flow aggregates for a ticker — SEC Form 4 filings parsed into clean insider transactions: buy/sell/award classification, 10b5-1 plan flags, per-filer roles, and aggregate net flow with notable-pattern flags. Use it to gauge insider conviction before events."
+    },
+    {
+      "url": "https://x402-factory.com/v1/climate-events/probability",
+      "description": "Probability of a specific weather event in a window, for any point or city — Our model's probability that a condition (temp above/below a threshold, precip amount, wind, any precip, named-storm landfall) occurs in a window up to 31 days out, with the method labeled. When a listed prediction market covers the same event, it is cross-referenced."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edge/backtest",
+      "description": "Historical performance of the edge signal: hit rate, calibration, by hazard — Aggregates stored edge signals whose markets have resolved: how often the model beat the market (hit rate), average absolute-error improvement (edge captured), a model calibration curve, and per-hazard breakdowns. model_label is explicit about which model produced the signals."
+    },
+    {
+      "url": "https://x402-factory.com/v1/recalls",
+      "description": "Product recalls across FDA, USDA, and CPSC in one normalized schema — openFDA enforcement reports (food/drug/device), USDA FSIS recalls, and CPSC consumer-product recalls normalized to one shape with a unified severity class (I highest — FDA/USDA classes verbatim; CPSC derived from hazard language). Newest first."
+    },
+    {
+      "url": "https://x402-factory.com/v1/forecast/point",
+      "description": "Hourly point forecast for any coordinate, up to 240 hours — Hourly temperature, feels-like, precipitation probability/amount, wind, gusts, humidity, and cloud cover from our weather model for an exact lat/lon. Imperial by default (units=metric available). Longer horizons cost more."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/economics",
+      "description": "Biggest economics probability moves (1h/6h/24h) — The fastest way to see where news is landing in economics: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to economics markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers/climate",
+      "description": "Biggest climate and weather probability moves (1h/6h/24h) — The fastest way to see where news is landing in climate and weather: active markets ranked by absolute probability change over your chosen window, with volume surge ratios. Same shape as /v1/movers, pre-filtered to climate and weather markets."
+    },
+    {
+      "url": "https://x402-factory.com/v1/calendar",
+      "description": "Upcoming market resolutions in the next N days with current probabilities — Active markets resolving inside the horizon, sorted by resolution date with the current blended probability. An agent's event calendar: what settles soon and where it stands."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/economics",
+      "description": "All active economics markets with live probabilities in one call — One-call board of the most active economics prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of economics at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/board/climate",
+      "description": "All active climate and weather markets with live probabilities in one call — One-call board of the most active climate and weather prediction markets: top markets by volume with blended live probabilities, resolution dates, and per-market slugs for drill-down. The bulk read for agents tracking the state of climate and weather at a glance."
+    },
+    {
+      "url": "https://x402-factory.com/v1/recalls/food",
+      "description": "Latest food safety recalls (FDA/USDA/CPSC normalized) — Latest food safety recalls across FDA, USDA FSIS, and CPSC in one normalized schema, with severity classing and product details. Same shape as /v1/recalls, pre-filtered to the food category."
+    },
+    {
+      "url": "https://x402-factory.com/v1/recalls/drug",
+      "description": "Latest drug and pharmaceutical recalls (FDA/USDA/CPSC normalized) — Latest drug and pharmaceutical recalls across FDA, USDA FSIS, and CPSC in one normalized schema, with severity classing and product details. Same shape as /v1/recalls, pre-filtered to the drug category."
+    },
+    {
+      "url": "https://x402-factory.com/v1/recalls/device",
+      "description": "Latest medical device recalls (FDA/USDA/CPSC normalized) — Latest medical device recalls across FDA, USDA FSIS, and CPSC in one normalized schema, with severity classing and product details. Same shape as /v1/recalls, pre-filtered to the device category."
+    },
+    {
+      "url": "https://x402-factory.com/v1/recalls/consumer",
+      "description": "Latest consumer product recalls (FDA/USDA/CPSC normalized) — Latest consumer product recalls across FDA, USDA FSIS, and CPSC in one normalized schema, with severity classing and product details. Same shape as /v1/recalls, pre-filtered to the consumer category."
+    },
+    {
+      "url": "https://x402-factory.com/v1/contracts/awards/doe",
+      "description": "Latest Department of Energy contract awards — Latest federal contract awards from Department of Energy: recipient, value, NAICS, and award dates from USAspending, newest first. Same shape as /v1/contracts/awards, pre-filtered to Department of Energy."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/dashboard",
+      "description": "US macro dashboard: every tracked series' latest print in one call — All tracked US economic series in one response: the latest headline print (with its date and a revised flag) plus each series' next scheduled release date. The one-call state of the US economy for agents that would otherwise fan out fifteen reads."
+    },
+    {
+      "url": "https://x402-factory.com/v1/econ/calendar",
+      "description": "Upcoming US economic release dates across all tracked series — Every tracked US economic series (CPI, payrolls, GDP, PCE, claims, housing, and more) with its next scheduled release date from the agencies' published calendars, sorted soonest first. The cheap planning read before paying for a full series view."
+    },
+    {
+      "url": "https://x402-factory.com/v1/forecast/probabilistic",
+      "description": "Ensemble percentile bands (p10–p90) for temp, precip, or wind — Hourly p10/p25/p50/p75/p90 bands from the model ensemble for one variable at a coordinate. Metric units (°C, mm, kph). Use it to reason about uncertainty, not just point values."
+    },
+    {
+      "url": "https://x402-factory.com/v1/alerts/severe",
+      "description": "Active NWS alerts for a point or state, plus model-forward hazard risk — Official National Weather Service active alerts (public domain, attributed) for a lat/lon or two-letter state, combined with our model's forward 48h hazard probabilities (extreme heat, heavy rain, damaging wind). Pass lat+lon or state."
+    },
+    {
+      "url": "https://x402-factory.com/v1/movers",
+      "description": "Markets with the largest probability moves over 1h/6h/24h windows — Active markets ranked by absolute blended-probability change over the chosen window, with volume surge ratios. The fastest way for an agent to find where news is landing."
+    },
+    {
+      "url": "https://x402-factory.com/v1/history/:slug",
+      "description": "Probability time series for a market with key-move detection — Hourly or daily blended probability series (per-venue series included where listed) with volume, plus key_moves: buckets where the blend moved at least 5 points. Useful for charting and for change-point context before paying for realtime reads."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/filings/search",
+      "description": "Full-text search over SEC filings (EDGAR FTS), normalized results — Proxies SEC EDGAR full-text search (efts.sec.gov) with fair-access rate limiting and returns normalized hits: company, form, filing date, matched document, and archive URL. Upstream provides no text excerpt, so snippets describe the matched document."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/events",
+      "description": "8-K corporate events classified by item number with extractive summaries — Material corporate events from SEC 8-K filings, deterministically classified by Item number (5.02 → leadership_change, 2.02 → results, 1.01 → material_agreement, …) with a two-sentence extractive summary and the filing URL. Filter by ticker, event type, or date."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edgar/13f/:cik/diff",
+      "description": "Quarter-over-quarter 13F position changes for an institutional manager — Parses a fund's 13F-HR information tables and diffs the latest quarter against the prior one: new positions, exits, increases, decreases (with share deltas), and the change in top-10 concentration. CIKs may be zero-padded or not."
+    },
+    {
+      "url": "https://x402-factory.com/v1/contracts/awards",
+      "description": "Federal contract awards from USAspending, normalized and filterable — Recent US federal contract awards (USAspending.gov) as clean records: vendor, awarding agency/sub-agency, value, NAICS, start date, and place of performance. Sorted by value. Filter by vendor, agency, NAICS, minimum value, or date."
+    },
+    {
+      "url": "https://x402-factory.com/v1/edge/weather-markets",
+      "description": "Model-vs-market divergence across every parseable weather prediction market — Compares our weather model's event probability with the market-implied probability for every weather-linked prediction market we can parse, ranked by divergence with direction, model confidence (from ensemble spread), and market liquidity. parse_coverage reports how much of the weather catalog is covered."
+    }
+  ]
+}

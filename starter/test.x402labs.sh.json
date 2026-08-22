@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "test.x402labs.sh",
+  "resources": [
+    {
+      "url": "https://test.x402labs.sh/v1/scraping/scrape",
+      "description": "Scraping endpoint"
+    },
+    {
+      "url": "https://test.x402labs.sh/v1/social/truthsocial/user-posts",
+      "description": "Truth Social user posts lookup"
+    },
+    {
+      "url": "https://test.x402labs.sh/v1/social/truthsocial/profile",
+      "description": "Truth Social profile lookup"
+    },
+    {
+      "url": "https://test.x402labs.sh/v1/social/truthsocial/post",
+      "description": "Truth Social post lookup by URL"
+    }
+  ]
+}

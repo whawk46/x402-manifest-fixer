@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "aegis-api.kadopi.workers.dev",
+  "resources": [
+    {
+      "url": "https://aegis-api.kadopi.workers.dev/v1/verify",
+      "description": "AegisAI risk verification"
+    }
+  ]
+}

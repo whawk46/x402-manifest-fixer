@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-solvers.onrender.com",
+  "resources": [
+    {
+      "url": "https://x402-solvers.onrender.com/v1/cycles/probe",
+      "description": "Detect whether an arbitrage opportunity exists in a set of token exchange rates (multi-pool negative-cycle scan). Cheap boolean + magnitude signal for trading agents. POST a swap-rate graph, get back whether a profitable cycle exists and how large — without the path."
+    }
+  ]
+}

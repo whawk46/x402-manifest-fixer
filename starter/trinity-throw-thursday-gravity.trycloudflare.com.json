@@ -1,0 +1,199 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "trinity-throw-thursday-gravity.trycloudflare.com",
+  "resources": [
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/competitor-comparison",
+      "description": "Build a symmetric, source-linked public-website evidence comparison for two organizations without inventing rankings or claims."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/vendor-due-diligence",
+      "description": "Create a bounded public-website, HTTP, TLS, and response-header evidence pack for human vendor due diligence."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/api-decision-pack",
+      "description": "Combine public API documentation-readiness, TLS, response-header, and optional changelog evidence into a conservative decision pack."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/api-changelog",
+      "description": "Extract source-linked API changelog signals, urgency, affected areas, and action items from bounded public documentation."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/webhook-readiness",
+      "description": "Create source-linked webhook integration-readiness evidence from bounded public documentation."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/code-assets",
+      "description": "Download dependency-free, tested TypeScript finite-state-machine, Python token-bucket rate-limiter, and Python CSV-deduplication source files with executable tests and SHA-256 hashes."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/sitemap-inventory",
+      "description": "Parse one public XML sitemap or bounded sitemap index into a URL, last-modified, hostname, and path-prefix inventory."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/metadata",
+      "description": "Extract a compact public webpage metadata snapshot with title, description, canonical URL, headings, schema types, and contact signals."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/link-preview",
+      "description": "Extract a bounded public webpage link preview with title, description, canonical URL, and referenced social image."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/docs-openapi",
+      "description": "Extract source-observed API operations from public documentation into a conservative OpenAPI draft without inventing schemas."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/api-readiness",
+      "description": "Create a source-linked API integration-readiness snapshot from bounded public documentation evidence."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/email-security",
+      "description": "Collect point-in-time DNS evidence for email authentication controls including MX, SPF, DMARC, CAA, MTA-STS, and TLS reporting."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/tls-security",
+      "description": "Inspect a public HTTPS hostname's TLS certificate and observable response security headers without active scanning."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/hackernews-trending",
+      "description": "Return up to twenty current top stories from the official Hacker News API with rank, score, comments, timestamps, and source links."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/wikipedia-summary",
+      "description": "Return a bounded source-linked summary for one public Wikipedia page through Wikimedia's REST API."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/weather",
+      "description": "Return current conditions and a compact three-day forecast for public coordinates from Open-Meteo, with units, timestamps, and source evidence."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/doi-metadata",
+      "description": "Return bounded bibliographic, authorship, publication, subject, funding, license, and citation-count metadata for one DOI from Crossref."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/dossier",
+      "description": "Analyze the public website in the url query parameter into compact JSON and agent-ready Markdown."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/qr",
+      "description": "Generate a QR code from the data query parameter as PNG base64 or inline SVG."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/v1/dossier",
+      "description": "Analyze up to three public website pages into compact JSON and agent-ready Markdown."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/v1/qr",
+      "description": "Generate a QR code from text, a URL, wallet address, or payment URI as PNG base64 or inline SVG."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/grant-checklist",
+      "description": "Turn one Grants.gov opportunity into an evidence-linked application-readiness checklist covering deadline, eligibility, registrations, budget, attachments, and agency contact."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/grant-eligibility",
+      "description": "Screen one Grants.gov opportunity for applicant-type, deadline, budget, and topical-fit conflicts using the current official API record."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/grant-match",
+      "description": "Search current posted Grants.gov opportunities and return up to five source-linked matches for a supplied applicant profile."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/seo-directives",
+      "description": "Inventory one public page's canonical URLs, hreflang alternates, indexing directives, navigation relations, viewport, referrer policy, and invalid link references."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/security-txt",
+      "description": "Discover and parse a public RFC 9116 security.txt policy into contacts, expiry, policy, encryption, canonical, hiring, extension, HTTP, and hash evidence."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/structured-data",
+      "description": "Inventory bounded public JSON-LD blocks and schema.org entities with types, identifiers, names, URLs, properties, and stable fingerprints."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/robots-policy",
+      "description": "Parse a public robots.txt into crawler groups, effective allow/disallow rules, crawl delay, sitemap references, and a response hash."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/feed-snapshot",
+      "description": "Parse a public RSS or Atom feed into recent source-linked entries with stable fingerprints and bounded summaries."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/agent-discovery",
+      "description": "Audit a public website for AI-agent discovery controls such as llms.txt, OpenAPI, agent cards, robots, and sitemap."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/agent-revenue-kit",
+      "description": "Purchase the Agent Revenue Launch Kit v1.0 as a small base64-encoded ZIP containing x402 checkout, discovery, offer-design, and conversion-tracking templates."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/base-gas-snapshot",
+      "description": "Return point-in-time Base mainnet block, suggested gas price, and base-fee observations from the public RPC endpoint."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/base-wallet-balance",
+      "description": "Return point-in-time public native ETH and native Base USDC balances for one EVM address from Base mainnet RPC."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/npm-downloads",
+      "description": "Return the public npm registry download count for one package over the last completed weekly window."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/pypi-package-health",
+      "description": "Inspect current public PyPI metadata for release freshness, license, project URLs, Python requirements, dependencies, classifiers, and yanked status."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/github-repo-health",
+      "description": "Inspect public GitHub repository metadata for activity freshness, license, archive and fork state, language, topics, issue counts, and popularity signals."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/npm-release-risk-pack",
+      "description": "Combine current npm registry metadata, last-week downloads, and exact-latest-version OSV records into a bounded release review-priority pack."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/npm-package-health",
+      "description": "Inspect current public npm registry metadata for release freshness, deprecation, license, repository, dependencies, maintainers, integrity, and install lifecycle scripts."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/redirect-chain",
+      "description": "Trace up to three public HTTP redirects and report status semantics, cross-origin hops, HTTPS downgrades, and final-response evidence."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/dns-inventory",
+      "description": "Inventory bounded public DNS answers for A, AAAA, CNAME, NS, MX, TXT, CAA, HTTPS SRV, and SOA record types."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/openapi-inventory",
+      "description": "Inventory operations, schemas, security declarations, tags, and documentation gaps in one public OpenAPI JSON document."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/http-policy",
+      "description": "Inspect one bounded public HTTP response for cache directives, CORS headers, and redacted cookie security attributes."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/json-api-shape",
+      "description": "Inventory bounded observed key and type paths from one unauthenticated public JSON API response, with status and SHA-256 evidence but no raw values."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/bug-triage",
+      "description": "Run one bounded unauthenticated public GET, compare optional status and body-text assertions, and return reproducible bug-triage evidence and next actions."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/api-sanity",
+      "description": "Run one bounded unauthenticated GET against a public API endpoint and report status, redirects, response hash, and an optional text-presence assertion."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/url-evidence",
+      "description": "Verify a public webpage with a bounded, reproducible snapshot of website status, redirects, content hash, and optional text-presence evidence for monitoring and research."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/go-module-latest",
+      "description": "Return the public Go module proxy's current @latest version, release timestamp, and bounded origin metadata."
+    },
+    {
+      "url": "https://trinity-throw-thursday-gravity.trycloudflare.com/x402/osv-vulnerabilities",
+      "description": "Return bounded OSV vulnerability records for one exact package ecosystem, name, and version."
+    }
+  ]
+}

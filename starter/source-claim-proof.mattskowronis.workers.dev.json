@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "source-claim-proof.mattskowronis.workers.dev",
+  "resources": [
+    {
+      "url": "https://source-claim-proof.mattskowronis.workers.dev/v1/verify",
+      "description": "Verify whether a supplied public source page currently supports one atomic factual claim. Returns supported, contradicted, or insufficient-evidence plus source snippets, or explicit blocked/unreachable/unsupported states. Not a general fact checker or web search."
+    }
+  ]
+}

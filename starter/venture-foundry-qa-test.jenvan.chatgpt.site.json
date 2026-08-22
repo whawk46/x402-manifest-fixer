@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "venture-foundry-qa-test.jenvan.chatgpt.site",
+  "resources": [
+    {
+      "url": "https://venture-foundry-qa-test.jenvan.chatgpt.site/api/v1/preflight",
+      "description": "Check agent deliverables for required sections, limits, placeholder or forbidden text, source minimums, citation wiring, and claim traceability."
+    }
+  ]
+}

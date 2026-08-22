@@ -1,0 +1,43 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "bazaar-gateway.vercel.app",
+  "resources": [
+    {
+      "url": "https://bazaar-gateway.vercel.app/api/crypto-prices",
+      "description": "Real-time cryptocurrency prices for BTC, ETH, SOL, and other major coins. Data sourced from CoinGecko. Returns current price in USD, 24h change percentage, and market cap."
+    },
+    {
+      "url": "https://bazaar-gateway.vercel.app/api/weather",
+      "description": "Real-time weather data and 3-day forecast for any location worldwide. Accepts city name or lat/lon coordinates. Returns temperature, humidity, wind, precipitation, and conditions. Powered by Open-Meteo."
+    },
+    {
+      "url": "https://bazaar-gateway.vercel.app/api/crypto-health",
+      "description": "Instant crypto market health check: 9 macro indicators (Fear & Greed, BTC dominance, funding rates, MVRV Z-Score, hash rate, active addresses, US net liquidity, stablecoin supply, altcoin cap) each scored favorable/neutral/unfavorable with exact values, plus a global risk_on/mixed/risk_off verdict and a deterministic summary. No LLM, sub-second. Per-indicator deep dives available."
+    },
+    {
+      "url": "https://bazaar-gateway.vercel.app/api/url-preview",
+      "description": "Fast link preview extractor — returns OpenGraph/Twitter Card metadata (title, description, image, favicon, site name, canonical URL, language) for any public URL. Perfect for agents that need to scan many links quickly before deciding which ones deserve deep analysis via /api/web-intelligence ($0.005). 5x cheaper than full AI analysis. Latency ~300-800ms."
+    },
+    {
+      "url": "https://bazaar-gateway.vercel.app/api/market-report",
+      "description": "AI-generated cryptocurrency market analysis report. Fetches real-time prices from CoinGecko then uses Claude AI to generate a professional market analysis with trends, risks, and opportunities."
+    },
+    {
+      "url": "https://bazaar-gateway.vercel.app/api/crypto-indicator",
+      "description": "Deep dive on one crypto macro indicator: definition, formula, exact status thresholds, current value, recent stats and a 30-point history, plus an agent reading guide. Valid names: fear-greed, btc-dominance, funding-rates, mvrv-zscore, hash-rate, active-addresses, net-liquidity, stablecoin-supply, altcoin-mcap."
+    },
+    {
+      "url": "https://bazaar-gateway.vercel.app/api/timestamp",
+      "description": "Current date, time, and timestamp for any timezone worldwide. Returns UTC and local timestamps, unix epoch, day of week. Useful for scheduling, logging, and time-aware operations."
+    },
+    {
+      "url": "https://bazaar-gateway.vercel.app/api/hype-signal",
+      "description": "Deep dive on one HYPE engine signal: definition, why it matters for the flywheel, buy/neutral/sell thresholds and the raw inputs behind the current status. Valid names include fees-30d, revenue-annualized, ps-ratio, funding, market-share, price-7d, open-interest, volume-24h, tvl-bridge, hip3-rwa, buybacks-af, staking, auction-hip3, mcap-fdv, momentum-rsi."
+    },
+    {
+      "url": "https://bazaar-gateway.vercel.app/api/hype-engine",
+      "description": "Fundamentals engine for the HYPE token (Hyperliquid): live price, funding and open interest, fees and buyback flywheel, P/S valuation percentile, perp market share, unlock absorption and RSI timing - scored into 3 axes (engine health, climate, momentum) with a synthesized buy/hold/lighten recommendation and buy-zone detection. Proprietary methodology, deterministic, no LLM."
+    }
+  ]
+}

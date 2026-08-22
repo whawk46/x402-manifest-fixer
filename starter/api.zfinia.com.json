@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.zfinia.com",
+  "resources": [
+    {
+      "url": "https://api.zfinia.com/x402/v1/data-compatibility-checker",
+      "description": "Compare caller-supplied source and target field definitions for deterministic structural compatibility; no data is fetched or executed."
+    },
+    {
+      "url": "https://api.zfinia.com/x402/v1/accessibility-contrast-calculator",
+      "description": "Calculate WCAG 2.x sRGB contrast for one caller-supplied colour pair; no interface-wide accessibility claim is made."
+    },
+    {
+      "url": "https://api.zfinia.com/x402/v1/catalog-offer-evidence-extractor",
+      "description": "Convert caller-supplied authorized public product-page HTML containing schema.org Product JSON-LD into normalized Product/Offer evidence with SHA-256 provenance; no URL fetching, browser execution, or price-currentness claim."
+    }
+  ]
+}

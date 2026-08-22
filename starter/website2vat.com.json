@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "website2vat.com",
+  "resources": [
+    {
+      "url": "https://website2vat.com/x402/vat-lookup",
+      "description": "Look up VAT and company registration identifiers for one website domain."
+    }
+  ]
+}

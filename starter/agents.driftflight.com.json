@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agents.driftflight.com",
+  "resources": [
+    {
+      "url": "https://agents.driftflight.com/v1/images/generate",
+      "description": "Generate an image from a text prompt"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "xcatcher.top",
+  "resources": [
+    {
+      "url": "https://xcatcher.top/api/v1/x402/crawl",
+      "description": "Retrieve recent public X/Twitter posts from one or more named public account handles for monitoring, comparison, OSINT, social intelligence, and source-linked summaries. Returns an asynchronous task with scoped polling access; it does not search X-wide keywords, access private accounts, or control an X account."
+    }
+  ]
+}

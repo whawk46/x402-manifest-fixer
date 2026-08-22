@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "wallets-demo-seller-server.calebgcarithers.workers.dev",
+  "resources": [
+    {
+      "url": "https://wallets-demo-seller-server.calebgcarithers.workers.dev/weather",
+      "description": "Real-time current weather conditions for a city or location, including temperature, humidity, precipitation, wind, and a human-readable condition."
+    }
+  ]
+}

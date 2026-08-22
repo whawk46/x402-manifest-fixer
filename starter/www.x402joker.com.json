@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "www.x402joker.com",
+  "resources": [
+    {
+      "url": "https://www.x402joker.com/api/buy",
+      "description": "Pay-per-joke vending machine: send USDC, get a fresh Claude-generated joke. Optional \"theme\" picks the topic."
+    }
+  ]
+}

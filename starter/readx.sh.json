@@ -1,0 +1,135 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "readx.sh",
+  "resources": [
+    {
+      "url": "https://readx.sh/api/search",
+      "description": "Search tweets. Start the query with @ (or add f:user) to search users instead. Example: GET /api/search?q=typescript"
+    },
+    {
+      "url": "https://readx.sh/api/:name/followers",
+      "description": "A user's followers (~200 per page; paginate with cursor until has_more is false). Example: GET /api/jack/followers"
+    },
+    {
+      "url": "https://readx.sh/api/search/tweets",
+      "description": "Search for tweets by query (optional product filter; paginate with cursor). Example: GET /api/search/tweets?q=typescript"
+    },
+    {
+      "url": "https://readx.sh/api/:name/following",
+      "description": "Accounts a user follows (~200 per page; paginate with cursor until has_more is false). Example: GET /api/jack/following"
+    },
+    {
+      "url": "https://readx.sh/api/:name/tweets/:id",
+      "description": "A single tweet with its full conversation: tweets before, after and replies. Example: GET /api/jack/tweets/20"
+    },
+    {
+      "url": "https://readx.sh/api/search/users",
+      "description": "Search for users by query (paginate with cursor until has_more is false). Example: GET /api/search/users?q=jack"
+    },
+    {
+      "url": "https://readx.sh/api/articles/:id",
+      "description": "An X article (long-form post) by its wrapper tweet id (public). Example: GET /api/articles/1"
+    },
+    {
+      "url": "https://readx.sh/api/:name",
+      "description": "A user's timeline: tweets, retweets and quotes. Example: GET /api/jack"
+    },
+    {
+      "url": "https://readx.sh/api/:name/verified_followers",
+      "description": "A user's verified followers (~200 per page; paginate with cursor until has_more is false). Example: GET /api/jack/verified_followers"
+    },
+    {
+      "url": "https://readx.sh/api/:name/about",
+      "description": "Account info: join date, base location, verification, username changes. Example: GET /api/jack/about"
+    },
+    {
+      "url": "https://readx.sh/api/tweets/:id/replies",
+      "description": "Replies to a tweet (paginate with cursor until has_more is false). Example: GET /api/tweets/20/replies"
+    },
+    {
+      "url": "https://readx.sh/api/:name/with_media",
+      "description": "A user's timeline filtered to tweets with media. Example: GET /api/jack/with_media"
+    },
+    {
+      "url": "https://readx.sh/api/:name/profile",
+      "description": "Full profile: bio, counts, banner, pinned tweet and a photo rail. Example: GET /api/jack/profile"
+    },
+    {
+      "url": "https://readx.sh/api/tools/get_user_id",
+      "description": "Resolve an @handle to its numeric user id. Example: GET /api/tools/get_user_id?username=jack"
+    },
+    {
+      "url": "https://readx.sh/api/tweets/:id",
+      "description": "A single tweet on its own, without the surrounding conversation. Example: GET /api/tweets/20"
+    },
+    {
+      "url": "https://readx.sh/api/:name/affiliates",
+      "description": "Accounts affiliated with a user (e.g. an organization's members). Example: GET /api/jack/affiliates"
+    },
+    {
+      "url": "https://readx.sh/api/:name/tweets/:id/history",
+      "description": "A tweet's edit history: the latest version plus every prior revision. Example: GET /api/jack/tweets/20/history"
+    },
+    {
+      "url": "https://readx.sh/api/tweets/:id/retweeters",
+      "description": "Accounts that retweeted a tweet (paginate with cursor until has_more is false). Example: GET /api/tweets/20/retweeters"
+    },
+    {
+      "url": "https://readx.sh/api/tools/get_username",
+      "description": "Resolve a numeric user id to its current @username. Example: GET /api/tools/get_username?user_id=12"
+    },
+    {
+      "url": "https://readx.sh/api/broadcasts/:id",
+      "description": "A Spaces / broadcast: title, state, watch count, replay m3u8. Example: GET /api/broadcasts/1"
+    },
+    {
+      "url": "https://readx.sh/api/lists/:id/members",
+      "description": "The users that belong to a list (paginate with cursor until has_more is false). Example: GET /api/lists/84839422/members"
+    },
+    {
+      "url": "https://readx.sh/api/hashtag/:hash",
+      "description": "Tweet search for a hashtag. Same as `/api/search?q=%23tag`. Example: GET /api/hashtag/typescript"
+    },
+    {
+      "url": "https://readx.sh/api/:name/mentions",
+      "description": "Tweets that mention a user (paginate with cursor until has_more is false). Example: GET /api/jack/mentions"
+    },
+    {
+      "url": "https://readx.sh/api/:name/pinned",
+      "description": "Just the user's pinned tweet, if any. Example: GET /api/jack/pinned"
+    },
+    {
+      "url": "https://readx.sh/api/:name/with_replies",
+      "description": "A user's timeline including their replies. Example: GET /api/jack/with_replies"
+    },
+    {
+      "url": "https://readx.sh/api/:name/info",
+      "description": "A user's profile info: id, name, bio, location, follower/following counts, verification. Example: GET /api/jack/info"
+    },
+    {
+      "url": "https://readx.sh/api/trends",
+      "description": "Trending topics for a location (worldwide by default; filter with country or woeid). Example: GET /api/trends?country=US"
+    },
+    {
+      "url": "https://readx.sh/api/:name/followers_web",
+      "description": "A user's followers as shown on the web (~70 per page, capped at ~800; paginate with cursor until has_more is false). Example: GET /api/jack/followers_web"
+    },
+    {
+      "url": "https://readx.sh/api/:name/following_web",
+      "description": "Accounts a user follows as shown on the web (~70 per page, capped at ~800; paginate with cursor until has_more is false). Example: GET /api/jack/following_web"
+    },
+    {
+      "url": "https://readx.sh/api/tools/get_usernames",
+      "description": "Resolve up to 20 numeric user ids to @usernames (map; null on per-id failure). Example: GET /api/tools/get_usernames?user_ids=12,44196397"
+    },
+    {
+      "url": "https://readx.sh/api/tools/get_user_ids",
+      "description": "Resolve up to 20 @handles to numeric user ids (map; null on per-handle failure). Example: GET /api/tools/get_user_ids?usernames=jack,elonmusk"
+    },
+    {
+      "url": "https://readx.sh/api/:name/follower_web",
+      "description": "A user's followers as shown on the web (~70 per page, capped at ~800; paginate with cursor until has_more is false). Example: GET /api/jack/follower_web"
+    }
+  ]
+}

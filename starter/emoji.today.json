@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "emoji.today",
+  "resources": [
+    {
+      "url": "https://emoji.today/api/vote",
+      "description": "Cast a paid vote for today's emoji election on emoji.today"
+    }
+  ]
+}

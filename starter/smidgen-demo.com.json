@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "smidgen-demo.com",
+  "resources": [
+    {
+      "url": "https://smidgen-demo.com/premium-demo/",
+      "description": "Premium Demo"
+    }
+  ]
+}

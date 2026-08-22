@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "staging.402utils.com",
+  "resources": [
+    {
+      "url": "https://staging.402utils.com/v1/vat-check",
+      "description": "Validate an EU VAT number against the official VIES registry before invoicing, onboarding or a reverse charge. Per-country syntax is checked locally first, so invalid formats never touch the network. Valid numbers return the registered company name and address when disclosed, plus an optional consultation number (requesterVat). Never a false 'invalid': if VIES is down you get a 503 and are not charged. ?attest=1 → Ed25519-signed."
+    },
+    {
+      "url": "https://staging.402utils.com/v1/market-price",
+      "description": "Live market price stats for a kind of x402 service, from the public Bazaar catalog. Pass ?category=vat or ?query=pdf extraction and get {sampleSize, priceUsd:{min,p25,median,max,p75}, networks, examples} in USD — is your price fair, what should you charge? Computed over a live sample of up to 1000 resources; <3 matches returns an honest 'insufficient market data'. Neutral: our own endpoints are never featured."
+    },
+    {
+      "url": "https://staging.402utils.com/v1/iban-check",
+      "description": "Validate an IBAN structurally before you pay or store it: ISO 7064 mod-97 check digits plus the official per-country length and BBAN layout (~90 countries), returning the bank/branch/account breakdown for FR, DE, ES, IT, BE and NL. Structural validation only — no BIC directory lookup (SWIFT's BIC registry is proprietary) and no proof the account exists. Local, instant. ?attest=1 → Ed25519-signed."
+    }
+  ]
+}

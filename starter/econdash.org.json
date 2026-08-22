@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "econdash.org",
+  "resources": [
+    {
+      "url": "https://econdash.org/api/v1/m2m/indicators/test",
+      "description": "EconDash economic data API (M2M)"
+    },
+    {
+      "url": "https://econdash.org/api/v1/m2m/stats",
+      "description": "EconDash economic data API (M2M)"
+    },
+    {
+      "url": "https://econdash.org/api/v1/m2m/countries/DEU",
+      "description": "EconDash economic data API (M2M)"
+    },
+    {
+      "url": "https://econdash.org/api/v1/m2m/indicators/by-slug/%7Bslug%7D",
+      "description": "EconDash economic data API (M2M)"
+    },
+    {
+      "url": "https://econdash.org/api/v1/m2m/indicators/%7Bcode%7D",
+      "description": "EconDash economic data API (M2M)"
+    },
+    {
+      "url": "https://econdash.org/api/v1/m2m/countries/%7Biso3%7D",
+      "description": "EconDash economic data API (M2M)"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "omniac.0000402.xyz",
+  "resources": [
+    {
+      "url": "https://omniac.0000402.xyz/ask",
+      "description": "Pay $0.01 USDC to ask Omniac, the Omniacs DAO mascot, any question about crypto, data science, or tech. Responses are concise by default. Powered by llama-3.3-70b via Venice.ai. Max question length: 2000 characters. Network: Base Mainnet. Each request sends one natural-language question to the model and returns one direct answer, making it useful for crypto explainers, technical Q&A, research support, and agent knowledge lookups."
+    }
+  ]
+}

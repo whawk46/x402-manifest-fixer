@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.doc2json.de",
+  "resources": [
+    {
+      "url": "https://api.doc2json.de/v1/extract",
+      "description": "Parse any PDF (optimized for German business documents: invoices, contracts, official letters) into an arbitrary caller-defined JSON schema. Stateless, GDPR-friendly: documents are processed in memory and never stored."
+    }
+  ]
+}

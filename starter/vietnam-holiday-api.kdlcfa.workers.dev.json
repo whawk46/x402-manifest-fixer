@@ -1,0 +1,59 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "vietnam-holiday-api.kdlcfa.workers.dev",
+  "resources": [
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/",
+      "description": "VN Holiday API — official Vietnam public holiday lookup"
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/prices",
+      "description": "VN Market Prices API — USD/VND rate and gold prices (SJC, DOJI)"
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/vn30",
+      "description": "VN30 proxy — VFMVN30 ETF tracking Vietnam's top 30 HOSE blue-chip stocks, delayed quote"
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/vn-index",
+      "description": "VN-Index — Vietnam stock market index (HOSE), delayed quote"
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/finance-news",
+      "description": "Vietnam financial news headlines — latest titles and links via CafeF/CafeBiz/VnEconomy RSS fallback chain, headline+link only, no article content"
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/crypto-market",
+      "description": "Generic crypto quote via Yahoo Finance. Pass ?symbol=SYMBOL-USD (e.g. ETH-USD, SOL-USD)."
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/vn-water-price",
+      "description": "Vietnam residential water tariff structure (HCMC/SAWACO and Hanoi/HAWACO) — tier structure and official lookup channels, no VND figures (source data inconsistent, see notes)"
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/vn-electricity-price",
+      "description": "Vietnam residential electricity tariff — 6-tier progressive schedule per EVN Decision 1279/QĐ-BCT, VND per kWh before VAT"
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/vn-travel-destinations",
+      "description": "Top 5 Vietnam travel destinations — curated static list with descriptions, highlights, and best time to visit"
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/vn-etf",
+      "description": "VanEck Vietnam ETF (NYSE: VNM) — USD-denominated foreign investor exposure to the Vietnam market, delayed quote"
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/stocks",
+      "description": "VN individual stock quote — pass ?symbol=VIC (Vingroup), VNM (Vinamilk), VCB (Vietcombank), etc. HOSE-listed blue-chips, delayed quote"
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/stock-quote",
+      "description": "Generic stock/index quote via Yahoo Finance. Pass ?ticker=SYMBOL (e.g. AAPL, %5EGSPC)."
+    },
+    {
+      "url": "https://vietnam-holiday-api.kdlcfa.workers.dev/btc-price",
+      "description": "BTC-USD spot price, delayed quote via Yahoo Finance"
+    }
+  ]
+}

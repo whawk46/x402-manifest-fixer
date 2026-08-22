@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "assay.nominal-labs.com",
+  "resources": [
+    {
+      "url": "https://assay.nominal-labs.com/score",
+      "description": "Quality score for any x402 service, earned by real paid probes with on-chain receipts: composite 0-100, component breakdown (payment settlement, schema conformance, ground-truth accuracy, LLM-judged quality), 7-day trend, probe count. Scores publish only after 20+ probes across days; daily corpus digests are Bitcoin-anchored via OpenTimestamps. Query: /score?service={url-encoded resource URL}. Free: /tier/{url}, /leaderboard. Agent guide: https://assay.nominal-labs.com/SKILL.md"
+    }
+  ]
+}

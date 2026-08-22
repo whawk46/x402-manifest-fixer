@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.wallettriage.com",
+  "resources": [
+    {
+      "url": "https://api.wallettriage.com/scan",
+      "description": "WalletTriage — real-time wallet risk check: dangerous ERC20 approvals cross-referenced with a live exploit threat feed. Returns risk_score (0-100), risk_level and actionable findings."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.qonoro.ai",
+  "resources": [
+    {
+      "url": "https://api.qonoro.ai/v1/email/validate",
+      "description": "Validates email deliverability: syntax check, MX record lookup, and SMTP server reachability. Returns risk score and quality rating. Deterministic, sub-second. x402-native."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/domain-resolver/resolve",
+      "description": "Resolves a company name to its official domain. Returns primary domain, confidence score, and alternative candidates. Deterministic, sub-second. x402-native."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/company/search",
+      "description": "Company discovery for autonomous agents: find companies matching industry, headquarters location, size, founding year, or keyword criteria, with sources and confidence scores per match."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/phone/validate",
+      "description": "Validate phone numbers: E.164 format, country detection, line type (mobile/landline/VOIP/toll-free), and risk score. Deterministic, sub-second. x402-native."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/url/health",
+      "description": "Check URL health: HTTP status code, redirect chain, SSL certificate validity and expiry date, content type, and response time. HTTP and SSL inspection. Sub-second. x402-native."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/person/enrich",
+      "description": "x402-native professional person enrichment for autonomous agents. Given a full name and company, returns title, seniority, department, decision-maker status, LinkedIn URL, location, and a brief bio. Structured JSON. Paid per request via x402."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/company/enrich",
+      "description": "Basic company identity enrichment for autonomous agents, including normalized profile fields, source URLs, coverage, and confidence scoring."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/domain/intelligence",
+      "description": "Given a domain name, returns tech stack (CMS, frameworks, analytics, CDN, email marketing, e-commerce), DNS records, WHOIS data, email provider, hosting provider, and domain age in a single structured JSON response."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/person/search",
+      "description": "x402-native person discovery for autonomous agents. Given search criteria (title, seniority, company, industry, or location) instead of a known name, returns a list of matching people with title, seniority, department, decision-maker status, LinkedIn URL, and location. Structured JSON. Paid per request via x402."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/sales-signals/find",
+      "description": "Sales signal detection for autonomous agents, including funding, hiring, product launches, partnerships, expansion, revenue growth, recommended actions, and confidence scores."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/news/sentiment",
+      "description": "Real-time news sentiment analysis for a company: overall sentiment, score, signal strength, key themes, per-article sentiment, and a recommended action for B2B sales and PR agents."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/naics/classify",
+      "description": "Classify a company to its NAICS 2022 code and SIC code. Input: company name, optional website, optional description. Output: NAICS code, title, sector, SIC code, confidence score. Deterministic, sub-second. x402-native."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/kyb/verify",
+      "description": "Know Your Business (KYB) entity verification: registration status, sanctions screening, beneficial ownership, risk score, and a proceed/review/reject recommendation for compliance and fintech agents."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/job-changes/detect",
+      "description": "Given a person name and company, detect recent job changes, new roles, and career moves. Returns structured signals with source URLs and confidence scoring."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/intent-signals/find",
+      "description": "x402-native buying-intent detection for autonomous agents. Identifies companies actively evaluating or purchasing in a given product category, with structured signals, confidence scoring, and recommended sales approach."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/hiring-signals/find",
+      "description": "Given a company name, returns the company's currently open job postings, normalized into a single structured JSON response (title, department, location, posted date, URL)."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/address/normalize",
+      "description": "Parse and normalize postal addresses into structured components. Returns address number, street, city, state, ZIP, and USPS-formatted output. Postal address parsing and normalization. Sub-second. x402-native."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/revenue/qualify-lead",
+      "description": "Revenue intelligence lead qualification for autonomous agents, including fit scoring, cited evidence, risks, buying signals, sales angle, and next action."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/outbound/personalize",
+      "description": "Generates a personalized B2B outbound message for a target prospect: subject line, opening, body, and call to action, grounded in company and person context."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/competitors/analyze",
+      "description": "Competitor intelligence for autonomous agents, including competitor types, reasons, confidence scores, and source URLs."
+    },
+    {
+      "url": "https://api.qonoro.ai/v1/company/research",
+      "description": "Premium AI-powered due-diligence report for autonomous agents: named decision makers with role and confidence, business summary, target customer, funding stage, risks, opportunities, recommended next actions, cross-verified claims, and a single unified confidence score across the full profile."
+    }
+  ]
+}

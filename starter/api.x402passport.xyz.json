@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.x402passport.xyz",
+  "resources": [
+    {
+      "url": "https://api.x402passport.xyz/v1/x402/passport/:wallet",
+      "description": "Paid x402 passport endpoint"
+    }
+  ]
+}

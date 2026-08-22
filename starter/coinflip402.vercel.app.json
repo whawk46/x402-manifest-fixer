@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "coinflip402.vercel.app",
+  "resources": [
+    {
+      "url": "https://coinflip402.vercel.app/api/coinflip",
+      "description": "Flip a coin for a small USDC payment on Base mainnet. Returns heads or tails."
+    }
+  ]
+}

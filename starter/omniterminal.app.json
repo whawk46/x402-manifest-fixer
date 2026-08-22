@@ -1,0 +1,59 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "omniterminal.app",
+  "resources": [
+    {
+      "url": "https://omniterminal.app/api/x402/v1/market-risk/:symbol",
+      "description": "Omni Terminal assesses one Hyperliquid market before entering, sizing, or reducing a position using all published mark-anchored liquidation levels, explicit flow direction, margin stress, current funding/carry, and enriched AI news."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/news/:symbol",
+      "description": "Omni Terminal delivers fresh, deduplicated crypto AI news and market-moving events for an allowlisted symbol, with catalyst summaries, sentiment, impact, confidence, affected tickers, market context, and freshness for trading agents."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/liquidations/:symbol",
+      "description": "Omni Terminal finds where forced-liquidation pressure is concentrated using all bounded published Hyperliquid levels anchored to live mark price, explicit position-side versus liquidation-flow semantics, margin-stress scenarios, and a selected summary, heatmap, cluster, or flow view."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/traders/:symbol",
+      "description": "Omni Terminal ranks public Hyperliquid traders by PnL, position size, wallet size, or liquidation proximity for wallet and positioning research."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/market-snapshot/:symbol",
+      "description": "Omni Terminal provides Hyperliquid price structure with bounded OHLCV candles, current funding/carry, and an optional mark-anchored all-level liquidation and margin-stress overlay."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/trader-profile/:address",
+      "description": "Omni Terminal analyzes a public Hyperliquid wallet's reconciled equity, PnL, positions, balances, activity, and data-quality flags for copy-trading or counterparty research."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/symbols/resolve",
+      "description": "Omni Terminal turns up to 20 market names or aliases into canonical Hyperliquid symbols to prevent downstream trading-agent tool-call failures."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/news",
+      "description": "Omni Terminal delivers fresh, deduplicated market-moving news and catalyst context across equities, crypto, macro, and forex for AI trading agents."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/research/premarket",
+      "description": "Omni Terminal returns the latest published Pre-Market Roundup by default, or an exact publication date, as bounded editorial metadata and sanitized excerpts with canonical article links for agent research and citation."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/screenshots/trader-profile/:address",
+      "description": "Omni Terminal renders a bounded public Hyperliquid trader-profile PNG with configurable symbol, range, chart tab, and capture depth for visual-capable trading agents."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/screenshots/liquidation-bucket/:symbol",
+      "description": "Omni Terminal renders a bounded PNG for one published Hyperliquid liquidation bucket at an explicit price and side for visual trading agents."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/screenshots/liquidation-levels/:symbol",
+      "description": "Omni Terminal renders a bounded price-chart PNG with published Hyperliquid liquidation levels so visual-capable trading agents can inspect level placement and price structure."
+    },
+    {
+      "url": "https://omniterminal.app/api/x402/v1/market-carry/:symbol",
+      "description": "Omni Terminal compares current Hyperliquid 1h funding with mechanical 8h, 1d and APR projections, open interest, volume, premium, and mark-oracle basis for one perpetual market."
+    }
+  ]
+}

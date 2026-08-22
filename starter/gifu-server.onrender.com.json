@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "gifu-server.onrender.com",
+  "resources": [
+    {
+      "url": "https://gifu-server.onrender.com/api/x402/search/random",
+      "description": "AI-generated random GIF or image search with creative prompts"
+    }
+  ]
+}

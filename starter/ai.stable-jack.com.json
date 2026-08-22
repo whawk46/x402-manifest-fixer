@@ -1,0 +1,295 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ai.stable-jack.com",
+  "resources": [
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/valuation_research_packet",
+      "description": "Build a valuation evidence packet for one listed operating company. Include subject plus assetIntent=\"equity\", or a canonical symbol."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/top_asset_positions",
+      "description": "Retrieve top asset positions through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/post_earnings_research_packet",
+      "description": "Build a post-earnings evidence packet for one listed operating company. Include subject plus assetIntent=\"equity\", or a canonical symbol."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/market_segment_bias",
+      "description": "Retrieve positioning history for a named cohort. Pass a known segment such as whales or smart money."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/fundraising_intelligence",
+      "description": "Retrieve fundraising records using the selected lookup. For crowdfunding-by-cik include a ten-digit company CIK."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/derivatives_market_indicators",
+      "description": "Retrieve cross-asset derivatives indicator rankings. Always include a supported operation and params object."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/asset_brief_research_packet",
+      "description": "Build a bounded brief for one explicitly classified asset. For single_asset include exactly one intent.assets entry with subject and assetIntent."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/token_intelligence",
+      "description": "Retrieve token exposure and unlock information. Include at least one of symbol or protocol; include both when known."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/technical_market_scan",
+      "description": "Retrieve technical market scan through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/technical_indicator_analysis",
+      "description": "Calculate one technical indicator for one market. Include symbol or coin and indicator; interval and period are optional."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/securities_search",
+      "description": "Search the securities directory using the selected lookup. For search-CIK include a ten-digit CIK."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/protocol_intelligence",
+      "description": "Retrieve protocol-level TVL, fees, revenue, and activity. Pass a canonical protocol slug such as aave."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/perpetual_asset_screener",
+      "description": "Retrieve perpetual asset screener through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/pair_derivatives_indicators",
+      "description": "Retrieve a selected pair-level derivatives indicator. Always include a supported operation and params with the required market fields."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/onchain_user_activity",
+      "description": "Retrieve a derived chain or protocol activity proxy. Include scope and a canonical target such as Ethereum or a protocol slug."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/news_brief_research_packet",
+      "description": "Retrieve news brief research packet through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/market_quotes",
+      "description": "Retrieve a current or after-hours market quote. Include endpoint and symbol."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/market_price_charts",
+      "description": "Retrieve historical market prices for a listed security. Include endpoint and symbol."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/market_candle_data",
+      "description": "Retrieve market candle data through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/l2_order_book",
+      "description": "Retrieve l2 order book through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/institutional_holdings",
+      "description": "Retrieve institutional filing data. For filings-extract include institution CIK, filing year, and quarter."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/insider_trading_data",
+      "description": "Retrieve insider ownership or transaction data. Include endpoint and listed-company symbol."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/funds_intelligence",
+      "description": "Retrieve ETF or mutual-fund holdings and exposure data. Include endpoint and fund symbol."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/funding_rate_history",
+      "description": "Retrieve funding rate history through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/financial_statements",
+      "description": "Retrieve a selected financial statement for a listed company. Include endpoint and symbol."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/equity_symbol_discovery",
+      "description": "Retrieve equity symbol discovery through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/discounted_cash_flow",
+      "description": "Calculate discounted cash-flow evidence for a listed company. Include endpoint and symbol."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/derivatives_market_index",
+      "description": "Retrieve a selected crypto derivatives or market-regime index. Always include a supported operation and params object."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/crypto_market_data",
+      "description": "Retrieve crypto market data through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/crypto_insights",
+      "description": "Retrieve crypto insights through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/crypto_insight_by_symbol",
+      "description": "Retrieve crypto insight by symbol through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/crypto_etf_data",
+      "description": "Retrieve structured Bitcoin or Ethereum ETF lists and flow history. Always include a supported operation and params object."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/commitment_of_traders",
+      "description": "Retrieve commitment of traders through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/blockchain_intelligence",
+      "description": "Retrieve chain-level activity and fundamentals. Pass a canonical, case-sensitive chain name such as Ethereum, Arbitrum, or Solana."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/analyst_rankings",
+      "description": "Retrieve the current analyst rating snapshot for a listed company. Include endpoint=\"ratings-snapshot\" and symbol."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/analyst_estimates",
+      "description": "Retrieve forward analyst estimates for a listed company. Include endpoint, symbol, period, and a bounded limit."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/web_research",
+      "description": "Retrieve web research through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/wallet_intelligence",
+      "description": "Retrieve wallet intelligence through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/technical_indicator_catalog",
+      "description": "Retrieve technical indicator catalog through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/stablecoin_intelligence",
+      "description": "Retrieve stablecoin intelligence through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/social_market_research",
+      "description": "Retrieve social market research through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/securities_directory",
+      "description": "Retrieve securities directory through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/regulatory_filings",
+      "description": "Retrieve regulatory filings through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/predicted_funding_rates",
+      "description": "Retrieve predicted funding rates through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/perpetual_market_context",
+      "description": "Retrieve perpetual market context through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/oracle_intelligence",
+      "description": "Retrieve oracle intelligence through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/market_performance",
+      "description": "Retrieve market performance through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/market_calculator",
+      "description": "Retrieve market calculator through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/liquidation_risk",
+      "description": "Retrieve liquidation risk through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/historical_market_prices",
+      "description": "Retrieve historical market prices through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/government_trading_data",
+      "description": "Retrieve government trading data through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/global_market_indexes",
+      "description": "Retrieve global market indexes through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/global_market_hours",
+      "description": "Retrieve global market hours through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/foreign_exchange_data",
+      "description": "Retrieve foreign exchange data through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/financial_news",
+      "description": "Retrieve financial news through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/financial_market_calendar",
+      "description": "Retrieve financial market calendar through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/esg_intelligence",
+      "description": "Retrieve esg intelligence through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/economic_data",
+      "description": "Retrieve economic data through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/earnings_transcripts",
+      "description": "Retrieve earnings transcripts through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/defi_market_intelligence",
+      "description": "Retrieve defi market intelligence through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/defi_event_intelligence",
+      "description": "Retrieve defi event intelligence through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/defi_entity_discovery",
+      "description": "Retrieve defi entity discovery through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/defi_bridge_intelligence",
+      "description": "Retrieve defi bridge intelligence through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/crypto_reference_data",
+      "description": "Retrieve crypto reference data through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/crowd_positioning",
+      "description": "Retrieve crowd positioning through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/company_intelligence",
+      "description": "Retrieve company intelligence through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/commodity_market_data",
+      "description": "Retrieve commodity market data through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/batch_market_snapshot",
+      "description": "Retrieve batch market snapshot through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/batch_financial_statements",
+      "description": "Retrieve batch financial statements through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/ask_jack",
+      "description": "Ask StableJack to synthesize a source-grounded market research answer."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/tools/advanced_web_research",
+      "description": "Retrieve advanced web research through StableJack's agent-ready research API."
+    },
+    {
+      "url": "https://ai.stable-jack.com/x402/market-news/brief",
+      "description": "StableJack is an AI investment copilot that helps investors research markets, monitor portfolios, generate reports, discover opportunities, automate investment workflows and trade with AI-powered insights."
+    }
+  ]
+}

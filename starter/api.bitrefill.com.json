@@ -1,0 +1,39 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.bitrefill.com",
+  "resources": [
+    {
+      "url": "https://api.bitrefill.com/x402/gift-cards/search",
+      "description": "Search 10,000+ gift card & voucher brands across 180+ countries by name and country. Pay in USDC via x402, no account."
+    },
+    {
+      "url": "https://api.bitrefill.com/x402/products/detail",
+      "description": "Get a product's packages, pricing, and recipient requirements before creating an invoice."
+    },
+    {
+      "url": "https://api.bitrefill.com/x402/invoice/pay",
+      "description": "Pay a Bitrefill invoice in USDC via x402 to buy gift cards, eSIMs & mobile top-ups across 180+ countries."
+    },
+    {
+      "url": "https://api.bitrefill.com/x402/topups/search",
+      "description": "Search mobile top-ups & prepaid airtime for carriers in 180+ countries. Pay in USDC via x402, no account."
+    },
+    {
+      "url": "https://api.bitrefill.com/x402/checkout/info",
+      "description": "Discover the Bitrefill x402 storefront: supported networks, the full route flow, and wallet persistence rules."
+    },
+    {
+      "url": "https://api.bitrefill.com/x402/invoice/create",
+      "description": "Create a price-locked USDC invoice for one or more gift cards, eSIMs, or mobile top-ups."
+    },
+    {
+      "url": "https://api.bitrefill.com/x402/esims/search",
+      "description": "Search prepaid eSIM data plans for 180+ countries and regions. Pay in USDC via x402, no account."
+    },
+    {
+      "url": "https://api.bitrefill.com/x402/invoice/status",
+      "description": "Check an invoice status and, with SIWX from the paying wallet, retrieve redemption codes."
+    }
+  ]
+}

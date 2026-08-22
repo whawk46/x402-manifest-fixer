@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "peerlytics.xyz",
+  "resources": [
+    {
+      "url": "https://peerlytics.xyz/api/v1/analytics/summary",
+      "description": "Protocol-level ZKP2P analytics for agents that need activity, volume, liquidity, maker, taker, and platform trend context."
+    }
+  ]
+}

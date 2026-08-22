@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "seo-data-extractor.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://seo-data-extractor.underscoredone.com/extract",
+      "description": "Give this API a web address and it will visit that page, then hand back everything an SEO professional needs to know: the page title, meta description, meta keywords, robots instructions, canonical link, H1/H2/H3 headings, how many links are on the page, and the HTTP status code. No setup required — just paste a URL and get structured data back in under two seconds."
+    }
+  ]
+}

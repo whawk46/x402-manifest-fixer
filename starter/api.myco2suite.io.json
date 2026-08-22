@@ -1,0 +1,39 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.myco2suite.io",
+  "resources": [
+    {
+      "url": "https://api.myco2suite.io/api/v1/freight",
+      "description": "Freight carbon: CO2e for road/rail/sea/air shipments by weight × distance, single-leg or multi-leg intermodal. Ports/airports by UN-LOCODE, IATA, name or lat/long."
+    },
+    {
+      "url": "https://api.myco2suite.io/api/v1/factor",
+      "description": "Emission-factor lookup: fetch the underlying factor (value, unit, methodology, source, licence) by id, activity_type, BEA code, or spend classification. Audit-grade provenance, no calculation."
+    },
+    {
+      "url": "https://api.myco2suite.io/api/v1/cbam/batch",
+      "description": "Batch EU CBAM: liability for a portfolio of shipments in one call (1–100 shipments; a single live ETS price is shared). Priced per shipment."
+    },
+    {
+      "url": "https://api.myco2suite.io/api/v1/cbam",
+      "description": "EU CBAM liability: embedded emissions, free-allocation benchmark, certificates and EUR liability for an import by CN code, origin country and weight (live EU ETS price)."
+    },
+    {
+      "url": "https://api.myco2suite.io/api/v1/flight",
+      "description": "Flight carbon: great-circle CO2e for a route by IATA/UN-LOCODE or lat/long, by cabin class and passengers, with optional radiative forcing (BEIS 2025 factors)."
+    },
+    {
+      "url": "https://api.myco2suite.io/api/v1/activity/batch",
+      "description": "Batch activity-based carbon: many activity calculations in one call (1–100 items). Priced per item."
+    },
+    {
+      "url": "https://api.myco2suite.io/api/v1/activity",
+      "description": "Activity-based carbon: convert a physical quantity (fuel, electricity, materials; 1,000+ activity types) into verified CO2e for a given country and year."
+    },
+    {
+      "url": "https://api.myco2suite.io/api/v1/transaction",
+      "description": "Spend-based carbon (Scope 3): convert a transaction amount + industry code (MCC/NAICS/BEA/ISIC/SIC/NACE) into verified CO2e. 200+ countries, licensed emission factors with full provenance."
+    }
+  ]
+}

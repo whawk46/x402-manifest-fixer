@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.qist.info",
+  "resources": [
+    {
+      "url": "https://api.qist.info/api/zakat",
+      "description": "Compute zakat due on wealth: cash, gold, silver, business inventory, receivables, crypto and stocks, less deductible liabilities. Returns the nisab threshold under BOTH the gold (85g) and silver (595g) standards and flags when they disagree, since the choice changes who owes. Supports lunar (2.5%) and solar (2.577%) years. Deterministic — you supply metal prices, so you control the source. Educational calculation, not a fatwa."
+    },
+    {
+      "url": "https://api.qist.info/api/hijri",
+      "description": "Convert Gregorian dates to Hijri (Umm al-Qura calendar) and back. Returns day/month/year, Arabic and English month names, and a formatted Arabic date string. Essential for agents handling Islamic events, Ramadan, Hajj seasons, or Arabic documents."
+    },
+    {
+      "url": "https://api.qist.info/api/prayer-times",
+      "description": "High-precision Islamic prayer times (fajr, sunrise, dhuhr, asr, maghrib, isha) plus qibla direction for any coordinates and date. Pure astronomical computation (adhan library), 11 calculation methods including Umm al-Qura, Dubai, Egyptian, MWL. Ideal for agents building Muslim-facing schedules, reminders, or travel plans."
+    },
+    {
+      "url": "https://api.qist.info/api/arabic/repair",
+      "description": "Repair Arabic text extracted from PDFs and OCR. Many PDFs encode Arabic as Unicode Presentation Forms: it renders identically but is a different byte sequence, so search and retrieval fail silently and invisibly. Also fixes visual-order reversal, invisible bidi controls, and Arabic-Indic digits that NFKC does not convert. Deterministic and lossless — encoding only, never wording. Essential for RAG pipelines ingesting Arabic documents."
+    },
+    {
+      "url": "https://api.qist.info/api/shariah-screen",
+      "description": "Screen a crypto asset against Islamic finance (fiqh al-mu'amalat) prohibition criteria: riba (interest), maysir (gambling), gharar (excessive uncertainty), impermissible business, and real utility. Returns a per-criterion assessment with the reasoning behind each result, plus documented scholarly disagreement where it exists. For agents serving Muslim users who need to know whether an asset conflicts with Islamic finance principles. Educational screening, not a fatwa."
+    }
+  ]
+}

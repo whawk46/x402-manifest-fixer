@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "402timezones.vercel.app",
+  "resources": [
+    {
+      "url": "https://402timezones.vercel.app/api/convert-timezone",
+      "description": "Convert a time between any two IANA time zones (DST-aware). Pay-per-call in USDC on Base."
+    }
+  ]
+}

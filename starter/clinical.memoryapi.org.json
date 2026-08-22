@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "clinical.memoryapi.org",
+  "resources": [
+    {
+      "url": "https://clinical.memoryapi.org/x402/clinical/study",
+      "description": "ClinicalTrials.gov — get full details of a specific trial by NCT ID including eligibility, outcomes, and locations."
+    }
+  ]
+}

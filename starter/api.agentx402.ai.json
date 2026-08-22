@@ -1,0 +1,67 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.agentx402.ai",
+  "resources": [
+    {
+      "url": "https://api.agentx402.ai/v1/scout/read",
+      "description": "Agent-native web reader over x402 — send a URL, get back clean markdown: no signup, no API key, no SDK required. Pay-on-success: a fetch that fails or returns too little content settles nothing. Read $0.004; prepay $1 = 10,000 credits, spent at 80% of the per-op price (20% off). Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/rag/ask",
+      "description": "Agent-native retrieval over x402 — send a query and, optionally, source URLs to index: get back ranked, cited chunks. Hybrid retrieval by default (dense vectors + BM25 keyword search, fused and reranked) beats vector-only search on exact tokens (error codes, API symbols, config keys). Pay-on-success: a query that matches nothing settles nothing. Ask $0.008; prepay $1 = 10,000 credits, spent at 80% of the per-op price (20% off). Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/rag/ingest",
+      "description": "Explicit pre-warm for AgentRAG over x402 — index URLs, same-origin crawl roots, or raw documents (text with no URL) ahead of querying, or force a refresh of already-indexed pages. The only way to index raw text directly. Ingest $0.005/page; prepay $1 = 10,000 credits, spent at 80% of the per-op price (20% off). Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/kv/canary-kv-1785514797",
+      "description": "Agent-native encrypted key-value store, paid per request over x402 — no signup, no API key. The payer's wallet (or an ak_ account key) is the namespace; values are client-side encrypted. Write $0.005, read $0.003; prepay $1 = 10,000 credits at 1/10 the per-op price (POST /v1/credits/deposit). SDK: npm i @agentkv/client. Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/scout/extract",
+      "description": "Agent-native structured extraction over x402 — send a URL and a JSON Schema, get back schema-valid JSON pulled from the page: no signup, no API key, no SDK. Pay-on-success: an extraction that can't produce schema-valid output settles nothing. Extract $0.020; prepay $1 = 10,000 credits, spent at 80% of the per-op price (20% off). Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/kv/smoke-2026-07-30",
+      "description": "Agent-native encrypted key-value store, paid per request over x402 — no signup, no API key. The payer's wallet (or an ak_ account key) is the namespace; values are client-side encrypted. Write $0.005, read $0.003; prepay $1 = 10,000 credits at 1/10 the per-op price (POST /v1/credits/deposit). SDK: npm i @agentkv/client. Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/scout/crawl",
+      "description": "Agent-native site crawler over x402 — send a URL and a page budget, get back clean markdown for every page plus a manifest: no signup, no API key, no SDK. Settles the WHOLE max_pages budget UPFRONT, quoted as max_pages × price (a crawl outruns the ~10-min payment authorization, so it cannot pay per page); unused pages are REFUNDED AS CREDITS on completion. Crawl $0.004/page; prepay $1 = 10,000 credits at 20% off. Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/kv/canary-kv-1785255879",
+      "description": "Agent-native encrypted key-value store, paid per request over x402 — no signup, no API key. The payer's wallet (or an ak_ account key) is the namespace; values are client-side encrypted. Write $0.005, read $0.003; prepay $1 = 10,000 credits at 1/10 the per-op price (POST /v1/credits/deposit). SDK: npm i @agentkv/client. Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/kv/canary-kv-1785245249",
+      "description": "Agent-native encrypted key-value store, paid per request over x402 — no signup, no API key. The payer's wallet (or an ak_ account key) is the namespace; values are client-side encrypted. Write $0.005, read $0.003; prepay $1 = 10,000 credits at 1/10 the per-op price (POST /v1/credits/deposit). SDK: npm i @agentkv/client. Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/kv/canary-kv-1785218442",
+      "description": "Agent-native encrypted key-value store, paid per request over x402 — no signup, no API key. The payer's wallet (or an ak_ account key) is the namespace; values are client-side encrypted. Write $0.005, read $0.003; prepay $1 = 10,000 credits at 1/10 the per-op price (POST /v1/credits/deposit). SDK: npm i @agentkv/client. Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/kv/canary-kv-1785214918",
+      "description": "Agent-native encrypted key-value store, paid per request over x402 — no signup, no API key. The payer's wallet (or an ak_ account key) is the namespace; values are client-side encrypted. Write $0.005, read $0.003; prepay $1 = 10,000 credits at 1/10 the per-op price (POST /v1/credits/deposit). SDK: npm i @agentkv/client. Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/kv/dev-canary-1785214805",
+      "description": "Agent-native encrypted key-value store, paid per request over x402 — no signup, no API key. The payer's wallet (or an ak_ account key) is the namespace; values are client-side encrypted. Write $0.005, read $0.003; prepay $1 = 10,000 credits at 1/10 the per-op price (POST /v1/credits/deposit). SDK: npm i @agentkv/client. Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/kv/final-1785132418",
+      "description": "Agent-native encrypted key-value store, paid per request over x402 — no signup, no API key. The payer's wallet (or an ak_ account key) is the namespace; values are client-side encrypted. Write $0.005, read $0.003; prepay $1 = 10,000 credits at 1/10 the per-op price (POST /v1/credits/deposit). SDK: npm i @agentkv/client. Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/kv/smoke-1785130642",
+      "description": "Agent-native encrypted key-value store, paid per request over x402 — no signup, no API key. The payer's wallet (or an ak_ account key) is the namespace; values are client-side encrypted. Write $0.005, read $0.003; prepay $1 = 10,000 credits at 1/10 the per-op price (POST /v1/credits/deposit). SDK: npm i @agentkv/client. Docs: https://agentx402.ai"
+    },
+    {
+      "url": "https://api.agentx402.ai/v1/kv/mainnet-validation-2026-07-26",
+      "description": "Agent-native encrypted key-value store, paid per request over x402 — no signup, no API key. The payer's wallet (or an ak_ account key) is the namespace; values are client-side encrypted. Write $0.005, read $0.003; prepay $1 = 10,000 credits at 1/10 the per-op price (POST /v1/credits/deposit). SDK: npm i @agentkv/client. Docs: https://agentx402.ai"
+    }
+  ]
+}

@@ -1,0 +1,587 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "fittings.sh",
+  "resources": [
+    {
+      "url": "https://fittings.sh/v1/valid/iban",
+      "description": "Validate an IBAN by country length and ISO 7064 mod-97 checksum, returning the normalized form."
+    },
+    {
+      "url": "https://fittings.sh/v1/text/sentiment",
+      "description": "Score text from -1 (strongly negative) to +1 (strongly positive) with a label, handling negation, intensifiers and emphasis."
+    },
+    {
+      "url": "https://fittings.sh/v1/time/business-days",
+      "description": "Add or subtract N business days from a date, skipping weekends and any supplied holiday dates."
+    },
+    {
+      "url": "https://fittings.sh/v1/valid/gtin",
+      "description": "Validate a GTIN-8/12/13/14 barcode number by GS1 mod-10 check digit and report its format."
+    },
+    {
+      "url": "https://fittings.sh/v1/rdap/domain",
+      "description": "Registrar, creation and expiry dates, status codes, nameservers and DNSSEC state for a domain, from the authoritative registry over RDAP."
+    },
+    {
+      "url": "https://fittings.sh/v1/geo/distance",
+      "description": "Distance in meters and initial bearing in degrees between two WGS-84 coordinate pairs."
+    },
+    {
+      "url": "https://fittings.sh/v1/text/char-edit",
+      "description": "Insert, delete, replace, extract, locate or measure at exact character offsets, counting by grapheme, code point or UTF-16 unit, with the affected range reported in both the chosen unit and UTF-16."
+    },
+    {
+      "url": "https://fittings.sh/v1/calc/worksheet",
+      "description": "Runs a sequence of named arithmetic steps in exact rational arithmetic, returning every intermediate value as a fraction and a decimal, plus the repeating expansion where the result has one."
+    },
+    {
+      "url": "https://fittings.sh/v1/hazard/active-events",
+      "description": "Natural hazard events NASA is currently tracking worldwide, filterable by category, bounding box and recency, with the latest observed position and magnitude of each."
+    },
+    {
+      "url": "https://fittings.sh/v1/tsunami/center-bulletins",
+      "description": "The most recent bulletin from each NOAA tsunami warning center, with its category (warning, advisory, watch or information), issue time, epicenter and bulletin link."
+    },
+    {
+      "url": "https://fittings.sh/v1/nhc/active-cyclones",
+      "description": "Every tropical cyclone the National Hurricane Center currently has advisories out on, with position, intensity, Saffir-Simpson category and links to the forecast cone."
+    },
+    {
+      "url": "https://fittings.sh/v1/swpc/space-weather-scales",
+      "description": "Current NOAA G, S and R space weather scale levels with the three-day forecast probabilities."
+    },
+    {
+      "url": "https://fittings.sh/v1/ndbc/buoy-conditions",
+      "description": "Latest wind, wave height, water temperature and pressure reading from a NOAA data buoy, each field timestamped with the observation it came from."
+    },
+    {
+      "url": "https://fittings.sh/v1/pkg/normalize-manifest",
+      "description": "Normalizes a package.json the way npm does at publish time (repository shorthand, author strings, license and bin fields) and reports every change, warning and blocking error."
+    },
+    {
+      "url": "https://fittings.sh/v1/pkg/name-check",
+      "description": "Checks a proposed package name against a registry’s own naming rules (npm scoping and URL-safety, PEP 503 normalization for PyPI, cargo’s crate name grammar) and returns the normalized form the registry compares by."
+    },
+    {
+      "url": "https://fittings.sh/v1/ghsa/advisory",
+      "description": "The full GitHub Advisory Database record for a GHSA or CVE id: severity, CVSS, EPSS, CWEs, and the affected package and version ranges per ecosystem."
+    },
+    {
+      "url": "https://fittings.sh/v1/ctgov/eligibility-screen",
+      "description": "Screens open ClinicalTrials.gov studies for a condition against a patient age, sex and healthy-volunteer status, returning the trials the structured criteria do not exclude with their inclusion and exclusion criteria split out."
+    },
+    {
+      "url": "https://fittings.sh/v1/dailymed/spl-fetch",
+      "description": "For one DailyMed SET ID: the current label version and date, its products with active ingredients and package descriptions, its marketed NDC codes, and the full revision history."
+    },
+    {
+      "url": "https://fittings.sh/v1/dailymed/spl-search",
+      "description": "Finds current FDA Structured Product Labels by drug name, NDC or labeler, returning each label SET ID, title, version and publication date."
+    },
+    {
+      "url": "https://fittings.sh/v1/semver/bump-classify",
+      "description": "Classifies the change between two versions as major, minor, patch, premajor, preminor, prepatch, prerelease or none, with the direction and whether the move stays inside a caret range."
+    },
+    {
+      "url": "https://fittings.sh/v1/semver/range-resolve",
+      "description": "Tests versions against an npm-style semver range and returns which satisfy it, the highest and lowest that do, and the range expanded into explicit comparators."
+    },
+    {
+      "url": "https://fittings.sh/v1/npi/provider-lookup",
+      "description": "The NPPES record for a healthcare provider or organization: name, credential, taxonomy specialties with state licence numbers, practice and mailing addresses, enumeration date and active status."
+    },
+    {
+      "url": "https://fittings.sh/v1/orangebook/therapeutic-equivalence",
+      "description": "FDA therapeutic equivalence codes for a drug: the TE rating and what it means, whether each product is the reference listed drug or reference standard, plus application type, sponsor and marketing status. Patent and exclusivity listings are not included."
+    },
+    {
+      "url": "https://fittings.sh/v1/devicerecall/search",
+      "description": "FDA medical device recall and enforcement reports filtered by product, firm, recall class, state, status or report date, with the hazard reason and what each class means."
+    },
+    {
+      "url": "https://fittings.sh/v1/faers/adverse-events",
+      "description": "A summary of FDA Adverse Event Reporting System reports naming a drug: total reports, the most frequently reported reactions, and the reaction outcome and seriousness distributions."
+    },
+    {
+      "url": "https://fittings.sh/v1/ndc/package-lookup",
+      "description": "The FDA NDC Directory record for a package or product National Drug Code: brand and generic name, labeler, dosage form, route, active ingredients, marketing category and status."
+    },
+    {
+      "url": "https://fittings.sh/v1/rxclass/drug-classes",
+      "description": "The therapeutic, pharmacologic, mechanism-of-action, ATC and VA classes a drug or ingredient belongs to, from NLM RxClass, deduplicated and labeled."
+    },
+    {
+      "url": "https://fittings.sh/v1/cpsc/recall-check",
+      "description": "Search the official CPSC recall record by product name and/or recall title, with an optional recall-date window, returning matching recalls with hazard, remedy, units, UPCs and the recall notice URL."
+    },
+    {
+      "url": "https://fittings.sh/v1/addr/standardize",
+      "description": "Normalize a free-text US street address into its USPS-style standardized one-line form plus parsed components: house number range, directionals, street name, suffix, city, state and 5-digit ZIP."
+    },
+    {
+      "url": "https://fittings.sh/v1/rxterms/prescribable",
+      "description": "Look up the RxTerms prescribing form of a drug by RxCUI or name: display name, brand name, strength, dose form and route, as used in e-prescribing pick lists."
+    },
+    {
+      "url": "https://fittings.sh/v1/rxnorm/ndc-crosswalk",
+      "description": "Map an RxNorm concept or drug name to every associated NDC package code in 5-4-2 form, or reverse-map an NDC to its RxCUI with active status and history."
+    },
+    {
+      "url": "https://fittings.sh/v1/rxnorm/normalize",
+      "description": "Resolve a free-text, brand or generic drug name to its canonical RxNorm concept: RxCUI, normalized name, term type, synonyms, dose forms, and ranked approximate candidates when nothing matches exactly."
+    },
+    {
+      "url": "https://fittings.sh/v1/hts/search",
+      "description": "Candidate HTS classifications for a plain-language product description, each with its code, description, units of quantity and duty rates where the line carries them. A statistical line shows no rate of its own because it inherits its parent’s, which v1/hts/lookup resolves."
+    },
+    {
+      "url": "https://fittings.sh/v1/hts/lookup",
+      "description": "The HTS line for a US tariff code with its description, units of quantity and general, special and column 2 duty rates, resolved to the parent line that carries the rates when a statistical suffix does not."
+    },
+    {
+      "url": "https://fittings.sh/v1/epa/tri-releases",
+      "description": "Chemical releases reported by one TRI facility for one reporting year, in pounds, totalled per chemical and split into air, water, land and underground injection."
+    },
+    {
+      "url": "https://fittings.sh/v1/epa/tri-facilities",
+      "description": "Industrial facilities reporting to the EPA Toxics Release Inventory in a ZIP code or a city, with the TRI facility id needed to pull their release quantities."
+    },
+    {
+      "url": "https://fittings.sh/v1/drought/severity",
+      "description": "Percent of a US state, county or the nation in each US Drought Monitor category D0 to D4, by area or by population, for a recent run of weekly maps."
+    },
+    {
+      "url": "https://fittings.sh/v1/nws/area-alerts",
+      "description": "Every active National Weather Service watch, warning and advisory for a whole US state, territory, marine area or forecast zone, with a count per event type."
+    },
+    {
+      "url": "https://fittings.sh/v1/govinfo/us-code-section",
+      "description": "The current text of a US Code section by title and section number: the statutory text, its source credit, the chapter it sits in, the edition it comes from and the date it is current through."
+    },
+    {
+      "url": "https://fittings.sh/v1/govinfo/public-law",
+      "description": "An enacted US public or private law by Congress and law number: official title, short titles, date signed, the US Code sections and Statutes at Large pages it touched, and optionally the enacted text."
+    },
+    {
+      "url": "https://fittings.sh/v1/lang/bcp47",
+      "description": "Parses a BCP 47 language tag into language, extlang, script, region, variant, extension and private-use subtags, validates each against the IANA registry, and returns the canonical form."
+    },
+    {
+      "url": "https://fittings.sh/v1/epss/score",
+      "description": "The FIRST.org EPSS probability and percentile for one or more CVEs: the modelled chance each is exploited in the next 30 days."
+    },
+    {
+      "url": "https://fittings.sh/v1/kev/recent",
+      "description": "Vulnerabilities added to CISA’s Known Exploited Vulnerabilities catalog within a recent lookback window, newest first."
+    },
+    {
+      "url": "https://fittings.sh/v1/kev/status",
+      "description": "Whether a CVE is in CISA’s Known Exploited Vulnerabilities catalog, with the date added, the federal remediation due date and the required action."
+    },
+    {
+      "url": "https://fittings.sh/v1/cve/search",
+      "description": "Search the National Vulnerability Database by keyword, CPE, publication window or CVSS severity, returning a paginated list with scores and CWE classifications."
+    },
+    {
+      "url": "https://fittings.sh/v1/tax/us-state-sales-rate",
+      "description": "The state-level sales or use tax rate for a US state, with optional tax and total for a subtotal. Excludes county, city and district rates."
+    },
+    {
+      "url": "https://fittings.sh/v1/aba/routing-validate",
+      "description": "Validate a US ABA routing number by its 3-7-1 check digit and decode its Federal Reserve district and institution class."
+    },
+    {
+      "url": "https://fittings.sh/v1/fx/ecb-timeseries",
+      "description": "Daily ECB reference rates between two currencies over a date range, one point per working day."
+    },
+    {
+      "url": "https://fittings.sh/v1/fx/ecb-rate",
+      "description": "The European Central Bank's daily reference rate between two currencies, for the latest working day or a historical date."
+    },
+    {
+      "url": "https://fittings.sh/v1/lei/hierarchy",
+      "description": "GLEIF 'who owns whom' for an LEI: direct and ultimate accounting parent, any reporting exception, and known direct subsidiaries."
+    },
+    {
+      "url": "https://fittings.sh/v1/lei/search",
+      "description": "Find LEI records matching a company name, with jurisdiction, country and registration status."
+    },
+    {
+      "url": "https://fittings.sh/v1/lei/lookup",
+      "description": "Resolve an LEI code to its GLEIF record: registered legal name, addresses, jurisdiction, legal form and registration status."
+    },
+    {
+      "url": "https://fittings.sh/v1/pep/wikidata-screen",
+      "description": "Screen a person name against Wikidata position-held claims, returning every government or state office the matching people have held, with start and end dates."
+    },
+    {
+      "url": "https://fittings.sh/v1/csl/name-screen",
+      "description": "Screen a name against the US Consolidated Screening List, which merges the OFAC SDN and non-SDN lists with the BIS Denied Persons, Entity and Unverified lists and the State Department debarred lists."
+    },
+    {
+      "url": "https://fittings.sh/v1/fmt/xml-to-json",
+      "description": "Convert an XML document to an ordered JSON tree with resolved namespaces, attributes, CDATA and mixed content preserved."
+    },
+    {
+      "url": "https://fittings.sh/v1/data/column-profile",
+      "description": "Per-column profile of a CSV or NDJSON payload: null rate, cardinality, inferred type, numeric range, mean, standard deviation and most frequent values."
+    },
+    {
+      "url": "https://fittings.sh/v1/text/similarity",
+      "description": "Similarity of two records from 0 to 1: Jaro-Winkler, token-sorted and Levenshtein ratios, and the strongest of the three as the headline score."
+    },
+    {
+      "url": "https://fittings.sh/v1/schema/infer",
+      "description": "Infers a JSON Schema 2020-12 document from sample records: unified types, required keys, array item types and string formats."
+    },
+    {
+      "url": "https://fittings.sh/v1/email/deliverability",
+      "description": "RFC 5322 syntax check, live MX resolution and a disposable-provider check for one email address, in a single call."
+    },
+    {
+      "url": "https://fittings.sh/v1/tz/offset-at",
+      "description": "The UTC offset, abbreviation and DST state a zone was on at any moment from 1970, with the surrounding transitions, and resolution of ambiguous or nonexistent local times."
+    },
+    {
+      "url": "https://fittings.sh/v1/road/nearest",
+      "description": "The closest US street segments to a point, with name, road class, route type and distance in meters, from Census TIGER."
+    },
+    {
+      "url": "https://fittings.sh/v1/quake/nearby",
+      "description": "Earthquakes from the USGS catalog within a radius and time window of a point, with magnitude, depth, distance and time."
+    },
+    {
+      "url": "https://fittings.sh/v1/fema/flood-zone",
+      "description": "FEMA flood hazard zone, Special Flood Hazard Area status and base flood elevation at a US coordinate."
+    },
+    {
+      "url": "https://fittings.sh/v1/spatial/nearest-point",
+      "description": "The closest candidate coordinate to a query point, with great-circle distance and initial bearing."
+    },
+    {
+      "url": "https://fittings.sh/v1/spatial/point-in-polygon",
+      "description": "Whether a coordinate falls inside a GeoJSON Polygon or MultiPolygon, honouring holes and reporting boundary hits."
+    },
+    {
+      "url": "https://fittings.sh/v1/lunar/moon-times",
+      "description": "Moon phase, illuminated fraction, distance and UTC moonrise/moonset for a date and coordinate."
+    },
+    {
+      "url": "https://fittings.sh/v1/solar/sun-position",
+      "description": "The sun's azimuth, elevation, shadow ratio and normal-facing panel angles at a coordinate and instant."
+    },
+    {
+      "url": "https://fittings.sh/v1/solar/twilight-windows",
+      "description": "Civil, nautical and astronomical twilight boundaries plus golden and blue hour windows for a date and coordinate, in UTC."
+    },
+    {
+      "url": "https://fittings.sh/v1/nws/point-metadata",
+      "description": "The National Weather Service office, grid X/Y, timezone, forecast and county zones and radar station for a US coordinate."
+    },
+    {
+      "url": "https://fittings.sh/v1/census/geography-bundle",
+      "description": "Every Census geography layer containing a US coordinate in one call: state, county, tract, block, place, urban area, congressional and state legislative districts."
+    },
+    {
+      "url": "https://fittings.sh/v1/fcc/census-block",
+      "description": "The 15-digit census block FIPS code containing a US coordinate, with its county and state codes and the block bounding box."
+    },
+    {
+      "url": "https://fittings.sh/v1/ctgov/trial-search",
+      "description": "Search registered clinical trials by condition, intervention, sponsor or free text, filtered by recruitment status and phase."
+    },
+    {
+      "url": "https://fittings.sh/v1/nasa/power-point",
+      "description": "Daily solar irradiance and meteorology at a coordinate from NASA POWER, for a date range of up to 366 days."
+    },
+    {
+      "url": "https://fittings.sh/v1/noaa/coops-station-data",
+      "description": "Observed water levels, tide predictions or current speed and direction for a NOAA CO-OPS station over a date window of up to 7 days."
+    },
+    {
+      "url": "https://fittings.sh/v1/weather/nws-point-forecast",
+      "description": "One call returning both the National Weather Service forecast periods and any active watches, warnings and advisories for a US latitude and longitude. Use when a decision needs the outlook and the hazards together; `nws.point-forecast` returns the forecast alone and offers hourly granularity, and `nws.active-alerts` returns the alerts alone."
+    },
+    {
+      "url": "https://fittings.sh/v1/quake/usgs-events",
+      "description": "Earthquakes from the USGS catalog by time window, minimum magnitude and optional radius around a point, most recent first."
+    },
+    {
+      "url": "https://fittings.sh/v1/pdb/structure",
+      "description": "Experimental method, resolution, R-factor, unit cell, entity composition and primary citation for a PDB entry."
+    },
+    {
+      "url": "https://fittings.sh/v1/chem/pubchem-compound",
+      "description": "Structure and computed properties for a compound by name, CAS number, PubChem CID or SMILES: formula, weight, InChI, logP, TPSA and H-bond counts."
+    },
+    {
+      "url": "https://fittings.sh/v1/orcid/researcher-profile",
+      "description": "Name, biography, employments and educations for an ORCID iD, with an optional capped list of the most recent publications."
+    },
+    {
+      "url": "https://fittings.sh/v1/pubmed/search",
+      "description": "Search PubMed/MEDLINE by keyword, author or MeSH term and return matching citations with journal, authors, date and DOI."
+    },
+    {
+      "url": "https://fittings.sh/v1/crossref/search",
+      "description": "Find the DOI and metadata for a work from a title, author or keyword string when the DOI is unknown."
+    },
+    {
+      "url": "https://fittings.sh/v1/crossref/doi-metadata",
+      "description": "Resolve a DOI to bibliographic metadata: title, authors, journal, dates, abstract, licence, funders and citation counts."
+    },
+    {
+      "url": "https://fittings.sh/v1/fdic/bank-lookup",
+      "description": "Look up an FDIC-insured US bank by certificate number or name: insurance status, charter class, location, offices, assets and deposits."
+    },
+    {
+      "url": "https://fittings.sh/v1/nasa/astronomy-picture",
+      "description": "NASA's daily astronomy image with its title, explanation, media URLs and copyright, by date or as a random selection."
+    },
+    {
+      "url": "https://fittings.sh/v1/census/geocode-batch",
+      "description": "Resolve up to 10 US street addresses at once to latitude/longitude plus state, county, tract, block, CBSA and CSA codes."
+    },
+    {
+      "url": "https://fittings.sh/v1/nhtsa/safety-ratings",
+      "description": "NCAP five-star crash ratings for a model year, make and model: overall, frontal, side and rollover, with recall, complaint and investigation counts."
+    },
+    {
+      "url": "https://fittings.sh/v1/nhtsa/vin-decode",
+      "description": "Decodes a VIN into make, model, model year, trim, body class, engine, drivetrain and assembly plant using the NHTSA vPIC database."
+    },
+    {
+      "url": "https://fittings.sh/v1/nws/active-alerts",
+      "description": "Active National Weather Service watches, warnings and advisories covering a US latitude and longitude."
+    },
+    {
+      "url": "https://fittings.sh/v1/nws/point-forecast",
+      "description": "National Weather Service forecast for a US latitude and longitude: temperature, wind, precipitation chance and narrative per period, switchable to hourly resolution. Forecast only — `weather.nws-point-forecast` bundles the active watches and warnings into the same call, and `nws.active-alerts` returns those alone."
+    },
+    {
+      "url": "https://fittings.sh/v1/usda/food-nutrients",
+      "description": "Full nutrition facts for one FoodData Central item: every reported nutrient with its amount and unit, plus serving size and ingredients."
+    },
+    {
+      "url": "https://fittings.sh/v1/usda/food-search",
+      "description": "Foods in USDA FoodData Central matching a name, each with its FDC id, serving size and calories, protein, fat and carbohydrate."
+    },
+    {
+      "url": "https://fittings.sh/v1/fema/disaster-declarations",
+      "description": "Federal disaster declarations for a state, with incident type, declaration date, designated county and which assistance programs were authorized."
+    },
+    {
+      "url": "https://fittings.sh/v1/fec/financial-totals",
+      "description": "Receipts, disbursements, contributions, cash on hand and debts per election cycle for an FEC candidate or committee."
+    },
+    {
+      "url": "https://fittings.sh/v1/fec/candidate-search",
+      "description": "Federal candidates matching a name, with their FEC candidate id, party, office, state and election years."
+    },
+    {
+      "url": "https://fittings.sh/v1/vat/eu-validate",
+      "description": "Validate an EU VAT number against the European Commission VIES registry, returning validity and the registered trader where the member state discloses it."
+    },
+    {
+      "url": "https://fittings.sh/v1/url/expand",
+      "description": "Follows a shortened link through its redirect chain and returns the final destination with click-tracking parameters removed."
+    },
+    {
+      "url": "https://fittings.sh/v1/qr/generate",
+      "description": "Generates a QR code for arbitrary text or a URL as SVG or PNG, with a chosen error-correction level, module scale, quiet zone and colors."
+    },
+    {
+      "url": "https://fittings.sh/v1/fx/convert",
+      "description": "Converts an amount between currencies at the European Central Bank daily reference rate, for the latest publication or any past date back to 1999."
+    },
+    {
+      "url": "https://fittings.sh/v1/brand/logo",
+      "description": "Fetches a domain's home page and returns its declared icons, ranked, with the best-available logo first."
+    },
+    {
+      "url": "https://fittings.sh/v1/quake/recent",
+      "description": "Earthquakes above a magnitude threshold in the last N hours, worldwide or within a radius of a point, newest first."
+    },
+    {
+      "url": "https://fittings.sh/v1/sec/company-filings",
+      "description": "Most recent SEC filings for a US registrant by ticker or CIK, with form type, dates, item numbers and document URLs."
+    },
+    {
+      "url": "https://fittings.sh/v1/naics/lookup",
+      "description": "Looks up a NAICS industry code and its parent hierarchy, or searches NAICS industry titles by text."
+    },
+    {
+      "url": "https://fittings.sh/v1/cfr/section-text",
+      "description": "The current authoritative text of a Code of Federal Regulations section, as plain text with its heading and citation."
+    },
+    {
+      "url": "https://fittings.sh/v1/icd10/lookup",
+      "description": "Verifies an ICD-10-CM diagnosis code or searches the code set by text, returning official code descriptions."
+    },
+    {
+      "url": "https://fittings.sh/v1/airport/nearby",
+      "description": "Commercial airports within a radius of a coordinate, sorted by distance, with IATA and ICAO codes, city and bearing."
+    },
+    {
+      "url": "https://fittings.sh/v1/regulations/document-search",
+      "description": "Searches federal rulemaking documents on Regulations.gov, returning title, agency, docket, type, posted date and comment deadline."
+    },
+    {
+      "url": "https://fittings.sh/v1/sec/ticker-financials",
+      "description": "Latest and recent values of an XBRL concept, such as Revenues or Assets, for a US public company named by ticker."
+    },
+    {
+      "url": "https://fittings.sh/v1/sec/ticker-resolve",
+      "description": "Resolves a stock ticker to the SEC central index key and registered company name."
+    },
+    {
+      "url": "https://fittings.sh/v1/pubmed/citation-search",
+      "description": "Searches PubMed and returns citation metadata for each hit: title, journal, publication date, authors, DOI and PMID."
+    },
+    {
+      "url": "https://fittings.sh/v1/calc/evaluate",
+      "description": "Evaluates an arithmetic expression in exact rational arithmetic and returns the fraction plus a decimal to the requested precision."
+    },
+    {
+      "url": "https://fittings.sh/v1/time/zone-clock",
+      "description": "Renders one instant, or now, in up to 20 IANA zones at once with UTC offset, abbreviation and DST state."
+    },
+    {
+      "url": "https://fittings.sh/v1/nws/current-conditions",
+      "description": "Latest observation for a US coordinate: temperature, conditions, wind, humidity, pressure and visibility, from the nearest NWS station."
+    },
+    {
+      "url": "https://fittings.sh/v1/doc/url-metadata",
+      "description": "Fetch a public URL and return its title, description, preview image, site name and canonical URL from its meta tags."
+    },
+    {
+      "url": "https://fittings.sh/v1/epa/carbon-estimate",
+      "description": "Estimate CO2e for fuel burned, electricity used, freight moved or a trip taken, using published US EPA emission factors."
+    },
+    {
+      "url": "https://fittings.sh/v1/time/holiday-check",
+      "description": "Answer whether one date is a public holiday in one country, with its name, regional scope and the next holiday that year."
+    },
+    {
+      "url": "https://fittings.sh/v1/text/profanity-filter",
+      "description": "Check text for profanity and obscenity, returning each match with its offset and a redacted copy of the text."
+    },
+    {
+      "url": "https://fittings.sh/v1/lang/detect",
+      "description": "Detect the language of a text snippet: ISO 639-1 and 639-3 codes, the Unicode script, a confidence score and runner-up candidates. Latin and Cyrillic languages are separated by function-word profile, other scripts by script; answers 'und' rather than guessing when there is no evidence."
+    },
+    {
+      "url": "https://fittings.sh/v1/qr/encode",
+      "description": "Encode text, a URL or a payment string as a QR code, returned as SVG, a base64 PNG, or the raw module matrix."
+    },
+    {
+      "url": "https://fittings.sh/v1/census/address-geographies",
+      "description": "Geocode a US street address and return the matched address, coordinates, and its Census tract, county and state codes in one call."
+    },
+    {
+      "url": "https://fittings.sh/v1/water/noaa-tides",
+      "description": "Predicted high and low tides for a NOAA CO-OPS station on a given date, in feet above datum."
+    },
+    {
+      "url": "https://fittings.sh/v1/cve/lookup",
+      "description": "A CVE record from the National Vulnerability Database: description, CVSS severity and references."
+    },
+    {
+      "url": "https://fittings.sh/v1/fda/drug-recall",
+      "description": "Recent drug enforcement actions and recalls for a product or firm, with classification and reason."
+    },
+    {
+      "url": "https://fittings.sh/v1/fda/drug-label",
+      "description": "Prescribing information for a drug: indications, warnings, dosage and adverse reactions, as filed with the FDA."
+    },
+    {
+      "url": "https://fittings.sh/v1/gov/congress-bill",
+      "description": "Status, sponsor, latest action and titles for a bill in a given Congress and chamber."
+    },
+    {
+      "url": "https://fittings.sh/v1/sec/company-facts",
+      "description": "Structured XBRL financial facts for a company by CIK: revenue, assets, cash and every other tagged concept as reported."
+    },
+    {
+      "url": "https://fittings.sh/v1/sec/filing-search",
+      "description": "Search the full text of SEC filings from 2001 onward, returning filing type, date, company and accession number."
+    },
+    {
+      "url": "https://fittings.sh/v1/energy/uk-carbon-intensity",
+      "description": "Current or forecast carbon intensity of the GB electricity grid in gCO2/kWh, with the generation fuel mix."
+    },
+    {
+      "url": "https://fittings.sh/v1/text/extract-citations",
+      "description": "Pulls DOIs, arXiv ids, PMIDs, PMCIDs and ISBNs out of free text, deduplicated and normalized, with the character offset of each first occurrence."
+    },
+    {
+      "url": "https://fittings.sh/v1/net/dns-lookup",
+      "description": "Resolve DNS records of any common type over DoH, returning answers with TTLs and the DNSSEC-authenticated flag."
+    },
+    {
+      "url": "https://fittings.sh/v1/valid/lei",
+      "description": "Validate an ISO 17442 Legal Entity Identifier checksum and extract its issuing LOU prefix."
+    },
+    {
+      "url": "https://fittings.sh/v1/crypto/hash-digest",
+      "description": "Compute a SHA-1/256/384/512 digest of supplied text, returned as hex and base64."
+    },
+    {
+      "url": "https://fittings.sh/v1/crypto/random-bytes",
+      "description": "Generate CSPRNG bytes from the Web Crypto API, returned as hex, base64 or a UUID. Never Math.random."
+    },
+    {
+      "url": "https://fittings.sh/v1/fmt/json-flatten",
+      "description": "Flatten arbitrarily nested JSON to a single-level object of dotted paths, or expand one back."
+    },
+    {
+      "url": "https://fittings.sh/v1/fmt/csv-to-json",
+      "description": "Parse RFC 4180 CSV into JSON objects keyed by header row, handling quotes and embedded newlines."
+    },
+    {
+      "url": "https://fittings.sh/v1/doc/url-to-markdown",
+      "description": "Fetch a public web page and return it as clean Markdown with its title. Capped at 2 MB."
+    },
+    {
+      "url": "https://fittings.sh/v1/doc/html-to-markdown",
+      "description": "Convert an HTML document supplied in the request body to clean Markdown, stripping scripts and styles."
+    },
+    {
+      "url": "https://fittings.sh/v1/time/sunrise-sunset",
+      "description": "UTC sunrise, sunset, solar noon and day length for a date and coordinate, including polar day/night."
+    },
+    {
+      "url": "https://fittings.sh/v1/time/timezone-convert",
+      "description": "Convert an instant between IANA timezones, returning the local wall time, UTC offset and DST state."
+    },
+    {
+      "url": "https://fittings.sh/v1/time/public-holidays",
+      "description": "Every public holiday for a country and year, with local and English names and observance scope."
+    },
+    {
+      "url": "https://fittings.sh/v1/geo/elevation",
+      "description": "Ground elevation in meters and feet at a coordinate, from the USGS 3DEP dataset."
+    },
+    {
+      "url": "https://fittings.sh/v1/geo/reverse-geocode",
+      "description": "Convert latitude/longitude to the containing US street address, census tract and county. US coverage only."
+    },
+    {
+      "url": "https://fittings.sh/v1/geo/forward-geocode",
+      "description": "Convert a US street address to latitude/longitude with a matched, standardized address. US coverage only."
+    },
+    {
+      "url": "https://fittings.sh/v1/water/usgs-streamflow",
+      "description": "Latest instantaneous discharge and gauge height for a USGS river monitoring site, with the observation timestamp."
+    },
+    {
+      "url": "https://fittings.sh/v1/sam/exclusions-check",
+      "description": "Check a name against the US System for Award Management exclusions list: parties debarred, suspended or otherwise ineligible for federal contracts and assistance."
+    },
+    {
+      "url": "https://fittings.sh/v1/cpi/adjust",
+      "description": "Adjusts a US dollar amount between two dates using the official BLS CPI-U index, returning both index values."
+    }
+  ]
+}

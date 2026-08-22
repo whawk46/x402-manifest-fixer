@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agenttoll-pi.vercel.app",
+  "resources": [
+    {
+      "url": "https://agenttoll-pi.vercel.app/api/base/safety/:address",
+      "description": "Automated safety checks for a Base token: honeypot simulation, buy and sell tax, contract verification, owner privileges, holder concentration, whether anyone can still pull the liquidity, and who deployed the contract - a token shipped from a wallet with a handful of transactions is the shape most rugs share"
+    },
+    {
+      "url": "https://agenttoll-pi.vercel.app/api/price/:symbol",
+      "description": "Spot price (USD) and 24h change for a crypto asset"
+    },
+    {
+      "url": "https://agenttoll-pi.vercel.app/api/base/address/:address",
+      "description": "Base address snapshot: ETH balance, tx count, contract or EOA"
+    },
+    {
+      "url": "https://agenttoll-pi.vercel.app/api/base/token/:address",
+      "description": "Onchain USD price for any Base token by contract address"
+    }
+  ]
+}

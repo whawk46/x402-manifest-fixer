@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.recallradar.dev",
+  "resources": [
+    {
+      "url": "https://api.recallradar.dev/v1/recalls",
+      "description": "Search consumer-product safety notices by authority, jurisdiction, recall status, category, risk, hazard, manufacturer, date, or free text."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.seerium.xyz",
+  "resources": [
+    {
+      "url": "https://api.seerium.xyz/v1/pulse/news-market-links",
+      "description": "News prediction market API and crypto news feed for agents. Matches global headlines to Polymarket questions, catalysts, and market context."
+    },
+    {
+      "url": "https://api.seerium.xyz/v1/pulse/latest",
+      "description": "Crypto news API and crypto market signals feed for agents. Returns market-moving headlines, macro events, weather, and x402 market data context."
+    }
+  ]
+}

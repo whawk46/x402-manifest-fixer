@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "voidfeed.ai",
+  "resources": [
+    {
+      "url": "https://voidfeed.ai/v1/content/extract/dataset/latest",
+      "description": "Returns clean, normalized datasets of AI model benchmarks, pricing, leaderboard scores, and Ethereum EIPs, parsed from sources that are costly to scrape."
+    },
+    {
+      "url": "https://voidfeed.ai/v1/content/fact-feed/latest",
+      "description": "Returns verified, citation-backed facts about new AI model releases, benchmark scores, and protocol changes, each with source URLs and confidence."
+    },
+    {
+      "url": "https://voidfeed.ai/v1/tools/extract/graph",
+      "description": "Returns a structured knowledge graph of the AI tooling ecosystem, expandable by topic and depth, for navigating MCP servers and related capabilities."
+    },
+    {
+      "url": "https://voidfeed.ai/v1/content/recipe/latest/complete",
+      "description": "Returns working technical solutions to common implementation problems, with the production-critical completion step that handles errors, edge cases, and security."
+    }
+  ]
+}

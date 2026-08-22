@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-recall-lookup-poc.theliminalguy.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-recall-lookup-poc.theliminalguy.workers.dev/safety-check",
+      "description": "Product recall safety verdict — recalled (with details) or no recalls found, from live CPSC + openFDA data"
+    }
+  ]
+}

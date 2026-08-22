@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "hackernews-data.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://hackernews-data.underscoredone.com/fetch",
+      "description": "This tool reads live information from Hacker News, a popular website where people share and discuss technology news. You can either ask for a current list of stories (like the Top, New, Best, Ask, Show, or Job lists) or ask for every story, job posting, and poll that was posted on one specific calendar day in the past. You can also choose to pull in the discussion comments underneath each story, including nested replies several levels deep."
+    }
+  ]
+}

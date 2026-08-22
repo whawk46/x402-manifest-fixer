@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.402rates.com",
+  "resources": [
+    {
+      "url": "https://api.402rates.com/v1/ping",
+      "description": "Paid ping to test the Compass x402 payment rails end to end. Returns pong with server time and the rail you paid on."
+    },
+    {
+      "url": "https://api.402rates.com/v1/settlement/costs",
+      "description": "Compare the measured on-chain cost of a USDC transfer across Base, Polygon, Arbitrum, Ethereum, and XDC, using gas units simulated per chain, live gas prices, fresh chain heads and the rollup L1 data fee, sorted cheapest first."
+    },
+    {
+      "url": "https://api.402rates.com/v1/rwa/yields",
+      "description": "Compare realised 30-day yields of tokenized treasury funds - BUIDL, BENJI, OUSG, USDY, USTB, USYC, VBILL, mTBILL, Spiko EUTBL/USTBL/UKTBL and OpenEden TBILL - computed from each fund's own NAV or price series under the published Open Treasury Basis specification, with every input, window and source disclosed so the figure can be recomputed, and the issuer's own figure printed beside ours."
+    }
+  ]
+}

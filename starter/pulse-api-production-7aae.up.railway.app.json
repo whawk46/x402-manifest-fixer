@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "pulse-api-production-7aae.up.railway.app",
+  "resources": [
+    {
+      "url": "https://pulse-api-production-7aae.up.railway.app/arbitrum/v1/analysis/spot/standard",
+      "description": "Standard Grok analysis from a server-fetched OKX spot snapshot."
+    }
+  ]
+}

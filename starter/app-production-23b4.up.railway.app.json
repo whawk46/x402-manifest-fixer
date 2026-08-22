@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "app-production-23b4.up.railway.app",
+  "resources": [
+    {
+      "url": "https://app-production-23b4.up.railway.app/v1/matches/results",
+      "description": "Final results of completed professional esports matches from the last 24-168 hours for League of Legends, Valorant and Dota 2: final scores, teams, best-of format and tournament. Use for recap content, ELO models, prediction grading and news generation."
+    }
+  ]
+}

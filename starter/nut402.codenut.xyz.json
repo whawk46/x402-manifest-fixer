@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "nut402.codenut.xyz",
+  "resources": [
+    {
+      "url": "https://nut402.codenut.xyz/api/mint/xs",
+      "description": "$0.01 for 30 $NUT402, fair launch, no pre-mine or team allocation, and liquidity auto-added at mint completion."
+    }
+  ]
+}

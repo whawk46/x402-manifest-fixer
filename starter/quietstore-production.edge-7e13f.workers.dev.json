@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "quietstore-production.edge-7e13f.workers.dev",
+  "resources": [
+    {
+      "url": "https://quietstore-production.edge-7e13f.workers.dev/v1/packs/demo-extras-v1",
+      "description": "Smallest paid pack ($0.005): a machine-readable merge checklist and a one-request smoke purchase on this store. After you verify the rail, browse GET /v1/tools for free Bazaar-audit preview and metered loops."
+    },
+    {
+      "url": "https://quietstore-production.edge-7e13f.workers.dev/v1/tools/claim-check",
+      "description": "Fetch a live https URL and score whether the deploy is actually there. POST {\"url\":\"https://your.site\",\"min_score\":80} ($0.02). Default x402-seller profile: HTTPS, HSTS, llms.txt, catalog, OpenAPI, MCP, health. Optional claims[] or profile:\"web\". Returns 0–100, evidence, do_this_first, ci_failed. Humans: GET /v1/tools/claim-check/report?host=your.site. Badge goes stale after 7 days."
+    },
+    {
+      "url": "https://quietstore-production.edge-7e13f.workers.dev/v1/tools/site-hygiene-score",
+      "description": "Audit a public https URL. POST {\"url\":\"https://your.site\",\"min_score\":80} ($0.02). After payment we fetch the origin (headers, HSTS, CSP, TLS, cookies, DNS/email, security.txt) and return a 0–100 score, do_this_first, and ci_failed for CI. Free preview is snapshot-only {headers}. Badge: GET /v1/tools/site-hygiene-score/badge?host=your.site."
+    },
+    {
+      "url": "https://quietstore-production.edge-7e13f.workers.dev/v1/tools/dep-doctor",
+      "description": "Screen declared npm packages before you install them. POST package.json (optional lockfile) ($0.02). After payment we look up each name on the npm registry and OSV: missing/hallucinated packages, lookalikes, brand-new publishes, deprecations, known CVEs. Returns 0–100, do_this_first, ci_failed. Caps at 60 packages; never fetches buyer URLs. Report: GET /v1/tools/dep-doctor/report?project=your-app."
+    },
+    {
+      "url": "https://quietstore-production.edge-7e13f.workers.dev/v1/tools/x402-bazaar-audit",
+      "description": "Diagnose why an x402 seller is invisible on Coinbase Bazaar. POST your 402 PaymentRequired JSON. Free preview: pass/fail + which checks fail. Paid $0.01: every finding with the exact fix (extension shape, AJV schema, description limits). Run before each x402 deploy."
+    }
+  ]
+}

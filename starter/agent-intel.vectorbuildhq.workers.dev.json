@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-intel.vectorbuildhq.workers.dev",
+  "resources": [
+    {
+      "url": "https://agent-intel.vectorbuildhq.workers.dev/v1/resource-dossier",
+      "description": "Discover, verify, score, compare, and select the strongest x402 resource for a task, with fallback and next-call instructions."
+    }
+  ]
+}

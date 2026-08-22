@@ -1,0 +1,203 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.aidress.ai",
+  "resources": [
+    {
+      "url": "https://api.aidress.ai/pay/agent_ottoai_crypto_news",
+      "description": "Real-time crypto market news with sentiment analysis and top headlines ranked by importance."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_edgar_apitoll_cloud",
+      "description": "Latest SEC EDGAR filings for any US-listed company by stock ticker or CIK: 10-K annual reports, 10-Q quarterly reports, and 8-K material events. Resolves ticker to CIK via SEC's official index and returns the parsed filing (company, form type, dated items). Sourced live from data.sec.gov."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_supply_lonestaroracle_xyz",
+      "description": "Full supply chain report — shipping rates, BLS PPI, NY Fed GSCPI, AI summary"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_grid_lonestaroracle_xyz",
+      "description": "US electricity grid — demand, generation mix (renewable/gas/nuclear), and stress signals across 7 regions"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_compute_lonestaroracle_xyz",
+      "description": "GPU compute spot prices — best deals across Vast.ai, RunPod, AWS, Lambda + market signal + AI brief"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_macro_lonestaroracle_xyz",
+      "description": "US macro intelligence — Fed rate, CPI/Core PCE YoY, yield curve, M2 money supply, GDP, VIX, crypto Fear & Greed, AI macro regime narrative"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_chainscout_lonestaroracle_xyz",
+      "description": "On-chain intelligence — whale transfers trending tokens DeFi TVL on Base and Ethereum"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_weather_lonestaroracle_xyz",
+      "description": "GFS+ECMWF ensemble temperature probability for NWS weather prediction markets"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_api_dev_v2_ixs_finance",
+      "description": "IXS Real world asset vaults — 6% yields, BlackRock exposure, tokenized on-chain"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_agri_lonestaroracle_xyz",
+      "description": "Full agricultural commodity report with AI summary"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_bazaar_gateway_vercel_app",
+      "description": "AI-powered text translation between any languages. Powered by Claude AI. Send text and target language, receive a high-quality translation with context awareness. Usage-based pricing from $0.004, scaled by text length and target language (up to $0.020 for long or non-Latin text). The exact price for your text is returned in the 402 payment challenge before you pay."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_metals_lonestaroracle_xyz",
+      "description": "Industrial metals prices with momentum signals, category analysis, and AI brief"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_equity_lonestaroracle_xyz",
+      "description": "Stock analysis — price fundamentals technical indicators for any ticker"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_labor_lonestaroracle_xyz",
+      "description": "US labor-market signal (jobs, unemployment, wages, JOLTS)"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_minifetch_com",
+      "description": "For site owners auditing AI readability: returns the clean markdown an LLM extracts from your page after nav, ads, and scripts are stripped. See what survives for AEO, GEO and AI search; respects robots.txt"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_makespdf_com",
+      "description": "Convert GitHub-flavoured Markdown to a tagged, accessible PDF — PDF/UA-1 + PDF/A-2A dual-compliant out of the box."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_stablestudio_dev",
+      "description": "Get a client token for direct upload to Vercel Blob"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_stake_lonestaroracle_xyz",
+      "description": "Live staking yields with liquid staking, liquid restaking (ether.fi/Renzo/Kelp), and best_strategy recommendation. ETH, SOL, ATOM, ADA, DOT, AVAX, MATIC. $0.05/report via x402 on Base."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_wallet_lonestaroracle_xyz",
+      "description": "EVM wallet risk scoring — transaction patterns, exposure analysis, suspicious activity"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_portfolio_lonestaroracle_xyz",
+      "description": "Portfolio risk analysis — concentration volatility correlation across holdings"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_whale_lonestaroracle_xyz",
+      "description": "Large on-chain transaction monitor — whale movements on Base, Ethereum, and Robinhood Chain with AI pattern analysis"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_agentres_dev",
+      "description": "Book a paid Resy reservation for the authenticated user using a slot config token."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_launches_lonestaroracle_xyz",
+      "description": "New token launch scanner — Base and EVM chains, real-time pool data"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_trade_lonestaroracle_xyz",
+      "description": "US trade-flow + tariff signal by commodity"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_funding_lonestaroracle_xyz",
+      "description": "Full funding rates — all assets, all exchanges, signal analysis"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_web_production_78e17_up_railway_app",
+      "description": "Summarize and compress text, Markdown, or JSON into a structured summary. Output as prose, bullets, headline, or TLDR, with optional exact target word count. Built for agent and document pipelines."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_stable_lonestaroracle_xyz",
+      "description": "Top stables ranked by mcap with peg deviation (now/24h/7d) + stability score + risk"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_latam_lonestaroracle_xyz",
+      "description": "Full LatAm economic report — currencies, Argentina dolar blue, commodities, AI narrative"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_liq_lonestaroracle_xyz",
+      "description": "Full liquidation report — all assets, long/short breakdown, hot zones"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_minerals_lonestaroracle_xyz",
+      "description": "Critical-minerals supply-concentration & US import-reliance signal"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_consumer_lonestaroracle_xyz",
+      "description": "US consumer-demand signal (retail sales)"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_voidfeed_ai",
+      "description": "Returns verified, citation-backed facts about new AI model releases, benchmark scores, and protocol changes, each with source URLs and confidence."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_lease_lonestaroracle_xyz",
+      "description": "BLM lease auctions, expiring leases, active lease portfolio analysis — oil/gas, geothermal, grazing rights. $0.15/report via x402 on Base."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_geo_lonestaroracle_xyz",
+      "description": "Real-time geopolitical risk signal — base score + live news sentiment for any country or region"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_oi_lonestaroracle_xyz",
+      "description": "Full OI report — all assets, all exchanges, 5-min delta"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_cascade_lonestaroracle_xyz",
+      "description": "DeFi liquidation cascade risk — Morpho Blue health factors and cascade exposure"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_cycle_lonestaroracle_xyz",
+      "description": "US inventory & production cycle signal (bullwhip gauge)"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_rwa_lonestaroracle_xyz",
+      "description": "Per-vault RWA risk profile — admin/freeze control + exit-liquidity"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_ta_lonestaroracle_xyz",
+      "description": "Full technical analysis — 18 indicators + AI signal summary"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_weather_payapi_market",
+      "description": "Current weather conditions for any global location — temperature, feels-like, humidity, precipitation, wind, and human-readable weather description."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_printmoneylab_com",
+      "description": "Korean exchange prices (Upbit, Bithumb) for a single token in KRW"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_pro_api_coingecko_com",
+      "description": "Search onchain DEX pools and token, by contract address, name, or token symbol."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_blockrun_ai",
+      "description": "Query Polymarket markets with filtering, sorting, and pagination"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_x402_twit_sh",
+      "description": "Look up a Twitter/X user profile by their screen name. Returns full profile data including id, name, username, bio, follower count, following count, tweet count, verification status, and profile image URL. Query param: username (string, required) - Twitter screen name without @, e.g. GET /users/by/username?username=elonmusk. Returns X v2 API-compatible JSON."
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_run402_com",
+      "description": "Set prototype tier ($0.10 USDC) — auto-detects subscribe/renew/upgrade"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_exa_ai",
+      "description": "Exa /search endpoint"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_x402_tavily_com",
+      "description": "Tavily Search - advanced mode"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_stableenrich_dev",
+      "description": "Exa Search - Neural search across the web"
+    },
+    {
+      "url": "https://api.aidress.ai/pay/agent_tick_hugen_tokyo",
+      "description": "List all available FX symbols with their current quality state and source count. AI agent API for discovering available instruments before subscribing to tick data. Accepts USDC payments on Base and Solana"
+    }
+  ]
+}

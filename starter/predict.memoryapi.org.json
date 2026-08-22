@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "predict.memoryapi.org",
+  "resources": [
+    {
+      "url": "https://predict.memoryapi.org/x402/predict/platform_arb",
+      "description": "Find prediction market arbitrage across Polymarket, Kalshi, and Manifold."
+    },
+    {
+      "url": "https://predict.memoryapi.org/x402/predict/mispricing",
+      "description": "Detect prediction market outcome mispricings — find markets where real-world outcome is already determined but market price is wrong"
+    },
+    {
+      "url": "https://predict.memoryapi.org/x402/predict/sports_arb",
+      "description": "Find sports betting arbitrage opportunities from The Odds API."
+    }
+  ]
+}

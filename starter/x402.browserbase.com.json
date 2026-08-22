@@ -1,0 +1,39 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "x402.browserbase.com",
+  "resources": [
+    {
+      "url": "https://x402.browserbase.com/browser/session/create",
+      "description": "Create a Browserbase browser session with prepaid time. Returns a WebSocket connection URL for browser automation."
+    },
+    {
+      "url": "https://x402.browserbase.com/browser/session/session_3af76894-52db-4722-9d21-03e18ff366da/extend",
+      "description": "Extend an existing Browserbase session by adding more prepaid time"
+    },
+    {
+      "url": "https://x402.browserbase.com/browser/session/sess_8f3a2b91-random-test-id/extend",
+      "description": "Extend an existing Browserbase session by adding more prepaid time"
+    },
+    {
+      "url": "https://x402.browserbase.com/browser/session/test-session-4471/extend",
+      "description": "Extend an existing Browserbase session by adding more prepaid time"
+    },
+    {
+      "url": "https://x402.browserbase.com/browser/session/sess_7f3a9c2e1b4d/extend",
+      "description": "Extend an existing Browserbase session by adding more prepaid time"
+    },
+    {
+      "url": "https://x402.browserbase.com/browser/session/sess_7f3a9d2e1b48c6/extend",
+      "description": "Extend an existing Browserbase session by adding more prepaid time"
+    },
+    {
+      "url": "https://x402.browserbase.com/browser/session/sess_7f3a9c2e1b8d4f6a/extend",
+      "description": "Extend an existing Browserbase session by adding more prepaid time"
+    },
+    {
+      "url": "https://x402.browserbase.com/browser/session/sess_7f3a9c2e/extend",
+      "description": "Extend an existing Browserbase session by adding more prepaid time"
+    }
+  ]
+}

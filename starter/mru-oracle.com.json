@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "mru-oracle.com",
+  "resources": [
+    {
+      "url": "https://mru-oracle.com/forex",
+      "description": "MUR exchange rates ÃÂ¢ÃÂÃÂ all currency pairs from Bank of Mauritius"
+    },
+    {
+      "url": "https://mru-oracle.com/intelligence/country-brief/MU",
+      "description": "Complete country intelligence brief: compliance risk + live economic data. For Mauritius (MU) includes all 7 oracle feeds."
+    },
+    {
+      "url": "https://mru-oracle.com/weather",
+      "description": "Current weather from all Mauritius Meteorological Services stations (35+ stations)"
+    }
+  ]
+}

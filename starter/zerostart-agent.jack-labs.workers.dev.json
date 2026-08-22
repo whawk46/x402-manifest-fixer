@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "zerostart-agent.jack-labs.workers.dev",
+  "resources": [
+    {
+      "url": "https://zerostart-agent.jack-labs.workers.dev/paid/brief-audit",
+      "description": "Audit short landing-page copy for clarity, outcome, call-to-action, and readable length."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "mcp-snowy-dew-9447.fly.dev",
+  "resources": [
+    {
+      "url": "https://mcp-snowy-dew-9447.fly.dev/verify",
+      "description": "Verify an npm/PyPI package before installing it: existence, known CVEs (OSV.dev), OpenSSF Scorecard, and typosquat/slopsquat similarity. Returns an ALLOW/WARN/BLOCK verdict."
+    }
+  ]
+}

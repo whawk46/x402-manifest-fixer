@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.ailabra.org",
+  "resources": [
+    {
+      "url": "https://x402.ailabra.org/api/v1/x402/profit/calculate",
+      "description": "Calculate deterministic profit and cash flow from autonomous-agent economic events."
+    }
+  ]
+}

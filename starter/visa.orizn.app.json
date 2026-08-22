@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "visa.orizn.app",
+  "resources": [
+    {
+      "url": "https://visa.orizn.app/api/x402/visa",
+      "description": "Visa and entry requirements for a passport/destination pair: requirement type, visa-free days, documents, fees, processing time, transit rules, passport validity, overstay penalties and embassy contacts. Answers travel compliance and passport restriction checks, in 15 languages, with the official source and verification date where that pair has been verified."
+    }
+  ]
+}

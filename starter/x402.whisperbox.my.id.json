@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.whisperbox.my.id",
+  "resources": [
+    {
+      "url": "https://x402.whisperbox.my.id/x402/rate",
+      "description": "Currency rate conversion"
+    }
+  ]
+}

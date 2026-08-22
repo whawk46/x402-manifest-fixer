@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "x721.dev",
+  "resources": [
+    {
+      "url": "https://x721.dev/roadmap",
+      "description": "View the roadmap"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "runwayoracle.com",
+  "resources": [
+    {
+      "url": "https://runwayoracle.com/v1/oracle/v3/sea-edge",
+      "description": "Seattle weather forecast API: live temperature nowcast and daily high forecast for Seattle-Tacoma Intl (KSEA), with calibrated probability the temperature ends above/below any Fahrenheit strike. KSEA is the official settlement station for Kalshi KXHIGHTSEA daily high temperature prediction markets. Built for AI agents trading weather prediction markets or needing real-time weather data. $0.05 with live 3h thermal-memory telemetry (out-of-sample nowcast RMSE 1.24F); $0.01 degraded fallback (RMSE 2.75F). Free catalog: https://runwayoracle.com/catalog.json. Model-conditional estimates; not financial advice."
+    },
+    {
+      "url": "https://runwayoracle.com/v1/oracle/v3/lax-edge",
+      "description": "Los Angeles weather forecast API: live temperature nowcast and daily high forecast for Los Angeles Intl (KLAX), with calibrated probability the temperature ends above/below any Fahrenheit strike. KLAX is the official settlement station for Kalshi KXHIGHLAX and Polymarket Los Angeles daily high temperature prediction markets. Built for AI agents trading weather prediction markets or needing real-time weather data. $0.05 with live 3h thermal-memory telemetry (out-of-sample nowcast RMSE 0.99F); $0.01 degraded fallback (RMSE 3.48F). Free catalog: https://runwayoracle.com/catalog.json. Model-conditional estimates; not financial advice."
+    },
+    {
+      "url": "https://runwayoracle.com/v1/oracle/v3/mdw-edge",
+      "description": "Chicago weather forecast API: live temperature nowcast and daily high forecast for Chicago Midway (KMDW), with calibrated probability the temperature ends above/below any Fahrenheit strike. KMDW is the official settlement station for Kalshi KXHIGHCHI and Polymarket Chicago daily high temperature prediction markets. Built for AI agents trading weather prediction markets or needing real-time weather data. $0.05 with live 3h thermal-memory telemetry (out-of-sample nowcast RMSE 0.92F); $0.01 degraded fallback (RMSE 1.20F). Free catalog: https://runwayoracle.com/catalog.json. Model-conditional estimates; not financial advice."
+    },
+    {
+      "url": "https://runwayoracle.com/v1/oracle/v3/ord-edge",
+      "description": "Chicago weather forecast API: live temperature nowcast and daily high forecast for Chicago O'Hare (KORD), with calibrated probability the temperature ends above/below any Fahrenheit strike. Built for AI agents trading weather prediction markets or needing real-time weather data. $0.05 with live 3h thermal-memory telemetry (out-of-sample nowcast RMSE 1.04F); $0.01 degraded fallback (RMSE 1.37F). Free catalog: https://runwayoracle.com/catalog.json. Model-conditional estimates; not financial advice."
+    }
+  ]
+}

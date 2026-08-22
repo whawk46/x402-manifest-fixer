@@ -1,0 +1,15 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "bittensorman.xyz",
+  "resources": [
+    {
+      "url": "https://bittensorman.xyz/ksbrain/analyze/news",
+      "description": "Equity news impact analysis (JP/US) from supplied headlines. DeepSeek."
+    },
+    {
+      "url": "https://bittensorman.xyz/kcbrain/analyze/technical",
+      "description": "Crypto technical analysis (trend, levels, momentum) as structured JSON with evidence and invalidation. DeepSeek."
+    }
+  ]
+}

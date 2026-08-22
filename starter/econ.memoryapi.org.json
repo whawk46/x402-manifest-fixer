@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "econ.memoryapi.org",
+  "resources": [
+    {
+      "url": "https://econ.memoryapi.org/x402/econ/demographics",
+      "description": "U.S. Census demographic data by state or county. Population, income, poverty, unemployment, home values, education."
+    },
+    {
+      "url": "https://econ.memoryapi.org/x402/econ/business",
+      "description": "U.S. County Business Patterns — number of businesses, employees, and payroll by industry (NAICS) and state."
+    }
+  ]
+}

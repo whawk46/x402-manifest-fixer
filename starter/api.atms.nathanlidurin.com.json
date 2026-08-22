@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.atms.nathanlidurin.com",
+  "resources": [
+    {
+      "url": "https://api.atms.nathanlidurin.com/x402/challenge",
+      "description": "ATMS x402 challenge — crawler / probe endpoint (always 402, no side effects)"
+    }
+  ]
+}

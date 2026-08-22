@@ -1,0 +1,35 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "zeroclick.affiliate.com",
+  "resources": [
+    {
+      "url": "https://zeroclick.affiliate.com/v1/products",
+      "description": "Search more than one billion affiliate products refreshed daily. Pass a plain search string or an array of field filters, or use the structured query rule builder for compound conditions. Results carry pricing, availability, commission URLs, and network and merchant attribution, with support for field selection, pagination, sorting, facets, and per network affiliate link configuration."
+    },
+    {
+      "url": "https://zeroclick.affiliate.com/v1/merchants",
+      "description": "List the merchants behind the catalog. Filter by name or domain search, by country, or by product count, and page through the results."
+    },
+    {
+      "url": "https://zeroclick.affiliate.com/v1/tools/convert/asin-to-barcode",
+      "description": "Convert Amazon ASINs to barcodes. Provide up to 10 ASINs and the Amazon marketplace locale, and each ASIN maps to an array of barcodes, empty when none were found."
+    },
+    {
+      "url": "https://zeroclick.affiliate.com/v1/tools/convert/barcode-to-asin",
+      "description": "Convert barcodes to Amazon ASINs. Provide numeric barcode strings, and each barcode maps to an array of ASIN results with their marketplace locale."
+    },
+    {
+      "url": "https://zeroclick.affiliate.com/v1/tools/convert/url-to-barcode",
+      "description": "Convert retailer product page URLs to barcodes. Provide full URL strings, and each URL maps to an array of barcodes, empty when none were found."
+    },
+    {
+      "url": "https://zeroclick.affiliate.com/v1/tools/convert/barcode-to-sku",
+      "description": "Convert barcodes to merchant SKUs. Provide numeric barcode strings and the merchant to resolve against, and each barcode maps to its SKU or to null when no match exists."
+    },
+    {
+      "url": "https://zeroclick.affiliate.com/v1/tools/convert/sku-to-barcode",
+      "description": "Convert merchant SKUs to barcodes. Provide the SKUs and the merchant they belong to, and each SKU maps to its barcode or to null when no match exists."
+    }
+  ]
+}

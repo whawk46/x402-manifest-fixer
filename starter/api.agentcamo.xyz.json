@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.agentcamo.xyz",
+  "resources": [
+    {
+      "url": "https://api.agentcamo.xyz/sessions",
+      "description": "Returns proxy credentials for a geo-targeted exit IP. Residential, mobile/5G, SOCKS5, WireGuard. 249 countries, mid-session geo-swap. No signup."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "licenses.recordsforagents.com",
+  "resources": [
+    {
+      "url": "https://licenses.recordsforagents.com/licenses/search",
+      "description": "Search contractor/trade licenses (TX TDLR electricians/A-C, FL DBPR construction) by free-text query, name, state, profession, or status."
+    },
+    {
+      "url": "https://licenses.recordsforagents.com/licenses/verify",
+      "description": "Fuzzy-verify a business or person name against the license roster; returns scored candidate matches (name variants, legal-suffix/dba handling) with their license history."
+    }
+  ]
+}

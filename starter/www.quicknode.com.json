@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.quicknode.com",
+  "resources": [
+    {
+      "url": "https://www.quicknode.com/api/v1/agent/subscriptions",
+      "description": "Create a Quicknode account and blockchain-infrastructure subscription paid with USDC via x402. Returns a Console API key (QN_*). Call without plan_name to list available plans and prices in the 402 body."
+    }
+  ]
+}

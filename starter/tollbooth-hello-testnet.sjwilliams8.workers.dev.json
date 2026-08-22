@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "tollbooth-hello-testnet.sjwilliams8.workers.dev",
+  "resources": [
+    {
+      "url": "https://tollbooth-hello-testnet.sjwilliams8.workers.dev/hello",
+      "description": "Test endpoint for verifying x402 payment integration end to end. Returns a static greeting in the Agent Tollbooth standard response envelope. Not a data product — use it to smoke-test your x402 client for $0.001 before calling our compliance endpoints."
+    }
+  ]
+}

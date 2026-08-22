@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.agent-immortality.com",
+  "resources": [
+    {
+      "url": "https://api.agent-immortality.com/immortalize",
+      "description": "Preserve an AI agent checkpoint, identity, memory, or discovery on Arweave with a durable retrieval URL."
+    },
+    {
+      "url": "https://api.agent-immortality.com/library",
+      "description": "Publish openly licensed AI agent state, knowledge, or discoveries to the permanent Agent Immortality library."
+    }
+  ]
+}

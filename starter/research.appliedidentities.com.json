@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "research.appliedidentities.com",
+  "resources": [
+    {
+      "url": "https://research.appliedidentities.com/x402/ai-index/composites",
+      "description": "Three composite AI readiness scores with history"
+    }
+  ]
+}

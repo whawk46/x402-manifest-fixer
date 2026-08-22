@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "news.x402.press",
+  "resources": [
+    {
+      "url": "https://news.x402.press/news/ask",
+      "description": "Ask for a triangulated news report on a topic, sourced from 125+ global outlets."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "earth.x402.press",
+  "resources": [
+    {
+      "url": "https://earth.x402.press/earth/ask",
+      "description": "Multi-source AI Earth intelligence via DeepSeek. Accepts any natural language question about Earth — weather, air quality, marine conditions, earthquakes, volcanoes, species, seasons, climate, polar ice, and tides."
+    }
+  ]
+}

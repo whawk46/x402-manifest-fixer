@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "polymarket-signal-api.pwnker-polymarket-signals.workers.dev",
+  "resources": [
+    {
+      "url": "https://polymarket-signal-api.pwnker-polymarket-signals.workers.dev/v1/performance",
+      "description": "PolySignal paper-trading performance summary, including win rate, ROI, PnL, open trades, settled trades, and tag-level breakdowns."
+    },
+    {
+      "url": "https://polymarket-signal-api.pwnker-polymarket-signals.workers.dev/v1/markets/rank",
+      "description": "PolySignal ranks current Polymarket opportunities by EV, confidence, size hint, risk, and staleness for agent research workflows."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "domain-age-checker.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://domain-age-checker.underscoredone.com/lookup",
+      "description": "Send a list of domain names and this tool tells you exactly how old each one is, when it was first registered, when it expires, and how much time is left before expiration. Great for spotting brand-new suspicious domains, researching competitors, or evaluating domains before buying or linking to them. Works with over 100 domain extensions worldwide."
+    }
+  ]
+}

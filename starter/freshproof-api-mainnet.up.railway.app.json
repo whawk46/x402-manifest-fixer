@@ -1,0 +1,35 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "freshproof-api-mainnet.up.railway.app",
+  "resources": [
+    {
+      "url": "https://freshproof-api-mainnet.up.railway.app/v1/extract",
+      "description": "FreshProof Evidence Extractor. Extract structured, evidence-backed facts from public HTML, JSON, XML and text resources with timestamped source evidence."
+    },
+    {
+      "url": "https://freshproof-api-mainnet.up.railway.app/v1/evidence-pack",
+      "description": "Fetches up to five public web sources through FreshProofâ€™s hardened retrieval pipeline and returns sanitized, prompt-injection-scanned, citation-ready evidence with deterministic hashes and provenance metadata."
+    },
+    {
+      "url": "https://freshproof-api-mainnet.up.railway.app/v1/verify",
+      "description": "Verify a claim against a live public web source for autonomous agents. Returns deterministic document evidence, a confidence score, source metadata, and a verification verdict without generating unsupported claims."
+    },
+    {
+      "url": "https://freshproof-api-mainnet.up.railway.app/v1/agent-safe-read",
+      "description": "Retrieve a public webpage as sanitized Markdown with prompt injection detection, hidden-instruction, tool-coercion and URL-exfiltration risk assessment. Protect agent context and inspect untrusted webpage or MCP output before model memory or action planning."
+    },
+    {
+      "url": "https://freshproof-api-mainnet.up.railway.app/v1/pdf-to-markdown",
+      "description": "Convert a public text-based PDF into page-referenced Markdown with document metadata, page boundaries, retrieval evidence, and a content hash for AI agents. OCR is not supported."
+    },
+    {
+      "url": "https://freshproof-api-mainnet.up.railway.app/v1/read",
+      "description": "Retrieve a public webpage as clean deterministic Markdown with source metadata, resolved links, retrieval time, and a content hash for AI agents."
+    },
+    {
+      "url": "https://freshproof-api-mainnet.up.railway.app/v1/compare",
+      "description": "Compare a fresh public web retrieval with previous evidence from a ProofBundle or retained snapshot. Returns deterministic fact differences, evidence, content hashes, retrieval timestamps, and significance for autonomous agents without inventing unsupported changes."
+    }
+  ]
+}

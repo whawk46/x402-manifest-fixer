@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "risk.yo.xyz",
+  "resources": [
+    {
+      "url": "https://risk.yo.xyz/api/v1/agent/schema",
+      "description": "Graph schema definition — entry point for agents to discover available data"
+    },
+    {
+      "url": "https://risk.yo.xyz/api/v1/agent/search",
+      "description": "Targeted node lookup by asset address or protocol/asset name — the sole discovery path"
+    }
+  ]
+}

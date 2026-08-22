@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "endpoint-intelligence-edge.ldbertoldi.workers.dev",
+  "resources": [
+    {
+      "url": "https://endpoint-intelligence-edge.ldbertoldi.workers.dev/v1/reports/service",
+      "description": "Perform fresh TCP service identification against a public IP address or hostname and port. Returns protocol, detected service, software product, version and CPE information where observable."
+    },
+    {
+      "url": "https://endpoint-intelligence-edge.ldbertoldi.workers.dev/v1/reports/host",
+      "description": "Perform a fresh active survey of a public internet host and identify exposed TCP services. Returns open services, software fingerprints, HTTP observations and TLS certificate information."
+    }
+  ]
+}

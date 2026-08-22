@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "affiliate.pay.zeroclick.io",
+  "resources": [
+    {
+      "url": "https://affiliate.pay.zeroclick.io/v1/merchants",
+      "description": "List the merchants behind the catalog. Filter by name or domain search, by country, or by product count, and page through the results."
+    }
+  ]
+}

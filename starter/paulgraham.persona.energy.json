@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "paulgraham.persona.energy",
+  "resources": [
+    {
+      "url": "https://paulgraham.persona.energy/v1/x402/entities/paul-graham/retrieve",
+      "description": "Search Paul Graham's source corpus — a source-grounded persona of the Y Combinator co-founder and essayist, built from 13,000+ cited sources: his complete essays, talks, interviews, and X posts — by semantic + lexical query and retrieve grounded packets (graded claims, quotes, evidence with citations). POST a JSON body { query, limit? (<=100), packetTypes? }. Flat micro-price per query."
+    }
+  ]
+}

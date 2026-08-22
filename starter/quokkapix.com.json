@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "quokkapix.com",
+  "resources": [
+    {
+      "url": "https://quokkapix.com/api/agent-unlock/coinbase-x402",
+      "description": "QuokkaPix official browser-agent batch/scenario unlock. Images stay local in the user's browser."
+    }
+  ]
+}

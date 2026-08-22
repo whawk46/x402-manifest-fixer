@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "aux.prdictionedge.ai",
+  "resources": [
+    {
+      "url": "https://aux.prdictionedge.ai/x402/v1/preflight",
+      "description": "Evaluation-grade synthetic-data pre-transaction risk screening with a signed decision receipt."
+    },
+    {
+      "url": "https://aux.prdictionedge.ai/v1/x402/preflight",
+      "description": "Evaluate a proposed B2B payment before execution using entity facts and caller-supplied transaction history. Returns PROCEED, REVIEW, or STOP with evidence signals and a tamper-evident receipt."
+    }
+  ]
+}

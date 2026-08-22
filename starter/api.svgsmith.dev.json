@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.svgsmith.dev",
+  "resources": [
+    {
+      "url": "https://api.svgsmith.dev/v1/convert",
+      "description": "Convert a raster image (PNG, JPEG, or WebP) into clean, editable, self-verified SVG vector art. Pay per conversion in USDC on Base via x402 - no API key, no subscription. Send JSON with imageBase64 or imageUrl; tune with mode (auto/binary/color/pixel), detail (high/normal/clean/poster), transparent or solid background, and outline flags. Returns the SVG plus a quality report (paths, similarity score)."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "shopify-ai-rank-checker.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://shopify-ai-rank-checker.underscoredone.com/rank",
+      "description": "Checks how well a Shopify store's products show up when AI shopping assistants such as ChatGPT, Gemini, Perplexity, Grok, and Copilot search for products, and reports the store's rank and its closest competitors. Searches Shopify's real Global Catalog — the same product index AI assistants read from."
+    }
+  ]
+}

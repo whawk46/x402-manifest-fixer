@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-stablecoin-data-demo.ryan-ee4.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-stablecoin-data-demo.ryan-ee4.workers.dev/v1/reports/stablecoin-bridge-flows",
+      "description": "Retrieve a seven-day USD-denominated report of Tether bridge flows on Ethereum. This is a bounded onchain stablecoin intelligence product backed by The Tie's data API."
+    }
+  ]
+}

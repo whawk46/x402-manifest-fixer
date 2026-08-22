@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "app.ravn.exchange",
+  "resources": [
+    {
+      "url": "https://app.ravn.exchange/api/v1/x402/quote",
+      "description": "RAVN cross-chain swap quote, incl. native Bitcoin as source or destination"
+    },
+    {
+      "url": "https://app.ravn.exchange/api/v1/x402/execute",
+      "description": "RAVN cross-chain swap execution, incl. native Bitcoin as source or destination"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "property-risk-passport-api.lifebite-app.workers.dev",
+  "resources": [
+    {
+      "url": "https://property-risk-passport-api.lifebite-app.workers.dev/v1/property-risk-full",
+      "description": "Evaluate a US property address for parcel match, FEMA flood zone, flood proximity, taxing entities, school district, permit history, zoning/land-use context, insurance red flags, due-diligence risk score, quality score, recommended next steps, and official source links."
+    }
+  ]
+}

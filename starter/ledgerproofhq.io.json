@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "ledgerproofhq.io",
+  "resources": [
+    {
+      "url": "https://ledgerproofhq.io/api/lain/confidence",
+      "description": "LAIN confidence: independently verifiable evidence about the subject — <entity/product/firm>"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.exende.dev",
+  "resources": [
+    {
+      "url": "https://api.exende.dev/v1/callbacks",
+      "description": "Create a temporary public webhook endpoint for AI agents and automated workflows that need to receive asynchronous callbacks from external services. Returns a callback URL plus read and wait endpoints. No server deployment, signup, API key, or subscription required."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "anthropic.x402.stage.paywithlocus.com",
+  "resources": [
+    {
+      "url": "https://anthropic.x402.stage.paywithlocus.com/anthropic/chat",
+      "description": "Locus public pay-per-use API"
+    }
+  ]
+}

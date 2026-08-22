@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "avt-x402.ttsempelis.workers.dev",
+  "resources": [
+    {
+      "url": "https://avt-x402.ttsempelis.workers.dev/integration/device",
+      "description": "AV/IT device integration facts for AI agents writing drivers and integrations: control protocol family, transport, TCP/UDP port, connection notes and field-tested gotchas for professional audio-video, lighting, shading and network devices (Crestron, Samsung, Shure, Somfy, Huawei, MikroTik and more). Curated first-hand by working systems integrators."
+    }
+  ]
+}

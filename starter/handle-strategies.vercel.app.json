@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "handle-strategies.vercel.app",
+  "resources": [
+    {
+      "url": "https://handle-strategies.vercel.app/report",
+      "description": "ADA Handle portfolio report with personalization and Pz readiness flags."
+    }
+  ]
+}

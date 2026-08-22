@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.nativebtc.org",
+  "resources": [
+    {
+      "url": "https://api.nativebtc.org/v1/mempool/stream-ticket",
+      "description": "Pay once to receive a short-lived WebSocket ticket for the live Bitcoin mempool stream."
+    },
+    {
+      "url": "https://api.nativebtc.org/v1/bitcoin/insight",
+      "description": "Unified Bitcoin transaction analysis: fee verdict, mempool state, RBF bump plan, and Core v31 template check."
+    }
+  ]
+}

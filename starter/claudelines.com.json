@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "claudelines.com",
+  "resources": [
+    {
+      "url": "https://claudelines.com/api/download",
+      "description": "Buy and download a paid status line. The publisher sets the price and receives the payment directly with no platform fee. Returns the script, integrity hash, and install instructions. Review the script before installing."
+    }
+  ]
+}

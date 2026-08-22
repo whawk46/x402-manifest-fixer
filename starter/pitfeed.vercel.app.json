@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "pitfeed.vercel.app",
+  "resources": [
+    {
+      "url": "https://pitfeed.vercel.app/api/motogp/:season/:round",
+      "description": "MotoGP results by season and round — full classification, points, and DNFs."
+    },
+    {
+      "url": "https://pitfeed.vercel.app/api/wec/:season/:round",
+      "description": "FIA World Endurance Championship results by season and round."
+    },
+    {
+      "url": "https://pitfeed.vercel.app/api/gtwc/:season/:round",
+      "description": "GT World Challenge Europe results (Sprint Cup + Endurance Cup) by season and round."
+    },
+    {
+      "url": "https://pitfeed.vercel.app/api/nascar/:season/:round",
+      "description": "NASCAR Cup Series results by season and round — full classification, points, and DNFs."
+    },
+    {
+      "url": "https://pitfeed.vercel.app/api/f1/:season/:round",
+      "description": "Formula 1 results by season and round — full classification, points, and DNFs."
+    },
+    {
+      "url": "https://pitfeed.vercel.app/api/indycar/:season/:round",
+      "description": "IndyCar results by season and round — full classification, points, and DNFs."
+    }
+  ]
+}

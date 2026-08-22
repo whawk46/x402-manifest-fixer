@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "deploy.acu.run",
+  "resources": [
+    {
+      "url": "https://deploy.acu.run",
+      "description": "Deploy jobs to Acurast decentralized cloud with automatic payment"
+    },
+    {
+      "url": "https://deploy.acu.run/deploy",
+      "description": "Deploy jobs to Acurast decentralized cloud with automatic payment"
+    }
+  ]
+}

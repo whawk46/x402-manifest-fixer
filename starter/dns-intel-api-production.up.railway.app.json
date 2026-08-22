@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "dns-intel-api-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://dns-intel-api-production.up.railway.app/dns/reverse",
+      "description": "Reverse-DNS lookup for an IP: PTR record plus a best-effort list of other domains hosted on the same IP."
+    },
+    {
+      "url": "https://dns-intel-api-production.up.railway.app/dns/subdomains",
+      "description": "Discover subdomains for a domain via Certificate Transparency logs (crt.sh); returns a de-duplicated, sorted list."
+    },
+    {
+      "url": "https://dns-intel-api-production.up.railway.app/dns/ssl",
+      "description": "Live TLS certificate for a domain: issuer, subject, validity dates, days remaining, SANs, TLS version, and cipher suite."
+    },
+    {
+      "url": "https://dns-intel-api-production.up.railway.app/dns/whois",
+      "description": "WHOIS registration data for a domain: registrar, creation/expiry/updated dates, nameservers, status, DNSSEC, and organisation."
+    },
+    {
+      "url": "https://dns-intel-api-production.up.railway.app/dns/full",
+      "description": "Resolve every common DNS record type for a domain: A, AAAA, MX, TXT, NS, SOA, and CNAME in one call."
+    }
+  ]
+}

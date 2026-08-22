@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "tempfile.0000402.xyz",
+  "resources": [
+    {
+      "url": "https://tempfile.0000402.xyz/upload",
+      "description": "Pay $0.02 USDC to store a file for 7 days. Send filename, optional content_type, and base64-encoded file bytes as JSON. Max file size: 10 MB. Returns a token and a stable GET URL. Network: Base Mainnet. Each request stores one file and returns a retrieval token plus expiry timestamp."
+    }
+  ]
+}

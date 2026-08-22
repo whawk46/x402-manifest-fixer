@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "pagedistill.thumm.workers.dev",
+  "resources": [
+    {
+      "url": "https://pagedistill.thumm.workers.dev/extract",
+      "description": "URL to clean JSON for AI agents. Fetches any public web page server-side and returns title, meta description, canonical URL, a heading outline, and boilerplate-stripped plain text — navigation, sidebars, cookie banners and footers removed. Saves an agent from running its own fetch + HTML-parsing + readability stack. Flat $0.01 per call, no account, no API key, no rate limit."
+    }
+  ]
+}

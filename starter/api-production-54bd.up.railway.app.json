@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "api-production-54bd.up.railway.app",
+  "resources": [
+    {
+      "url": "https://api-production-54bd.up.railway.app/v1/macro-calendar",
+      "description": "Trading Data API — 23 endpoints for agents: crypto & stock prices/OHLCV, ATR, Fair Value Gaps, ICT liquidity levels, funding/OI, order books, Kalshi prediction markets, DeFi TVL, volatility, macro calendar, and an AI momentum score. Full catalog at /v1/status."
+    }
+  ]
+}

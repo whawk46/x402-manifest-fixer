@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "statepulse-api.hahavoid0.workers.dev",
+  "resources": [
+    {
+      "url": "https://statepulse-api.hahavoid0.workers.dev/blockchain/gas-history",
+      "description": "Scans recent block gas details to estimate the minimum, average, and maximum base fee."
+    },
+    {
+      "url": "https://statepulse-api.hahavoid0.workers.dev/blockchain/balances",
+      "description": "Scans native balance and ERC-20 token balances for a wallet address on Base or Ethereum."
+    },
+    {
+      "url": "https://statepulse-api.hahavoid0.workers.dev/water/streamflow",
+      "description": "Queries live US river level, streamflow gauge height, and flow velocity metrics using the USGS National Water Information System."
+    },
+    {
+      "url": "https://statepulse-api.hahavoid0.workers.dev/network/dns-security",
+      "description": "Queries DNSSEC (DS) and Certification Authority Authorization (CAA) records for a domain using Cloudflare DoH."
+    },
+    {
+      "url": "https://statepulse-api.hahavoid0.workers.dev/calendar/holidays",
+      "description": "Retrieves local bank and public holidays across 100+ countries to verify business days."
+    },
+    {
+      "url": "https://statepulse-api.hahavoid0.workers.dev/brand/assets",
+      "description": "Extracts brand logos and theme colors for any public business URL using Clearbit and HTML parsing."
+    }
+  ]
+}

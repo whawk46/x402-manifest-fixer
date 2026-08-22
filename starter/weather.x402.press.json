@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "weather.x402.press",
+  "resources": [
+    {
+      "url": "https://weather.x402.press/weather/ask",
+      "description": "Premium multi-source intelligence: ask natural-language questions about weather, earthquakes, volcanoes, or natural events. Queries multiple weather models in parallel and returns the fastest result with cross-validation."
+    }
+  ]
+}

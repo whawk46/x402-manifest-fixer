@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "acoda.xyz",
+  "resources": [
+    {
+      "url": "https://acoda.xyz/v1/observed-map",
+      "description": "MEASURED liquidation map: real liquidation prices read from live Hyperliquid positions (the exchange-reported liquidationPx of open positions), bucketed by price. A sampled lower bound with explicit coverage — observed, not modeled."
+    }
+  ]
+}

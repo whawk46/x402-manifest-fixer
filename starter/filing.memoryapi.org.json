@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "filing.memoryapi.org",
+  "resources": [
+    {
+      "url": "https://filing.memoryapi.org/x402/filing/fda",
+      "description": "FDA drug recalls and adverse event reports from openFDA. Search by drug name or company."
+    }
+  ]
+}

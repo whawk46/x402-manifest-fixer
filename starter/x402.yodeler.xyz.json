@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.yodeler.xyz",
+  "resources": [
+    {
+      "url": "https://x402.yodeler.xyz/v1/news",
+      "description": "Forwarded news data from the Yodeler database. Price is computed from the actual billable row count and requested recency. Use /v1/news/availability to preview whether the query is free before paying."
+    }
+  ]
+}

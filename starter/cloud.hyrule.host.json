@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "cloud.hyrule.host",
+  "resources": [
+    {
+      "url": "https://cloud.hyrule.host/v1/dns/lookup",
+      "description": "Hyrule Cloud is pay-per-use infrastructure for AI agents on AS215932: IPv6-native compute, outbound requests over Direct, Tor, I2P, or Yggdrasil, BGP/routing intelligence, IP/ASN intelligence, DNS diagnostics, blocklist membership checks, filtering evidence, RDAP/WHOIS registry lookups, web and deep TLS checks, mail deliverability, outside-in port reachability, NAT port-forward checks, VoIP/SIP diagnostics. Calls settle in USDC via x402. This endpoint: Paid read-only DNS lookup, reverse lookup, resolver-validated DNSSEC (AD/DS), and trace diagnostics."
+    }
+  ]
+}

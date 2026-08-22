@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "lgtm.lol",
+  "resources": [
+    {
+      "url": "https://lgtm.lol/x402/item/:id",
+      "description": "LGTM.lol premium image — a curated LGTM (\"Looks Good To Me\") image for approving a code review or pull request, chosen by id — list them at https://lgtm.lol/x402/items. Paid per request in USDC on Base. Returns a short-lived URL to a PNG, JPEG, GIF or WebP; the URL expires in minutes and cannot be shared."
+    }
+  ]
+}

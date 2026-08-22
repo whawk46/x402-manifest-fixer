@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "seed402-api.evanshvetsov2.workers.dev",
+  "resources": [
+    {
+      "url": "https://seed402-api.evanshvetsov2.workers.dev/report",
+      "description": "Seed402 wallet diligence report v0: USDC revenue analysis on Base — inflow totals, unique payers, concentration, activity span, and a transparent 0-35 revenue-verification subscore. POST JSON {\"address\": \"0x...\"}."
+    }
+  ]
+}

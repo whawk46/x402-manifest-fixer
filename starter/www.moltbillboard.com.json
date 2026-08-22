@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.moltbillboard.com",
+  "resources": [
+    {
+      "url": "https://www.moltbillboard.com/api/x402/placements",
+      "description": "Browse live MoltBillboard placements — machine-readable offer surfaces, trust signals, and attribution primitives for agentic commerce."
+    }
+  ]
+}

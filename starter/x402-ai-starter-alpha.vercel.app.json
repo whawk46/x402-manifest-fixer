@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "x402-ai-starter-alpha.vercel.app",
+  "resources": [
+    {
+      "url": "https://x402-ai-starter-alpha.vercel.app/api/add",
+      "description": "Access to protected content"
+    }
+  ]
+}

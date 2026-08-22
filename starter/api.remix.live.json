@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.remix.live",
+  "resources": [
+    {
+      "url": "https://api.remix.live/mcp/x402-http/compile",
+      "description": "Compile Solidity contracts with the Remix compiler, supporting multiple files, custom versions, and optimization settings"
+    },
+    {
+      "url": "https://api.remix.live/mcp/x402-http/analyze",
+      "description": "Security analysis powered by Slither to detect vulnerabilities, reentrancy issues, and smart contract code quality problems"
+    }
+  ]
+}

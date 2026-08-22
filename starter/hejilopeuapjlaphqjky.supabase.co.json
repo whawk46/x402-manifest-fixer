@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "hejilopeuapjlaphqjky.supabase.co",
+  "resources": [
+    {
+      "url": "https://hejilopeuapjlaphqjky.supabase.co/functions/v1/acp/v1/quote-compare/run",
+      "description": "Compares and ranks supplier quotes by price, lead time, warranty, payment terms and mandatory-requirement eligibility."
+    },
+    {
+      "url": "https://hejilopeuapjlaphqjky.supabase.co/functions/v1/acp/v2/experts/supplier-quality/run",
+      "description": "Evaluates whether a supplier passes mandatory quality requirements and evidence verification using the certified Supplier Quality Expert v1."
+    },
+    {
+      "url": "https://hejilopeuapjlaphqjky.supabase.co/functions/v1/acp/v1/supplier-portfolio-risk/run",
+      "description": "Analyzes procurement portfolio risk from supplier spend concentration, critical dependencies, alternatives, geography and category exposure."
+    },
+    {
+      "url": "https://hejilopeuapjlaphqjky.supabase.co/functions/v1/acp/v1/requirement-check/run",
+      "description": "Checks a supplier offer against mandatory and optional procurement requirements and returns a compliance decision and score."
+    },
+    {
+      "url": "https://hejilopeuapjlaphqjky.supabase.co/functions/v1/acp/v1/supplier-risk/run",
+      "description": "Assesses supplier operational and due-diligence risk from delivery, quality, dependency, incident, certification and financial signals."
+    },
+    {
+      "url": "https://hejilopeuapjlaphqjky.supabase.co/functions/v1/acp/v1/tenderfit/score",
+      "description": "Assesses whether a company should bid on a tender or RFP by scoring capability, certification, geographic and contract-value fit."
+    }
+  ]
+}

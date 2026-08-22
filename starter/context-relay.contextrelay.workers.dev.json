@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "context-relay.contextrelay.workers.dev",
+  "resources": [
+    {
+      "url": "https://context-relay.contextrelay.workers.dev/api/v1/context",
+      "description": "URL-to-Markdown web extraction and context compression for AI agents. Fetch a public web page and return clean, task-relevant, citation-verifiable LLM context with exact excerpts, locators, hashes, and estimated tokens saved. Use before an agent summarizes, answers questions from, or cites a long or noisy URL. Deterministic and model-free. Public HTML only; no PDFs, logins, or JavaScript-only pages."
+    }
+  ]
+}

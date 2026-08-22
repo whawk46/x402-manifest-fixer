@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "replicate.x402.paywithlocus.com",
+  "resources": [
+    {
+      "url": "https://replicate.x402.paywithlocus.com/replicate/run",
+      "description": "Locus public pay-per-use API"
+    },
+    {
+      "url": "https://replicate.x402.paywithlocus.com/replicate/get-prediction",
+      "description": "Locus public pay-per-use API"
+    }
+  ]
+}

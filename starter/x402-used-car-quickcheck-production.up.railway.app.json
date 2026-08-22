@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-used-car-quickcheck-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://x402-used-car-quickcheck-production.up.railway.app/car-check",
+      "description": "Evaluate a used car before purchase. Compares the asking price with up to 50 current dealer listings in Canada or the U.S., matched by year, make, model, mileage and optional trim/location. Returns robust median and quartile pricing, deal rating, confidence, sample size and risk flags. Use for used-car price checks, negotiation prep and market comparisons."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "hosaka-agents.vercel.app",
+  "resources": [
+    {
+      "url": "https://hosaka-agents.vercel.app/dossier",
+      "description": "Full company dossier from a domain: every third-party vendor we can prove they use, with the DNS record or script that proves it, plus registration, mail, certificate and site facts. Technographics without a subscription."
+    },
+    {
+      "url": "https://hosaka-agents.vercel.app/lookup",
+      "description": "Fast company look-up from a domain: age, registrar, mail and DNS provider, DMARC, HTTPS, and how many third-party vendors we can see. One call, no signup, no API key."
+    },
+    {
+      "url": "https://hosaka-agents.vercel.app/contacts",
+      "description": "Company dossier plus every contact point the company publishes — emails, phones and social accounts scraped from its own site. Returns each third-party vendor the company can be proven to use with the record proving it. For reaching a company rather than a named person."
+    }
+  ]
+}

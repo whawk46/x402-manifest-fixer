@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "sandbox.weverpay.com",
+  "resources": [
+    {
+      "url": "https://sandbox.weverpay.com/api/wever-pay/sandbox/services/commercial-readiness",
+      "description": "Paid deterministic assessment of whether a machine-readable commercial service is ready for agent discovery, exact pricing, and Base Sepolia x402 settlement."
+    },
+    {
+      "url": "https://sandbox.weverpay.com/api/wever-pay/sandbox/services/evidence-integrity-digest",
+      "description": "Canonicalizes a bounded JSON evidence package and returns an independently reproducible SHA-256 digest without asserting the truth of its claims."
+    },
+    {
+      "url": "https://sandbox.weverpay.com/api/wever-pay/sandbox/services/agent-manifest-lint",
+      "description": "Deterministic machine-readable review of an agent manifest's identity, version, capabilities, authority separation, and public-testnet spending ceiling."
+    },
+    {
+      "url": "https://sandbox.weverpay.com/api/wever-pay/sandbox/services/authority-boundary-review",
+      "description": "Deterministic policy decision for requested actions, prohibited actions, Base Sepolia asset restrictions, and atomic test-USDC spending limits."
+    }
+  ]
+}

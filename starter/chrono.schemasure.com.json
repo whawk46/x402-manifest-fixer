@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "chrono.schemasure.com",
+  "resources": [
+    {
+      "url": "https://chrono.schemasure.com/v1/business-time",
+      "description": "Resolve a local time to an exact UTC instant with explicit DST ambiguity handling, business-day arithmetic, public-holiday status, and working-hour overlap across timezones. Detects ambiguous and nonexistent local times instead of silently shifting them. Declares its IANA tzdb release and per-jurisdiction holiday provenance."
+    }
+  ]
+}

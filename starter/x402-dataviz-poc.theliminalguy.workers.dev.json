@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-dataviz-poc.theliminalguy.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-dataviz-poc.theliminalguy.workers.dev/chart-v2",
+      "description": "Render a bar/line/area chart to SVG (v2 discovery probe)"
+    },
+    {
+      "url": "https://x402-dataviz-poc.theliminalguy.workers.dev/chart",
+      "description": "Render a bar/line/area chart to SVG"
+    }
+  ]
+}

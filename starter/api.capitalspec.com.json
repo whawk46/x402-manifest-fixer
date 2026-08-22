@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.capitalspec.com",
+  "resources": [
+    {
+      "url": "https://api.capitalspec.com/analyze",
+      "description": "Test an investment thesis or fact-check a claim against a company's actual SEC filings. Send {ticker, statement}; an analyst selects the relevant 10-K/10-Q/8-K from the full EDGAR index, deep-reads them, and returns an evidence-graded verdict — SUPPORTS, MIXED, UNDERCUTS, or INSUFFICIENT — with verbatim quotes, red flags, and what went unread. Async: pay, job id in ~2s, result in ~3 min. Built for due-diligence and equity-research agents."
+    }
+  ]
+}

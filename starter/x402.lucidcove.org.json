@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.lucidcove.org",
+  "resources": [
+    {
+      "url": "https://x402.lucidcove.org/v1/ping",
+      "description": "Settlement canary: returns a timestamped pong JSON after USDC micropayment. Use to verify x402 client + wallet + facilitator end-to-end."
+    }
+  ]
+}

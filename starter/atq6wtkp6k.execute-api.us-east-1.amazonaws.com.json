@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "atq6wtkp6k.execute-api.us-east-1.amazonaws.com",
+  "resources": [
+    {
+      "url": "https://atq6wtkp6k.execute-api.us-east-1.amazonaws.com/prod/v1/payg/llm-credential-exposure",
+      "description": "Check whether a domain's LLM/AI provider API keys (OpenAI, Anthropic, Google, Groq, xAI, Replicate) appear exposed in criminal stealer logs — LLMjacking, a fast-growing threat where a leaked key becomes a live, uncapped billing liability rather than just a data exposure. Call to catch an exposed key before the drain, not after the invoice."
+    }
+  ]
+}

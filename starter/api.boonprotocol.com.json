@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.boonprotocol.com",
+  "resources": [
+    {
+      "url": "https://api.boonprotocol.com/api/v1/x402/routes",
+      "description": "Boon recognized x402 endpoint directory"
+    },
+    {
+      "url": "https://api.boonprotocol.com/api/v1/x402/graph",
+      "description": "Boon x402 endpoint recognition graph"
+    },
+    {
+      "url": "https://api.boonprotocol.com/api/v1/handles/:handle/boons",
+      "description": "Boon chronological per-handle boon list"
+    }
+  ]
+}

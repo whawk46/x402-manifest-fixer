@@ -1,0 +1,363 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "proxy.suverse.io",
+  "resources": [
+    {
+      "url": "https://proxy.suverse.io/v1/proxy/reskey_1166628d/bazaar-test",
+      "description": "Bitcoin spot price in USD. Pay-per-call $0.001 USDC. AI agent BTC price feed."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/swap/solana/quote",
+      "description": "Bidirectional SPL token swap aggregator on Solana mainnet via Jupiter v6 routing across 30+ DEXs (Raydium, Orca, Meteora, Phoenix). USDC to BONK WIF POPCAT JUP RAY ORCA SOL MEW BOME or any SPL, and reverse to USDC. Two-step quote/execute x402 flow. 1% fee. AI agent swap. memecoin DEX."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/swap/base/quote",
+      "description": "Bidirectional ERC20 token swap aggregator on Base mainnet via LiFi routing across 20+ DEXs (Uniswap V3, Aerodrome, BaseSwap, SushiSwap). USDC to WETH AERO DEGEN BRETT TOSHI cbETH cbBTC or any ERC20, and reverse to USDC. Two-step quote/execute x402 flow. 1% fee. AI agent swap. L2 DEX."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/smart-money-netflow",
+      "description": "Solana smart-money wallet flow analytics — aggregated netflows from profitable on-chain Solana traders. Per-token buy/sell USD, score-weighted, 1h/24h/7d/30d windows. Pump.fun + meme coverage. $0.02/call. Keywords: solana, netflow, pump.fun, wallet-tracking."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/dex-trending-pools",
+      "description": "GeckoTerminal trending DEX pools for a network (eth/base/solana/arbitrum...): base & quote token, price USD, 24h volume, reserve liquidity, price change and tx counts. Pass network; bounded top list."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/wallet-reputation",
+      "description": "Solana wallet reputation verdict in one call: smart-money skill tier (elite, skilled, average, weak, unknown), activity class, trading style flags, 24h/7d/30d trade stats, recent classified trades. Answers: can this wallet trading be trusted or copied? On-chain data only."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/polymarket-whale-entries",
+      "description": "Polymarket whale entries feed — large trades from skill-ranked traders. Stream with trader skill score, side, size, entry price, post-entry market context. NOT guaranteed alpha. $0.02/call. Keywords: polymarket, whale, entries, feed, copy-trading."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-perp-open-interest",
+      "description": "Open interest for any Binance Futures perpetual with 24h change %, USD notional, 5-minute OI history over last 24 hours. AI agent leverage buildup detector, squeeze-setup finder, funding-pressure precursor, position monitoring, perp OI API."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/smart-money-top-wallets",
+      "description": "Smart-money wallet leaderboard from our tracker: eligible wallets ranked by skill score then 90d PnL. address, tier, score, win rate, 90d/realized PnL, profit factor, holding time. chain=base|solana. In-house scoring data."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/ethereum-gas-tracker",
+      "description": "Ethereum mainnet gas prices (safe / standard / fast tier) real-time from Etherscan V2. AI agent MEV bot, trading bot, dApp tx-timing API, ETH gas oracle, pay-per-call. Time transactions for cost efficiency."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/smart-money-accumulation",
+      "description": "Tokens with the biggest smart-money net INFLOW (30d) from our tracker: buy/sell/net USD, unique traders, smart-money score, symbol. chain=base|solana, limit<=100. In-house data."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/crypto-market-pulse",
+      "description": "Aggregated crypto market verdict in one call: fear-greed sentiment crossed with smart-money netflow regime (accumulation_on_fear, capitulation, confirmed_rally, late_stage_caution), trending coins checked against smart-money buying, BTC 24h move, high-conviction Polymarket positioning, plus all raw source data."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/token-check",
+      "description": "Solana token safety verdict in one call: risk level with flags, exit cost from a real $500 quote, top-10 holder concentration with pools excluded, token age, mint and freeze authority checks, 24h momentum, and whether elite smart-money wallets bought or sold it in the last 30 days. Answers: is this token sane to enter?"
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/weather-forecast-nyc",
+      "description": "Free weather data from Open-Meteo. Current temperature, conditions, wind for any location (default NYC, customizable via query params). No upstream API key. AI agent travel context, logistics weather, local recommendation, geocoded forecast API."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/binance-btc-spot",
+      "description": "Real-time Bitcoin BTC spot price in USDT from Binance. AI agent price feed, low-latency crypto quote, market data API, pay-per-call."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-cve-lookup",
+      "description": "Full detail for a single CVE by identifier from the NIST National Vulnerability Database: description, CVSS scores and vector, affected configs, references, dates. For AI security agents triaging vulnerabilities, enriching alerts, and prioritizing patching."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-fear-greed-index",
+      "description": "Crypto fear and greed sentiment index (0 extreme fear to 100 extreme greed) with classification label, 30-day history for trend analysis, timestamp. AI agent sentiment extreme detector, contrarian signal, risk-management trigger, market mood API."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-ta-moving-averages",
+      "description": "SMA + EMA at 20, 50, 200 periods for any Binance pair on any timeframe. Current price, all six MAs, golden cross / death cross detection within last 10 periods, above/below 200 SMA trend flag. AI agent trend-following bot, dynamic support-resistance, TA API."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-crypto-market-rankings",
+      "description": "Top N crypto by market cap with price, 24h volume, 1h/24h/7d/30d % changes, fully diluted valuation, circulating supply, ATH/ATL, dominance. AI agent leaderboard, opportunity screener, market report, momentum tracker. 10-250 coins per call. CoinGecko data."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-opensky-live-aircraft",
+      "description": "Live ADS-B aircraft inside a bounding box from OpenSky Network: ICAO24, callsign, country, position, altitude, speed, track and vertical rate. Bounding box required. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-crypto-trending",
+      "description": "Top 7 trending crypto by user searches on CoinGecko in the last 24h. Sentiment/hype signal showing what is capturing retail attention before price moves. Name, symbol, market cap rank, price, thumbnail. AI agent attention shift detector, memecoin emergence radar."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-crypto-ohlc-history",
+      "description": "Daily OHLC candle bars (open/high/low/close) for any coin up to 365 days back. Timestamp + OHLC per day. AI agent technical analysis, backtest, chart generator, volatility calculator, pattern recognition. Standard format for all TA libraries. CoinGecko."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/polymarket-position-holders",
+      "description": "Polymarket position holders intelligence. Where do skill-ranked traders hold large open positions right now? Per-market YES/NO concentration, holder skill distribution, largest positions. Leading indicator for resolution. $0.07/call. Keywords: polymarket, position-holders, leading-indicator, intelligence."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/bitcoin-fees-recommended",
+      "description": "Bitcoin recommended fees real-time from mempool. sat/vByte tiers: fastest, half-hour, hour, economy, minimum. Includes mempool tx count, total size MB, total fee sats, fee histogram. AI agent BTC broadcasting bot, fee estimator API, mempool monitor."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-anime-search",
+      "description": "Search anime by title on MyAnimeList; returns score, type, episodes, status, aired dates and synopsis per match. Keyless Jikan v4. For agents finding an anime by name."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/base-contract-info",
+      "description": "Verified smart contract metadata on Base mainnet by address. Returns contract name, compiler version, ABI, implementation address for proxies, license, optimization runs, EVM version. AI agent contract verification, security audit, ABI lookup, Base L2 contract API."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-perp-funding-batch",
+      "description": "Batch funding rates for multiple Binance Futures perps in one call. Per-symbol mark price, funding rate, next funding timestamp, predicted next rate. AI agent funding arbitrage, multi-pair basis trader, market maker funding skew, hedge bot, batch perp API."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-forex-historical",
+      "description": "Historical daily ECB FX rate for any currency pair on any date going back to 1999. Covers major + emerging currencies USD EUR GBP JPY CHF AUD CAD CNY. AI agent historical tx reconciliation, returns computation, regulatory reporting, forex backtest API."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/fiat-exchange-rates",
+      "description": "Real-time forex exchange rates for 170+ currencies with USD base. Daily updates from ExchangeRate-API open data. AI agent international payment calculator, cross-border FX, finance dashboard, currency converter API, pay-per-call USDC."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-wiki-random",
+      "description": "A random English Wikipedia article summary via the REST API, no key. Returns title, extract, and URL. For AI agents generating discovery, trivia, and serendipity content."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-sec-filings",
+      "description": "Latest SEC EDGAR filings for any US-listed company: 10K annual, 10Q quarterly, 8K material events, S1 IPO, Form 4 insider transactions. Returns date, form type, accession number, direct filing URL. AI agent corporate event tracker, insider activity bot, equity research API."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/smart-money-base",
+      "description": "Base smart-money wallet flow analytics — aggregated netflows from on-chain Base traders. Per-token buy/sell USD, score-weighted, 1h/24h/7d/30d windows. Aerodrome + Uniswap V3 + ERC-20. $0.02/call. Keywords: base, aerodrome, uniswap, defi, wallet."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/polymarket-smart-bias",
+      "description": "Polymarket smart-money bias signals. Where are skill-ranked traders positioning per market? YES/NO volume split, conviction score, category-aware. Politics + crypto + sports + macro. $0.05/call. Keywords: polymarket, prediction-markets, smart-money, bias, signal."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/bitcoin-block-info",
+      "description": "Bitcoin block info by height or hash. Returns hash, height, timestamp, tx count, total fees, miner pool ID, size, weight, difficulty, merkle root, version, nonce, up to 100 tx IDs. AI agent BTC block explorer API, network state analysis, mining metrics."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/coinbase-btc-spot",
+      "description": "Real-time Bitcoin BTC spot price in USD from Coinbase. AI agent price feed, exchange-rate quote, market data API, BTC-USD ticker, pay-per-call."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-artic-search",
+      "description": "Search the Art Institute of Chicago collection by keyword, no key. Returns matching artworks with title, artist, and date. For AI agents building art discovery experiences."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-river-discharge",
+      "description": "River discharge (flood) forecast for a latitude and longitude from the Open-Meteo flood API, no key. Returns daily river discharge in cubic meters per second. For AI agents in flood risk, insurance, and water management."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/cosmos-chain-info",
+      "description": "Cosmos chain info for Hub, Noble, Osmosis, Juno, Stride and any Cosmos SDK chain. Current block height, latest block time, avg block time, total staking supply, bonded tokens, bonded ratio, active validator count, denom count, chain ID. AI agent Cosmos monitor, IBC ecosystem API."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-weather-forecast",
+      "description": "Seven day daily weather forecast for any latitude and longitude from Open-Meteo: daily max and min temperature and total precipitation per day in local time. For AI agents planning weather sensitive operations like travel, agriculture, retail, and energy load."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/cosmos-ibc-tracker",
+      "description": "Track Cosmos IBC transfer by source tx hash. Source channel/port, dest channel/port, packet sequence, timeout height/timestamp, sender, receiver, denom, amount, lifecycle (sent, acknowledged, in flight, timed out). AI agent cross-chain monitor, IBC stuck-transfer debugger, Cosmos API."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/road-conditions",
+      "description": "CLEAR / CAUTION / SEVERE verdict for any US freight corridor: live NWS alerts sampled along the route + WZDx work zones within 30 km (closures first) from keyless state DOT feeds. Honest per-state coverage disclosure. Origin/destination as lat,lon or place names. Fail-closed, auto-refund."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-net-dns-txt",
+      "description": "Resolve a domain's TXT records (SPF, DKIM, verification strings) via keyless Cloudflare DNS-over-HTTPS. For agents auditing email auth and domain ownership records."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-geo-osrm-nearest",
+      "description": "Snap a lon,lat coordinate to the nearest routable road via public OSRM. Returns matched location, road name and snap distance for the closest N points. Keyless OpenStreetMap map-matching for agents."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-pokemon",
+      "description": "Look up a Pokemon by name from PokeAPI, no key. Returns types, stats, abilities, height, and weight. For AI agents in games, trivia, and entertainment apps."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-solana-dex-pools",
+      "description": "Top Solana DEX liquidity pools across Raydium, Orca, Meteora and others. Token pair, TVL USD, 24h volume, fee tier, current price. AI agent Solana liquidity finder, MEV searcher, arbitrage bot, Jupiter aggregator user, SPL DEX API. Concentrated + standard pools."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-deck-of-cards-shuffle",
+      "description": "Create and shuffle a standard playing card deck, returning a reusable deck id and remaining count. A shuffle primitive for card games and randomised sampling. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-scryfall-card-search",
+      "description": "Search Magic: The Gathering cards via Scryfall query syntax. Returns mana cost, oracle text, rarity, set, images, market prices and format legality across all formats. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-steamspy-app-stats",
+      "description": "SteamSpy estimates for a Steam game: owners range, average and median playtime, concurrent users, price, review counts, developer, publisher, genre and tags. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-steam-player-count",
+      "description": "Live concurrent player count for a Steam game from the Steam Web API. Pass a Steam app id. The cheapest read on how alive a game is right now. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-steam-app-details",
+      "description": "Steam storefront details for a game: name, description, developers, publishers, release date, price and discount, platforms, Metacritic, genres and system requirements. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-chesscom-player-profile",
+      "description": "Chess.com public player profile: name, title, country, followers, league, join and last-online times and streamer status. Pass a username. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-chesscom-player-stats",
+      "description": "Chess.com player ratings and record: current, best and lowest across blitz, bullet, rapid and daily with W/L/D counts, plus tactics and puzzle rush bests. Pass a username. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-f1-driver-standings",
+      "description": "Formula 1 World Drivers' Championship standings for a season from Jolpica-F1: position, points, wins, constructor and driver details. Pass a season year. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-f1-race-results",
+      "description": "Formula 1 race classification from Jolpica-F1 (Ergast successor): position, driver, constructor, grid, laps, status, time, points and fastest lap. Pass season and round. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-espn-teams",
+      "description": "All teams in an ESPN-covered league with id, name, abbreviation, location, colours and logos. Pass sport and league, e.g. basketball/nba. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-espn-scoreboard",
+      "description": "Live scoreboard for any ESPN-covered league: fixtures, scores, clock state, venue and competitor records. Pass sport and league, e.g. soccer/eng.1 or basketball/nba. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-deezer-search",
+      "description": "Search Deezer for artists, albums, tracks or playlists. Returns ids, names, artwork, fan counts, track duration, rank and 30-second preview URLs. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-itunes-catalog-search",
+      "description": "Search Apple's iTunes and App Store catalogue for music, podcasts, movies, TV, books and apps. Returns names, release dates, genre, price, previews and artwork. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-dailymed-drug-labels",
+      "description": "Search DailyMed official FDA Structured Product Labels by drug name or NDC. Returns SPL set id, title, published date and labeller. NLM authoritative prescribing information. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-who-indicator-catalogue",
+      "description": "Catalogue of WHO Global Health Observatory indicators with code, name and language. The lookup for discovering WHO indicator codes. OData filter and top supported. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-hibp-latest-breach",
+      "description": "The most recently added breach in Have I Been Pwned: name, domain, dates, accounts exposed, compromised data classes and verification status. No parameters. Keyless route."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-hibp-breach-detail",
+      "description": "Detail for one known data breach from Have I Been Pwned: date, accounts affected, exact compromised data classes and verified/sensitive flags. Pass a breach name. Keyless route."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-tor-relay-summary",
+      "description": "Compact Tor relay summary from Onionoo: nickname, fingerprint, running state and addresses. Lighter than full details, for quick Tor membership checks. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-tor-relay-details",
+      "description": "Tor relay and bridge records from the Tor Project's Onionoo service: nickname, fingerprint, flags, bandwidth, IPs, AS, country and first-seen. Search by fingerprint, nickname, IP or country. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-photon-reverse-geocode",
+      "description": "Reverse geocode a lat/lon to the nearest address via Photon (OpenStreetMap): street, house number, postcode, city, state, country and OSM ids. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-photon-geocode",
+      "description": "Geocode a place name or address to coordinates via Photon, the OpenStreetMap-backed geocoder. Returns ranked GeoJSON with name, country, city, postcode and OSM ids. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-l2beat-scaling-summary",
+      "description": "L2Beat scaling summary: every tracked Ethereum L2 with value secured, market share, 7d change, stage classification, rollup type and risk profile. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-ukpolice-force-detail",
+      "description": "Profile for one UK police force: name, description, telephone and official website plus engagement channels. Pass a force id such as metropolitan. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-usaspending-agency-budget",
+      "description": "Budgetary resources for a US federal agency by toptier code from USAspending.gov: total resources, obligations and outlays by fiscal year. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-usaspending-agencies",
+      "description": "All US federal top-tier agencies from USAspending.gov with name, abbreviation, toptier code and current-year budget authority. The agency-code lookup for federal spending queries. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-gdacs-disaster-events",
+      "description": "Worldwide disaster events from GDACS (UN/EC): earthquakes, cyclones, floods, volcanoes, droughts and wildfires as GeoJSON with alert level, severity and population affected. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-fema-nfip-claims",
+      "description": "FEMA NFIP flood insurance claims: date of loss, state, county, ZIP, flood zone, occupancy and amounts paid on building and contents. OData filter supported. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-fema-disaster-declarations",
+      "description": "US federal disaster declarations from OpenFEMA: declaration and incident type, state, county, incident dates and authorised assistance programs. OData filter supported. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-swpc-f107-flux",
+      "description": "Current F10.7 cm solar radio flux from NOAA SWPC, the standard solar activity proxy driving satellite drag and ionospheric models, with timestamp. No parameters. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-swpc-solar-wind-mag",
+      "description": "Interplanetary magnetic field at L1 from NOAA SWPC: total field Bt and north-south Bz in nT with timestamp. Southward Bz is the key storm predictor. No parameters. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-swpc-solar-wind-speed",
+      "description": "Current solar wind bulk speed in km/s at the L1 point from NOAA SWPC, with observation timestamp. Elevated speed precedes geomagnetic disturbance. No parameters. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-ripe-rpki-validation",
+      "description": "RPKI route origin validation via RIPEstat: is this ASN authorised to announce this prefix? Returns valid, invalid or unknown plus matching and non-matching ROAs. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-ripe-abuse-contact",
+      "description": "Registered abuse-reporting contact for an IP, prefix or ASN via RIPEstat, with the authoritative RIR and the resource matched. Pass an IP, prefix or AS number. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-ripe-routing-history",
+      "description": "Historic BGP announcements for a prefix or ASN from RIPEstat: which ASNs originated it over time with first and last seen timestamps. Useful for hijack and origin-change checks. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-ripe-prefix-overview",
+      "description": "Routing overview for an IP or CIDR from RIPEstat: announced prefix, originating ASNs with holder names, and announcement status. Pass an IP or prefix. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-ossf-scorecard",
+      "description": "OpenSSF Scorecard for a public GitHub repo: aggregate score out of 10 plus per-check results for branch protection, code review, maintenance, pinned deps and vulnerabilities. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-depsdev-package",
+      "description": "Package insights from deps.dev across npm, pypi, cargo, go, maven and nuget: known versions with publication metadata in one cross-ecosystem shape. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-osv-vuln-detail",
+      "description": "Full OSV.dev advisory for one vulnerability ID (OSV, GHSA, PYSEC, RUSTSEC or CVE): summary, severity, affected package ranges, fixed versions, references, aliases. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-maven-artifact",
+      "description": "Search Maven Central for Java artifacts by query, groupId or artifactId. Returns coordinates, latest version, packaging and last-updated time. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-rubygems-gem",
+      "description": "RubyGems gem metadata: version, summary, authors, licenses, download counts, project URIs and runtime dependencies. Pass a gem name. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-crates-crate",
+      "description": "Rust crate metadata from crates.io: description, latest version, total and recent downloads, repository and docs links, categories and keywords. Pass a crate name. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-pypi-package",
+      "description": "PyPI package metadata: version, summary, author, license, requires-python, classifiers, project URLs and latest-release files. Pass a package name. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-npm-downloads",
+      "description": "npm package download counts for last-day, last-week or last-month, with the exact date range covered. Pass a package name and optional period. Keyless."
+    },
+    {
+      "url": "https://proxy.suverse.io/v1/data/suverse-npm-package",
+      "description": "Latest npm package metadata from the npm registry: version, license, homepage, repository, dependencies and dist integrity hash. Pass a package name. Keyless."
+    }
+  ]
+}

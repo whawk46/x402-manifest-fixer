@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "bazaar-demand-forecaster-mainnet-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://bazaar-demand-forecaster-mainnet-production.up.railway.app/v1/forecast",
+      "description": "Forecast aggregate Bazaar demand by endpoint category with bounded evidence and confidence."
+    }
+  ]
+}

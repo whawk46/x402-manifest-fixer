@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402lifeadvice.vercel.app",
+  "resources": [
+    {
+      "url": "https://x402lifeadvice.vercel.app/api/life-advice",
+      "description": "Get one piece of thoughtful life advice, paid per request over x402."
+    }
+  ]
+}

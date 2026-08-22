@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.tryskopos.xyz",
+  "resources": [
+    {
+      "url": "https://www.tryskopos.xyz/api/market-read",
+      "description": "Aeon-powered market intelligence: defi regime, narratives, trending, top protocols, fear/greed divergence, or x402 ecosystem pulse."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "donate.0000402.xyz",
+  "resources": [
+    {
+      "url": "https://donate.0000402.xyz/donate",
+      "description": "Pay $0.01 USDC as a small donation or a simple live x402 integration test. Optional name and message are stored publicly and shown on GET /donations. Network: Base Mainnet. Each request records one donation and returns public feed links."
+    }
+  ]
+}

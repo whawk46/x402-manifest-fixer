@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "bizintel-api.hahavoid0.workers.dev",
+  "resources": [
+    {
+      "url": "https://bizintel-api.hahavoid0.workers.dev/finance/gas-arbitrum",
+      "description": "Fetches live Arbitrum L2 gas price estimations from the mainnet RPC pipeline."
+    },
+    {
+      "url": "https://bizintel-api.hahavoid0.workers.dev/finance/gas-ethereum",
+      "description": "Fetches current Ethereum Mainnet gas price from the public DoH RPC pipeline."
+    },
+    {
+      "url": "https://bizintel-api.hahavoid0.workers.dev/geography/ip-lookup",
+      "description": "Resolves geographic city, region, ISP, and coordinates for an IP address via ip-api.com."
+    },
+    {
+      "url": "https://bizintel-api.hahavoid0.workers.dev/geography/weather-history",
+      "description": "Queries historical temperature observations for a coordinate and date."
+    }
+  ]
+}

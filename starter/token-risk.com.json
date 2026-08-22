@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "token-risk.com",
+  "resources": [
+    {
+      "url": "https://token-risk.com/v1/scan",
+      "description": "Deterministic on-chain structural risk report for an ERC-20 token on Base. Keyless x402-native payment — no signup, no API key. Reports STRUCTURAL risk, not reputation: centralized-control powers (mint/pause/blacklist) are flagged regardless of issuer. Score 0-100, higher = structurally safer. See free real samples before paying: GET /samples/index.json"
+    },
+    {
+      "url": "https://token-risk.com/v1/wallet",
+      "description": "Deterministic on-chain structural-safety report for a Base address: contract detection, verification status, proxy/owner/privileged-function analysis. Behavioral signals (age, activity, funding) not yet included. Keyless x402-native payment — no signup, no API key. Score 0-100, higher = structurally safer. See free real samples before paying: GET /samples/index.json"
+    }
+  ]
+}

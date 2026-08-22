@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402toll.com",
+  "resources": [
+    {
+      "url": "https://x402toll.com/v1/llc-cost",
+      "description": "LLC formation cost for any US state + DC: filing fee, annual/biennial report, franchise tax, publication requirements — Year-1 and 5-year totals from each state's own 2026 fee schedule."
+    },
+    {
+      "url": "https://x402toll.com/v1/commerce/discount",
+      "description": "Sale price after one or more stacked percentage discounts (applied sequentially, not summed) plus an optional flat amount off."
+    }
+  ]
+}

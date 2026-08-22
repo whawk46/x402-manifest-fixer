@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "k-data-x402-production.theblack1022.workers.dev",
+  "resources": [
+    {
+      "url": "https://k-data-x402-production.theblack1022.workers.dev/api/fx/usdkrw",
+      "description": "Current USD/KRW exchange rate (ECB reference via Frankfurter, fallback open.er-api.com)."
+    }
+  ]
+}

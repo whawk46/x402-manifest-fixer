@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-offers-api-replitzip.replit.app",
+  "resources": [
+    {
+      "url": "https://agent-offers-api-replitzip.replit.app/v1/offers/search",
+      "description": "One unified source-first query for official China bank card offer documents. Select bank_code from the Bazaar input schema or /v1/supported-banks. Returns cleaned activity text, linked source resources, official source URLs, hashes, status labels and enrollment requirements; no recommendations or rankings."
+    }
+  ]
+}

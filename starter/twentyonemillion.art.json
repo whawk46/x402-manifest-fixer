@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "twentyonemillion.art",
+  "resources": [
+    {
+      "url": "https://twentyonemillion.art/api/x402/claim",
+      "description": "One permanent square on twentyone-million, $1 USDC on Base (one per wallet). Want it? Retry this request with a signed payment and the square mints in the response. Pass ?handle= and ?message=. Live: 5 of 21,000 squares claimed, 20,995 open. A novelty collectible — not a token, not an investment."
+    }
+  ]
+}

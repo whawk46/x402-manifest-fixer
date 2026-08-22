@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agentspec-one.vercel.app",
+  "resources": [
+    {
+      "url": "https://agentspec-one.vercel.app/inspect/mcp",
+      "description": "Inspect MCP tools and return agent-readiness score, risky tools, missing schemas, and marketplace candidates."
+    }
+  ]
+}

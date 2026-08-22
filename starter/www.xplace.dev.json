@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "www.xplace.dev",
+  "resources": [
+    {
+      "url": "https://www.xplace.dev/api/place",
+      "description": "Buy a pixel!"
+    }
+  ]
+}

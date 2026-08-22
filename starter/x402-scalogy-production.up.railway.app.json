@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-scalogy-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://x402-scalogy-production.up.railway.app/find_graded_deals",
+      "description": "Proprietary, daily-scored US residential real-estate deals for investors. Each on-market listing is graded (STRONG / MODERATE / FAIR) for flip, BRRRR, or buy-&-hold, with an estimated ARV from a live comp set, gross spread, margin %, cap rate / cash flow, days on market, comp count and the source URL. Filter by state, ZIP, city, price, beds, margin and ARV confidence. Coverage: FL, GA, NC, SC, AL, MS (2,400+ metro ZIPs)."
+    }
+  ]
+}

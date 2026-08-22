@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "giftpulse.theaslangroupllc.com",
+  "resources": [
+    {
+      "url": "https://giftpulse.theaslangroupllc.com/api/topup/lookup",
+      "description": "Auto-detect the mobile carrier for a phone number and return its live top-up amount range/denominations and current discount, before quoting or sending airtime. Wraps Reloadly's operator auto-detect. Run this (or POST /api/topup/quote directly, which auto-detects internally) before POST /api/topup."
+    },
+    {
+      "url": "https://giftpulse.theaslangroupllc.com/api/giftcard/catalog",
+      "description": "Search Reloadly's gift card catalog (300+ brands, 14,000+ products/denominations across countries). Returns each product's id, brand, country, denomination range or fixed amounts, and sender fee/discount — everything needed to build a POST /api/giftcard/quote call."
+    }
+  ]
+}

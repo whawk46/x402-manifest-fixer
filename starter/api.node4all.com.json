@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.node4all.com",
+  "resources": [
+    {
+      "url": "https://api.node4all.com/v1/x402-test",
+      "description": "Node4All Fortune — deterministic fortune reading derived from the x402 payment authorization nonce. Flagship demo of the Node4All x402 v2 payment flow. Operator: Node4All (https://node4all.com). Currency: USDC on Base."
+    },
+    {
+      "url": "https://api.node4all.com/v1/md2pdf",
+      "description": "Node4All md2pdf — Markdown → PDF (md2pdf) conversion for AI agents and document automation workflows. Accepts UTF-8 markdown either as a multipart \"file\" upload (.md, ≤10MB) or as a JSON body { \"markdown\": \"...\" }, and returns application/pdf. Operator: Node4All (https://node4all.com). Currency: USDC on Base."
+    },
+    {
+      "url": "https://api.node4all.com/v1/pdf2md",
+      "description": "Node4All pdf2md — layout-aware PDF → Markdown (pdf2md) conversion powered by @opendocsg/pdf2md, ideal for ingesting long documents into agent context windows. Accepts a multipart \"file\" upload (application/pdf, ≤10MB) and returns text/markdown. Operator: Node4All (https://node4all.com). Currency: USDC on Base."
+    }
+  ]
+}

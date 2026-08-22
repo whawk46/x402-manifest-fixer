@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-economy-sec-verifier.onrender.com",
+  "resources": [
+    {
+      "url": "https://agent-economy-sec-verifier.onrender.com/v1/verify-sec-fact",
+      "description": "Verify a numeric financial claim against official SEC XBRL company facts. Send a ticker or CIK, us-gaap concept or supported alias, claimed value, and filters. Returns verified, mismatch, or unknown with the exact filing fact, comparison, timestamps, and official SEC provenance. Buy when an agent must validate a financial figure before analysis or action."
+    }
+  ]
+}

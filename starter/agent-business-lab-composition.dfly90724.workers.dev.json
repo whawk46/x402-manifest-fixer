@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-business-lab-composition.dfly90724.workers.dev",
+  "resources": [
+    {
+      "url": "https://agent-business-lab-composition.dfly90724.workers.dev/api/composition",
+      "description": "Deterministic three-service GEO visibility composition with verified procurement accounting."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.blockscout.com",
+  "resources": [
+    {
+      "url": "https://api.blockscout.com/:chain_id/api/v2/addresses/:address_hash_param",
+      "description": "Access to api/v2/addresses/:address_hash. Retrieve detailed information about a specific address or contract"
+    },
+    {
+      "url": "https://api.blockscout.com/:chain_id/api/v2/tokens/:address_hash_param",
+      "description": "Access to api/v2/tokens/:address_hash. Retrieve detailed information about a specific token"
+    },
+    {
+      "url": "https://api.blockscout.com/:chain_id/api/v2/tokens/:address_hash_param/holders",
+      "description": "Access to api/v2/tokens/:address_hash/holders. List addresses holding a specific token sorted by balance"
+    },
+    {
+      "url": "https://api.blockscout.com/:chain_id/api/v2/addresses/:address_hash_param/transactions",
+      "description": "Access to api/v2/addresses/:address_hash/transactions. List transactions involving a specific address with to-from filtering"
+    },
+    {
+      "url": "https://api.blockscout.com/:chain_id/api/v2/smart-contracts/:address_hash_param",
+      "description": "Access to api/v2/smart-contracts/:address_hash. Retrieve detailed information about a verified smart contract"
+    },
+    {
+      "url": "https://api.blockscout.com/:chain_id/api/v2/transactions/:transaction_hash_param",
+      "description": "Access to api/v2/transactions/:hash. Retrieve detailed information about a specific transaction"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "final-project-bitcoin-three.vercel.app",
+  "resources": [
+    {
+      "url": "https://final-project-bitcoin-three.vercel.app/api/add",
+      "description": "Access to protected math functions"
+    }
+  ]
+}

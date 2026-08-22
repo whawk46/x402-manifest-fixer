@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "currency-api-production-4a8d.up.railway.app",
+  "resources": [
+    {
+      "url": "https://currency-api-production-4a8d.up.railway.app/crypto/price",
+      "description": "Current price, market cap, and 24h change for a single cryptocurrency by symbol or name (CoinGecko)."
+    },
+    {
+      "url": "https://currency-api-production-4a8d.up.railway.app/rates/historical",
+      "description": "Historical fiat exchange rates for a given date (YYYY-MM-DD, back to 1999-01-04) and base currency; optionally restrict to specific targets."
+    },
+    {
+      "url": "https://currency-api-production-4a8d.up.railway.app/crypto/prices",
+      "description": "Batch current prices, market caps, and 24h changes for up to 50 cryptocurrencies by symbol or name (CoinGecko)."
+    },
+    {
+      "url": "https://currency-api-production-4a8d.up.railway.app/rates/convert",
+      "description": "Convert an amount from one fiat currency to another at the latest ECB rate; returns the rate, converted result, and rate date."
+    },
+    {
+      "url": "https://currency-api-production-4a8d.up.railway.app/rates/latest",
+      "description": "Latest fiat exchange rates (ECB via Frankfurter) for a base currency; optionally restrict to specific target currency codes."
+    }
+  ]
+}

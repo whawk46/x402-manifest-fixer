@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "projectx402-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://projectx402-production.up.railway.app/v1/schema-check",
+      "description": "Validate JSON against a JSON Schema. Checks LLM and agent output and API request payloads, returning structured errors with error codes, JSONPath locations, and a plain-English summary. Optional automatic repair of invalid payloads."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "deadchannel.vercel.app",
+  "resources": [
+    {
+      "url": "https://deadchannel.vercel.app/probe",
+      "description": "Risk check for any x402 endpoint. Returns a verdict (live, degraded, trap, testnet, dead), a 0-100 risk score and the specific problems found — before you spend money on it."
+    }
+  ]
+}

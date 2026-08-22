@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "hl-tool.darren-pi.workers.dev",
+  "resources": [
+    {
+      "url": "https://hl-tool.darren-pi.workers.dev/v1/funding/extremes",
+      "description": "Full Hyperliquid funding extremes (carry-cost leaderboard)"
+    }
+  ]
+}

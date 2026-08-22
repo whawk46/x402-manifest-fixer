@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "toolvend.dev",
+  "resources": [
+    {
+      "url": "https://toolvend.dev/rdap/:var1",
+      "description": "Domain registration data (modern WHOIS) via RDAP: registrar, created/expiry dates, status, nameservers, DNSSEC."
+    },
+    {
+      "url": "https://toolvend.dev/text/clean",
+      "description": "Clean text: strip HTML, normalise unicode/whitespace, dedupe lines. Returns cleaned text plus stats."
+    },
+    {
+      "url": "https://toolvend.dev/email-auth/:var1",
+      "description": "Email authentication posture for a domain: DMARC + SPF records fetched, parsed, scored 0-100, with findings and fix recommendations."
+    },
+    {
+      "url": "https://toolvend.dev/extract",
+      "description": "Fetch a web page and return structured content: title, meta/OpenGraph, canonical, headings, links, readable text (boilerplate stripped). Add ?render=true for JavaScript-rendered pages ($0.03)."
+    },
+    {
+      "url": "https://toolvend.dev/lei/:var1",
+      "description": "Global legal-entity/KYB lookup by LEI: official identity, jurisdiction, addresses, registration and renewal standing, risk flags, and GLEIF data freshness."
+    }
+  ]
+}

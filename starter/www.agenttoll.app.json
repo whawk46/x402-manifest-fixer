@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "www.agenttoll.app",
+  "resources": [
+    {
+      "url": "https://www.agenttoll.app/api/watch/address/:address",
+      "description": "New activity for a Base address since your cursor (stateless watch)"
+    }
+  ]
+}

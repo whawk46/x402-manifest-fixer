@@ -1,0 +1,83 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.tantra-authority.com",
+  "resources": [
+    {
+      "url": "https://api.tantra-authority.com/api/x402/lazy-getting-rich-audiobook",
+      "description": "The Lazy Guide to Getting Rich — Audiobook — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/reading-unlimited-30d",
+      "description": "Unlimited Tarot Readings — 30-Day Access Pass — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/open-relationship-blueprint-book",
+      "description": "The Open Relationship Blueprint (eBook) — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/awaken-sexually",
+      "description": "Awaken Sexually — Binaural Beats — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/reading-magician",
+      "description": "The Magician — Your Full Reading — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/reading-wild-one",
+      "description": "The Wild One — Your Full Reading — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/reading-architect",
+      "description": "The Architect — Your Full Reading — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/reading-sovereign",
+      "description": "The Sovereign — Your Full Reading — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/symbolic-mind-book",
+      "description": "The Symbolic Mind: Essential (eBook) — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/reignite-your-desire-book",
+      "description": "Reignite Your Desire (eBook) — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/free-yourself-from-fear-book",
+      "description": "Free Yourself From Fear (eBook) — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/heart-of-god",
+      "description": "Entering the Heart of God — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/passive-income-tracker",
+      "description": "Passive Income Tracker (PRO) — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/reading-mystic",
+      "description": "The Mystic — Your Full Reading — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/reading-dreamer",
+      "description": "The Dreamer — Your Full Reading — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/reading-oracle",
+      "description": "The Oracle — Your Full Reading — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/reading-flame",
+      "description": "The Flame — Your Full Reading — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/infinite-mind-book",
+      "description": "Infinite Mind (eBook) — Tantra Authority"
+    },
+    {
+      "url": "https://api.tantra-authority.com/api/x402/mind-stop-book",
+      "description": "Mind Stop (eBook) — Tantra Authority"
+    }
+  ]
+}

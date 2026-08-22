@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "zero1mind.onrender.com",
+  "resources": [
+    {
+      "url": "https://zero1mind.onrender.com/purchase/weather-data-api",
+      "description": "01Mind listing: weather-data-api"
+    }
+  ]
+}

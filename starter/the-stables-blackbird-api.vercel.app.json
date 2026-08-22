@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "the-stables-blackbird-api.vercel.app",
+  "resources": [
+    {
+      "url": "https://the-stables-blackbird-api.vercel.app/api/payment_intents/:id/refund",
+      "description": "Refund a paid Payment Intent — reverses the full FLY transfer (partial refunds unsupported). Requires a Blackbird identity: link your agent wallet once at /connect, then call with x402 + SIWX (first call pays, later SIWX-signed calls are free); or pass a member JWT in the X-Blackbird-Token header."
+    },
+    {
+      "url": "https://the-stables-blackbird-api.vercel.app/api/payment_intents/:id/cancel",
+      "description": "Cancel a pending Payment Intent. Idempotent; 400 if already paid or refunded. Requires a Blackbird identity: link your agent wallet once at /connect, then call with x402 + SIWX (first call pays, later SIWX-signed calls are free); or pass a member JWT in the X-Blackbird-Token header."
+    },
+    {
+      "url": "https://the-stables-blackbird-api.vercel.app/api/payment_intents/:id",
+      "description": "Retrieve a Payment Intent with its derived status. Requires a Blackbird identity: link your agent wallet once at /connect, then call with x402 + SIWX (first call pays, later SIWX-signed calls are free); or pass a member JWT in the X-Blackbird-Token header."
+    },
+    {
+      "url": "https://the-stables-blackbird-api.vercel.app/api/restaurants/:id",
+      "description": "Get a single restaurant by UUID."
+    }
+  ]
+}

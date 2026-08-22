@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.verifyproceed.com",
+  "resources": [
+    {
+      "url": "https://api.verifyproceed.com/v1/x402/decide",
+      "description": "Policy-driven pre-execution decision for autonomous agents, based on custom verification checks."
+    },
+    {
+      "url": "https://api.verifyproceed.com/v1/x402/guard",
+      "description": "Pre-execution safety verification for on-chain agent actions. Returns a proceed, wait, or block verdict with a confidence score and per-check breakdown, before your agent executes."
+    }
+  ]
+}

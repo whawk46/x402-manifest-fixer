@@ -1,0 +1,39 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "anywaypossible.com",
+  "resources": [
+    {
+      "url": "https://anywaypossible.com/api/base-balance",
+      "description": "Live Base wallet balance for AI agents. Returns native ETH and Circle USDC balances, atomic values, block height, contract address, and observation time for any EVM address. Includes a machine-readable upgrade path to treasury readiness for spend, gas-reserve, and wallet-health decisions. No API key."
+    },
+    {
+      "url": "https://anywaypossible.com/api/check",
+      "description": "URL uptime and website health check for AI agents. Verify reachability, exact HTTP status, latency, content type, and safe redirect chain before following a link, citing a source, or calling an API. Deterministic, SSRF-safe, no account."
+    },
+    {
+      "url": "https://anywaypossible.com/api/verify",
+      "description": "Web evidence and citation verification for AI agents. Prove a source is live and contains expected text or status before citing or acting. Returns redirects, metadata, headers, latency, SHA-256 content digest, receipt ID, and timestamp. SSRF-safe, no account."
+    },
+    {
+      "url": "https://anywaypossible.com/api/treasury",
+      "description": "Preflight a Base USDC payment before an AI agent signs it. Check live funding and gas, confirm Base chain intent, classify the destination as an EOA or contract, catch zero-address, token-contract, and self-payment hazards, and receive a machine-readable proceed, fund, review, or reject decision. No account or API key."
+    },
+    {
+      "url": "https://anywaypossible.com/api/merchant-snapshot",
+      "description": "Diagnose why an x402 API is not generating revenue. This $0.05 seller-intelligence snapshot scores Coinbase Bazaar discovery, buyer-search visibility, live payment reliability, 30-day demand signals, and observed Base USDC activity, then returns the biggest revenue issue and a full-audit upgrade. No account or API key."
+    },
+    {
+      "url": "https://anywaypossible.com/api/batch",
+      "description": "Batch URL validation for AI agents. Check up to 10 citations, links, websites, or API endpoints in one payment. Returns reachability, exact status, latency, content type, final URL, and safe redirects; partial failures stay isolated."
+    },
+    {
+      "url": "https://anywaypossible.com/api/payment-guard",
+      "description": "Verify an x402 purchase before an AI agent signs. Validate the live HTTP 402 challenge, Base network, USDC asset, quoted price, recipient, price ceiling, buyer funding, optional gas reserve, and destination hazards, then receive a machine-readable safe-to-sign, fund, review, or reject decision. No account or API key."
+    },
+    {
+      "url": "https://anywaypossible.com/api/merchant-audit",
+      "description": "Find why an x402 API is not selling. Audit Coinbase Bazaar listings, semantic-search rank, competitor pricing, unpaid 402 reliability, 30-day buyer signals, and Base USDC wallet activity, then receive a scored report with prioritized fixes. No account or API key."
+    }
+  ]
+}

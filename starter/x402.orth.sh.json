@@ -1,0 +1,51 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.orth.sh",
+  "resources": [
+    {
+      "url": "https://x402.orth.sh/olostep/v1/crawls",
+      "description": "Starts a new crawl. You receive a `id` to track the progress. The operation may take 1-10 mins depending upon the site and depth and pages parameters."
+    },
+    {
+      "url": "https://x402.orth.sh/nyne/person/enrichment",
+      "description": "Start async person enrichment. Requires at least one of: email, phone, or social_media_url."
+    },
+    {
+      "url": "https://x402.orth.sh/nyne/company/funding",
+      "description": "Start async retrieval of company funding history and investment details."
+    },
+    {
+      "url": "https://x402.orth.sh/nyne/person/social-profiles",
+      "description": "Start async retrieval of all social media profiles associated with a person."
+    },
+    {
+      "url": "https://x402.orth.sh/nyne/company/enrichment",
+      "description": "Start async company enrichment. Requires at least one of: email, phone, or social_media_url."
+    },
+    {
+      "url": "https://x402.orth.sh/didit/v3/email/send",
+      "description": "Send a one-time verification code to an email address."
+    },
+    {
+      "url": "https://x402.orth.sh/didit/v3/database-validation",
+      "description": "Validate user-provided identity data against authoritative national and global data sources."
+    },
+    {
+      "url": "https://x402.orth.sh/didit/v3/phone/send",
+      "description": "Send a one-time verification code to a phone number."
+    },
+    {
+      "url": "https://x402.orth.sh/baseten/v1/chat/completions",
+      "description": "Send a conversation to a model and get a completion back. Works exactly like the OpenAI chat completions endpoint. Pass messages and a model slug, get a response with the assistant's reply. Supports streaming for real-time token delivery, tool calling for function execution, structured outputs via response_format, and controllable reasoning depth on supported models. | ERROR: Unable to calculate price."
+    },
+    {
+      "url": "https://x402.orth.sh/agentmail/v0/inboxes/:inbox_id/messages/send",
+      "description": "Send an email message from an inbox. At least one recipient (to, cc, or bcc) is required. Returns the message_id and thread_id. Replace {inbox_id} directly in the path with the full inbox email (e.g., /v0/inboxes/myagent@agentmail.to/messages/send)."
+    },
+    {
+      "url": "https://x402.orth.sh/olostep/v1/scrapes",
+      "description": "Initiate a web page scrape"
+    }
+  ]
+}

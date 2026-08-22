@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "tollbooth-fdic-verify.sjwilliams8.workers.dev",
+  "resources": [
+    {
+      "url": "https://tollbooth-fdic-verify.sjwilliams8.workers.dev/verify",
+      "description": "Before your agent trusts, cites, or transacts with a U.S. bank: verify it is actually FDIC-insured, for $0.01, against the FDIC's own BankFind Suite records, synced daily. Look up by institution name (fuzzy, word-order-tolerant, confidence-scored), FDIC certificate number, or website domain. Returns insurance status, charter class, HQ city/state, and the FDIC cert; renamed and failed/inactive institutions stay findable. Assistive screening signal, not a certified compliance determination."
+    }
+  ]
+}

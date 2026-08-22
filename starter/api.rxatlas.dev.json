@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.rxatlas.dev",
+  "resources": [
+    {
+      "url": "https://api.rxatlas.dev/v1/drugs",
+      "description": "Search US drug products by NDC, brand, generic name, ingredient, manufacturer, dosage form, route, source, or identifier."
+    }
+  ]
+}

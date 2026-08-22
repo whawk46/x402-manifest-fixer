@@ -1,0 +1,231 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "globalrules-api.onrender.com",
+  "resources": [
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/countries",
+      "description": "List all 118 countries covered by the GlobalRules country-facts API, returned as ISO 3166-1 alpha-2 codes with country names. Use this endpoint first to discover which countries you can query for practical travel and business facts such as VAT rates, public holidays, tipping customs, power plugs, emergency numbers and visa rules (55 topics per country). Designed for AI agents, travel planners and cross-border e-commerce tools."
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/DE",
+      "description": "Verified practical facts for one country in one JSON call: VAT/GST rates, 2026 public holidays, tipping, power plugs and voltage, emergency numbers, timezone, minimum wage, visa rules, customs allowances and corporate tax (54 topics, 106 countries). For AI travel agents, tax tools and e-commerce. Pass an ISO alpha-2 code, e.g. /api/v1/country/JP for Japan."
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/compare/minimum_wage",
+      "description": "Compare one fact across all 106 countries in a single JSON call — e.g. VAT rates, minimum wages, public holidays or digital nomad visas for every country at once. The bulk alternative to 106 single-country calls. For AI agents building comparisons, rankings and market scans. Example: /api/v1/compare/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/FR/tourist_tax",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/US/corporate_tax",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/AE/alcohol_sales_hours",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/PT/digital_nomad_visa",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/US/customs_duty_free_allowance",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/GB/plug",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/DE/minimum_wage",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/JP/tipping",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/US/visa_requirement_common_passports",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/JP/holidays_2026_sample",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/IN/cash_declaration_limit",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/AU/medication_import_rules",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/US/holidays_2027",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/GB/lgbtq_legal_status",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/JP/public_holiday_in_lieu_policy",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/GB/banking_hours",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/FR/parental_leave_policy",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/DE/retirement_age",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/SG/business_ready_score",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/US/gdp_per_capita",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/FR/national_day",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/JP/negotiation_style_note",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/DE/business_dress_code",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/FR/gift_giving_custom",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/JP/business_card_etiquette",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/IN/main_religion",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/DE/mobile_roaming_note",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/FR/travel_insurance_requirement",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/JP/sim_esim_availability",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/SG/internet_connectivity",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/GB/public_transport_payment",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/JP/currency_detail",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/US/idp",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/BR/climate",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/GB/units",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/SG/tax_free_shopping",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/JP/work_week",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/AU/road_rules",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/US/legal_ages",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/FR/tap_water",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/SG/payment_culture",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/GB/tld",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/DE/postal_format",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/JP/calling_code",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/IN/languages",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/BR/timezone",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/US/emergency",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/AU/driving_side",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/FR/business_hours_typical",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/IN/week_start",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/DE/number_format",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/GB/date_format",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    },
+    {
+      "url": "https://globalrules-api.onrender.com/api/v1/country/SG/currency",
+      "description": "One specific fact for one country: VAT/GST rate, public holidays by country, visa requirements for travelers, tipping customs, power plug type, minimum wage, corporate tax, digital nomad visa, customs duty-free allowance and more. 106 countries, 54 fields, verified sources. Example: /api/v1/country/JP/vat"
+    }
+  ]
+}

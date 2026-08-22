@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "screenshots.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://screenshots.underscoredone.com/capture",
+      "description": "Renders a webpage exactly as a real browser would, including all its scripts and dynamic content, then takes a picture of it. You can capture just the visible area or the whole scrollable page, choose the screen size, wait for slow-loading images to finish, and hide cookie banners or popups before the picture is taken."
+    }
+  ]
+}

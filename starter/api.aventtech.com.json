@@ -1,0 +1,71 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.aventtech.com",
+  "resources": [
+    {
+      "url": "https://api.aventtech.com/lookup/domain",
+      "description": "Look up a domain name and check whether it is registered or available. Queries authoritative registry data via RDAP to return registration status, the registrar, creation and expiry dates, nameservers and status flags. Real-time domain availability check, WHOIS-style lookup and expiry monitoring for any domain."
+    },
+    {
+      "url": "https://api.aventtech.com/validate/email",
+      "description": "Validate an email address and check whether an email domain can receive mail. Verifies email syntax and performs a live MX and A DNS lookup to return a deliverability verdict, the mail servers (MX hosts) and whether the domain accepts email. Fast email address validation and verification for signup forms, lead lists and contact data cleaning."
+    },
+    {
+      "url": "https://api.aventtech.com/lookup/dns",
+      "description": "Look up DNS records for any hostname: query A, AAAA, MX, TXT, CNAME, NS, SOA, CAA, SRV and PTR records with TTLs over DNS-over-HTTPS. Check mail configuration (MX), SPF/DKIM/DMARC TXT records, nameservers and IP addresses. Fast, reliable DNS resolver and record lookup for domain and infrastructure verification."
+    },
+    {
+      "url": "https://api.aventtech.com/convert/currency",
+      "description": "Convert an amount between currencies and get the exchange rate. Converts between 30+ currencies (USD, EUR, GBP, JPY and more) using daily European Central Bank reference rates with cross-rate calculation, returning the converted amount, the rate and the rate date. Fast currency converter and FX rate lookup for pricing, invoicing and reporting (informational use)."
+    },
+    {
+      "url": "https://api.aventtech.com/validate/isin",
+      "description": "Validate an ISIN securities identifier (ISO 6166) and check whether it is valid. Verifies structure and the Luhn check digit and extracts the country code and NSIN. Instant ISIN validation and verification for stocks, bonds and financial instruments."
+    },
+    {
+      "url": "https://api.aventtech.com/validate/phone",
+      "description": "International phone number validation and normalization (libphonenumber): validity, country, E.164, national/international formats and line type."
+    },
+    {
+      "url": "https://api.aventtech.com/generate/qr",
+      "description": "QR code generation returning clean scalable SVG: any text/URL up to 1800 chars, selectable error-correction level (L/M/Q/H)."
+    },
+    {
+      "url": "https://api.aventtech.com/integration/device",
+      "description": "AV/IT device integration facts for AI agents writing drivers and integrations: control protocol family, transport, TCP/UDP port, connection notes and field-tested gotchas for professional audio-video, lighting, shading and network devices (Crestron, Samsung, Shure, Somfy, Huawei, MikroTik and more). Curated first-hand by working systems integrators."
+    },
+    {
+      "url": "https://api.aventtech.com/validate/card",
+      "description": "Validate a credit card or payment card number and detect its brand. Checks the Luhn checksum and identifies Visa, Mastercard, Amex, Discover, Diners or JCB, returning the BIN and last four digits. Structural card number validation for checkout forms and fraud pre-checks (does not verify the card exists or has funds)."
+    },
+    {
+      "url": "https://api.aventtech.com/validate/iban",
+      "description": "Validate an IBAN and check whether a bank account number is valid. Verifies the ISO 13616 MOD-97 checksum, structure and country length against the IBAN registry, and returns validity, the country, the BBAN and a formatted IBAN. Instant, deterministic bank account number validation and verification for any European or international IBAN."
+    },
+    {
+      "url": "https://api.aventtech.com/validate/vat",
+      "description": "Validate an EU VAT number and check whether a VAT registration is valid, against the official European Commission VIES registry in real time. Returns validity and, when available, the registered company name and address. Authoritative VAT number validation, verification and company lookup for invoicing, tax compliance and B2B onboarding across all EU member states."
+    },
+    {
+      "url": "https://api.aventtech.com/convert/color",
+      "description": "Color conversion: hex or rgb() input to hex, RGB, HSL, approximate relative luminance and best text contrast (black/white)."
+    },
+    {
+      "url": "https://api.aventtech.com/explain/cron",
+      "description": "Cron expression explainer: human-readable description plus the next run times (UTC) for standard 5-field cron syntax including ranges, lists and steps."
+    },
+    {
+      "url": "https://api.aventtech.com/net/cidr",
+      "description": "IPv4 CIDR calculator: network, broadcast, netmask, wildcard, usable host range and count, plus optional contains-IP membership check."
+    },
+    {
+      "url": "https://api.aventtech.com/inspect/password",
+      "description": "Password strength and breach inspection: character classes, entropy bits, verdict, and Have-I-Been-Pwned breach count via k-anonymity (only a truncated hash prefix leaves the server; the password is never stored or logged)."
+    },
+    {
+      "url": "https://api.aventtech.com/parse/useragent",
+      "description": "User-agent string parsing: browser, engine, OS, device type/vendor/model, CPU architecture, plus a likely-bot flag. For agents analyzing logs or adapting responses per client."
+    }
+  ]
+}

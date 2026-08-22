@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "health.memoryapi.org",
+  "resources": [
+    {
+      "url": "https://health.memoryapi.org/x402/health/global",
+      "description": "WHO Global Health Observatory — life expectancy, obesity, alcohol, air pollution by country."
+    }
+  ]
+}

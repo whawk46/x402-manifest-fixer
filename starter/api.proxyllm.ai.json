@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "api.proxyllm.ai",
+  "resources": [
+    {
+      "url": "https://api.proxyllm.ai/x402/llm-cost-scout",
+      "description": "LLM cost scout: send your monthly OpenAI API spend in USD and get back the flat ChatGPT/Codex subscription tier that absorbs it through the ProxyLLM gateway, the exact new monthly total and savings, the live model catalog, and machine-readable signup steps an agent can complete autonomously (email OTP, no browser)."
+    }
+  ]
+}

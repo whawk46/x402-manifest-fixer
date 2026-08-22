@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "app.aabc.app",
+  "resources": [
+    {
+      "url": "https://app.aabc.app/api/base-agent-report",
+      "description": "AABC Base Agent Report"
+    }
+  ]
+}

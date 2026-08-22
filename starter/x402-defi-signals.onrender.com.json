@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-defi-signals.onrender.com",
+  "resources": [
+    {
+      "url": "https://x402-defi-signals.onrender.com/market/snapshot",
+      "description": "One-call market snapshot: BTC/ETH/SOL spot prices with 24h change plus the Crypto Fear & Greed index. The cheapest way for an agent to establish market context."
+    },
+    {
+      "url": "https://x402-defi-signals.onrender.com/defi/yields",
+      "description": "Top DeFi yield opportunities per chain from DefiLlama — TVL-filtered, outlier-cleaned (unsustainable meme-pool APYs removed), sorted by APY. Fields: project, symbol, apy_pct, apy_base_pct, tvl_usd, stable. Ideal for yield-hunting agents."
+    }
+  ]
+}

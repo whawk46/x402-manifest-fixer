@@ -1,0 +1,55 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "402utils.com",
+  "resources": [
+    {
+      "url": "https://402utils.com/v1/echo",
+      "description": "Echoes back the JSON body you send, with a server timestamp. Useful for verifying your x402 client integration end to end."
+    },
+    {
+      "url": "https://402utils.com/v1/x402-quote",
+      "description": "Enriched quote for an x402 endpoint: probes it unpaid (never pays, SSRF-checked), decodes {price, asset, network, payTo}, then compares the USD price against the live Bazaar market for its category → {marketContext:{category, medianForCategory, cheaperThanMarket}}. Not just how much, but whether it's fair. Market context is best-effort; the decoded quote returns even if the Bazaar read fails. Neutral — our own endpoints are never featured."
+    },
+    {
+      "url": "https://402utils.com/v1/rss-to-json",
+      "description": "Fetch an RSS 2.0 or Atom feed and return clean JSON: feed title, link and description, plus items with title, link, ISO-8601 publishedAt, summary and author. Handles both formats and normalises the dates. The caller-supplied URL is SSRF-checked; the fetch is capped at 2 MB and 8 s."
+    },
+    {
+      "url": "https://402utils.com/v1/screenshot",
+      "description": "Capture a screenshot of any public web page with a headless Chrome browser. Set the viewport, grab the full scrollable page or just the fold, and choose PNG, JPEG or WebP with an optional quality. Returns the raw image bytes — ideal for link previews, thumbnails, visual monitoring and archiving. No browser to run, pay per capture."
+    },
+    {
+      "url": "https://402utils.com/v1/email-check",
+      "description": "Validate an email address before you accept a signup or send to it: RFC 5322 syntax, whether the domain resolves and its MX records, whether it is a disposable/throwaway domain (community blocklist), and whether it is a role account (info@, support@…). DNS is checked over DoH. No SMTP probing (intrusive and spammy), so a true 'domainExists' does not guarantee the mailbox exists."
+    },
+    {
+      "url": "https://402utils.com/v1/rerank",
+      "description": "Rerank passages by relevance to a query via Cloudflare Workers AI (@cf/baai/bge-reranker-base). Send {query, documents[] (≤50, each ≤4000 chars), topK?}; returns [{index, score}] best-first — the missing link after embed/chunk, keeping the top chunks before a costly LLM call. Score is the model's relevance score (higher = better), named as it only compares within this model. Unavailable binding → 503, unbilled."
+    },
+    {
+      "url": "https://402utils.com/v1/timezone-convert",
+      "description": "Convert a datetime between any two IANA time zones using the runtime's ICU tzdb — always current, DST-correct, half-hour zones included. A datetime without offset is read as wall time in `from` (ambiguous fall-back times resolve to the earlier instant; times skipped by spring-forward shift ahead, flagged in `note`). Returns both ISO datetimes with offsets and DST status per side. Unknown zone → 400 with a spelling suggestion."
+    },
+    {
+      "url": "https://402utils.com/v1/peppol-lookup",
+      "description": "Look up a business in the public Peppol Directory — where to route an e-invoice (the BT-34/49 electronic address). ?id= (a Peppol id like 0225:992412536, or a value to search) or ?country=FR&name=. Returns { found, count, participants:[{peppolId, name, country, documentTypes[], schemes[]}] }. Unknown id → { found:false }. Directory down → 503, unbilled. Public source, 1h cache."
+    },
+    {
+      "url": "https://402utils.com/v1/domain-check",
+      "description": "Domain availability and expiry intelligence via RDAP, the WHOIS successor. Queries the authoritative registry for any RDAP-enabled TLD: free domains return registered:false, taken ones return registrar, creation and expiry dates, nameservers and EPP status codes. TLDs without RDAP coverage return supported:false. Built for agents that buy, monitor or vet domains."
+    },
+    {
+      "url": "https://402utils.com/v1/hash",
+      "description": "Compute cryptographic hashes / checksums of a string or of raw bytes (base64). Returns lowercase hex for each requested algorithm: sha256 (default), sha512, sha1, md5. SHA via native Web Crypto; md5 and sha1 are offered for legacy interop only and flagged — not for security. POST so the input never lands in a URL/log. Verification/checksums only, not a hash cracker."
+    },
+    {
+      "url": "https://402utils.com/v1/ics",
+      "description": "Build a strictly RFC 5545-conformant .ics calendar file from a list of events: correct TEXT escaping, 75-octet line folding, generated UIDs, and unambiguous UTC timestamps (a per-event IANA timezone interprets naive wall-clock times). Supports all-day events, location, description and a passthrough RRULE. The fiddly conformance an agent shouldn't hand-roll."
+    },
+    {
+      "url": "https://402utils.com/v1/iban-check",
+      "description": "Validate an IBAN structurally before you pay or store it: ISO 7064 mod-97 check digits plus the official per-country length and BBAN layout (~90 countries), returning the bank/branch/account breakdown for FR, DE, ES, IT, BE and NL. Structural validation only — no BIC directory lookup (SWIFT's BIC registry is proprietary) and no proof the account exists. Local, instant. ?attest=1 → Ed25519-signed."
+    }
+  ]
+}

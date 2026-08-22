@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "goldkey-edge-storefront.noah-ing.workers.dev",
+  "resources": [
+    {
+      "url": "https://goldkey-edge-storefront.noah-ing.workers.dev/v1/action-gate",
+      "description": "$0.01 AI-agent tool-call preflight: return ALLOW, REVIEW, or BLOCK before an MCP/tool call, payment, fetch, message, write, or execution. One deterministic request combines prompt-injection and hidden-Unicode scanning, SSRF/unsafe-URL screening, JSON Schema payload validation, and atomic spend-mandate enforcement. Returns stable reason codes plus request_sha256 and receipt_sha256; never executes the action; hashes are reproducible, not signatures."
+    }
+  ]
+}

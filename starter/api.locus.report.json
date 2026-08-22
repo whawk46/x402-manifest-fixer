@@ -1,0 +1,55 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.locus.report",
+  "resources": [
+    {
+      "url": "https://api.locus.report/api/locus-flood-zone",
+      "description": "FEMA flood zone for an address. Perfect for: 'flood zone for an address', 'FEMA flood designation', 'is this property in a floodplain', 'is this address in a 100-year flood zone', 'flood risk lookup'. Returns the FEMA NFHL flood-zone designation, 0.2%-annual-chance and BFE/floodway flags at the geocoded point, with source provenance. National. Not a flood insurance quote or a safe/unsafe verdict. Charge-free when the flood lookup fails."
+    },
+    {
+      "url": "https://api.locus.report/api/locus-transaction-follow-up",
+      "description": "Build one cited public-record follow-up packet after the caller explicitly confirms a homebuyer, land-investor, developer-predevelopment, or commercial-tenant profile. A typed registry controls the evidence include-list and charge threshold. No readiness, suitability, approval, value, access, capacity, occupancy, or closing verdict; thin evidence is charge-free. Install agent skill: npx @velinussage/locus-agent-skill add."
+    },
+    {
+      "url": "https://api.locus.report/api/locus-parcel-lookup",
+      "description": "Parcel facts for an address. Perfect for: 'what is the lot size / acreage of this property', 'year built for an address', 'land use / zoning class of a parcel', 'look up parcel details'. Resolves a US street address to cited, PII-safe parcel facts (land use, acreage, year built, derived county/municipality) from wired official parcel sources. Owner/mailing never returned; assessed value, last sale, and tax are the paid place report. Charge-free when no parcel resolves."
+    },
+    {
+      "url": "https://api.locus.report/api/locus-before-you-sign",
+      "description": "Pre-decision due-diligence bundle for one street address. Runs free coverage-aware parcel checks plus paid local-change and property bill/ordinance analysis when component readiness is strong. Returns component status, citations, caveats, and verify-next steps. Not inspection, appraisal, valuation, screening, or legal advice. Install agent skill: npx @velinussage/locus-agent-skill add."
+    },
+    {
+      "url": "https://api.locus.report/api/locus-place-report",
+      "description": "Official-record property context for agents. Accepts street address or ZIP; street address is best after free lane preflight. Returns a structured public-record artifact to combine with policy or local-change analysis. Provenance included; never valuation, screening, forecasts, or safe/unsafe labels. Install agent skill: npx @velinussage/locus-agent-skill add."
+    },
+    {
+      "url": "https://api.locus.report/api/locus-valuation-challenge",
+      "description": "Challenge a caller-supplied property price for one US address. Uses existing cited lanes: recorded sales, parcel facts, permits, flood/soil/env, tax, zoning, and legislation. Locus never creates or endorses a price, ARV, deal judgment, or investment score; charge-free if under two substantive sections resolve. Install agent skill: npx @velinussage/locus-agent-skill add."
+    },
+    {
+      "url": "https://api.locus.report/api/locus-permit-closeout-check",
+      "description": "Check exact parcel permit status, published final-signoff fields, and occupancy-document evidence where the closeout registry is verified. Coverage derives from: City of Raleigh building-permit system; Durham City-County Inspections all-building-permits layer. Permit evidence is not physical condition, code compliance, occupancy permission, or closing approval. Charge-free on uncertain, uncovered, unavailable, or unpublished results. Install agent skill: npx @velinussage/locus-agent-skill add."
+    },
+    {
+      "url": "https://api.locus.report/api/locus-environmental-context",
+      "description": "Address-level EPA environmental public-record context (heavier call: allow 60-90s): TRI/RCRA proximity plus SDWIS water systems from address, point, or state+county. Provenance and verify links; facility context, not incident confirmation or a safety verdict. Install agent skill: npx @velinussage/locus-agent-skill add."
+    },
+    {
+      "url": "https://api.locus.report/api/locus-zoning",
+      "description": "Zoning district + overlays for an address. For 'what is the zoning', 'is this parcel being rezoned', 'zoning changes near an address', 'is nearby redevelopment changing this area'. Returns the official district/overlays from wired municipal/county layers. Zoning matters most as a CHANGE (rezonings, zoning bills) and vs NEIGHBORS; pair with development cases, legislation, capital projects, transfers. Not a buildability, variance, entitlement, or value ruling. Charge-free when out of coverage."
+    },
+    {
+      "url": "https://api.locus.report/api/locus-air-quality-history",
+      "description": "Historical location-specific air-quality evidence: nearby EPA AQS annual monitor summaries, exact-point NOAA HMS satellite smoke days, and clearly separated CDC county-level modeled PM2.5 only where a requested year lacks nearby AQS PM2.5. This is not wildfire hazard, source-fire attribution, medical advice, or a safe/unsafe property score. Missing mirror years are disclosed and never treated as clean air. Install agent skill: npx @velinussage/locus-agent-skill add."
+    },
+    {
+      "url": "https://api.locus.report/api/locus-place-facts",
+      "description": "One-call free/paid dual address snapshot (prefer free /tools/call first): parcel, flood, districts, transportation, tax rates where wired. Perfect for 'basic facts about this property'. For pre-sign trend+policy use locus-before-you-sign; for neighbor topology and multi-lane surrounding evidence use locus-surrounding-area-analysis. Facts only, not a verdict. Charge-free when no component returns data."
+    },
+    {
+      "url": "https://api.locus.report/api/locus-environmental-history-lookup",
+      "description": "Address-level environmental record proximity. Perfect for: 'environmental hazards near an address', 'EPA TRI / RCRA sites near a property', 'is there a polluter nearby', 'radon zone for an address', 'environmental due diligence for a property'. Returns proximity-ranked EPA Toxics Release Inventory + RCRA facilities, nearest large-quantity generator, and the county radon/background composite. National. Not a contamination or safe/unsafe verdict."
+    }
+  ]
+}

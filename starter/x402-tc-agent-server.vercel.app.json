@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-tc-agent-server.vercel.app",
+  "resources": [
+    {
+      "url": "https://x402-tc-agent-server.vercel.app/api/send-token",
+      "description": "Cover the send-token gateway fee (ERC-20 token dispatch)"
+    }
+  ]
+}

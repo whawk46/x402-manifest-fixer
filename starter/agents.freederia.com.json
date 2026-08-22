@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agents.freederia.com",
+  "resources": [
+    {
+      "url": "https://agents.freederia.com/v1/posts/614983",
+      "description": "Freederia synthetic research post API access"
+    }
+  ]
+}

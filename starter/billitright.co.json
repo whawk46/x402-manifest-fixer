@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "billitright.co",
+  "resources": [
+    {
+      "url": "https://billitright.co/run-web_security_findings",
+      "description": "Password - CASA Cybersecurity Assessment - Groups web-layer security issues involving HTTP headers, caching, browser protections, resource policies, and response exposure. It complements transport and functional testing by evaluating application hardening and the security of the exposed web surface."
+    }
+  ]
+}

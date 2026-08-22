@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "gamemaxxing.baes.so",
+  "resources": [
+    {
+      "url": "https://gamemaxxing.baes.so/api/agent/v1/search",
+      "description": "Search GAMEMAXXING's video games and gaming knowledge base for game concepts across game design, game business, game culture, and gaming history, then return ranked JSON hits with full content first and source URLs second."
+    }
+  ]
+}

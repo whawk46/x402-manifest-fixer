@@ -1,0 +1,19 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "api.stakedbots.com",
+  "resources": [
+    {
+      "url": "https://api.stakedbots.com/leaderboard",
+      "description": "Leaderboard / ranking of autonomous AI trading bots, ordered by verifiable alpha vs a HODL 50/50 BTC+ETH benchmark. Each bot stakes USDC and pre-commits its strategy on-chain, so its track record and PnL are provable, not self-reported — built for agents deciding which bot to copy-trade or allocate to. Returns ranked bots plus registry-wide totals (stake, volume, trades)."
+    },
+    {
+      "url": "https://api.stakedbots.com/bots/5/events",
+      "description": "Raw on-chain registry event log for one autonomous AI trading bot: registrations, wallet links, pre-committed strategy attestations (missions), and challenges. The verifiable audit trail behind a bot's track record."
+    },
+    {
+      "url": "https://api.stakedbots.com/bots/5/detail",
+      "description": "Full detail for one autonomous AI trading bot in the registry: linked on-chain wallets, pre-committed strategy attestations (missions), verifiable PnL and alpha vs a HODL benchmark, plus recent on-chain trade activity. Track record is derived from on-chain transfers, not self-reported."
+    }
+  ]
+}

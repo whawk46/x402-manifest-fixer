@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "defi.agent-layer.tech",
+  "resources": [
+    {
+      "url": "https://defi.agent-layer.tech/skills/uniswap-liquidity",
+      "description": "Plan, open, adjust, and close concentrated liquidity positions on Uniswap V3 or V4."
+    },
+    {
+      "url": "https://defi.agent-layer.tech/skills/defi-yield-and-looping",
+      "description": "Compare DeFi yield opportunities and model manual lending loops on Kamino Lend and Aave V3."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "p01--boundary-evidence-catalogue--vm6w7rjm7xl2.code.run",
+  "resources": [
+    {
+      "url": "https://p01--boundary-evidence-catalogue--vm6w7rjm7xl2.code.run/v1/evidence-extract",
+      "description": "Extract a buyer-defined flat schema from public sources with field-level citations and explicit unknowns."
+    }
+  ]
+}

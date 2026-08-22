@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "preview.agenticinsights.com",
+  "resources": [
+    {
+      "url": "https://preview.agenticinsights.com/api/x402/agentic-market/validate",
+      "description": "One-cent Base Sepolia x402 demo with Bazaar discovery and a durable operational receipt."
+    }
+  ]
+}

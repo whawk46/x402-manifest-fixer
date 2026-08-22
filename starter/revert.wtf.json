@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "revert.wtf",
+  "resources": [
+    {
+      "url": "https://revert.wtf/api/x402/explain",
+      "description": "Paid hosted deterministic explanation for EVM/RPC/wallet/UserOperation/x402 errors. Send raw pasted error JSON, text, or revert bytes."
+    }
+  ]
+}

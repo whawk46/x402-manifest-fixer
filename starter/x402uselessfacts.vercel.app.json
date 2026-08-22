@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402uselessfacts.vercel.app",
+  "resources": [
+    {
+      "url": "https://x402uselessfacts.vercel.app/api/useless-fact",
+      "description": "Pay a tiny amount of USDC and receive one delightfully useless fact."
+    }
+  ]
+}

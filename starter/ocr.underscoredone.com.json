@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ocr.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://ocr.underscoredone.com/read",
+      "description": "Send a picture, either as a public web address or as base64-encoded image data, and get back the plain text found inside it."
+    }
+  ]
+}

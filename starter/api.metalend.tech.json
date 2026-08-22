@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.metalend.tech",
+  "resources": [
+    {
+      "url": "https://api.metalend.tech/v1/services",
+      "description": "Returns MetaLend API services directory with a one-line summary of each RebalancerResource endpoint plus links to API docs."
+    }
+  ]
+}

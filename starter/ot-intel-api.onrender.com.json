@@ -1,0 +1,127 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ot-intel-api.onrender.com",
+  "resources": [
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/ioc",
+      "description": "IOC enrichment with ICS campaign context. Pass ?value=1.2.3.4&type=ip or type=domain. Queries AlienVault OTX, AbuseIPDB, and DeepSeek CTI for OT campaign association. Returns verdict on whether the IOC is linked to ICS-targeting campaigns."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/cve",
+      "description": "OT-contextualised CVE triage for ICS/SCADA. Pass ?id=CVE-XXXX-XXXX. Returns OT-adjusted severity, cyber-physical impact, patch feasibility, CISA KEV status, and prioritised action. DeepSeek-enriched with live NVD and CISA-KEV data."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/gcc-bulletin",
+      "description": "Recurring public \"State of OT Threat Intel — GCC\" sitrep, human-reviewed before publish, sourced from the same intel.db pipeline as /ot/sitrep. Pass optional issue_date (YYYY-MM-DD) for a past edition; omit for the latest reviewed edition."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/asn",
+      "description": "ICS threat actor ASN infrastructure profiling. Pass ?asn=AS215540. Returns ICS actor associations (SANDWORM, VOLTZITE, XENOTIME), phishing kit links (Tycoon2FA, EvilProxy, NakedPages), bulletproof hosting indicators, abuse categories (c2, staging, phishing), and an OT-specific blocking recommendation with WAF rule hint. ASN analysis reveals infrastructure clustering that survives IP/domain rotation — critical for OT defenders tracking persistent actor infrastructure."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/malware",
+      "description": "ICS malware encyclopedia. Pass ?name=PIPEDREAM. Returns capabilities, targeted OT protocols, attributed actor, affected vendors, detection signatures, and MITRE ATT&CK ICS techniques. Covers PIPEDREAM, TRITON, INDUSTROYER2, CRASHOVERRIDE, FROSTYLOOP, BLACKENERGY."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/advisory",
+      "description": "Live CISA ICS-CERT advisories filtered by vendor or sector. Pass ?vendor=siemens or ?sector=energy. Returns advisory IDs, CVSS scores, CVE lists, OT severity, and sector tags. Up to 25 results."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/device",
+      "description": "ICS/OT device exposure lookup. Pass ?vendor=siemens&model=s7-1200. Returns default credential risk, exposed OT protocols (Modbus/502, S7comm/102, DNP3/20000), exploitation notes, and hardening steps. Covers Siemens, Schneider, Rockwell, Honeywell, GE, Unitronics, Beckhoff."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/vendor-risk-delta",
+      "description": "Counterfactual vendor-swap risk comparison. Pass vendor_current, vendor_proposed (optionally product_current, product_proposed). Runs the same DeepSeek assessment used by /ot/vendor-risk on each vendor and returns the risk-tier delta plus per-vendor summaries — for pre-purchase or migration decisions."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/compliance/batch",
+      "description": "Aggregate compliance-gap assessment across multiple CVEs/actors in one call. Pass items=<comma-separated, max 25> (auto-detects CVE vs actor), optional framework=<value>, entity_sector=<ENERGY|WATER|TRANSPORTATION|GOVERNMENT>. Dedupes triggered controls into one compliance_gap_severity (HIGH/MEDIUM/LOW/CLEAN) plus a remediation summary. Same compliance_mappings data as /ot/compliance — deterministic lookup, LLM only writes prose. Cheaper than N individual calls for batch triage."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/analyst-brief",
+      "description": "Human-readable analyst brief: BLUF, key judgments, and ICD-203 confidence assessment for a threat actor (optionally scoped to a sector). Same fan-out data as /ot/report (actor, campaign, malware, advisory) but DeepSeek-synthesised into a short decision-ready brief instead of a full report. Pass actor (required), sector (optional)."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/sighting/submit",
+      "description": "Submit an anonymized IOC/TTP sighting observed in your own OT environment. Pass ioc_or_ttp_id, sector, region (actor_name, observed_at optional). Feeds the correlation corpus without storing an org identifier. Written to a separate sightings store, not intel.db."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/agentic/threat-hunt/control-loop",
+      "description": "Flags control-loop recon patterns and living-off-the-land/RMM-tool abuse from caller-submitted process/command observations. Pass observed_processes? and/or observed_commands? (comma-separated, max 40 combined), optional zone (OT/IT/DMZ). Fully deterministic keyword matching, no LLM. Grounded in CyberAgentX and AgenticCyOps (arXiv 2603.09134). ADVISORY ONLY — never executes containment or any network action."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/physics/invariant-reachability",
+      "description": "Checks whether a tank/vessel reported level change is physically consistent with its metered flow-in/flow-out via conservation of mass. Pass asset_id, flow_in, flow_out, level_start, level_end, dt_seconds (>0), tank_area (>0), optional noise_floor (default 0.5). Fully deterministic, no LLM, no trained model. Inspired by Barbhaya et al. 2025 physical-invariant residual check — flags inconsistency and direction, does not assert a specific cause."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/xai/root-cause-localization",
+      "description": "Ranks which sensors most likely drove a reported anomaly by z-score deviation from each sensor baseline, given a caller-supplied telemetry window. Pass window=<JSON array, max 20>: [{sensor_id, values[], baseline_mean?, baseline_stddev?}], optional top_k (default 5), anomaly_event_id. Fully deterministic, no LLM, no trained model. Statistical approximation inspired by Oswal et al. 2025 kernel-SHAP/TCAE work — not a reimplementation of it."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/compliance",
+      "description": "Compliance gap mapping for a CVE or threat actor across 11 frameworks: NERC CIP, IEC 62443, NIST 800-82, NIST CSF 2.0, CISA CPG, Saudi NCA OTCC, UAE NESA IA. Pass ?cve_id=CVE-2023-38802 or ?actor=SANDWORM, optionally &framework=<value> to filter. Returns triggered controls (e.g. CIP-007-6 R2, IEC 62443-3-3 SR 5.1), status (NON_COMPLIANT_IF_UNMITIGATED / REVIEW_REQUIRED), required action, and compensating controls. For automated compliance reporting agents on cron."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/ai-exposure",
+      "description": "AI/agentic copilot exposure lookup for OT/ICS vendors. Pass vendor (Siemens, Schneider Electric, Rockwell Automation, ABB, Emerson, Honeywell, Yokogawa, GE Vernova, Omron, Mitsubishi Electric). Returns the vendor's documented AI/agentic copilot, autonomy level (advisory vs agentic — the key risk differentiator), access, and applicable MITRE ATLAS techniques. Hand-verified mapping, ATLAS IDs confirmed against the live atlas.mitre.org matrix. Deterministic, no LLM in the lookup path."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/action-conformance",
+      "description": "Deterministic remediation risk gate. Pass actor, sector, region, planned_action (e.g. block_ip, halt_pipeline, disable_account). Returns auto_approve/human_review/reject via capability x opportunity x intent scoring (same as /ot/threat-score) — no LLM in the loop. auto_approve requires vendor_stack; omitting it caps the verdict at human_review regardless of score. Optional asset_context escalates to human_review on shared cloud/CDN infra (e.g. shared_infra:cloudflare)."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/mitigation-map",
+      "description": "Prescriptive D3FEND-mapped mitigation guidance for OT/ICS threats. Pass one of ?actor=<threat actor name>, ?cve_id=<CVE ID>, or ?technique_id=<MITRE ATT&CK ICS technique ID e.g. T0836>, optionally with &vendor_stack=<vendor/product context e.g. Schneider Modicon>. Returns matched ATT&CK ICS techniques mapped to D3FEND defensive countermeasures with priority and rationale, plus prescriptive architecture recommendations. DeepSeek-synthesised, ICD-203 estimative language."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/vendor-risk",
+      "description": "OT/ICS supply-chain vendor risk assessment. Pass ?vendor=(name) e.g. Schneider Electric, Siemens, Rockwell Automation, optionally &product=(line) e.g. Modicon. Returns risk tier, confidence, cited CVEs (KEV/EPSS), threat actors with historical targeting interest, and supply-chain mitigation recommendations. DeepSeek-synthesised, ICD-203 language. Certain restricted-license sources excluded."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/precursor-ttp",
+      "description": "Buckets an actor's known ATT&CK-for-ICS TTPs into pre-impact (reconnaissance through command-and-control — the early-warning window before physical/process disruption) vs impact-stage (inhibit-response-function, impair-process-control, impact). Deterministic tactic-taxonomy lookup against intel.db. Not LLM-generated."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/threat-score",
+      "description": "Capability x opportunity x intent threat score for an actor-target pairing. Pass actor, sector, region, vendor_stack. Deterministic scoring: actor/CVE/campaign data plus GDELT tension and OFAC sanctions pressure. Not LLM-generated."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/detection",
+      "description": "ICS detection artifact retrieval. Pass ?target=PIPEDREAM or ?target=SANDWORM&format=sigma. Returns YARA/Sigma rules for the target malware or actor, sourced from public corpus (Florian Roth signature-base, CISA advisories) with validated:true, or DeepSeek-synthesised with validated:false. Designed for automated threat hunting pipelines that commit rules to SIEMs and EDRs — validated:true rules are safe to deploy; validated:false require lab testing first."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/brief",
+      "description": "Sector threat brief for ICS/OT. Pass ?sector=energy&period=30. Returns active actors, new CVE counts, active campaigns, top advisories, and risk_trend (increasing/stable/decreasing). One call replaces 5+ chained calls. Ideal for weekly reporting and compliance dashboards."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/delta",
+      "description": "ICS sector change feed — only what is NEW in the last N days. Pass ?sector=water&days=7. Returns new CVEs, new CISA advisories, and new actor activity since the last call. Designed for cron-based monitoring agents. Eliminates redundant reprocessing."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/campaign",
+      "description": "Active ICS campaign tracker. Pass ?sector=electric&status=active. Returns campaigns currently targeting a sector with actor attribution, start date, targeted geography, TTPs in use, and CVEs being exploited. No free equivalent for live campaign status."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/exposure",
+      "description": "OT asset risk verdict. Pass ?vendor=siemens&model=s7-1500&sector=energy&network=internet-facing. Returns risk_score (0-100), risk_level, escalate (boolean), recommended_action, active CVEs, and threat actors. Optional firmware param enables firmware-specific CVE matching. Cached 1 hour."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/actor/sector",
+      "description": "ICS threat actors by sector. Pass ?sector=energy. Returns all groups targeting that sector from live MITRE ATT&CK ICS STIX data. Covers energy, water, manufacturing, oil-and-gas, chemical, transportation, nuclear."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/actor",
+      "description": "ICS threat actor profile. Pass ?name=SANDWORM. Returns MITRE ATT&CK ICS techniques, known malware, attribution, physical impact, targeted sectors, and OT detection recommendations. Alias lookup supported: Volt Typhoon→VOLTZITE, APT44→SANDWORM. Covers all Dragos Activity Groups."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/patch",
+      "description": "OT/ICS patch feasibility for a CVE. Pass ?id=CVE-XXXX-XXXX. Returns patch availability, OT-safe workarounds, patch complexity per ICS layer, estimated downtime, safe-to-patch-live flag, deployment strategy, and risk-vs-disruption score 1-10."
+    },
+    {
+      "url": "https://ot-intel-api.onrender.com/ot/stix-coverage",
+      "description": "Deterministic STIX representability + actionability lookup, grounded in Hahn/Krief et al. (arXiv:2512.18714v3, Jan 2026). Pass technique_id (MITRE ATT&CK ICS ID, optionally campaign=Triton|Stuxnet|Industroyer), protocol, or cve_id. Returns whether STIX 2.1 can represent the artifact (full/partial/none) and whether reporting gave enough detail to build a detection. Answers what STIX sharing alone can't tell you: is this actually actionable once shared. No LLM in the lookup path."
+    }
+  ]
+}

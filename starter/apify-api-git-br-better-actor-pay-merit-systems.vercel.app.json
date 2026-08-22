@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "apify-api-git-br-better-actor-pay-merit-systems.vercel.app",
+  "resources": [
+    {
+      "url": "https://apify-api-git-br-better-actor-pay-merit-systems.vercel.app/api/actors/apify/instagram-scraper/call",
+      "description": "Start the \"Instagram Scraper\" Apify actor (apify/instagram-scraper). Scrape and download Instagram posts, profiles, places, hashtags, photos, and comments. Get data from Instagram using one or more Instagram URLs or search queri…"
+    }
+  ]
+}

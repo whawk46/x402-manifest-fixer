@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "next-demo.smidgen.io",
+  "resources": [
+    {
+      "url": "https://next-demo.smidgen.io/premium/locked",
+      "description": "Next.js hard-locked article"
+    }
+  ]
+}

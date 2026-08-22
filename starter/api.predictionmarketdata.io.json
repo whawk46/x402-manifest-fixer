@@ -1,0 +1,39 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.predictionmarketdata.io",
+  "resources": [
+    {
+      "url": "https://api.predictionmarketdata.io/market-news",
+      "description": "Recent news relevant to prediction markets within a publish-date window."
+    },
+    {
+      "url": "https://api.predictionmarketdata.io/prediction-markets",
+      "description": "Search, filter, and sort prediction markets across exchanges."
+    },
+    {
+      "url": "https://api.predictionmarketdata.io/prediction-markets/similar",
+      "description": "Find semantically similar prediction markets given an event_ticker."
+    },
+    {
+      "url": "https://api.predictionmarketdata.io/prediction-markets/taxonomy",
+      "description": "List valid PMCS taxonomy codes used to filter prediction-market searches."
+    },
+    {
+      "url": "https://api.predictionmarketdata.io/market-recap",
+      "description": "LLM-generated narrative recap of recent prediction-market activity."
+    },
+    {
+      "url": "https://api.predictionmarketdata.io/exchanges",
+      "description": "Prediction-market exchanges and entity metadata (Lukka VASP)."
+    },
+    {
+      "url": "https://api.predictionmarketdata.io/market-statistics/sectors",
+      "description": "Aggregated prediction-market statistics by sector."
+    },
+    {
+      "url": "https://api.predictionmarketdata.io/prediction-markets/pmcs-stats",
+      "description": "Live PMCS counts by hierarchy and exchange."
+    }
+  ]
+}

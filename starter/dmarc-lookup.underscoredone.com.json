@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "dmarc-lookup.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://dmarc-lookup.underscoredone.com/dmarc-lookup",
+      "description": "Give this tool a list of domain names and it will instantly check each one's DMARC email security record. DMARC is a standard that tells email providers how to handle fake or spoofed emails pretending to come from your domain. For each domain you submit, you get back whether a valid record exists, what the policy is (none, quarantine, or reject), whether reporting addresses are set up, and the full raw record text. Perfect for auditing many domains at once without any setup."
+    }
+  ]
+}

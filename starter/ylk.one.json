@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ylk.one",
+  "resources": [
+    {
+      "url": "https://ylk.one/v1/vet",
+      "description": "Trust boolean for any x402 payTo on Base: verdict (organic/concentrated/fragile/solo/opaque), settled revenue, buyer count, top-buyer dependency — from on-chain USDC settlement, facilitator-decoded. JSON ylk.vet.v1. Upgrade path → /v1/x402/brief."
+    },
+    {
+      "url": "https://ylk.one/v1/spikes",
+      "description": "Settlement-derived x402 market tape: live $/hr and tx/hr vs 24h baseline, last completed hour, every ≥2.5× spike hour in the past 24h with named driver. Habit SKU after vet — upgrade path to /v1/vet then /v1/x402/brief for any hot payTo. Not self-reported."
+    }
+  ]
+}

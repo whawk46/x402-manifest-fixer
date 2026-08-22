@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.n0brains.com",
+  "resources": [
+    {
+      "url": "https://api.n0brains.com/x402/macro",
+      "description": "Current cross-asset macro conditions for crypto: liquidity, volatility, rates and upcoming calendar risk (CPI, FOMC, etc), with a per-asset directional bias only when the live composite supports one. For setting risk posture, not a daily signal feed. Not financial advice."
+    },
+    {
+      "url": "https://api.n0brains.com/x402/signals",
+      "description": "Real-time crypto trading signals for BTC, ETH, SOL and 400+ coins — classified by type (whale flows, funding, liquidations, listings, news, on-chain), scored, with direction, confidence and conviction. Emitted signals' forward-return record is public at n0brains.com/proof. Not financial advice."
+    },
+    {
+      "url": "https://api.n0brains.com/x402/rotation",
+      "description": "Crypto market rotation and altseason regime detector: sector/asset rotation score, breadth, relative strength, and which coins are rotating in vs out. Tells an agent whether capital is flowing to BTC, ETH, or alts right now. Not financial advice."
+    }
+  ]
+}

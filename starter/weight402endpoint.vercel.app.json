@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "weight402endpoint.vercel.app",
+  "resources": [
+    {
+      "url": "https://weight402endpoint.vercel.app/api/convert-weight",
+      "description": "Convert a weight/mass value between units (kg, g, lb, oz, stone, tonne, and more)."
+    }
+  ]
+}

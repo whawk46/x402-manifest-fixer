@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "cron.memoryapi.org",
+  "resources": [
+    {
+      "url": "https://cron.memoryapi.org/x402/cron/alerts",
+      "description": "Retrieve change alerts for monitored URLs. Returns list of detected changes with timestamps."
+    }
+  ]
+}

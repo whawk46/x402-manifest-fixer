@@ -1,0 +1,47 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "market.memoryapi.org",
+  "resources": [
+    {
+      "url": "https://market.memoryapi.org/x402/market/tokenized",
+      "description": "Tokenized securities prices from CoinGecko. Real-time quotes for tokenized stocks and real-world assets (RWA tokens)."
+    },
+    {
+      "url": "https://market.memoryapi.org/x402/market/calendar",
+      "description": "Economic event calendar from FRED with sector performance from FMP. Upcoming key economic releases."
+    },
+    {
+      "url": "https://market.memoryapi.org/x402/market/holdings",
+      "description": "Institutional investor SEC Form 13F filings. Look up any institution by CIK or name to get their latest 13F filing date and link."
+    },
+    {
+      "url": "https://market.memoryapi.org/x402/market/arbitrage",
+      "description": "Real-time arbitrage spreads between tokenized securities and actual stock prices. Identify premium/discount opportunities."
+    },
+    {
+      "url": "https://market.memoryapi.org/x402/market/earnings",
+      "description": "Recent earnings announcements from SEC EDGAR Form 8-K filings. Search by company or get all earnings in past N days."
+    },
+    {
+      "url": "https://market.memoryapi.org/x402/market/news_sentiment",
+      "description": "Financial news with sentiment analysis from Marketaux. Per-symbol sentiment aggregation."
+    },
+    {
+      "url": "https://market.memoryapi.org/x402/market/indices",
+      "description": "Major market indices and macro indicators: S&P 500, NASDAQ, VIX, 10-Year Treasury, WTI Oil, Gold, USD/EUR from FRED."
+    },
+    {
+      "url": "https://market.memoryapi.org/x402/market/analyst",
+      "description": "Analyst stock ratings and price targets from Finnhub. Consensus recommendations (Strong Buy, Buy, Hold, Sell) with analyst price target distribution."
+    },
+    {
+      "url": "https://market.memoryapi.org/x402/market/preipo",
+      "description": "Pre-IPO and private company token prices — SpaceX, OpenAI, and other unicorns trading as tokenized assets via CoinGecko."
+    },
+    {
+      "url": "https://market.memoryapi.org/x402/market/cex_arb",
+      "description": "Cross-exchange cryptocurrency arbitrage opportunities. Find best buy/sell prices across major exchanges."
+    }
+  ]
+}

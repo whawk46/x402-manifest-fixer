@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-market.kore-app.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-market.kore-app.workers.dev/v1/market",
+      "description": "Aggregated crypto market snapshot: prices, Fear & Greed, DeFi TVL, dominance, top stable yields."
+    }
+  ]
+}

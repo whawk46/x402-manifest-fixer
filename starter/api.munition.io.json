@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.munition.io",
+  "resources": [
+    {
+      "url": "https://api.munition.io/v1/flights/search",
+      "description": "Munition Flight Search: x402-paid live flight offer search for AI agents. Pay 0.05 USDC to search Duffel flight offers and receive compact normalized itineraries, prices, carriers, and metadata suitable for replay and downstream planning."
+    },
+    {
+      "url": "https://api.munition.io/v1/uploads",
+      "description": "Munition Upload: x402-paid temporary file hosting for AI agents. Buy a presigned upload slot, upload one local file or generated artifact up to 10 MB, and get a public non-guessable files.munition.io link retained for 7 days. Useful for PDFs, screenshots, images, logs, JSON, reports, browser sharing, webhook sharing, and agent-to-human handoff."
+    },
+    {
+      "url": "https://api.munition.io/v1/airports/search",
+      "description": "Munition Airport Search: x402-paid airport reference data search for AI agents. Pay 0.001 USDC to search airports by IATA code, city, airport name, or country and receive normalized IATA airport records suitable for travel planning."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "human.twin3.ai",
+  "resources": [
+    {
+      "url": "https://human.twin3.ai/v1/human",
+      "description": "Human verification for AI agents — proof of humanity, sybil resistance, and 'is this wallet a real person' answers in one paid call. Returns two ZK-style outputs about any EVM wallet: (1) total humanity score 0-255 (15 = baseline reCAPTCHA, 45 = + Google OAuth, 70 = + Apple ID, 105 = + 2FA, 255 = full stack), with optional `min_score=N` for a yes/no `passes` verdict; (2) per-method verification check via `check=telegram,apple,g2fa,...` — buyer must NAME the methods to ask about, we never enumerate the full set. Backed by 141,871 Twin Matrix Soulbound Tokens on BNB Chain plus the canonical humanity registry off-chain. The underlying verification list never leaves Twin3 — only verdicts."
+    }
+  ]
+}

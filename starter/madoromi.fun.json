@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "madoromi.fun",
+  "resources": [
+    {
+      "url": "https://madoromi.fun/api/agent/interpret/full",
+      "description": "Japanese dream-interpretation agent API. Returns a Gemini-generated full interpretation from madoromi's curated dream-motif knowledge base (result schema agent-dream-insight.full.v1). Japanese output only. Dream text is never stored or logged. Async by default: the paid POST returns a job id in seconds; fetch the result with a plain free HTTP GET (no x402 client) at /api/agent/interpret/result/{job_id} (ready in ~15s). options.sync=true for one sync response (10-20s; client timeout 60s+)."
+    }
+  ]
+}

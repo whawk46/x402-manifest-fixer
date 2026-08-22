@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "music.jamesbpollack.com",
+  "resources": [
+    {
+      "url": "https://music.jamesbpollack.com/api/x402/search",
+      "description": "Search the James B. Pollack music catalog by mood, BPM, key, year, or similarity"
+    }
+  ]
+}

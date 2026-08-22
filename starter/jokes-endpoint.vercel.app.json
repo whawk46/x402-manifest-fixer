@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "jokes-endpoint.vercel.app",
+  "resources": [
+    {
+      "url": "https://jokes-endpoint.vercel.app/api/jokes",
+      "description": "Get a random interesting joke. Secured with x402 payment protocol on Base mainnet."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "time.24klabs.ai",
+  "resources": [
+    {
+      "url": "https://time.24klabs.ai/timezone",
+      "description": "Timezone intelligence — offsets, DST, transitions"
+    },
+    {
+      "url": "https://time.24klabs.ai/summary",
+      "description": "Time Lord synthesized interpretation of the current moment"
+    },
+    {
+      "url": "https://time.24klabs.ai/time",
+      "description": "Full temporal context — 15+ time systems"
+    },
+    {
+      "url": "https://time.24klabs.ai/ask",
+      "description": "Ask the Time Lord a temporal question"
+    }
+  ]
+}

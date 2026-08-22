@@ -1,0 +1,71 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.x402scan.com",
+  "resources": [
+    {
+      "url": "https://www.x402scan.com/api/x402/merchants",
+      "description": "Paginated list of merchants (top recipients by volume)"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/resources",
+      "description": "Paginated list of all indexed x402 resources"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/facilitators/stats",
+      "description": "Overall high-level facilitator stats"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/resources/search",
+      "description": "Full-text search across x402 resources"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/registry/origin",
+      "description": "List all registered x402 resources for an origin"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/facilitators",
+      "description": "Paginated list of facilitators with stats"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/merchants/:address/stats",
+      "description": "Aggregate stats for a merchant"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/merchants/:address/transactions",
+      "description": "Paginated transfers where merchant is recipient"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/wallets/:address/stats",
+      "description": "Aggregate stats for a wallet (tx count, total amount, unique recipients)"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/buyers",
+      "description": "Paginated list of buyers (top senders by volume)"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/origins/:id/resources",
+      "description": "Resources for a specific origin/domain"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/merchants/:solana_address/stats",
+      "description": "Aggregate stats for a merchant"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/wallets/:address/transactions",
+      "description": "Paginated transfers where wallet is sender"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/merchants/:solana_address/transactions",
+      "description": "Paginated transfers where merchant is recipient"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/origins/blockrun.ai/resources",
+      "description": "Resources for a specific origin/domain"
+    },
+    {
+      "url": "https://www.x402scan.com/api/x402/origins/%7Bid%7D/resources",
+      "description": "Resources for a specific origin/domain"
+    }
+  ]
+}

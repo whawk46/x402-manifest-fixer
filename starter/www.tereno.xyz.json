@@ -1,0 +1,43 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.tereno.xyz",
+  "resources": [
+    {
+      "url": "https://www.tereno.xyz/api/v1/capabilities/token.metadata/invoke",
+      "description": "What token is this? Read a Base token's name, symbol, decimals and total supply in one cheap typed call, with block-level freshness and explicit limitations. Identity is shared across agents for 7 days while total supply is re-read on every call beyond the block window the answer was quoted for. Positive-sum by design: $0.03 cold, $0.02 when the token identity is already shared, $0.01 on a shared full answer — and the wallet that seeded it earns a share of every reuse."
+    },
+    {
+      "url": "https://www.tereno.xyz/api/v1/capabilities/contract.guard/invoke",
+      "description": "Is this Base contract safe to interact with? Detect whether an address has no code, is an upgradeable proxy, or is currently paused, and get a bounded allow, review or block trust verdict with evidence and block freshness before you call it. Positive-sum by design: $0.03 when nobody has checked this contract yet, $0.02 on a shared bytecode fingerprint, $0.01 once another agent has computed the full answer — and the wallet that computed it first earns a share of every reuse."
+    },
+    {
+      "url": "https://www.tereno.xyz/api/v1/capabilities/transaction.intent.guard/invoke",
+      "description": "Is this transaction safe to sign? Simulate an unsigned Base transaction against current chain state and get one verdict back: what the call does, the gas it burns, which balances and allowances move, and whether it hides an unlimited approval or a target that changed under you. Returns allow, review or block with reason codes, evidence and the block it stops being valid. Never cached, shared or resold: your unsigned transaction stays private to the wallet that paid for it."
+    },
+    {
+      "url": "https://www.tereno.xyz/api/v1/capabilities/chain.snapshot/invoke",
+      "description": "What is the current state of Base? Latest block number, timestamp, base fee and suggested gas fees in a single cheap call with no parameters — the fastest way to test an x402 payment loop end to end. Positive-sum by design: it takes no parameters, so every agent shares one answer — $0.02 if you are the first inside the freshness window, $0.01 for everyone after you."
+    },
+    {
+      "url": "https://www.tereno.xyz/api/v1/capabilities/contract.change/invoke",
+      "description": "Did this token's contract change under you? Compare a Base contract against Tereno's previous observation and catch a silent proxy upgrade, an admin swap, a bytecode change or a contract that just got paused: the moves that turn a token you can sell into one you cannot. Every answer names the block it stops being valid at, so a bot knows when to re-check. Priced for the moment a launch is screened by everyone at once: $0.02 if nobody has asked yet, $0.01 once another bot has."
+    },
+    {
+      "url": "https://www.tereno.xyz/api/v1/capabilities/contract.interface/invoke",
+      "description": "What standard does this Base contract implement? Detect ERC-20, ERC-721, ERC-1155 and ERC-165 support plus EIP-1967 proxy control slots in one cheap bounded check, shared across agents for as long as the code at the address is unchanged, up to 7 days, and only for a few blocks when the target is an upgradeable proxy. Positive-sum by design: $0.02 when nobody has checked this contract yet, $0.01 once another agent has — and the wallet that computed it first earns a share of every reuse."
+    },
+    {
+      "url": "https://www.tereno.xyz/api/v1/capabilities/web.compile/invoke",
+      "description": "Convert a public web page into bounded, LLM-ready Markdown with resolved links, citations and a SHA-256 content-addressed artifact any agent can independently re-verify before citing it. Optionally pass a claim to check it is textually supported by the page. Every response includes source/final URL, content hash, validity window and x402 receipt; the first settled payer earns a bounded credit when another wallet reuses it."
+    },
+    {
+      "url": "https://www.tereno.xyz/api/v1/capabilities/evidence.artifact/invoke",
+      "description": "Can this public Tereno artifact be reused? Return a typed provenance envelope with source capability, field paths, validity window and exact recomputation input. If the artifact has expired, its source is recomputed in place and the fresh answer ships inside the same response. Private transaction intent is rejected. Use when another agent gives you a Tereno artifactId."
+    },
+    {
+      "url": "https://www.tereno.xyz/api/v1/claims",
+      "description": "Publish a deterministic claim about a Base proxy and let the market try to break it. You assert that a contract's implementation slot held one address across a block range, fund a reward for whoever finds a block where it did not, and Tereno writes the claim onchain and adjudicates counterexamples by historical storage reads. If nobody collects before your deadline, you get a reproducible survival receipt: not an audit, but proof the claim stood in public with money on it."
+    }
+  ]
+}

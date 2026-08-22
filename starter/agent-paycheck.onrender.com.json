@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-paycheck.onrender.com",
+  "resources": [
+    {
+      "url": "https://agent-paycheck.onrender.com/v1/check",
+      "description": "Pre-payment risk and usefulness check for AI agents deciding whether to pay an x402 endpoint."
+    }
+  ]
+}

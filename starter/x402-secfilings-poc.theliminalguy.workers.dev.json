@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-secfilings-poc.theliminalguy.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-secfilings-poc.theliminalguy.workers.dev/filing-check/:var1",
+      "description": "Computed SEC filing-health verdict (late-filing notifications, restatement events, overdue periodic reports) for one company CIK"
+    }
+  ]
+}

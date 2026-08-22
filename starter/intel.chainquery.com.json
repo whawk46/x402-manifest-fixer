@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "intel.chainquery.com",
+  "resources": [
+    {
+      "url": "https://intel.chainquery.com/v1/fee-pressure",
+      "description": "ChainQuery Bitcoin Intelligence: independent Bitcoin-native on-chain data over x402, no API key. Live mempool fee-pressure signal (state low/moderate/high/severe + score in sat/vB)."
+    },
+    {
+      "url": "https://intel.chainquery.com/v1/address/:addr",
+      "description": "ChainQuery Bitcoin Intelligence: independent Bitcoin-native on-chain data over x402, no API key. Per-address balance, received/spent flows, quantum exposure, and best-effort labels/tags."
+    },
+    {
+      "url": "https://intel.chainquery.com/v1/hodl-waves",
+      "description": "ChainQuery Bitcoin Intelligence: independent Bitcoin-native on-chain data over x402, no API key. Full HODL-waves history: supply split across 12 age bands per weekly snapshot."
+    },
+    {
+      "url": "https://intel.chainquery.com/v1/richlist",
+      "description": "ChainQuery Bitcoin Intelligence: independent Bitcoin-native on-chain data over x402, no API key. Top 10 addresses by balance from the weekly UTXO-set snapshot, with labels."
+    },
+    {
+      "url": "https://intel.chainquery.com/v1/coin-velocity",
+      "description": "ChainQuery Bitcoin Intelligence: independent Bitcoin-native on-chain data over x402, no API key. 90- and 365-day rolling coin-velocity time series derived from CDD and supply."
+    },
+    {
+      "url": "https://intel.chainquery.com/v1/cdd",
+      "description": "ChainQuery Bitcoin Intelligence: independent Bitcoin-native on-chain data over x402, no API key. Coin Days Destroyed (CDD) spike classifier (state normal/elevated/spike/extreme + z-score vs 30-day baseline)."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.srch.best",
+  "resources": [
+    {
+      "url": "https://x402.srch.best/fiscal",
+      "description": "Structured fiscal data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/spending",
+      "description": "Structured spending data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/economy",
+      "description": "Structured economy data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/knowledge",
+      "description": "Structured knowledge data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/batch",
+      "description": "Structured batch data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/answer",
+      "description": "Structured answer data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/water",
+      "description": "Structured water data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/vehicle-safety",
+      "description": "Structured vehicle-safety data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/complaints",
+      "description": "Structured complaints data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/government",
+      "description": "Structured government data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/disasters",
+      "description": "Structured disasters data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/vulnerabilities",
+      "description": "Structured vulnerabilities data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/regulatory",
+      "description": "Structured regulatory data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/alerts",
+      "description": "Structured alerts data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/nutrition",
+      "description": "Structured nutrition data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/indicators",
+      "description": "Structured indicators data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/domain",
+      "description": "Structured domain data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/company",
+      "description": "Structured company data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/research",
+      "description": "Structured research data for agents, paid per request with x402 v2"
+    },
+    {
+      "url": "https://x402.srch.best/contents",
+      "description": "Retrieve clean web text, highlights, or summaries with per-URL statuses, paid per request with x402 v2 (up to 10 URLs)"
+    },
+    {
+      "url": "https://x402.srch.best/search",
+      "description": "Live web search for agents and developers, paid per request with x402 v2 (up to 10 normalized results)"
+    }
+  ]
+}

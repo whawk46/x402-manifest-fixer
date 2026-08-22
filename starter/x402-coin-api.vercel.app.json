@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "x402-coin-api.vercel.app",
+  "resources": [
+    {
+      "url": "https://x402-coin-api.vercel.app/api/price",
+      "description": "Coin fiyati API — anlik kripto fiyati (USD)"
+    }
+  ]
+}

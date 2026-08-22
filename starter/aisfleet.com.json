@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "aisfleet.com",
+  "resources": [
+    {
+      "url": "https://aisfleet.com/api/x402/v1/ais/vessels/:mmsi/position",
+      "description": "Get the latest available AIS Fleet vessel position for a 9-digit MMSI, observed within the prior six hours. The response includes observation time and age."
+    }
+  ]
+}

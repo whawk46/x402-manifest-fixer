@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "qr-code-generator.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://qr-code-generator.underscoredone.com/generate",
+      "description": "Send a list of texts — website addresses, phone numbers, plain words, WiFi details, anything — and get back a ready-to-use QR code image for each one. Every QR code comes as a base64-encoded PNG you can drop straight into a webpage or save to disk. Great for marketing campaigns, event tickets, product labels, menus, or any situation where you need many QR codes in one go. Empty entries are quietly skipped. Each input is limited to 700 characters. You must send at least one non-empty entry."
+    }
+  ]
+}

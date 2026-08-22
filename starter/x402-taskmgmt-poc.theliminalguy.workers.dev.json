@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-taskmgmt-poc.theliminalguy.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-taskmgmt-poc.theliminalguy.workers.dev/projects/:var1/plan",
+      "description": "Computed next-actions plan: unblocked tasks, blocked tasks + reasons, critical path"
+    },
+    {
+      "url": "https://x402-taskmgmt-poc.theliminalguy.workers.dev/projects/:id/plan",
+      "description": "Computed next-actions plan: unblocked tasks, blocked tasks + reasons, critical path"
+    }
+  ]
+}

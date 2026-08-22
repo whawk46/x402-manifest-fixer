@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "web-production-77376.up.railway.app",
+  "resources": [
+    {
+      "url": "https://web-production-77376.up.railway.app/checkout",
+      "description": "Buy the \"My Agent Bought Me This\" embroidered hat — 0.5 USDC on Base"
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "stabletravel.dev",
+  "resources": [
+    {
+      "url": "https://stabletravel.dev/api/google-flights/search",
+      "description": "Search Google Flights for flight offers. Returns best flights, other flights, price insights, and airport info."
+    },
+    {
+      "url": "https://stabletravel.dev/api/seats-aero/search",
+      "description": "Search cached Seats.aero award availability by origin, destination, dates, cabin, carriers, and pagination."
+    },
+    {
+      "url": "https://stabletravel.dev/api/seats-aero/availability",
+      "description": "Retrieve bulk cached Seats.aero award availability for a mileage program, optionally filtered by region, date, and cabin."
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KMIA/weather/observations",
+      "description": "Get weather observations (METAR) for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/UAL123",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KJFK/weather/observations",
+      "description": "Get weather observations (METAR) for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/google-flights/booking",
+      "description": "Get booking options for a specific flight. Requires a departure_token from a search result."
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KSFO/weather/observations",
+      "description": "Get weather observations (METAR) for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports",
+      "description": "List all airports with optional pagination"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/id",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/nearby",
+      "description": "Find airports near a given latitude/longitude coordinate"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/EWR/delays",
+      "description": "Get current delay information for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/JA784A",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/JA894A",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/JA73NG",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/JA73AB",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/JA803X",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/JA607A",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/LHR/delays",
+      "description": "Get current delay information for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/UA123",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/search",
+      "description": "Search for flights by query string (-latlong, -idents, -airline syntax)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/LHR/flights/scheduled-departures",
+      "description": "Get scheduled departure flights for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KORD/weather/observations",
+      "description": "Get weather observations (METAR) for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KORD",
+      "description": "Get detailed information for a specific airport by its code"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KLAX/flights/counts",
+      "description": "Get flight counts (departed, enroute, scheduled) for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/seats-aero/trips/32Lg7vRAhpLsChllpSR8HcYQeip",
+      "description": "Retrieve flight-level trip details and booking links for a Seats.aero availability ID."
+    },
+    {
+      "url": "https://stabletravel.dev/api/seats-aero/trips/32Lg17LSv1Hy2hn0slMa0dkHPqj",
+      "description": "Retrieve flight-level trip details and booking links for a Seats.aero availability ID."
+    },
+    {
+      "url": "https://stabletravel.dev/api/seats-aero/trips/31kZf4CYMU0EEidKyURi40xzvuU",
+      "description": "Retrieve flight-level trip details and booking links for a Seats.aero availability ID."
+    },
+    {
+      "url": "https://stabletravel.dev/api/seats-aero/trips/31hvRhkkqBNUw1gYUfvSvIee7HS",
+      "description": "Retrieve flight-level trip details and booking links for a Seats.aero availability ID."
+    },
+    {
+      "url": "https://stabletravel.dev/api/seats-aero/trips/30im96WmcqPsBu21yTrWEwzjCkI",
+      "description": "Retrieve flight-level trip details and booking links for a Seats.aero availability ID."
+    },
+    {
+      "url": "https://stabletravel.dev/api/seats-aero/trips/30fuw9tOsJPIxlIDgje8YQEbhN3",
+      "description": "Retrieve flight-level trip details and booking links for a Seats.aero availability ID."
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/id/delays",
+      "description": "Get current delay information for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/MAD/delays",
+      "description": "Get current delay information for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KMIA/delays",
+      "description": "Get current delay information for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KJFK/delays",
+      "description": "Get current delay information for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/AT973",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/AA95",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/AA100",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/disruption-counts/airline",
+      "description": "Get disruption counts by entity type (airline, origin, destination)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KJFK/flights/scheduled-departures",
+      "description": "Get scheduled departure flights for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KJFK/flights/scheduled-arrivals",
+      "description": "Get scheduled arrival flights for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KEWR/weather/observations",
+      "description": "Get weather observations (METAR) for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KDFW/weather/observations",
+      "description": "Get weather observations (METAR) for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/HL8306",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/PK-GPY",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/PK-GMU",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/B-18916",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/B-18101",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/flights/9V-OJJ",
+      "description": "Get flight information by ident (designator, registration, or fa_flight_id)"
+    },
+    {
+      "url": "https://stabletravel.dev/api/seats-aero/routes",
+      "description": "List airline flight route pairs covered by a Seats.aero mileage program source. These are origin/destination airport pairs, not API routes."
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KJFK",
+      "description": "Get detailed information for a specific airport by its code"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/disruption-counts/destination/EWR",
+      "description": "Get disruption counts for a specific entity"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/kjfk/weather/forecast",
+      "description": "Get weather forecast (TAF) for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/disruption-counts/airline/UAL",
+      "description": "Get disruption counts for a specific entity"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KMIA/flights/departures",
+      "description": "Get departure flights for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KMIA/flights/arrivals",
+      "description": "Get arrival flights for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KJFK/weather/forecast",
+      "description": "Get weather forecast (TAF) for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/KDFW/weather/forecast",
+      "description": "Get weather forecast (TAF) for a specific airport"
+    },
+    {
+      "url": "https://stabletravel.dev/api/flightaware/airports/CTS/weather/forecast",
+      "description": "Get weather forecast (TAF) for a specific airport"
+    }
+  ]
+}

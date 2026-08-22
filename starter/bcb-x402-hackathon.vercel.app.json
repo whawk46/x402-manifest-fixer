@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "bcb-x402-hackathon.vercel.app",
+  "resources": [
+    {
+      "url": "https://bcb-x402-hackathon.vercel.app/api/add",
+      "description": "Access to protected content"
+    }
+  ]
+}

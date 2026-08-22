@@ -1,0 +1,35 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.ochinimus.app",
+  "resources": [
+    {
+      "url": "https://x402.ochinimus.app/api/liquidation-stats",
+      "description": "1h/24h liquidation totals for the 5 majors (SOL/BTC/ETH/XRP/DOGE), long/short split, biggest print, per-exchange breakdown"
+    },
+    {
+      "url": "https://x402.ochinimus.app/api/btc-price",
+      "description": "BTC spot price via Pyth"
+    },
+    {
+      "url": "https://x402.ochinimus.app/api/trade-context",
+      "description": "Full market state in one call: prices, funding, fear/greed, positioning, liquidations"
+    },
+    {
+      "url": "https://x402.ochinimus.app/api/peg-deviation",
+      "description": "Peg deviation for a tokenized US equity on Solana: on-chain DEX price vs the underlying last real trade, in bps, with 24h stats split into market-open and off-hours. Sampled every 5 minutes by our own collector; this tape exists nowhere else."
+    },
+    {
+      "url": "https://x402.ochinimus.app/api/peg-universe",
+      "description": "Every tokenized US equity we track, ranked by off-hours peg risk: p95 and max deviation bps, market-open deviation as control, median liquidity. Dead pools are excluded rather than reported as perfect pegs."
+    },
+    {
+      "url": "https://x402.ochinimus.app/api/sol-price",
+      "description": "SOL spot price via Pyth"
+    },
+    {
+      "url": "https://x402.ochinimus.app/api/token-metadata/:mint",
+      "description": "SPL token metadata via Helius DAS"
+    }
+  ]
+}

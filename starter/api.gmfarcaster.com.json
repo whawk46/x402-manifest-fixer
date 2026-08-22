@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.gmfarcaster.com",
+  "resources": [
+    {
+      "url": "https://api.gmfarcaster.com/v1/query",
+      "description": "Ask a natural-language question and get a cited answer from the GM Farcaster library — hundreds of episodes of Farcaster news, interviews, and analysis. Returns a grounded answer plus the source episodes with timestamped links."
+    }
+  ]
+}

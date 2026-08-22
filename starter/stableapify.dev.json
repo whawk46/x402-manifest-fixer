@@ -1,0 +1,75 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "stableapify.dev",
+  "resources": [
+    {
+      "url": "https://stableapify.dev/api/actors/results",
+      "description": "Fetch items from an Apify Actor run default dataset. Body: { \"token\": \"...\" } from actors/call. First call per wallet pays via x402 proportional to Apify usage (capped at $1.00); SIWX replay is free. Poll /api/actors/status until terminal — calling before terminal returns 409. POST only — never GET; token in JSON body, not query string."
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/maxcopell/zillow-scraper/call",
+      "description": "Start the \"Zillow Search Scraper\" Apify actor (maxcopell/zillow-scraper). Extract data about properties for sale and rent on Zillow using the Zillow API, but with no daily call limits. Scrape millions of listings and download your da…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/streamers/youtube-channel-scraper/call",
+      "description": "Start the \"Fast YouTube Channel Scraper\" Apify actor (streamers/youtube-channel-scraper). This alternative YouTube Data API has no limits or quotas. Use it to scrape one or multiple YouTube channels: channel info, URL, total number of subscribers, v…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/apify/rag-web-browser/call",
+      "description": "Start the \"RAG Web Browser\" Apify actor (apify/rag-web-browser). Web search and fetch tool for AI agents and RAG pipelines. It queries Google Search, scrapes the top N pages using a full web browser, and returns their conten…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/valig/indeed-jobs-scraper/call",
+      "description": "Start the \"💡 Indeed Jobs Scraper\" Apify actor (valig/indeed-jobs-scraper). $0.1/1K jobs | Scrape job listings, salaries, and company details from Indeed with customizable search filters and structured output."
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/valig/linkedin-jobs-scraper/call",
+      "description": "Start the \"🏆 LinkedIn Jobs Scraper\" Apify actor (valig/linkedin-jobs-scraper). $0.4/1K jobs | Scrape LinkedIn job listings based on your selected role and location, saving you time and effort."
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/apidojo/youtube-scraper/call",
+      "description": "Start the \"🏯 Youtube Scraper (Pay Per Result)\" Apify actor (apidojo/youtube-scraper). Experience unparalleled efficiency and depth with its ultra-fast capabilities in searching, URL, playlist, channel, and profile scraping. It comes equipped wit…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/junglee/Amazon-crawler/call",
+      "description": "Start the \"Amazon Product Scraper\" Apify actor (junglee/Amazon-crawler). Use this Amazon scraper to collect data based on URL and country from the Amazon website. Extract product information without using the Amazon API, including r…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/apify/facebook-marketplace-scraper/call",
+      "description": "Start the \"Facebook Marketplace Scraper\" Apify actor (apify/facebook-marketplace-scraper). Extract data from one or multiple Facebook Marketplace listings. Scrape data on apartments, whole categories, items for sale, prices, location and sellers. Exp…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/clockworks/tiktok-hashtag-scraper/call",
+      "description": "Start the \"TikTok Hashtag Scraper\" Apify actor (clockworks/tiktok-hashtag-scraper). Scrape TikTok hashtag data. Just add one or more hashtags and extract TikTok videos with that hashtag: URLs, likes, country of creation, video and music metada…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/harvestapi/linkedin-post-search/call",
+      "description": "Start the \"Linkedin Post Search Scraper (No Cookies)\" Apify actor (harvestapi/linkedin-post-search). Search LinkedIn Posts with advanced filters by target profiles or companies. No cookies or account required."
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/apidojo/tweet-scraper/call",
+      "description": "Start the \"🏯 Tweet Scraper V2 - X / Twitter Scraper\" Apify actor (apidojo/tweet-scraper). ⚡️ Lightning-fast search, URL, list, and profile scraping, with customizable filters. At $0.40 per 1000 tweets, and 30-80 tweets per second, it is ideal for re…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/apify/instagram-post-scraper/call",
+      "description": "Start the \"Instagram Post Scraper\" Apify actor (apify/instagram-post-scraper). Scrape Instagram posts. Just add one or more Instagram usernames and get your data in seconds including caption, metrics, images, mentions, coauthors, recent c…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/apify/google-trends-scraper/call",
+      "description": "Start the \"Google Trends Scraper\" Apify actor (apify/google-trends-scraper). Scrape data from Google Trends by search terms or URLs. Specify locations, define time ranges, select categories to get interest by subregion and over time, re…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/apify/instagram-hashtag-scraper/call",
+      "description": "Start the \"Instagram Hashtag Scraper\" Apify actor (apify/instagram-hashtag-scraper). Scrape Instagram posts and reels by hashtags. Just add one or more hashtags and extract captions, locations, likes, plays, shares, comments count, images, time…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/apify/instagram-profile-scraper/call",
+      "description": "Start the \"Instagram Profile Scraper\" Apify actor (apify/instagram-profile-scraper). Scrape all Instagram profile info. Just add Instagram usernames, IDs or URLs and extract name, join date, number of followers,  location, bio, website, related…"
+    },
+    {
+      "url": "https://stableapify.dev/api/actors/harshmaur/reddit-scraper/call",
+      "description": "Start the \"Reddit Scraper - MCP, AI, PPR\" Apify actor (harshmaur/reddit-scraper). Reddit Scraper lets you extract posts, comments, users, and communities without API rate limits. With a flexible pay-per-result model, it’s perfect for one-tim…"
+    }
+  ]
+}

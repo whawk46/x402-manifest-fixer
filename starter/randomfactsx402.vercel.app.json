@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "randomfactsx402.vercel.app",
+  "resources": [
+    {
+      "url": "https://randomfactsx402.vercel.app/api/random-fact",
+      "description": "Returns a single random fact as JSON in exchange for a micropayment."
+    }
+  ]
+}

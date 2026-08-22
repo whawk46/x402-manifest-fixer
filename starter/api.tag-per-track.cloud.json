@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.tag-per-track.cloud",
+  "resources": [
+    {
+      "url": "https://api.tag-per-track.cloud/api/analyze-with-lyrics",
+      "description": "Tag-per-Track: Agentic-First Musical Audio Analysis API. Extracts BPM, Key, Mood, Genres, Instruments AND Lyrics from audio URLs."
+    },
+    {
+      "url": "https://api.tag-per-track.cloud/api/analyze",
+      "description": "Tag-per-Track: Agentic-First Musical Audio Analysis API. Extracts BPM, Key, Mood, Genres and Instruments from audio URLs."
+    }
+  ]
+}

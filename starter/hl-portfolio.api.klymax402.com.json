@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "hl-portfolio.api.klymax402.com",
+  "resources": [
+    {
+      "url": "https://hl-portfolio.api.klymax402.com/api/funding",
+      "description": "Funding payments received/paid by a Hyperliquid wallet: coin, amount, rate, timestamp."
+    },
+    {
+      "url": "https://hl-portfolio.api.klymax402.com/api/fills",
+      "description": "Recent trade fills for a Hyperliquid wallet: coin, side, size, price, fee, closedPnl, timestamp."
+    }
+  ]
+}

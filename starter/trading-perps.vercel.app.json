@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "trading-perps.vercel.app",
+  "resources": [
+    {
+      "url": "https://trading-perps.vercel.app/api/composites",
+      "description": "El Niño event composites from El Niño Market Watch: 14 historical events (1951–2026) across 21 commodities, indexed-to-100 price paths around event onset with median/p25/p75 envelopes — the computed asset behind the dashboard charts."
+    },
+    {
+      "url": "https://trading-perps.vercel.app/api/nofa/signal",
+      "description": "Daily NoFA signal from El Niño Market Watch: a deterministic, rules-based LONG/SHORT pick across 21 ENSO-sensitive assets — expected return to the strong-scenario peak, historical hit-rate with Wilson 95% CI, CFTC COT crowding penalty, full rationale, plus the live paper portfolio (NAV, positions, trades). Simulation, not investment advice."
+    },
+    {
+      "url": "https://trading-perps.vercel.app/api/weather/anomalies",
+      "description": "Weather and soil-moisture anomalies for 10 commodity-growing regions (precipitation, temperature, root-zone soil wetness; Open-Meteo ERA5 + NASA POWER, 1994→) from El Niño Market Watch."
+    },
+    {
+      "url": "https://trading-perps.vercel.app/api/enso/indices",
+      "description": "Latest ENSO index bundle from El Niño Market Watch: weekly Niño 1+2/3/3.4/4 SST anomalies (NOAA CPC), RONI, Troup SOI (BOM) and weekly IOD/DMI — recent tails with exact source URLs."
+    }
+  ]
+}

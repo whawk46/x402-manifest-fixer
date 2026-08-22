@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "nickeljoke.vercel.app",
+  "resources": [
+    {
+      "url": "https://nickeljoke.vercel.app/api/joke",
+      "description": "Premium AI joke generation"
+    }
+  ]
+}

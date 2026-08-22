@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ladyfortunalx402.vercel.app",
+  "resources": [
+    {
+      "url": "https://ladyfortunalx402.vercel.app/api/fortune",
+      "description": "Get a random fortune via x402 payment on Base mainnet."
+    }
+  ]
+}

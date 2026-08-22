@@ -1,0 +1,35 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "01mind.net",
+  "resources": [
+    {
+      "url": "https://01mind.net/purchase/fx-rates-data-api",
+      "description": "Real-time foreign exchange rates — $0.002/call, trustScore 90. Real wrapper around frankfurter.dev (ECB reference rates), no fabricated data. Query any base currency, get one rate or the full set — real, live, verified against the actual current API contract."
+    },
+    {
+      "url": "https://01mind.net/purchase/weather-data-api",
+      "description": "Real-time and forecast weather data by location, returned as clean agent-readable JSON, via 01Mind. Pay-per-call, no subscription."
+    },
+    {
+      "url": "https://01mind.net/purchase/legal-research-knowledge-api",
+      "description": "Ask a real legal-research question, answered live and grounded in real, named legislation/case law/regulator guidance. Informational reference material only, not legal advice -- see the disclaimer on every response."
+    },
+    {
+      "url": "https://01mind.net/purchase/email-send-action-api",
+      "description": "Send a real plaintext email to a recipient you specify, on your behalf, via 01Mind. Every send carries a server-added disclosure footer naming 01Mind and your wallet, and is capped at 20 sends per wallet per 24h."
+    },
+    {
+      "url": "https://01mind.net/purchase/dyn-baf663b065a63397",
+      "description": "01Mind listing: dyn-baf663b065a63397"
+    },
+    {
+      "url": "https://01mind.net/purchase/dyn-9c6d8ecb1d01341b",
+      "description": "01Mind listing: dyn-9c6d8ecb1d01341b"
+    },
+    {
+      "url": "https://01mind.net/purchase/dyn-45c4dd28f5d640af",
+      "description": "01Mind listing: dyn-45c4dd28f5d640af"
+    }
+  ]
+}

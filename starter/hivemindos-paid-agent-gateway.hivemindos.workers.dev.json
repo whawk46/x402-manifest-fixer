@@ -1,0 +1,35 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "hivemindos-paid-agent-gateway.hivemindos.workers.dev",
+  "resources": [
+    {
+      "url": "https://hivemindos-paid-agent-gateway.hivemindos.workers.dev/api/x402/catalog",
+      "description": "HivemindOS service router for agents: one paid call returns the full HivemindOS commercial catalog (crypto research, wallet risk, Reddit customer research, media, models, email) with live pricing plus every direct x402 purchase endpoint and exact request examples. Start here to discover what a HivemindOS agent stack can buy."
+    },
+    {
+      "url": "https://hivemindos-paid-agent-gateway.hivemindos.workers.dev/api/x402/testnet-faucet/claims",
+      "description": "Agent-friendly multi-chain faucet routing through verified CDP and Paxos testnet providers. The asset-specific x402 charge pays HivemindOS for programmatic payment, provider routing, idempotency, and quota enforcement; test tokens have no sale price or monetary value."
+    },
+    {
+      "url": "https://hivemindos-paid-agent-gateway.hivemindos.workers.dev/api/x402/private-send/reservations",
+      "description": "Prepare a Veil Cash private USDC send on Base. The x402 price is HivemindOS's disclosed 1% service fee for the requested send amount, with a $0.25 minimum and $10 maximum. Returns time-limited proving-key access for local @veil-cash/sdk execution. The recipient, Veil key, proof, and final transaction never go to HivemindOS."
+    },
+    {
+      "url": "https://hivemindos-paid-agent-gateway.hivemindos.workers.dev/api/x402/hive-research/runs",
+      "description": "Buy a Hive Research crypto token analysis in one x402 call. Pay per Scout-depth report in USDC on Base; a multi-agent crew (collector, on-chain, sentiment, chart, analyst, devil's advocate, queen) produces a scored verdict report for any Base, Ethereum, Solana, or Robinhood Chain token by address, symbol, or name. Retrieve the finished report with the returned session token. Data source: Nansen API."
+    },
+    {
+      "url": "https://hivemindos-paid-agent-gateway.hivemindos.workers.dev/api/x402/reddit-voc/runs",
+      "description": "Buy a Reddit voice-of-customer snapshot in one x402 call. Pay per report in USDC on Base; the report mines recent Reddit threads and comments on your topic into validated evidence, customer pains, desires, objections, and swipeable phrasing, with a public share URL when complete."
+    },
+    {
+      "url": "https://hivemindos-paid-agent-gateway.hivemindos.workers.dev/api/x402/wallet-risk/runs",
+      "description": "Buy a wallet risk snapshot for any Base address in one x402 call. Pay per snapshot in USDC on Base; the report scores counterparty risk from holdings, counterparties, and token approvals, and returns a public share URL when complete. Useful before an agent transacts with an unknown wallet. Data source: Nansen API."
+    },
+    {
+      "url": "https://hivemindos-paid-agent-gateway.hivemindos.workers.dev/api/x402/token-autopsy/runs",
+      "description": "Buy a Token Autopsy due-diligence report for any Base, Ethereum, or Solana token in one x402 call. Pay per report in USDC on Base; the report grades the token and covers holders, smart money positioning, deployer history, and red/green flags, and returns a public share URL when complete. Data source: Nansen API."
+    }
+  ]
+}

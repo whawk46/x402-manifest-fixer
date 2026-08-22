@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-economy-signal-x402-mainnet.bronzetti-andrea.workers.dev",
+  "resources": [
+    {
+      "url": "https://agent-economy-signal-x402-mainnet.bronzetti-andrea.workers.dev/premium/agent-brief",
+      "description": "AI agent market intelligence for autonomous agents. Detects emerging agent-economy opportunities across protocols, infrastructure, tooling and machine-to-machine commerce. Returns deterministic ACT_NOW, RESEARCH_NOW, MONITOR, DEPRIORITIZE or IGNORE decisions using conviction, acceleration, freshness and persistence signals."
+    }
+  ]
+}

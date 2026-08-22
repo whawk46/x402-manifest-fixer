@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "watchtower-api.com",
+  "resources": [
+    {
+      "url": "https://watchtower-api.com/v1/screen",
+      "description": "Screen a person/company/vessel name against OFAC (SDN + Consolidated), UN, EU, UK, Canada, Australia, France, Switzerland, US export-control (BIS/State), and US SAM procurement/benefit exclusions. Deterministic typo-tolerant fuzzy matching with versioned list snapshots."
+    }
+  ]
+}

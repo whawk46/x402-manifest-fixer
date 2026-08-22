@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-codesearch-poc.theliminalguy.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-codesearch-poc.theliminalguy.workers.dev/search",
+      "description": "Semantic code search over an indexed repo (top-5 matches)"
+    }
+  ]
+}

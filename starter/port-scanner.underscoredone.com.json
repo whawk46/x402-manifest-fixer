@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "port-scanner.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://port-scanner.underscoredone.com/scan",
+      "description": "Give this API a hostname or IP address and it will try connecting to each port in your requested range. For every port that answers, it tells you whether it is open or blocked, which service is likely running there (like a web server or SSH), and what software version was detected. This saves you from installing network tools, parsing messy command-line output, or writing socket loops yourself. Only scan hosts you own or have permission to scan — this tool does not check that for you."
+    }
+  ]
+}

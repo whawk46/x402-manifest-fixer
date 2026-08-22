@@ -1,0 +1,67 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.agentfeeds.jp",
+  "resources": [
+    {
+      "url": "https://api.agentfeeds.jp/v1/reg/sanctions/heartbeat",
+      "description": "Freshness heartbeat only (list date, address count, fetched_at) for both Japan MOF and OFAC sanctions lists. No addresses. Cheapest polling entry point for change-detection loops."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/chain/gas/base",
+      "description": "Base network gas fee statistics (1-minute baseFeePerGas buckets): p25/p50/p90/p99 and the current value's percentile rank within the window. Descriptive statistics only; not investment advice."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/jp/fx/customs_rate",
+      "description": "Weekly official Japan Customs reference exchange rate (税関長公示レート) used to convert import declaration values to yen under Article 4-7 of the Customs Tariff Law -- a live proxy to the Customs weekly CSV, not a real-time market rate. Source: Japan Customs (customs.go.jp), whose terms of use explicitly permit commercial use. Factual published data only; not a live FX quote or trading advice."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/dex/wrapped/parity",
+      "description": "Wrapped-BTC parity monitor on Base: WBTC/cbBTC on-chain pool price vs 1:1 parity, in bps, plus consecutive-minute streak beyond a deviation threshold. Useful for collateral-acceptance decisions between BTC wrappers of the same underlying asset. Descriptive statistics only; not investment advice."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/reg/events/headlines",
+      "description": "Cheapest tier: headlines only (original + machine-translated title) across all 11 Japan regulatory sources, no summary. Upsell entry point to /v1/reg/events. Factual; not legal advice."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/reg/sanctions/jp/russia_ukraine",
+      "description": "Same substring name search as sanctions.entity_view, pre-filtered to the Russia/Ukraine(Crimea)-related subset of Japan MOF's asset-freeze designee list (three internal reference blocks: one from the 2014 measures, two from the 2022 measures). Same underlying data and matching method as sanctions.entity_view -- no new list, no new matching logic. Factual screening data; not legal or compliance advice."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/jp/debt/balance",
+      "description": "Central government debt balance by category (JGBs total, of which General Bonds; FILP bonds; Borrowings; Financing Bills; grand Total; separately Government-Guaranteed Debt) from the Ministry of Finance, quarter-end, 5-year trend. Factual published data only; not investment advice."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/jp/debt/auction_results",
+      "description": "Japanese Government Bond auction results by tenor (issue number, auction/issue/maturity dates, offering/bid/awarded amounts, price and yield) from the Ministry of Finance's official record. Covers coupon-bearing tenors (2y-40y, inflation-linked, floating-rate, GX bonds) and Treasury Bills. Factual published data only; not investment advice."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/jp/macro/leading_index",
+      "description": "Cabinet Office Composite Index (CI), one of leading/coincident/lagging, 2020=100, monthly since 1980. Same e-Stat API family as estat.search/estat.table_data (routed there rather than the Cabinet Office's own ESRI subdomain, whose commercial-use terms were less clearly stated). Factual published data only; not investment advice or a forecast."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/jp/labor/unemployment_rate",
+      "description": "Japan's unemployment rate from the Statistics Bureau's Labour Force Survey, not seasonally adjusted, monthly since 2000, broken out by total/male/female. Same e-Stat API family as estat.search/estat.table_data. Factual published data only; not investment advice or a forecast."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/boj/tankan",
+      "description": "Tankan (Bank of Japan's quarterly Short-Term Economic Survey of Enterprises) business-conditions diffusion index for large enterprises, manufacturing or non-manufacturing, current-quarter assessment. Same source and API family as boj.rates. Factual published data only; not investment advice or a forecast."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/jp/fx/intervention_record",
+      "description": "Individual yen foreign-exchange intervention operations (date, amount, currency pair) from the Ministry of Finance's official record, 1991-present. Quarters with no intervention are simply absent from the list rather than zero-padded. Factual published data only; not investment advice or a signal to trade on."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/jp/rates/jgb_curve",
+      "description": "Japanese government bond yield curve (1 to 40 years, 15 tenors) from the Ministry of Finance's daily reference series. Complements boj.rates (the short-end policy-rate proxy) with the long end of the curve. Factual published data only; not investment advice or a rate forecast."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/dex/peg/alert",
+      "description": "Same detection framework as dex.peg.anomalies, re-shaped to a single yes/no for right now: is the latest available 1-minute reading for this pair itself over the trailing 30-day p99 baseline, instead of a historical event log. Returns action=reroute_away_temporarily or action=no_action_needed, plus how many seconds the reading is valid for before you should re-query. Descriptive computation only; not investment or redemption advice."
+    },
+    {
+      "url": "https://api.agentfeeds.jp/v1/x402/gas/settlement_window",
+      "description": "Same computation as x402.gas.settlement_cost, re-shaped as a direct threshold comparison: pass your own max_acceptable_usd and get back action=settle_now or action=wait, plus how many seconds the reading is valid for before you should re-query. No new data, no judgment call beyond the arithmetic comparison you specified. Descriptive computation only; not investment advice."
+    }
+  ]
+}

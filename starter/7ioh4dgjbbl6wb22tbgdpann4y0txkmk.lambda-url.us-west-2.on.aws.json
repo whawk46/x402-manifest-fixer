@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "7ioh4dgjbbl6wb22tbgdpann4y0txkmk.lambda-url.us-west-2.on.aws",
+  "resources": [
+    {
+      "url": "https://7ioh4dgjbbl6wb22tbgdpann4y0txkmk.lambda-url.us-west-2.on.aws/brief",
+      "description": "Investment Morning Brief — latest weekly investment intelligence brief synthesized from 17 finance/investing podcast channels"
+    }
+  ]
+}

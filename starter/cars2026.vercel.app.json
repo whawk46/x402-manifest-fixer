@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "cars2026.vercel.app",
+  "resources": [
+    {
+      "url": "https://cars2026.vercel.app/api/cars",
+      "description": "Educational briefing on the latest cars in 2026 (powertrains, range, pricing, and what's new)."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "whaletape.xyz",
+  "resources": [
+    {
+      "url": "https://whaletape.xyz/ask",
+      "description": "Pergunte em linguagem natural sobre o mercado agora (baleias, fluxos, squeeze) e receba resposta do Claude fundamentada no snapshot ao vivo"
+    },
+    {
+      "url": "https://whaletape.xyz/whale/:address",
+      "description": "Dossie ao vivo de uma carteira na Hyperliquid: posicoes abertas por dex, exposicao long/short e notional"
+    },
+    {
+      "url": "https://whaletape.xyz/squeeze",
+      "description": "Radar de squeeze iminente: funding esticado + OI alto + baleias contra a multidao, score 0-100"
+    },
+    {
+      "url": "https://whaletape.xyz/flows/classes",
+      "description": "Rotacao de capital entre classes (crypto/equity/commodity/index/fx) em janelas 1h/4h/24h"
+    },
+    {
+      "url": "https://whaletape.xyz/flows",
+      "description": "Fluxo de notional (delta OI x preco) por mercado em janelas 1h/4h/24h + sinais de acumulacao furtiva"
+    },
+    {
+      "url": "https://whaletape.xyz/whales",
+      "description": "Exposicao long/short agregada dos maiores traders do leaderboard"
+    },
+    {
+      "url": "https://whaletape.xyz/markets/full",
+      "description": "Todos os mercados Hyperliquid (cripto + acoes + commodities) em USDC"
+    },
+    {
+      "url": "https://whaletape.xyz/signals",
+      "description": "Sinais recentes de salto de OI e virada de funding"
+    },
+    {
+      "url": "https://whaletape.xyz/analysis",
+      "description": "Brief de mercado gerado por Claude Opus sobre o snapshot atual"
+    },
+    {
+      "url": "https://whaletape.xyz/whales/positions",
+      "description": "Maiores posicoes individuais das baleias: dono, lado, notional, PnL"
+    },
+    {
+      "url": "https://whaletape.xyz/history/:symbol",
+      "description": "Serie historica de preco/funding/OI de um mercado (backtest)"
+    },
+    {
+      "url": "https://whaletape.xyz/recommendations",
+      "description": "Vies long/short por mercado com score e justificativas (heuristica)"
+    },
+    {
+      "url": "https://whaletape.xyz/premium",
+      "description": "Bundle: analise Opus + recomendacoes + posicoes das baleias + sinais"
+    },
+    {
+      "url": "https://whaletape.xyz/markets/class/:asset_class",
+      "description": "Mercados filtrados por classe (crypto/equity/commodity/index/fx/rates)"
+    }
+  ]
+}

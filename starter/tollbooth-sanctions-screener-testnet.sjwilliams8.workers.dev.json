@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "tollbooth-sanctions-screener-testnet.sjwilliams8.workers.dev",
+  "resources": [
+    {
+      "url": "https://tollbooth-sanctions-screener-testnet.sjwilliams8.workers.dev/screen",
+      "description": "Before your agent onboards, pays, or contracts with a counterparty: screen the name against the U.S. Treasury OFAC sanctions lists (SDN + Consolidated non-SDN, synced every 6h) for $0.01. Benchmarked 114/114 sanctioned names found with zero false positives on a 152-case adversarial corpus of misspellings, word-order swaps, and transliterated aliases. Ranked candidates with confidence 0-100, program tags, and match evidence. Assistive screening signal, not a certified compliance determination."
+    }
+  ]
+}

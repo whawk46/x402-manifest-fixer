@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "web-production-7ca5d.up.railway.app",
+  "resources": [
+    {
+      "url": "https://web-production-7ca5d.up.railway.app/v1/vietnam/xsmb",
+      "description": "Vietnam Northern traditional lottery results (XSMB / Xo So Mien Bac): full prize table from special prize (giai dac biet) to 7th prize for the latest daily draws at 18:15 Hanoi time. Structured JSON, updated within minutes of the draw. Used by millions of Vietnamese daily."
+    },
+    {
+      "url": "https://web-production-7ca5d.up.railway.app/v1/schedule",
+      "description": "Next draw times for major lotteries worldwide: US Powerball, Mega Millions, Vietnam Vietlott Power 6/55, Mega 6/45 and Vietnamese regional lotteries XSMB/XSMN/XSMT. Returns the next upcoming draw datetime in UTC for each game. Perfect for reminder bots and countdown widgets."
+    }
+  ]
+}

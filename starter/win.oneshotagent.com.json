@@ -1,0 +1,39 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "win.oneshotagent.com",
+  "resources": [
+    {
+      "url": "https://win.oneshotagent.com/v1/tools/search",
+      "description": "Web search returning URLs, titles, and descriptions"
+    },
+    {
+      "url": "https://win.oneshotagent.com/v1/tools/enrich/profile",
+      "description": "Profile enrichment from LinkedIn URL"
+    },
+    {
+      "url": "https://win.oneshotagent.com/v1/tools/verify/email",
+      "description": "Email deliverability verification"
+    },
+    {
+      "url": "https://win.oneshotagent.com/v1/tools/research/person",
+      "description": "Deep person research — returns enrichment, social profiles, articles, and dossier"
+    },
+    {
+      "url": "https://win.oneshotagent.com/v1/tools/enrich/email",
+      "description": "Email enrichment and validation"
+    },
+    {
+      "url": "https://win.oneshotagent.com/v1/tools/web-read",
+      "description": "Read a web page and extract content as markdown with screenshot"
+    },
+    {
+      "url": "https://win.oneshotagent.com/v1/tools/email/send",
+      "description": "Send email with provisioned domain"
+    },
+    {
+      "url": "https://win.oneshotagent.com/v1/tools/research/people",
+      "description": "People and contact discovery"
+    }
+  ]
+}

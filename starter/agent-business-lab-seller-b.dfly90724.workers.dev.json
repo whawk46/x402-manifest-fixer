@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-business-lab-seller-b.dfly90724.workers.dev",
+  "resources": [
+    {
+      "url": "https://agent-business-lab-seller-b.dfly90724.workers.dev/api/geo-audit",
+      "description": "Deterministic full GEO audit for a public HTTP(S) URL."
+    }
+  ]
+}

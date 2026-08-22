@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "base-gas-x402-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://base-gas-x402-production.up.railway.app/gas",
+      "description": "Live Base mainnet gas: EIP-1559 base fee, low/medium/high priority tiers in gwei, and a transaction cost estimate for any gas limit."
+    },
+    {
+      "url": "https://base-gas-x402-production.up.railway.app/gas/compare",
+      "description": "Live gas cost comparison across Base, OP Mainnet, Arbitrum One, and Ethereum in one call, ranked cheapest first."
+    },
+    {
+      "url": "https://base-gas-x402-production.up.railway.app/gas/cheapest-window",
+      "description": "Cheapest hours of day to transact on Base, from collected gas history: hourly averages in UTC ranked cheapest first, plus the savings percent."
+    },
+    {
+      "url": "https://base-gas-x402-production.up.railway.app/gas/history",
+      "description": "Historical Base mainnet gas prices over a lookback window: time series, min/max/average/median, and a cheap/normal/expensive verdict for the current price."
+    }
+  ]
+}

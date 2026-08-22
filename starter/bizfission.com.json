@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "bizfission.com",
+  "resources": [
+    {
+      "url": "https://bizfission.com/articles/we-installed-smidgen-x402-on-wordpress/",
+      "description": "Smidgen field note"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "codepulse-api.hahavoid0.workers.dev",
+  "resources": [
+    {
+      "url": "https://codepulse-api.hahavoid0.workers.dev/security/http-headers",
+      "description": "Queries target URL headers to score security configurations (HSTS, CSP, X-Frame-Options)."
+    },
+    {
+      "url": "https://codepulse-api.hahavoid0.workers.dev/mailbox/messages",
+      "description": "Polls the disposable inbox for messages and verification codes."
+    },
+    {
+      "url": "https://codepulse-api.hahavoid0.workers.dev/mailbox/create",
+      "description": "Generates a temporary disposable inbox address using the free 1secmail.com service."
+    },
+    {
+      "url": "https://codepulse-api.hahavoid0.workers.dev/notify/email",
+      "description": "Sends automated email notifications using the Resend API."
+    },
+    {
+      "url": "https://codepulse-api.hahavoid0.workers.dev/domain/check",
+      "description": "Checks domain registration availability by checking SOA DNS records."
+    },
+    {
+      "url": "https://codepulse-api.hahavoid0.workers.dev/web/history",
+      "description": "Queries historical website snapshots from the free Archive.org API."
+    },
+    {
+      "url": "https://codepulse-api.hahavoid0.workers.dev/network/ssl-expiry",
+      "description": "Checks domain certificate logs on CertSpotter for SSL expiry dates and issuers."
+    },
+    {
+      "url": "https://codepulse-api.hahavoid0.workers.dev/media/qr-generate",
+      "description": "Generates a QR code image buffer from a text string."
+    },
+    {
+      "url": "https://codepulse-api.hahavoid0.workers.dev/phone/messages",
+      "description": "Queries public SMS verification boards to retrieve recent OTP codes."
+    },
+    {
+      "url": "https://codepulse-api.hahavoid0.workers.dev/phone/temp-sms",
+      "description": "Lists active public numbers available for temporary SMS verification codes."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.molty.cash",
+  "resources": [
+    {
+      "url": "https://api.molty.cash/a2a",
+      "description": "Create a pay-per-view (CPM) content campaign that pays out in YOUR token (token_contract is mandatory — no USDC fallback): earners post about your token and earn a set rate per 1,000 views (capped per post). release_mode=auto reads X impressions (X only); release_mode=agent lets your agent report views for any platform. Fund the returned wallet with the payout token."
+    }
+  ]
+}

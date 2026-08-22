@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "directory-submission-lite.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://directory-submission-lite.underscoredone.com/submit",
+      "description": "Places an order to have a website submitted to twenty directories that publish a link back to it, and returns a confirmation number so the order can be checked later for free."
+    }
+  ]
+}

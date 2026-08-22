@@ -1,0 +1,43 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "skim402.com",
+  "resources": [
+    {
+      "url": "https://skim402.com/api/v2/signal/ai-news/latest",
+      "description": "Skim Signal: AI/tech news — high-signal Hacker News stories, fresh arXiv AI papers, and official vendor announcements as structured items (title, excerpt, source, link). Refreshed on a 10-minute cycle; poll as often as you like."
+    },
+    {
+      "url": "https://skim402.com/api/v2/read",
+      "description": "Skim: clean reader — URL to agent-ready markdown + structured metadata, ~4x smaller than raw HTML."
+    },
+    {
+      "url": "https://skim402.com/api/v2/signal/studio-jobs/latest",
+      "description": "Skim Signal: studio jobs — weekly counts of AI, content-ops, and production-staff postings (UPM, line producer, coordinator, AD, and more) across 7 major Hollywood studios, pulled from each studio's ATS API. One item per studio per ISO week with per-query counts; sourcesDown flags any studio board that failed this cycle. Refreshed daily."
+    },
+    {
+      "url": "https://skim402.com/api/v2/signal/film-incentives/latest",
+      "description": "Skim Signal: film incentives — new state film-incentive award rounds and allocations across California, New York, Georgia, New Mexico, and Texas as structured items: official California Film Commission and Texas Governor announcements plus incentive-focused press coverage per state, tagged with the state they cover. Optional ?states= filter. Refreshed on a 30-minute cycle."
+    },
+    {
+      "url": "https://skim402.com/api/v2/signal/entity-formations/latest",
+      "description": "Skim Signal: entity formations — new film/TV production-company registrations from official registries in CA, NY, TX, NM, and the UK (production/post SIC codes only). Entity name, jurisdiction, filing date, registry ID, agent. Balanced across jurisdictions by default; ?jurisdictions= filter. New formations only. Refreshed every 6 hours."
+    },
+    {
+      "url": "https://skim402.com/api/v2/signal/production-watch/latest",
+      "description": "Skim Signal: production watch — snapshot-and-diff change detection over state film office pages with no API: CA Film Commission approved-projects list, NM Film Office production directory, NY ESD film tax credit reports. Each item is a row NEW since the previous snapshot, with stable row ID, source URL, and first-seen date. Refreshed daily."
+    },
+    {
+      "url": "https://skim402.com/api/v2/extract/article",
+      "description": "Skim: article extraction — URL to structured article JSON (title, author, date, summary, key points). No schema required."
+    },
+    {
+      "url": "https://skim402.com/api/v1/read",
+      "description": "Skim: clean reader — URL to agent-ready markdown + metadata, ~4x smaller than raw HTML"
+    },
+    {
+      "url": "https://skim402.com/api/v1/read/js",
+      "description": "Skim: JS-rendered reader — full browser render via Cloudflare for SPAs and JS-gated pages, clean markdown ~4x smaller than raw HTML"
+    }
+  ]
+}

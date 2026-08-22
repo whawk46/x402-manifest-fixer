@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "orchard-data.netlify.app",
+  "resources": [
+    {
+      "url": "https://orchard-data.netlify.app/api/trending",
+      "description": "Trending tickers right now: StockTwits trending symbols + r/wallstreetbets hot posts with ticker mention counts. JSON."
+    }
+  ]
+}

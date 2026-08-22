@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api-v2.ixs.finance",
+  "resources": [
+    {
+      "url": "https://api-v2.ixs.finance/x402/vaults",
+      "description": "IXS Real world asset vaults — 6% yields, BlackRock exposure, tokenized on-chain"
+    }
+  ]
+}

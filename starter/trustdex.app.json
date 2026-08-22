@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "trustdex.app",
+  "resources": [
+    {
+      "url": "https://trustdex.app/api/v1/x402/authority/solana/:solana_address",
+      "description": "Authority quick-check for a Solana mint: mint/freeze state, dangerous Token-2022 extensions, top-holder concentration"
+    }
+  ]
+}

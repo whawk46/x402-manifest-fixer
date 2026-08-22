@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "gateway.sanfoundation.com",
+  "resources": [
+    {
+      "url": "https://gateway.sanfoundation.com/x402/v1/agents",
+      "description": "List or search SAN agents. Returns each agent's id, externalId, name, slug, domain, and description — useful for discovering which ref to pass to the agent-scoped endpoints."
+    }
+  ]
+}

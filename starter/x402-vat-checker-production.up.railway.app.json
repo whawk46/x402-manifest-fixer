@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-vat-checker-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://x402-vat-checker-production.up.railway.app/vat-check",
+      "description": "Validazione ufficiale in tempo reale di una Partita IVA europea tramite il registro VIES della Commissione Europea. Usa questo endpoint quando devi verificare se una Partita IVA UE è valida prima di emettere una fattura, registrare un cliente B2B o processare un ordine intracomunitario. Ritorna validità, ragione sociale e indirizzo registrato."
+    }
+  ]
+}

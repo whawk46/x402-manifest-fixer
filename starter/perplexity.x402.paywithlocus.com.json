@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "perplexity.x402.paywithlocus.com",
+  "resources": [
+    {
+      "url": "https://perplexity.x402.paywithlocus.com/perplexity/search",
+      "description": "Locus public pay-per-use API"
+    }
+  ]
+}

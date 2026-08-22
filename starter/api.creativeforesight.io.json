@@ -1,0 +1,43 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.creativeforesight.io",
+  "resources": [
+    {
+      "url": "https://api.creativeforesight.io/v1/insights",
+      "description": "Foresight API request"
+    },
+    {
+      "url": "https://api.creativeforesight.io/v1/observations/latest",
+      "description": "Foresight API request"
+    },
+    {
+      "url": "https://api.creativeforesight.io/v1/observations",
+      "description": "Foresight API request"
+    },
+    {
+      "url": "https://api.creativeforesight.io/v1/signals",
+      "description": "Foresight API request"
+    },
+    {
+      "url": "https://api.creativeforesight.io/v1/signals/active",
+      "description": "Foresight API request"
+    },
+    {
+      "url": "https://api.creativeforesight.io/v1/panel",
+      "description": "Foresight API request"
+    },
+    {
+      "url": "https://api.creativeforesight.io/v1/flows",
+      "description": "Foresight API request"
+    },
+    {
+      "url": "https://api.creativeforesight.io/v1/briefings/public/:slug",
+      "description": "Foresight API curated briefing"
+    },
+    {
+      "url": "https://api.creativeforesight.io/v1/ask",
+      "description": "Foresight API /v1/ask"
+    }
+  ]
+}

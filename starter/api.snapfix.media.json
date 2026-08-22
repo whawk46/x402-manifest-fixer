@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.snapfix.media",
+  "resources": [
+    {
+      "url": "https://api.snapfix.media/v1/transform",
+      "description": "Outcome-verified image transformation"
+    }
+  ]
+}

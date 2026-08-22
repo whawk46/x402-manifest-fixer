@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "pubmed.sekgen.xyz",
+  "resources": [
+    {
+      "url": "https://pubmed.sekgen.xyz/api/v1/trends",
+      "description": "Biomedical research publication trends from PubMed — year-by-year counts, growth analytics, and CAGR for any medical, clinical, or scientific topic"
+    },
+    {
+      "url": "https://pubmed.sekgen.xyz/api/v1/author",
+      "description": "Biomedical researcher analytics — h-index, citation metrics, institution, publication trajectory, and top topics from OpenAlex for any scientific or medical author"
+    },
+    {
+      "url": "https://pubmed.sekgen.xyz/api/v1/snapshot",
+      "description": "Single-year biomedical publication count from PubMed for any medical, clinical, pharmaceutical, or scientific search query"
+    }
+  ]
+}

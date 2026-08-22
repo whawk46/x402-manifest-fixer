@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "viql.upgo.ai",
+  "resources": [
+    {
+      "url": "https://viql.upgo.ai/viql/vvm/paid/vehicle/eligibility",
+      "description": "Cited compliance eligibility verdict (checks[] + ledger provenance)"
+    }
+  ]
+}

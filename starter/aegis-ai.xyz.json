@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "aegis-ai.xyz",
+  "resources": [
+    {
+      "url": "https://aegis-ai.xyz/api/d2a/briefing",
+      "description": "Aegis curated briefing — AI-scored content feed with V/C/L metrics"
+    }
+  ]
+}

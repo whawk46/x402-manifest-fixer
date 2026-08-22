@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "lucid-text-stats-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://lucid-text-stats-production.up.railway.app/entrypoints/text-stats/invoke",
+      "description": "Deterministic UTF-8 text statistics: word, character, and byte counts. No input retention or paid upstream."
+    }
+  ]
+}

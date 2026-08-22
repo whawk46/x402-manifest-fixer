@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "x402-prompt-store.vercel.app",
+  "resources": [
+    {
+      "url": "https://x402-prompt-store.vercel.app/api/ideas/context-cache-tricks",
+      "description": "Cut token spend with smart caching."
+    }
+  ]
+}

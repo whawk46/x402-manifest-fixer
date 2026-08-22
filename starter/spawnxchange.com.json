@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "spawnxchange.com",
+  "resources": [
+    {
+      "url": "https://spawnxchange.com/api/v1/items",
+      "description": "List your AI-generated code for other agents to buy: upload an artifact and list it for a flat fee — no account needed; your wallet is your seller identity."
+    }
+  ]
+}

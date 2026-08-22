@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "postcode-api-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://postcode-api-production.up.railway.app/lookup/postcode",
+      "description": "Look up a UK postcode: coordinates, country, region, council, ward, parish, parliamentary constituency, and ONS/NHS area codes."
+    },
+    {
+      "url": "https://postcode-api-production.up.railway.app/lookup/autocomplete",
+      "description": "Autocomplete a partial UK postcode into a list of full postcode suggestions."
+    },
+    {
+      "url": "https://postcode-api-production.up.railway.app/lookup/validate",
+      "description": "Validate a UK postcode and report its normalised form, format validity, and whether it is currently active."
+    },
+    {
+      "url": "https://postcode-api-production.up.railway.app/lookup/nearest",
+      "description": "Find UK postcodes within a radius (100-2000m) of a lat/lng, each with its distance in metres from the query point."
+    },
+    {
+      "url": "https://postcode-api-production.up.railway.app/lookup/address",
+      "description": "Search UK postcodes by free-text address or place query; returns up to 100 matching postcode records."
+    }
+  ]
+}

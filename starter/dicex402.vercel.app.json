@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "dicex402.vercel.app",
+  "resources": [
+    {
+      "url": "https://dicex402.vercel.app/api/dice",
+      "description": "Roll a dice with any number of faces. Specify faces via ?faces=N query parameter."
+    }
+  ]
+}

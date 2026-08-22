@@ -1,0 +1,47 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-filings.datalayer.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-filings.datalayer.workers.dev/v1/fda/enforcement",
+      "description": "FDA recall and enforcement records across drug, device and food, normalised into one shape with classification, reason, distribution scope and firm. Queryable by firm, product, classification and date. One product type returning nothing never fails the call — the three openFDA endpoints are independent and a gap in one is not a gap in the others."
+    },
+    {
+      "url": "https://x402-filings.datalayer.workers.dev/v1/company/enrich",
+      "description": "Turns a domain, company name or ticker into the official identifiers everything else joins on: SEC CIK, GLEIF LEI, Wikidata ID and SIC industry code, plus legal name, jurisdiction, HQ, whether it still files with the SEC, and its recent filing mix. Built to be called once per row over a list. Every source is free and redistributable, so results carry no vendor resale restriction."
+    },
+    {
+      "url": "https://x402-filings.datalayer.workers.dev/v1/social/telegram-channel",
+      "description": "Recent posts and engagement for any public Telegram channel, with views measured against subscriber count — the ratio that shows whether an audience is real or bought. Needs no API key, no account and no bot, because Telegram's Bot API cannot read a channel you do not administer. Pass a channel name, @handle or t.me link."
+    },
+    {
+      "url": "https://x402-filings.datalayer.workers.dev/v1/ecom/shopify-brand",
+      "description": "Turns any Shopify store's public catalogue into a read on the business: catalogue size, price bands, median price and where that sits in the market, publishing cadence, vendors and product types. Every Shopify store exposes this data — the work is turning it into a brand profile instead of a product dump. Pass any store domain."
+    },
+    {
+      "url": "https://x402-filings.datalayer.workers.dev/v1/games/steam-reviews",
+      "description": "Steam reviews scored by how long the reviewer actually played. A negative review from someone with 400 hours means something very different to one from a player with 12 minutes, and the headline percentage treats them the same. Also separates the lifetime rating from the recent one, which is how you spot a game that has just broken."
+    },
+    {
+      "url": "https://x402-filings.datalayer.workers.dev/v1/jobs/ats",
+      "description": "Job postings read straight from a company's own applicant tracking system — Greenhouse, Lever, Ashby, SmartRecruiters, BambooHR or Recruitee. This is the source that job boards scrape, so there are no duplicates, no expired listings and no aggregator lag. Hiring is a demand signal: which teams a company is growing and where."
+    },
+    {
+      "url": "https://x402-filings.datalayer.workers.dev/v1/corp/ownership",
+      "description": "Who actually owns a counterparty. Resolves a company to its Legal Entity Identifier and walks the GLEIF ownership graph — direct parent, ultimate parent and direct children — returning the group structure with the jurisdictions it spans. This is the entity-resolution step under every KYC, sanctions and diligence workflow: free lookups answer the name, almost nothing answers the group. Search by name and country, then resolve by LEI."
+    },
+    {
+      "url": "https://x402-filings.datalayer.workers.dev/v1/sec/institutional-holdings",
+      "description": "What an institutional manager actually changed last quarter. Reads 13F-HR filings for a CIK, parses the information table, aggregates by issuer and diffs consecutive quarters into opened, closed, increased and decreased positions with dollar values and portfolio weights. The diff is the signal — a holdings snapshot on its own says nothing about intent."
+    },
+    {
+      "url": "https://x402-filings.datalayer.workers.dev/v1/sec/insider-trading",
+      "description": "Real insider conviction from SEC Form 4 filings. Classifies every transaction by its one-letter code, so an RSU vest is not reported as an insider buy and the automatic tax withholding that follows is not reported as a sale. Returns only codes P and S — the trades where someone chose to move money at the market price — plus cluster-buy detection when several insiders buy the same issuer within a window. Query by ticker or CIK."
+    },
+    {
+      "url": "https://x402-filings.datalayer.workers.dev/v1/health/clinical-trials",
+      "description": "Stopped clinical trials with the stop reason classified. ClinicalTrials.gov records why a trial halted as free text; this reads that text and separates safety and efficacy failures from business, recruitment and funding stops, which are the ones people routinely misread as drug failures. Filter by sponsor, condition, intervention and phase, and get the cohort-level breakdown alongside the records."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agents.nibiashara.biz",
+  "resources": [
+    {
+      "url": "https://agents.nibiashara.biz/shelf/nb-flyer-design",
+      "description": "Print/social flyer design. One flyer, real licensed photography, print-ready PDF plus square and story exports. Pass ?brief=…&contact=email. Turnaround 72 hours."
+    },
+    {
+      "url": "https://agents.nibiashara.biz/api/parallel/USD-NGN",
+      "description": "Street (parallel-market) FX rate for a West African currency vs USD, derived from live P2P order books, with the official rate and the spread between them"
+    },
+    {
+      "url": "https://agents.nibiashara.biz/api/fx/USD-KES",
+      "description": "Single African FX pair vs USD (official rate, timestamp, source)"
+    },
+    {
+      "url": "https://agents.nibiashara.biz/api/fx/USD-TZS",
+      "description": "Single African FX pair vs USD (official rate, timestamp, source)"
+    },
+    {
+      "url": "https://agents.nibiashara.biz/api/parallel/--route%20parallel%20--pair%20USD-NGN",
+      "description": "Street (parallel-market) FX rate for a West African currency vs USD, derived from live P2P order books, with the official rate and the spread between them"
+    },
+    {
+      "url": "https://agents.nibiashara.biz/api/parallel/--route%20fx%20--pair%20USD-KES",
+      "description": "Street (parallel-market) FX rate for a West African currency vs USD, derived from live P2P order books, with the official rate and the spread between them"
+    },
+    {
+      "url": "https://agents.nibiashara.biz/shelf/fx-africa-daily-brief",
+      "description": "Africa FX daily brief. Every official pair plus both parallel quotes and spreads in one structured payload — the one call a pricing or remittance agent needs each morning."
+    },
+    {
+      "url": "https://agents.nibiashara.biz/shelf/fx-official-all",
+      "description": "Official FX rates — all eight pairs. All supported African pairs vs USD in one payload."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "apexrunner.ai",
+  "resources": [
+    {
+      "url": "https://apexrunner.ai/signals/btc-price-tick",
+      "description": "APEX Runner: Btc Price Tick Signal"
+    },
+    {
+      "url": "https://apexrunner.ai/signals/fg-micro",
+      "description": "APEX Runner: Fg Micro Signal"
+    },
+    {
+      "url": "https://apexrunner.ai/signals/market-tick",
+      "description": "APEX Runner: Market Tick Signal"
+    },
+    {
+      "url": "https://apexrunner.ai/signals/regime-micro",
+      "description": "APEX Runner: Regime Micro Signal"
+    }
+  ]
+}

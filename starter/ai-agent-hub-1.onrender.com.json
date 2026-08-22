@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ai-agent-hub-1.onrender.com",
+  "resources": [
+    {
+      "url": "https://ai-agent-hub-1.onrender.com/api/queries",
+      "description": "Fetch a URL and extract structured data (title, links, images, or metadata)"
+    }
+  ]
+}

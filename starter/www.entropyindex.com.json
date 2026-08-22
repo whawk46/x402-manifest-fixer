@@ -1,0 +1,39 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.entropyindex.com",
+  "resources": [
+    {
+      "url": "https://www.entropyindex.com/api/v1/risk/china",
+      "description": "Risk Pulse: China — Returns a heat check before you size — or poll again while in. Countries, chokepoints, and crypto (Taiwan, Hormuz, Bitcoin) plus perp context (funding flip, rekt guard, tape vs structure). $0.25. Is anything hot? Not a trade signal."
+    },
+    {
+      "url": "https://www.entropyindex.com/api/v1/risk/united-states",
+      "description": "Risk Pulse: United States — Returns a heat check before you size — or poll again while in. Countries, chokepoints, and crypto (Taiwan, Hormuz, Bitcoin) plus perp context (funding flip, rekt guard, tape vs structure). $0.25. Is anything hot? Not a trade signal."
+    },
+    {
+      "url": "https://www.entropyindex.com/api/v1/risk/vol-expansion-context",
+      "description": "Risk Pulse: Vol expansion context — Returns a heat check before you size — or poll again while in. Countries, chokepoints, and crypto (Taiwan, Hormuz, Bitcoin) plus perp context (funding flip, rekt guard, tape vs structure). $0.25. Is anything hot? Not a trade signal."
+    },
+    {
+      "url": "https://www.entropyindex.com/api/v1/crypto/gate",
+      "description": "Our Index hit Crisis mode by March 2008 — 6 months before Lehman. Chip gap Watch 19 months before 2021 auto-production trough. Structural vol before the candles widen the grid. Grid regime hints — poll while in. Check $0.07. Not a trade signal."
+    },
+    {
+      "url": "https://www.entropyindex.com/api/v1/risk/gibraltar",
+      "description": "GET this before you size: pre-action regime clock for geopolitical and country-risk context on a country, chokepoint, or crypto (Taiwan, Hormuz, Bitcoin). Cheap probe; $5 clock before size. Sealed structural-stress with attestation — not trade signals."
+    },
+    {
+      "url": "https://www.entropyindex.com/api/v1/risk/funding-flip-alert-context",
+      "description": "GET this before you size: pre-action regime clock for geopolitical and country-risk context on a country, chokepoint, or crypto (Taiwan, Hormuz, Bitcoin). Cheap probe; $5 clock before size. Sealed structural-stress with attestation — not trade signals."
+    },
+    {
+      "url": "https://www.entropyindex.com/api/v1/risk/rekt-guard-context",
+      "description": "GET this before you size: pre-action regime clock for geopolitical and country-risk context on a country, chokepoint, or crypto (Taiwan, Hormuz, Bitcoin). Cheap probe; $5 clock before size. Sealed structural-stress with attestation — not trade signals."
+    },
+    {
+      "url": "https://www.entropyindex.com/api/v1/risk/bitcoin",
+      "description": "GET this before you size: pre-action regime clock for geopolitical and country-risk context on a country, chokepoint, or crypto (Taiwan, Hormuz, Bitcoin). Cheap probe; $5 clock before size. Sealed structural-stress with attestation — not trade signals."
+    }
+  ]
+}

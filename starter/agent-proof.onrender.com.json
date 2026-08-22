@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-proof.onrender.com",
+  "resources": [
+    {
+      "url": "https://agent-proof.onrender.com/preflight",
+      "description": "Use before paying an unfamiliar x402 endpoint. Checks that the target is reachable, actually speaks x402, and what its historical reliability looks like, then returns a receipt with a safe_to_use or flagged verdict."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "cryptorisk-api.vercel.app",
+  "resources": [
+    {
+      "url": "https://cryptorisk-api.vercel.app/api/risk/pro",
+      "description": "CryptoRisk PRO: full wallet/token risk report (score, reasons, signals, sources)."
+    }
+  ]
+}

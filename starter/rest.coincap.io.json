@@ -1,0 +1,47 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "rest.coincap.io",
+  "resources": [
+    {
+      "url": "https://rest.coincap.io/v3/agentFriendly/full_assets_by_slug",
+      "description": "Full asset data for one or more slugs (agent-optimized)."
+    },
+    {
+      "url": "https://rest.coincap.io/v3/agentFriendly/ta/bitcoin/macd",
+      "description": "Moving average convergence divergence (MACD) for an asset slug."
+    },
+    {
+      "url": "https://rest.coincap.io/v3/agentFriendly/ta/bitcoin/ema",
+      "description": "Exponential moving average (EMA) for an asset slug."
+    },
+    {
+      "url": "https://rest.coincap.io/v3/agentFriendly/total_market_cap_history",
+      "description": "Total crypto market-cap history (capped data points)."
+    },
+    {
+      "url": "https://rest.coincap.io/v3/agentFriendly/asset_mcap_history/bitcoin",
+      "description": "Historical market-cap series for an asset slug (capped data points)."
+    },
+    {
+      "url": "https://rest.coincap.io/v3/agentFriendly/history/bitcoin",
+      "description": "Historical price series for an asset slug (capped data points)."
+    },
+    {
+      "url": "https://rest.coincap.io/v3/agentFriendly/assets_search",
+      "description": "Search CoinCap assets by name or symbol (agent-optimized)."
+    },
+    {
+      "url": "https://rest.coincap.io/v3/agentFriendly/news_top",
+      "description": "Top crypto news headlines (agent-optimized)."
+    },
+    {
+      "url": "https://rest.coincap.io/v3/agentFriendly/ta/bitcoin/rsi",
+      "description": "Relative strength index (RSI) for an asset slug."
+    },
+    {
+      "url": "https://rest.coincap.io/v3/agentFriendly/ta/bitcoin/sma",
+      "description": "Simple moving average (SMA) for an asset slug."
+    }
+  ]
+}

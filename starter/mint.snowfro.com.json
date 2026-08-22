@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "mint.snowfro.com",
+  "resources": [
+    {
+      "url": "https://mint.snowfro.com/api/projects/logo-by-generative-goods/x402-mint",
+      "description": "Mint a {LOGO} generative artwork"
+    }
+  ]
+}

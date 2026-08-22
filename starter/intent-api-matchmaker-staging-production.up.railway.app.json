@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "intent-api-matchmaker-staging-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://intent-api-matchmaker-staging-production.up.railway.app/v1/match",
+      "description": "Match normalized agent intents to endpoint contracts with explainable constraints."
+    }
+  ]
+}

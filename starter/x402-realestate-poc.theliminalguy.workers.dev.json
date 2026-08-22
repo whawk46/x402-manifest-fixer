@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-realestate-poc.theliminalguy.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-realestate-poc.theliminalguy.workers.dev/sold-prices/:var1/summary",
+      "description": "Computed sold-price summary for a UK postcode (count, min/max/median/avg price, date range, property-type breakdown), derived from HM Land Registry Price Paid Data"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ba-x402-requirements-agent.onrender.com",
+  "resources": [
+    {
+      "url": "https://ba-x402-requirements-agent.onrender.com/api/v1/requirements/check",
+      "description": "Assess one written business or system requirement for clarity, ambiguity, testability and completeness indicators. Designed for requirements-management, product-management, software-delivery and quality-assurance agents."
+    }
+  ]
+}

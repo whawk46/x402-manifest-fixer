@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "txguard.schemasure.com",
+  "resources": [
+    {
+      "url": "https://txguard.schemasure.com/v1/tx/preflight",
+      "description": "Explain and preflight an unsigned Base transaction, EIP-712 typed data, or an EIP-3009 x402 payment authorization before you sign it. Decodes intent against verified ABIs, resolves proxies, classifies approvals, and checks a payment authorization against the quote it claims to pay: recipient, amount, asset, chain, freshness, and nonce replay. Returns unknown rather than guessing when a selector is ambiguous. Not a guarantee that a transaction is safe or profitable."
+    }
+  ]
+}

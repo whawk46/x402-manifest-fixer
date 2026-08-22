@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "jobero.ai",
+  "resources": [
+    {
+      "url": "https://jobero.ai/api/v1/quick-searches",
+      "description": "Jobero quick match ($2.50): the single best current role for this candidate, with a tailored CV and cover letter, in minutes."
+    },
+    {
+      "url": "https://jobero.ai/api/v1/searches",
+      "description": "One Jobero job search: 7 matched roles with a tailored CV and cover letter."
+    }
+  ]
+}

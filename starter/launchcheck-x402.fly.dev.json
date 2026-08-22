@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "launchcheck-x402.fly.dev",
+  "resources": [
+    {
+      "url": "https://launchcheck-x402.fly.dev/v1/reaction-check",
+      "description": "Review and stress-test launch messaging, landing pages, product announcements, pricing pages, changelogs, app-store listings, and marketing emails before publication. LaunchCheck evaluates copy through eight audience lenses, surfaces positioning and conversion friction, flags claims needing evidence, predicts likely reader questions, recommends concrete changes, and returns a fact-preserving rewrite."
+    },
+    {
+      "url": "https://launchcheck-x402.fly.dev/v1/proposal-check",
+      "description": "Stress-test a product, feature, API, implementation, or business proposal before meaningful investment. ProposalCheck evaluates the core thesis, assumptions, differentiation, feasibility, economics, scope, dependencies, validation strategy, kill criteria, and recommended build sequence, then returns a structured green-light, revise, or rethink decision."
+    },
+    {
+      "url": "https://launchcheck-x402.fly.dev/v1/proposal-check/deep",
+      "description": "Deep red-team a product or technical proposal before a consequential investment. Uses a larger reasoning budget to test counter-theses, hidden dependencies, supplied economics, and decisive unknowns. Typical completion time is ~2-3 minutes. Clients should allow up to 4 minutes before timing out."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.auctiontrace.com",
+  "resources": [
+    {
+      "url": "https://api.auctiontrace.com/api/v1/datasets/auctiontrace-es-book-pressure-20250729-20260630-v1/access/coinbase",
+      "description": "$5 buys 751,598 validated ES Book Pressure observations, seven category-specific post-entry applications, matched historical evidence, and public companion verification, alignment, and matched-comparison code. Published results support relative improvement versus matched baselines, not standalone or guaranteed profitability."
+    }
+  ]
+}

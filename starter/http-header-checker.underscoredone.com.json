@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "http-header-checker.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://http-header-checker.underscoredone.com/check",
+      "description": "Sends a request to a web address you provide and reports back everything the server said in response: the status code, all the response headers, how many times it got redirected, and how long the whole thing took."
+    }
+  ]
+}

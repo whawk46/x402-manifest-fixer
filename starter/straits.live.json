@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "straits.live",
+  "resources": [
+    {
+      "url": "https://straits.live/api/premium/brief",
+      "description": "AI-assisted Strait of Hormuz daily situation brief as structured JSON: prose summary, bullets, and key figures, by date or latest, with archive access by date."
+    },
+    {
+      "url": "https://straits.live/api/premium/vessels",
+      "description": "Strait of Hormuz per-vessel intelligence: the live-AIS vessel manifest (MMSI-keyed, flag derived from the MMSI MID), the OFAC-sanctioned vessels currently in the Persian Gulf window with program detail, per-vessel risk bands, latest raw AIS positions, the top AIS-dark hulls with the full dark count alongside, and OFAC + UK sanctions reference-list sizes (per-IMO multi-body detail at /api/premium/vessel/{imo})."
+    }
+  ]
+}

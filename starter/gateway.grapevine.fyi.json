@@ -1,0 +1,35 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "gateway.grapevine.fyi",
+  "resources": [
+    {
+      "url": "https://gateway.grapevine.fyi/x402/cid/bafkreia6nujebdr2tyzvc4ayvtpi5az5dgrtd3scdvf3ehuepa4b2d3hpa",
+      "description": "0.01 USDC on base"
+    },
+    {
+      "url": "https://gateway.grapevine.fyi/x402/cid/bafkreichzs5w3zccsyjprccqtmys773yjle7zhxzvrxenm2sgphuf6laxy",
+      "description": "0.01 USDC on base"
+    },
+    {
+      "url": "https://gateway.grapevine.fyi/x402/cid/bafkreib7s7xuwc57wri43lyauwjeyfx3zqyc4ue34td5o7ab6wxp7sbqhm",
+      "description": "0.001 USDC on base"
+    },
+    {
+      "url": "https://gateway.grapevine.fyi/x402/cid/bafkreidgvykqe6qk7hoq2j7p252alsfkphxijhwjsgpt4xjxkeafhsxawi",
+      "description": "0.01 USDC on base"
+    },
+    {
+      "url": "https://gateway.grapevine.fyi/x402/cid/bafybeidw3gs4ff5gthqt4kovvtcanae4gqbzmuhrxe6c5jaayoanhdwp6i",
+      "description": "0.05 USDC on base"
+    },
+    {
+      "url": "https://gateway.grapevine.fyi/x402/cid/bafybeiazxnhibkuepn4vs33knfitredujxuweaxavvgryzwrdqxpagge3m",
+      "description": "0.05 USDC on base-sepolia"
+    },
+    {
+      "url": "https://gateway.grapevine.fyi/x402/cid/bafybeiceyif7fype4d4ksyfed52e2cyq5ghrgc7wagd2ilk7rllsdi6kh4",
+      "description": "0.01 USDC on base"
+    }
+  ]
+}

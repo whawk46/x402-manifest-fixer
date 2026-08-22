@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.exa.ai",
+  "resources": [
+    {
+      "url": "https://api.exa.ai/search",
+      "description": "Exa /search endpoint"
+    },
+    {
+      "url": "https://api.exa.ai/contents",
+      "description": "Exa /contents endpoint"
+    }
+  ]
+}

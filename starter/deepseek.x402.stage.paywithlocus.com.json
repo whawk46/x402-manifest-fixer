@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "deepseek.x402.stage.paywithlocus.com",
+  "resources": [
+    {
+      "url": "https://deepseek.x402.stage.paywithlocus.com/deepseek/chat",
+      "description": "Locus public pay-per-use API"
+    }
+  ]
+}

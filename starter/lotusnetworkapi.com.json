@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "lotusnetworkapi.com",
+  "resources": [
+    {
+      "url": "https://lotusnetworkapi.com/api/v1/gas/preflight",
+      "description": "Read-only Base L2 gas conditions computed directly from chain data: current base fee, recent percentiles, realised volatility, congestion state, and an 80% forecast range for a chosen horizon. This is supporting context for timing a transaction, not a trade instruction. Every figure is reproducible from public Base RPC data."
+    },
+    {
+      "url": "https://lotusnetworkapi.com/api/v1/gas/decision",
+      "description": "Records an agent decision (execute now, or wait) against a fresh forecast snapshot and returns a decision_id plus the block at which the outcome becomes checkable. Nothing is predicted here beyond the snapshot: this is a tamper-evident journal entry so the agent can later prove what it knew and what it chose."
+    },
+    {
+      "url": "https://lotusnetworkapi.com/api/v1/video",
+      "description": "Text-to-video and image-to-video generation at 1080p, up to five seconds. Returns a job id immediately; poll the free status endpoint until it completes, then collect an MP4 stored on a durable URL. Generation typically takes one to three minutes. No API key or account needed."
+    },
+    {
+      "url": "https://lotusnetworkapi.com/api/v1/generate-image",
+      "description": "Text-to-image generation powered by FLUX.2 [pro]. Send a prompt, get back a 1024x1024 image as base64 JSON or raw bytes, plus a durable direct URL. No API key or account needed."
+    },
+    {
+      "url": "https://lotusnetworkapi.com/api/v1/pdf-to-markdown",
+      "description": "Extracts text from a PDF and returns clean Markdown: unwrapped paragraphs, detected headings and bullet lists, no page furniture. Accepts a public PDF URL or base64 bytes. Built for agents that need to read documents they cannot parse natively."
+    }
+  ]
+}

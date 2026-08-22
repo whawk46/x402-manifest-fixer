@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402dir.com",
+  "resources": [
+    {
+      "url": "https://x402dir.com/api/recommend",
+      "description": "x402dir facilitator recommender: pick the best x402 payment facilitator by chain, token, and monthly volume. Returns ranked facilitators with fee estimates (JSON)."
+    }
+  ]
+}

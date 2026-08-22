@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "space.x402.press",
+  "resources": [
+    {
+      "url": "https://space.x402.press/space/ask",
+      "description": "Multi-source AI space reasoning via DeepSeek. Accepts any natural language question about celestial events, planets, moons, asteroids, comets, meteor showers, eclipses, satellites, ISS, rocket launches, space weather, stars, or deep-sky objects."
+    }
+  ]
+}

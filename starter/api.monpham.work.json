@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.monpham.work",
+  "resources": [
+    {
+      "url": "https://api.monpham.work/v1/social/search",
+      "description": "Search public social profiles (Instagram, TikTok, Reddit) by query. POST body: {query, platform, limit}."
+    },
+    {
+      "url": "https://api.monpham.work/v1/terra/chat/completions",
+      "description": "GPT-5.6 Terra — balanced frontier model (Intelligence Index 55.0, GPQA Diamond 92.5%, Terminal-Bench Hard 57.6%). Best for everyday coding, multi-step reasoning, and agentic tasks needing more capability than Luna without Sol's cost. Limits: 16K input / 4K output tokens per call. OpenAI-compatible request and response format."
+    },
+    {
+      "url": "https://api.monpham.work/v1/twitter/search",
+      "description": "Search X/Twitter tweets by query. POST body: {query, limit}."
+    },
+    {
+      "url": "https://api.monpham.work/v1/cbs/chat/completions",
+      "description": "Search products across China B2B wholesale marketplaces (Yiwugo, Made-in-China, DHgate) via a stealth browser farm. Returns structured products: title, price, MOQ, supplier, images (optional CDN URLs). POST with {keyword, siteIds, limitPerSite, saveMedia}. Best for B2B sourcing, price comparison, and dropshipping research."
+    },
+    {
+      "url": "https://api.monpham.work/v1/eia/grid",
+      "description": "US electricity grid demand (MWh/hour) from EIA. POST body: {ba, length, start?}."
+    },
+    {
+      "url": "https://api.monpham.work/v1/luna/chat/completions",
+      "description": "GPT-5.6 Luna — fast, low-cost frontier model (Artificial Analysis Intelligence Index 51.2, GPQA Diamond 91.1%). Best for high-volume chat, classification, extraction, and lightweight agentic loops where latency and cost matter. Limits: 8K input / 2K output tokens per call. OpenAI-compatible request and response format."
+    }
+  ]
+}

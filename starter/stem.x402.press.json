@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "stem.x402.press",
+  "resources": [
+    {
+      "url": "https://stem.x402.press/stem/ask",
+      "description": "Ask a multi-domain question combining chemistry, physics, and math computation."
+    }
+  ]
+}

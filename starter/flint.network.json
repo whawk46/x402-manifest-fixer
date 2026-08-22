@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "flint.network",
+  "resources": [
+    {
+      "url": "https://flint.network/api/x402/verify",
+      "description": "Verify an AI agent's authority and integrity before a transaction; returns a four-state verdict and a signed verification record"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "clink-lithium-vault.fly.dev",
+  "resources": [
+    {
+      "url": "https://clink-lithium-vault.fly.dev/x/search",
+      "description": "X/Twitter search for AI agents - live tweets via advanced search: from:user, exact phrases, #hashtags, min_faves, lang, since/until dates. Returns up to 20 newest matches with author, followers, likes, retweets, views, URL. Crypto, stocks, news, sentiment, social media monitoring, trend tracking, brand mentions, breaking news, memecoins, AI agents. ?query=<advanced search>. Want an AI-written trend summary too? /x/digest $0.02."
+    },
+    {
+      "url": "https://clink-lithium-vault.fly.dev/x/digest",
+      "description": "X/Twitter trend digest - live tweet search PLUS an AI-written summary an agent can use directly: 3-5 sentence trend summary, sentiment (positive/negative/mixed/neutral) with reason, key themes, driving accounts, notable post URLs. Raw tweets included. Advanced search syntax: from:user, #hashtags, min_faves, since dates, lang. Social media monitoring, crypto, stocks, news sentiment, brand tracking, market signals. ?query=<advanced search>. Raw-only tier: /x/search $0.006."
+    },
+    {
+      "url": "https://clink-lithium-vault.fly.dev/vault/summary",
+      "description": "Lithium Research Vault - headline snapshot for any lithium & battery-metals company, producing mine, or DFS-stage developer. One row: latest production, AISC, cash/debt/EBITDA, reserves, DFS NPV/IRR, top holder, source filing. Albemarle, Pilbara, SQM, Greenbushes, Atacama, Cinovec, Manna, Bandeira. 66 lithium mines (43 producing + 23 developer), 44 operators. Query by ticker (ALB, SQM, SGML, EMH, GL1, PMETF) or mine name. Cheapest tier; /vault full rows, /vault/comparables ranking."
+    },
+    {
+      "url": "https://clink-lithium-vault.fly.dev/vault",
+      "description": "Lithium Research Vault - full structured JSON for any lithium / battery-metals producer or DFS-stage developer, by company or mine: production, AISC, reserves, ownership, royalties, offtakes, financials, DFS economics (NPV/IRR/capex), market cap & lithium spot. From SEC/ASX/TSX/cninfo filings, USD-normalized, every figure cited. 66 mines, 44 operators. Greenbushes, Pilgangoora, Wodgina, Cinovec; tickers SGML, ALB, PILBF, EMH, GL1, PMETF. /vault/summary $0.02; /vault/comparables $0.20."
+    },
+    {
+      "url": "https://clink-lithium-vault.fly.dev/x/users",
+      "description": "X/Twitter account search for AI agents - find accounts by name, topic or keyword, no API key or login. Up to 20 matching profiles with handle, display name, bio, follower and following counts, verified status, location and URL. Build a list of analysts in a niche, find a company's real account, or discover creators to monitor. ?query=lithium analyst. One profile: /x/profile $0.005."
+    },
+    {
+      "url": "https://clink-lithium-vault.fly.dev/x/replies",
+      "description": "X/Twitter replies for AI agents - the reply thread under any post, by tweet id, no API key or login. Up to 20 replies with author, follower count, text, timestamp, likes, retweets, views and URL. Read the reaction to an announcement, gauge community sentiment on a launch, or mine a viral thread for arguments. ?id=1234567890. The tweet itself: /x/tweet $0.005. AI summary: /x/digest $0.02."
+    },
+    {
+      "url": "https://clink-lithium-vault.fly.dev/x/tweet",
+      "description": "X/Twitter single tweet lookup for AI agents - fetch one post by its numeric id, no API key or login. Returns full text, author, follower count, timestamp, likes, retweets, replies, views and canonical URL. Resolve a link an agent was handed, check whether a post still exists, or grab live engagement on one tweet. ?id=1234567890. Replies to it: /x/replies $0.006. Search: /x/search $0.006."
+    },
+    {
+      "url": "https://clink-lithium-vault.fly.dev/x/user",
+      "description": "X/Twitter user timeline for AI agents - the latest tweets from any handle, no Twitter API key or login. Up to 20 newest posts with text, date, likes, retweets, replies, views, follower count and URL, plus the pinned tweet. Track founders, analysts, competitors, crypto callers, journalists, brands. ?username=elonmusk. Search all of X instead: /x/search $0.006. AI trend summary: /x/digest $0.02."
+    },
+    {
+      "url": "https://clink-lithium-vault.fly.dev/x/profile",
+      "description": "X/Twitter profile lookup for AI agents - full public account details for any handle, no API key or login. Returns display name, user id, bio, follower and following counts, tweet count, verified status, location, join date and profile URL. Verify an account is real, size an audience, enrich a lead, resolve a handle to an id. ?username=elonmusk. Their tweets: /x/user $0.006. Find accounts: /x/users $0.006."
+    },
+    {
+      "url": "https://clink-lithium-vault.fly.dev/vault/sku/0.15",
+      "description": "Lithium mine analytics, pick one $0.15 field: sku=costcurve (this mine's AISC cost-curve percentile + nearest peers across the whole tracked universe — not reproducible from a single-entity call) or sku=economics (study NPV/IRR/capex per scenario, discount rate, mine life, payback). Primary-source, cited. ?sku=<id>&entity=<MineName>&level=mine. Spodumene brine lithium battery metals; cost curve AISC NPV."
+    },
+    {
+      "url": "https://clink-lithium-vault.fly.dev/vault/sku/0.05",
+      "description": "Lithium mine/company data, 5 cents a field: sku=aisc, production, reserves (grade+tonnage), offtakes (customers, volumes, terms), ownership (cap-table/control), royalties (stream type, payor, rate), spot (full lithium price series, spodumene SC6 + carbonate), musk (skin-in-the-game score). Every figure cited to SEC/ASX/TSX/SEDAR filings. ?sku=<id>&entity=<TICKER|MineName>&level=<company|mine>. Spodumene brine hardrock battery metals; ALB SQM PILBF SGML Greenbushes Wodgina Atacama."
+    }
+  ]
+}

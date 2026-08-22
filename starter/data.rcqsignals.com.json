@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "data.rcqsignals.com",
+  "resources": [
+    {
+      "url": "https://data.rcqsignals.com/v1/fetch/btc-funding-regime",
+      "description": "Compact BTC funding regime state from a four-venue normalized surface: regime label, surface median, 30d z-score, same-sign share, spread, dispersion, venue count, freshness. Ed25519-signed. Data, not advice."
+    },
+    {
+      "url": "https://data.rcqsignals.com/v1/fetch/btc-funding-surface",
+      "description": "BTC perpetual funding normalized across four independent venues (Bitnomial, OKX, Hyperliquid, dYdX) into one hourly surface: per-venue rates, dispersion, z-scores, regime state. Ed25519-signed. Data, not investment advice."
+    },
+    {
+      "url": "https://data.rcqsignals.com/v1/fetch/btc-intel",
+      "description": "Hourly Ed25519-signed BTC market-state intel: directional bias with conviction, regime label and score, technical levels (EMA20/50, ATR, RSI, 7D/30D), and 72h large on-chain transfer activity. Data, not advice."
+    },
+    {
+      "url": "https://data.rcqsignals.com/v1/fetch/monthly",
+      "description": "Cryptographically-signed Bitcoin trading-performance data you can verify: an 18-month monthly P/L, win-rate, and cumulative-return series from the RC Quantum algorithm's live-parallel shadow — real exchange fills, Ed25519-proofed."
+    }
+  ]
+}

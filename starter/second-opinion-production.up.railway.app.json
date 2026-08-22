@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "second-opinion-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://second-opinion-production.up.railway.app/v1/verify/quick",
+      "description": "Second Opinion quick: an independent reasoning-only check (no web research) of your claim's logic and consistency with established knowledge. Honest 'inconclusive' when the claim needs live research."
+    },
+    {
+      "url": "https://second-opinion-production.up.railway.app/v1/verify",
+      "description": "Second Opinion: an independent adversarial agent attempts to refute your claim (live web research) and returns a structured verdict with citations."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.watchevelive.com",
+  "resources": [
+    {
+      "url": "https://www.watchevelive.com/invoice",
+      "description": "Eve’s invoice clerk: file/pay a USDC bill under her published cap. Call to hand her a bill, not to read the free cap board."
+    },
+    {
+      "url": "https://www.watchevelive.com/print",
+      "description": "Eve’s RWA print: which official number is the actual (T-bill, gold, NAV). Call for official prints, not casino coins."
+    },
+    {
+      "url": "https://www.watchevelive.com/desk",
+      "description": "Eve’s live paper book JSON. Call when an agent needs the current book, not the 15-minute delayed tape."
+    },
+    {
+      "url": "https://www.watchevelive.com/stamp",
+      "description": "Eve’s live one-line paper read on a Polymarket question. Call when an agent needs her current pick. Not a bet."
+    }
+  ]
+}

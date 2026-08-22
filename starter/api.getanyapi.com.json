@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.getanyapi.com",
+  "resources": [
+    {
+      "url": "https://api.getanyapi.com/v1/run/apollo.organizations_search",
+      "description": "AnyAPI apollo.organizations_search (Apollo Organization Search)"
+    }
+  ]
+}

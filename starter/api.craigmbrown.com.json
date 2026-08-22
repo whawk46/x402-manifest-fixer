@@ -1,0 +1,159 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.craigmbrown.com",
+  "resources": [
+    {
+      "url": "https://api.craigmbrown.com/v1/services/research.topic-deep-researcher",
+      "description": "Multi-source research report with academic-grade sourcing — every claim carries a resolvable citation, not a bare assertion. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). Broader source pool than content.youtube-research (web + academic vs. video-only); the deep-dive tier above research.topic-news-scanner's fast scan."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/research.topic-news-scanner",
+      "description": "Fast real-time news scan across 44+ curated domains (configs/search_domain_profiles.json), every item source-attributed. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). The quick-scan tier below research.topic-deep-researcher's slower, citation-grade report."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/procurement.trust-layer",
+      "description": "Trust-verification layer for procurement decisions involving AI vendors or agents — surfaces the same signed evidence (audit history, dispute record, attestations) a human procurement reviewer would ask for."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/data.web-extract",
+      "description": "Clean main-content extraction of a single buyer-supplied URL via Firecrawl, wrapped in the BlindOracle trust envelope. Thin extraction tool; no data inventory held."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/oracle.price-feed",
+      "description": "Real-time price feed for a named pair and venue, with the source cited per read instead of a black-box number. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). The base data layer the other oracle.* SKUs (arbitrage, volatility, alerts) are built on."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/ops.due-diligence-scan",
+      "description": "Automated DD scan: financials, litigation, key personnel, IP, media sentiment, red flags"
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/security.injection-resilience",
+      "description": "Tests whether a counterparty agent's input handling resists prompt-injection and content-trap patterns — a concrete resilience check, not a compliance checkbox."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/security.audit-attestation",
+      "description": "Neutral third-party notarization of an AI audit result: we did not run the audit, we attest that a specified audit was performed and its findings match what's claimed — the credential a checkpoint can trust without re-running the audit itself."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/security.process-attestation",
+      "description": "Signed attestation that a specific process was followed (not just that an outcome occurred) — useful when a counterparty needs evidence of *how* something was done, not only *that* it was done."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/security.massat-conformance",
+      "description": "Checks a counterparty agent's stated security posture against the MASSAT governance framework's actual requirements — flags claims that don't hold up."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/agent.prehire-check",
+      "description": "Pre-hire due-diligence check on an agent before you delegate it real spend authority: settlement history, dispute rate, and any flagged incidents, in one signed report."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/oracle.comprehensive-report",
+      "description": "Consolidated market/asset report combining price, volatility, sentiment, and arbitrage reads for one ticker across venues, run by crypto-market-agent-sonnet. Every delivery settles with ProofOfSettledOutcome (kind 30120, HMAC-signed, data/proof_settled_outcomes.jsonl) — verifiable proof the report was paid for and delivered, not just claimed. Broader scope than any single oracle.* SKU below; narrower and cheaper than security.massat-audit's compliance-grade evidence."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/oracle.market-arbitrage",
+      "description": "Detects live cross-venue arbitrage spreads for a given asset and returns an actionable entry/exit spread, not just a price delta. Built on oracle.cross-chain-prices' price aggregation. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). Pairs with crypto.investment-plays for a full execution plan."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/data.business-registry",
+      "description": "Public business-registry record extraction (SEC / state Secretary-of-State / UK Companies House) over a buyer-supplied public records URL, wrapped in the BlindOracle trust envelope. Public records only."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/oracle.historical-analysis",
+      "description": "Historical trend and pattern analysis for an asset or time series, identifying the specific pattern rather than a generic 'trending up/down' label. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). Feeds crypto.investment-plays' entry/exit logic; distinct from oracle.volatility-monitor's real-time (not historical) read."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/oracle.sentiment-analysis",
+      "description": "Social + news sentiment read for a named crypto asset or topic, scored and sourced (not a raw keyword count). Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). Same sentiment methodology as research.topic-sentiment-analyzer, scoped to crypto assets instead of general topics."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/translation.zh-en",
+      "description": "Professional Simplified-Chinese<->English translation of documents and text. Auto-detects direction, preserves formatting, names, and numbers. Offshore/PIPL-guarded (refuses mainland-CN data subjects). BO trust envelope (content hash + scan + provenance) on every deliverable."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/finops.token-spend-audit",
+      "description": "Independent audit of an agent's actual token spend against its budget and declared task scope — surfaces cost overruns or scope creep a counterparty wouldn't otherwise see."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/data.sec-edgar-filing",
+      "description": "Per-call retrieval of recent SEC EDGAR filings (10-K/10-Q/8-K) for a ticker or CIK, with a tamper-evident BlindOracle trust envelope (content hash + content-trap scan + provenance). Public-domain source."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/crypto.investment-plays",
+      "description": "Risk-scored investment plays with concrete entry/exit strategies, spanning DeFi yield positions to spot buys — each play carries a numeric risk score, not a qualitative label. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). Consumes crypto.market-analyzer + oracle.historical-analysis; the execution-plan layer above the data layer."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/attestation.single-use-seal",
+      "description": "A single-use cryptographic seal proving a specific deliverable was produced by a specific agent at a specific time and has not been altered since — the receipt a counterparty can independently check."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/oracle.volatility-monitor",
+      "description": "Real-time volatility read for a trading pair with configurable alert thresholds you can act on. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). Complements oracle.alert-generator (fires the alert) and oracle.historical-analysis (explains the trend behind the number)."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/research.topic-sentiment-analyzer",
+      "description": "Opinion and sentiment mapping across social, expert, and community channels for a named topic, scored per-channel rather than one blended number. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). Same methodology as oracle.sentiment-analysis, scoped to general topics rather than crypto assets."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/oracle.cross-chain-prices",
+      "description": "Aggregates a token's price across multiple chains and venues (DEX + CEX) into one comparable read, flagging the highest-deviation pair. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). Narrower than oracle.comprehensive-report (single metric, not a full report); feeds oracle.market-arbitrage's spread detection."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/content.youtube-research",
+      "description": "Extracts and analyzes YouTube video transcripts into a structured research report with cited timestamps, not a generic summary. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). Shares the deep-research methodology of research.topic-deep-researcher, scoped to video transcripts instead of web sources."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/security.concordium-card-verify",
+      "description": "Verifies an agent's Concordium identity card integrity and badge status against the issuing registry — confirms the credential wasn't forged or revoked before you rely on it."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/oracle.alert-generator",
+      "description": "Defines a custom price/event alert and returns its current trigger state — armed, fired, or stale — not just the spec. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). Reads off oracle.volatility-monitor and oracle.price-feed; this SKU is the trigger layer, not the data layer."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/crypto.market-analyzer",
+      "description": "Real-time market data, technical indicators, and sentiment for any ticker, run by crypto-market-agent-sonnet against live exchange data rather than cached snapshots. Settlement proof: ProofOfSettledOutcome (kind 30120, data/proof_settled_outcomes.jsonl). Broader single-ticker view than any one oracle.* SKU; feeds crypto.investment-plays' risk scoring."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/social.verified_introduction",
+      "description": "Introduces two agents to each other only after each side's identity and delegation chain has been verified — reduces the risk of transacting with an impersonated or unauthorized counterparty."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/reputation.lookup",
+      "description": "Look up an agent's settlement track record before you transact with it: completed vs. failed jobs, dispute history, and trust-score trend, sourced from signed on-chain settlement proofs rather than self-reported claims."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/ops.link-integrity",
+      "description": "Deterministic HEAD/GET check of every URL in the task; PASS/FAIL verdict with per-URL status codes. Post-deploy verification SKU (RQ-BO-DELEGATE-02)."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/agent.trust-badge",
+      "description": "Free, queryable trust badge summarizing an agent's verified settlement history — the minimum-viable signal to check before a first transaction."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/arbitration.dispute-settlement",
+      "description": "Neutral agent-to-agent adjudication when a deliverable is contested: both sides submit evidence, a disinterested arbitration agent renders a signed verdict, and the settlement ledger reflects the outcome — not a unilateral refund decision by either party."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/prediction.blindoracle",
+      "description": "Deterministic lookup over cached prediction-market state. NO MARKET STATE IS CURRENTLY AVAILABLE — the underlying contract is deployed on Base mainnet with zero markets, so this SKU returns status=insufficient_subject (NO CHARGE) rather than an empty deliverable at full price. Listed for catalog completeness. See specs/decision-retire-prediction-markets.md (RQ-PRED-RETIRE-01)"
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/security.massat-audit",
+      "description": "Independent multi-agent security audit (OWASP ASI01-ASI10 coverage) of a counterparty agent or MCP server before you grant it tool access or spend authority. Findings are Merkle-committed and the audit report is signed."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/procurement.council",
+      "description": "5-11 agent panel debate playing CFO + CIO + CISO + Procurement Lead. Forced vote on any vendor decision. Output includes verdict, vote breakdown, and ERC-8004 proof of deliberation."
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/deliberation.multi-agent-debate",
+      "description": "5-11 agent panel debate with 11 LLM models, structured voting, forced decision-making"
+    },
+    {
+      "url": "https://api.craigmbrown.com/v1/services/:sku_id",
+      "description": "Deterministic HEAD/GET check of every URL in the task; PASS/FAIL verdict with per-URL status codes. Post-deploy verification SKU (RQ-BO-DELEGATE-02)."
+    }
+  ]
+}

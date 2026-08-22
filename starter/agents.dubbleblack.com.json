@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agents.dubbleblack.com",
+  "resources": [
+    {
+      "url": "https://agents.dubbleblack.com/api/agent/evidence",
+      "description": "Returns ranked products with evidence scores, confidence bands, and provenance metadata for a vertical, an optional category, and a natural language purchase intent. Supports budget, brand, and product ID filters. When observations are too sparse to support a confident recommendation, the API returns HTTP 200 with an empty results array and insufficient_evidence set to true. It never fabricates results."
+    }
+  ]
+}

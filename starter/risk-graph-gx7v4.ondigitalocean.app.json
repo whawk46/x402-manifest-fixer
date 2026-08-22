@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "risk-graph-gx7v4.ondigitalocean.app",
+  "resources": [
+    {
+      "url": "https://risk-graph-gx7v4.ondigitalocean.app/api/v1/agent/schema",
+      "description": "Graph schema definition — entry point for agents to discover available data"
+    },
+    {
+      "url": "https://risk-graph-gx7v4.ondigitalocean.app/api/v1/agent/search",
+      "description": "Targeted node lookup by asset address or protocol/asset name — the sole discovery path"
+    }
+  ]
+}

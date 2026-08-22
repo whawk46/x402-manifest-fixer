@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "qr-api-production-1836.up.railway.app",
+  "resources": [
+    {
+      "url": "https://qr-api-production-1836.up.railway.app/generate/basic",
+      "description": "Generate a QR code PNG (returned base64-encoded in JSON) for any text or URL using default black-on-white styling."
+    },
+    {
+      "url": "https://qr-api-production-1836.up.railway.app/decode",
+      "description": "Decode QR/barcodes from a base64-encoded image; returns each detected code's type, decoded text, bounding rect, and polygon."
+    },
+    {
+      "url": "https://qr-api-production-1836.up.railway.app/generate/batch",
+      "description": "Generate up to 20 QR codes in one call; returns a per-item record with QR metadata and the base64 PNG, or an error per item."
+    },
+    {
+      "url": "https://qr-api-production-1836.up.railway.app/generate/styled",
+      "description": "Generate a styled QR code PNG (base64 in JSON): custom foreground/background hex colours, module size, border, and error-correction level."
+    }
+  ]
+}

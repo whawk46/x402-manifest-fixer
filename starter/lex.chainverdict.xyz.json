@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "lex.chainverdict.xyz",
+  "resources": [
+    {
+      "url": "https://lex.chainverdict.xyz/v1/cite/extract",
+      "description": "Scan a block of text (brief, memo, agent draft), extract every citation, structurally check each, and return a fabrication risk flag with per-citation verdicts."
+    },
+    {
+      "url": "https://lex.chainverdict.xyz/v1/ecli/validate",
+      "description": "Validate a European ECLI identifier (format, jurisdiction, year)."
+    },
+    {
+      "url": "https://lex.chainverdict.xyz/v1/cfr/validate",
+      "description": "Validate a CFR citation structurally (title, part, section format)."
+    },
+    {
+      "url": "https://lex.chainverdict.xyz/v1/uscode/validate",
+      "description": "Validate a U.S. Code citation structurally (title exists, not reserved, section well-formed)."
+    },
+    {
+      "url": "https://lex.chainverdict.xyz/v1/cite/check",
+      "description": "Structural check of a single US case citation: catches impossible reporter volumes, unknown reporters, malformed patterns — the fabrication signals. Verdict: impossible / unknown-reporter / plausible."
+    }
+  ]
+}

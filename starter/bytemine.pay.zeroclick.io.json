@@ -1,0 +1,51 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "bytemine.pay.zeroclick.io",
+  "resources": [
+    {
+      "url": "https://bytemine.pay.zeroclick.io/functions/v1/api-gateway/v1/tech/stack",
+      "description": "Return the full detected technology stack for a domain. Every technology is mapped to a category with a confidence score. Includes stack_sophistication, stack_gaps, and competing_vendors derived intelligence. Billed per domain profiled."
+    },
+    {
+      "url": "https://bytemine.pay.zeroclick.io/functions/v1/api-gateway/v1/icp-builder",
+      "description": "Describe an ideal customer profile in plain text. Returns a job_id immediately; results are delivered asynchronously via the optional webhook_url or by polling the job status endpoint. Flat rate per run."
+    },
+    {
+      "url": "https://bytemine.pay.zeroclick.io/functions/v1/api-gateway/fraud-check",
+      "description": "Score a signup for fraud risk. Send email only, ip only, or both; at least one is required. Email checks cover disposable and free provider detection, MX validation, gibberish name detection, domain liveness, and known business signals. IP checks cover VPN, proxy, Tor, residential relay, datacenter, and bogon detection. Returns a decision of allow, review, or block with a risk score and itemized signals."
+    },
+    {
+      "url": "https://bytemine.pay.zeroclick.io/functions/v1/api-gateway/v1/company-lookalikes",
+      "description": "Provide up to 10 company domains. The system enriches them, extracts business keywords, and searches for similar companies. Returns a job_id immediately; poll the job status endpoint with type lookalike or supply a webhook_url. Optional filters restrict results by industry, US state, or country. Flat rate per run."
+    },
+    {
+      "url": "https://bytemine.pay.zeroclick.io/functions/v1/api-gateway/contacts/unlock",
+      "description": "Unlock full contact details for prospects by PID. Returns verified work email, personal email, and phone numbers. If an unlocked contact has no work email an email finder fallback runs automatically at no extra charge. Billed per PID."
+    },
+    {
+      "url": "https://bytemine.pay.zeroclick.io/functions/v1/api-gateway/company/intel/page",
+      "description": "Read any company page in real time and return clean structured content, links, metadata, and the detected tech stack. Data is fetched live from the source."
+    },
+    {
+      "url": "https://bytemine.pay.zeroclick.io/functions/v1/api-gateway/company/intel/extract",
+      "description": "Turn any company page into structured fields using a prebuilt schema: company_profile, team_members, pricing, tech_stack, social_links, branding, or full_intelligence."
+    },
+    {
+      "url": "https://bytemine.pay.zeroclick.io/functions/v1/api-gateway/v1/apps/roi-calculator",
+      "description": "Generate a personalized ROI projection and business case for a prospect. Crawls their website, enriches company data, and produces quantified savings projections, an implementation timeline, risk mitigation, a recommendation, a shareable public URL, and LinkedIn and email outreach copy. Optionally provide contact details for decision maker enrichment."
+    },
+    {
+      "url": "https://bytemine.pay.zeroclick.io/functions/v1/api-gateway/v1/apps/meeting-prep",
+      "description": "Generate a meeting preparation brief for a prospect. Crawls their website, enriches company data, and finds key decision maker contacts. Returns the company profile, key contacts, talking points, ice breakers, objections with responses, pain points, opportunities, and competitive landscape. Provide contact_email or contact_linkedin for deep person level enrichment."
+    },
+    {
+      "url": "https://bytemine.pay.zeroclick.io/functions/v1/api-gateway/v1/proposals/generate",
+      "description": "Generate a personalized sales or partnership proposal for a prospect. Crawls both websites, extracts branding and company context, and produces a fully branded HTML proposal with ROI projections, social proof, a shareable URL, and auto generated LinkedIn and email outreach copy."
+    },
+    {
+      "url": "https://bytemine.pay.zeroclick.io/functions/v1/api-gateway/contacts/:contactId",
+      "description": "Retrieve a specific contact's full profile by ID."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "api.aislabs.ai",
+  "resources": [
+    {
+      "url": "https://api.aislabs.ai/v1/kev/fresh",
+      "description": "CVEs added to CISA KEV in the last 7 days (complete catalog), annotated with today's AIS ranks"
+    },
+    {
+      "url": "https://api.aislabs.ai/v1/brief/today",
+      "description": "Today's full ranked CVE priorities (scores, KEV, EPSS, patch status, methodology)"
+    }
+  ]
+}

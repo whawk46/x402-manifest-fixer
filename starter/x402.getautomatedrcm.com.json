@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.getautomatedrcm.com",
+  "resources": [
+    {
+      "url": "https://x402.getautomatedrcm.com/denial-decode",
+      "description": "Claim-denial intelligence for a CARC code (e.g. CO-50, PR-204, CO-197). Returns plain-English meaning, category, whether it is appealable, the concrete next action, and how to prevent it. Unknown codes still get group-level (CO/PR/OA/PI) guidance. (AutomatedRCM agent: Dex)"
+    },
+    {
+      "url": "https://x402.getautomatedrcm.com/scrub",
+      "description": "Healthcare text de-identification engine (demo endpoint — SYNTHETIC/TEST DATA ONLY, never send real PHI; nothing is stored). Strips names, DOBs, member/claim IDs, phones, emails, addresses, SSNs; dates become a derived interval timeline (service-to-denial days, days-ago) so denial and timely-filing math survives de-identification. Returns scrubbed text + token map for local re-identification. Production use requires the licensed in-environment engine: contact laureennicholson@getautomatedrcm.com"
+    },
+    {
+      "url": "https://x402.getautomatedrcm.com/claim-triage",
+      "description": "Unpaid-claim follow-up triage. Given an action code (RES/CPE/CRO/APP/PAY or blank), balance, and claim ages, returns the work bucket (WORK_NOW / WAITING / REVIEW / COMPLETE), risk flags (FELL_THROUGH, OVERDUE, TIMELY_RISK), a priority score, and the recommended next action with its deadline. (AutomatedRCM agent: WorkQueue)"
+    },
+    {
+      "url": "https://x402.getautomatedrcm.com/appeal-assessment",
+      "description": "Full denial-appeal verdict for a denied medical claim. Given the CARC denial code, payer, balance, and timing, returns: appeal/fix/write-off verdict, deadline math against the payer's typical appeal window, the evidence checklist, payer-specific argument points (criteria-mapped when the CPT is in the prior-auth ruleset), and a complete structured appeal-letter draft ready to fill. Replaces a professional appealability review. Deterministic rules engine — no PHI accepted. (AutomatedRCM agent: Dex"
+    },
+    {
+      "url": "https://x402.getautomatedrcm.com/pa-check",
+      "description": "Prior-authorization determination for a CPT/HCPCS code + US payer. Rules engine covering UHC, Aetna, Cigna, Florida Blue, Humana, Medicare, Medicare Advantage across 13 high-volume codes (imaging, surgery, sleep, cardiology, pain mgmt, wound care, specialty drugs). Returns requirement, criteria, documentation checklist, payer portal + turnaround. Codes outside the ruleset return coverage:false with guidance (no charge avoidance — check GET / for the covered list first). (AutomatedRCM agent: PAT)"
+    },
+    {
+      "url": "https://x402.getautomatedrcm.com/pii-scrub",
+      "description": "PII pre-flight for agent pipelines: deterministic de-identification of free text BEFORE it reaches a third-party LLM or API. No account, no API key, no subscription — pay per call. Strips names, emails, phones, SSNs, credit cards (Luhn-validated), IPs, URLs, street addresses, account IDs; dates become tokens plus a derived interval timeline (days-between, days-ago) so deadline math survives redaction. Returns scrubbed text + token map for local re-identification. Nothing stored; no LLM ever touc"
+    }
+  ]
+}

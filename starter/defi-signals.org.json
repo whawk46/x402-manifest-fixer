@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "defi-signals.org",
+  "resources": [
+    {
+      "url": "https://defi-signals.org/market/snapshot",
+      "description": "One-call market snapshot: BTC/ETH/SOL spot prices with 24h change plus the Crypto Fear & Greed index. The cheapest way for an agent to establish market context."
+    }
+  ]
+}

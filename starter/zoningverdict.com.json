@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "zoningverdict.com",
+  "resources": [
+    {
+      "url": "https://zoningverdict.com/api/v1/parcel/resolve",
+      "description": "Address-to-zoning lookup for published municipalities. Coverage: 64 municipalities in 6 states. Resolves a street address to supported municipality and, where GIS is verified, zoning district_code with lookup method. Positioning: Records tell you what's on file; ZoningVerdict tells you what the ordinance actually says, independently verified, with the citation. Responses include source citations and last-reviewed dates. Price: $0.01/call."
+    }
+  ]
+}

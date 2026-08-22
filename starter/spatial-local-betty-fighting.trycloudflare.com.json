@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "spatial-local-betty-fighting.trycloudflare.com",
+  "resources": [
+    {
+      "url": "https://spatial-local-betty-fighting.trycloudflare.com/scores/daily",
+      "description": "Full daily signal stack"
+    }
+  ]
+}

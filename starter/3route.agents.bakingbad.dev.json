@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "3route.agents.bakingbad.dev",
+  "resources": [
+    {
+      "url": "https://3route.agents.bakingbad.dev/api/v6.1/:chainId/quote",
+      "description": "Price a swap without building a transaction. Returns expected input, output, and gas without constructing an executable transaction. Quotes are informational and can change with liquidity and chain state."
+    },
+    {
+      "url": "https://3route.agents.bakingbad.dev/api/v6.1/:chainId/swap",
+      "description": "Build an unsigned swap transaction for the best route. Builds an unsigned transaction for the selected route. Compare it with a fresh quote, validate every returned transaction field, obtain explicit signing approval, and broadcast it through the selected chain's RPC. The compatibility parameters permit and usePermit2 are ignored. For an ERC-20 source, approve the router in tx.to for at least srcAmount before executing the returned transaction."
+    }
+  ]
+}

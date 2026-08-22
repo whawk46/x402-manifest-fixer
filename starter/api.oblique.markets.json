@@ -1,0 +1,219 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.oblique.markets",
+  "resources": [
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/mpp-route",
+      "description": "MPP-native catalog-first task router: paid top-three shortlist with prices, payment methods, MCP schemas, health metadata and operator source attribution"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/x401-batch-extract",
+      "description": "Proof-gated batch JSON extraction for up to 10 public URLs in isolated Daytona or Modal compute with reconciled delivery and idempotent retries"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/x402-receipt-lookup",
+      "description": "Fetch a previously issued settlement-verify receipt by verification_id: returns the stored on-chain verification result (payer, payee, amount, status, confirmations at verification time) with its creation timestamp"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/x402-endpoint-verify",
+      "description": "Verify and lint a third-party x402 endpoint: probes the URL (SSRF-guarded), confirms it answers with a well-formed HTTP 402 challenge, and reports protocol-conformance findings — accepts[] completeness, CDP Base price floor, PAYMENT-REQUIRED header/body consistency, timeout sanity"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/bazaar-listing-lint",
+      "description": "Quality-score an x402 Bazaar listing (0-100): live SSRF-guarded probe of the resource for a valid 402 challenge with description/output-schema/category/price-floor checks, plus snapshot-history analysis from daily full-catalogue Bazaar snapshots (price churn, delisting)"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/agent-readiness-audit",
+      "description": "Agent-readiness audit of a domain: parallel SSRF-guarded probes of the six discovery surfaces agents read (/.well-known/x402.json, /.well-known/agent.json, /openapi.json, /llms.txt, /robots.txt, /.well-known/mcp.json) with key-field validation, a weighted 0-100 score and specific fix-it recommendations"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/batch-extract",
+      "description": "Run up to 10 public URL JSON extractions in isolated ephemeral compute against caller-supplied JSON Schemas with idempotent reconciliation"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/base-transfer-search",
+      "description": "Bounded accountless Base mainnet ERC-20 transfer and log search by address, direction, asset, counterparty and time window"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/base-wallet-profile",
+      "description": "Accountless Base mainnet wallet profile with native and ERC-20 balances, bounded transfer activity, counterparties, contracts, freshness metadata and evidence hash"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/b402-preflight",
+      "description": "BNB/B402 payment-intent preflight: validate intent freshness and recipient, query public BNB balance and recent activity, and return a signed decision without custody or payment relay"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/base-gas-price",
+      "description": "Live Base mainnet gas price and latest-block baseFeePerGas (EIP-1559), in wei and gwei, from redundant public RPCs"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/x402-facilitator-health",
+      "description": "Live health probe of the two x402 facilitators this service settles through: Dexter /supported coverage (kinds, schemes, networks) and Coinbase CDP reachability with HTTP status and latency"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/bazaar-price-stats",
+      "description": "x402 Bazaar price distribution across the latest daily full-catalogue snapshot: min/p25/p50/p75/p90/max in atomic units and USD, USD price bands with shares, and per-network listing counts with median price. Optional ?network= filter."
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/bazaar-new-listings",
+      "description": "x402 Bazaar new listings: resources that appeared in the latest daily full-catalogue snapshot but were absent the day before — resource URL, service, network, price and seller for up to 50 entrants, sorted by 30d call volume"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/endpoint-task-evaluation",
+      "description": "One bounded x402 endpoint request and payment-flow evaluation"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/listing-triage",
+      "description": "Listing history triage: persistence, price changes, duplicate variants, and buy signal"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/bazaar-trending",
+      "description": "x402 Bazaar trending report: services gaining settled calls and unique payers fastest between the two latest daily snapshots, with decliners and new entrants"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/bazaar-seller-rank",
+      "description": "x402 Bazaar seller leaderboard: top 25 seller addresses ranked by settled 30d calls in the latest daily full-catalogue snapshot, with listing count, unique 30d payers and each seller’s busiest resource"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/bazaar-delta",
+      "description": "x402 Bazaar day-over-day catalogue diff between the two latest daily full-catalogue snapshots: counts and samples of added resources, removed resources, and price changes (from/to atomic amounts)"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/evidence/browser",
+      "description": "Run one browser action and return AEP-compatible verified evidence"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/purchase-web-extraction-sample",
+      "description": "Purchase a machine-readable extraction sample from one HTTPS webpage"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/base-block-number",
+      "description": "Current Base mainnet block number, fetched live from redundant public RPCs"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/bazaar-market-report",
+      "description": "Comprehensive x402 Bazaar market report from the latest daily full-catalogue snapshot: marketplace totals, price percentiles and USD bands, network split, top 15 services by settled calls and by unique payers, top 10 sellers, new entrants vs the prior snapshot, top movers by call growth, and the count of listings with real repeat demand (>=5 unique 30d payers)"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/bazaar-category-heat",
+      "description": "x402 Bazaar category heat map: every listing in the latest daily full-catalogue snapshot classified into 9 categories (search/scrape, crypto-data, ai-inference, social-data, verification, compute/browser, agent-tools, enrichment, other) with listing counts, settled 30d calls, unique payers and listing share per category"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/bazaar-pulse",
+      "description": "Live x402 Bazaar market pulse: trending services, call volumes, new listings — from daily full-catalogue snapshots"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/time",
+      "description": "Current server time"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/batch-url-json",
+      "description": "Prepaid batch of up to 10 HTTPS URL-to-JSON extraction jobs with one idempotent reconciled completion receipt"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/route-task",
+      "description": "Cross-platform x402 task router: ranks endpoints from MPP catalog, Apify actors, and Bazaar listings"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/base-tx-status",
+      "description": "Base mainnet transaction status by hash: success/reverted, block number, confirmation count, gas used and effective gas price, from redundant public RPCs"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/base-usdc-balance",
+      "description": "USDC balance of any Base mainnet address, read live via balanceOf on the canonical USDC contract (6 decimals), from redundant public RPCs"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/rewrite",
+      "description": "Rewrite text per a natural-language instruction (tone, formality, simplification, shortening) — deterministic flash-model rewriting with hard input/output caps"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/compile-policy",
+      "description": "Compile a merchant payment policy across x402, MPP, AP2, and card rails from product, risk, authorization, latency, asset, and refund constraints."
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/summarize",
+      "description": "Summarize text as bullet points, a paragraph, or a single line — deterministic flash-model summarization with hard input/output caps"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/keyword-extract",
+      "description": "Ranked keyword and named-entity extraction from text, returned as clean JSON arrays — parse-validated with one automatic retry"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/classify",
+      "description": "Single-label text classification against 2-20 caller-supplied labels — reply validated against the label set, canonical label returned, 502 instead of hallucinated labels"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/extract-json",
+      "description": "Extract structured JSON from unstructured text against a caller-supplied JSON Schema — parse-validated with one automatic retry, 502 on failure instead of garbage"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/fetch-x402",
+      "description": "Fetch and extract content from web pages, handling x402 edge payments automatically"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/settlement-verify",
+      "description": "Real on-chain x402 settlement verification on Base mainnet: fetches the transaction receipt via JSON-RPC, decodes USDC Transfer events (payer, payee, amount), reports success/reverted status and confirmation depth, and issues a persistent verification_id receipt"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/base-usdc-transfer-check",
+      "description": "Verify a Base mainnet transaction moved USDC: decodes all USDC Transfer logs from the receipt and reports settled=true only for a mined, successful tx with at least one transfer"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/orders",
+      "description": "Website decision packet: extract supplied pages and synthesize a sourced answer to a decision question"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/wallet-spy",
+      "description": "Real-time wallet surveillance — transactions, tokens, DEX swaps, NFTs, risk score"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/company-research",
+      "description": "SEC EDGAR filing search + web scraping for company research"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/market-intel",
+      "description": "Competitive intelligence for any crypto project (Dune on-chain data + web scraping)"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/trading-signals",
+      "description": "Crypto trading signals from Dune on-chain data (whale movements, token flows, DEX volume)"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/echo",
+      "description": "Echo service"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/crypto-price",
+      "description": "Real-time cryptocurrency price data"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/inference",
+      "description": "LLM inference proxy ($0.01 fixed-price Base rail)"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/answer-with-sources",
+      "description": "LLM-powered answer with cited sources"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/sentiment",
+      "description": "Social media and news sentiment analysis"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/web-extract",
+      "description": "Web page structured extraction"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/token-metrics",
+      "description": "Token fundamental data with holder metrics"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/wallet-analyze",
+      "description": "Wallet token flow and activity analysis"
+    },
+    {
+      "url": "https://api.oblique.markets/api/v1/paid/dune-query",
+      "description": "Multi-chain on-chain SQL analytics via Dune"
+    }
+  ]
+}

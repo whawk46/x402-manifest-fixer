@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-commerce-factory-jm.austriaeast.cloudapp.azure.com",
+  "resources": [
+    {
+      "url": "https://agent-commerce-factory-jm.austriaeast.cloudapp.azure.com/v1/amazon/search",
+      "description": "Search live Amazon products by keyword. Returns normalized ASIN, title, current price/range, currency, rating, review count, bought-past-month signal, canonical product URL, image, rank, Amazon Choice/Best Seller flags and delivery text. Supports location, language and result-depth controls for shopping agents, Amazon product research and ecommerce discovery."
+    },
+    {
+      "url": "https://agent-commerce-factory-jm.austriaeast.cloudapp.azure.com/v1/news/search",
+      "description": "Search current Google News results. Returns headline, source/domain, URL, snippet, publication time, image and rank. For current-events, monitoring and research agents."
+    },
+    {
+      "url": "https://agent-commerce-factory-jm.austriaeast.cloudapp.azure.com/v1/local/search",
+      "description": "Search Google Maps for local businesses and places. Returns place ID, business name/category, address, phone, website, rating/reviews, coordinates, image and rank. For local discovery, travel and lead-finding agents."
+    },
+    {
+      "url": "https://agent-commerce-factory-jm.austriaeast.cloudapp.azure.com/v1/amazon/offers",
+      "description": "Get live Amazon sellers, prices, condition and delivery offers for a specific ASIN."
+    }
+  ]
+}

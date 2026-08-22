@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "cheaptokens.ai",
+  "resources": [
+    {
+      "url": "https://cheaptokens.ai/api/buy",
+      "description": "OpenAI-compatible LLM inference and chat completions via discounted Venice API credits. Pay USDC to receive a live Venice.ai API key for /api/v1 models, chat, images, audio, video, and embeddings. Same-Day credits are 30–90% below Venice direct and expire at 23:59 UTC; Prepaid API Keys support recurring agent jobs."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "domain-availability-checker.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://domain-availability-checker.underscoredone.com/check",
+      "description": "Give this API up to 10 domain names and it will tell you whether each one has a registration record on file with the official registry. It uses RDAP — the modern, structured replacement for WHOIS — so there is no messy free-text parsing. Each domain comes back labeled 'registered', 'unregistered', or 'indeterminate' (when the registry does not support RDAP for that ending). Important: 'unregistered' means no record was found, which usually means the name is available — but reserved or premium names can also return no record. This API tells you registration status only; it does not tell you price, premium status, or whether a registrar will actually let you buy the name."
+    }
+  ]
+}

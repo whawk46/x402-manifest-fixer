@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api-payment-staging.up.railway.app",
+  "resources": [
+    {
+      "url": "https://api-payment-staging.up.railway.app/v1/wallet/intent",
+      "description": "Conservative Base wallet intent signal using recent ERC-20 transfers, approvals, recognized protocols, evidence, contradictions, and explicit limitations."
+    }
+  ]
+}

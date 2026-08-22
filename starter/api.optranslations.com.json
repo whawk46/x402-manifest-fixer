@@ -1,0 +1,13 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.optranslations.com",
+  "resources": [
+    {
+      "url": "https://api.optranslations.com/api/v1/parser"
+    },
+    {
+      "url": "https://api.optranslations.com/api/v1/veritas/legal-translation"
+    }
+  ]
+}

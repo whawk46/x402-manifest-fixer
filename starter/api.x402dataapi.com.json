@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.x402dataapi.com",
+  "resources": [
+    {
+      "url": "https://api.x402dataapi.com/v1/agent-accessibility",
+      "description": "Paid x402 API for AI agents that checks robots.txt, sitemap availability, llms.txt discovery, AI crawler readiness, agent accessibility and AI scraping compatibility for a public URL."
+    },
+    {
+      "url": "https://api.x402dataapi.com/v1/mail-security",
+      "description": "Paid x402 API for AI agents that checks MX records, SPF, DMARC, email security, phishing risk, domain mail configuration and anti-spoofing posture for a public domain."
+    },
+    {
+      "url": "https://api.x402dataapi.com/v1/http-security",
+      "description": "Paid x402 API for AI agents that audits HTTP security headers, HSTS, Content-Security-Policy, X-Frame-Options, Referrer-Policy, Permissions-Policy and web security scan findings for a public URL."
+    }
+  ]
+}

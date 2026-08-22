@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "israel-tariff-x402.onrender.com",
+  "resources": [
+    {
+      "url": "https://israel-tariff-x402.onrender.com/il/tariff/:code",
+      "description": "Israeli Customs Tariff Lookup. Look up structured Israeli customs tariff information for a known Israeli customs tariff code using normalized data sourced from the Israel Tax Authority. Use for Israel import research, customs duty or import tax verification, procurement/import workflows, and trade compliance research. The caller must already know the code. This endpoint does not classify products or provide legal or customs advice. Official legislation and Customs determinations prevail."
+    }
+  ]
+}

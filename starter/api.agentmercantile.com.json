@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.agentmercantile.com",
+  "resources": [
+    {
+      "url": "https://api.agentmercantile.com/v1/portfolio-preflight",
+      "description": "Return a bounded snapshot of native and ERC-20 holdings for one public Ethereum/Base address, with DEX-market observations, priced-holdings concentration, evidence and limitations. No investment advice."
+    },
+    {
+      "url": "https://api.agentmercantile.com/v1/allowance-exposure",
+      "description": "Check one Base ERC-20 owner's direct allowance to one spender and compare it with the owner's current token balance at one block, returning normalized allowance exposure and deterministic large-approval evidence."
+    },
+    {
+      "url": "https://api.agentmercantile.com/v1/url-context",
+      "description": "Fetch one public HTTPS URL and return deterministic structured web context: final URL/status, title/description, canonical, headings, readable content, structured-data types, freshness observations, evidence, and methodology."
+    },
+    {
+      "url": "https://api.agentmercantile.com/v1/productive-venue-snapshot",
+      "description": "Return currently observed factual Aave V3 and Lido lending/staking venues and rates for one supported chain and asset from Agent Mercantile's frozen V1 protocol set, with evidence, timestamps and limitations. Not a recommendation."
+    }
+  ]
+}

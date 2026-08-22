@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "sarachai.com",
+  "resources": [
+    {
+      "url": "https://sarachai.com/api/x402/upload",
+      "description": "Upload an image, get back a permanent public URL. multipart/form-data with a required 'file' field (image/jpeg, image/png, image/webp, image/gif, image/svg+xml), max 10MB, and an optional 'title' field. Limits: 20 uploads per wallet per 24h (429 past that), and a total service storage cap — 507 once full."
+    }
+  ]
+}

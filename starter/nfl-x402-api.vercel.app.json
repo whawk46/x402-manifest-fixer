@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "nfl-x402-api.vercel.app",
+  "resources": [
+    {
+      "url": "https://nfl-x402-api.vercel.app/api/player/usage",
+      "description": "NFL player usage and opportunity metrics for fantasy football: target share, air yards share, WOPR, Next Gen Stats (separation, YAC over expectation, rush yards over expected) with recent-week trend deltas vs season average."
+    }
+  ]
+}

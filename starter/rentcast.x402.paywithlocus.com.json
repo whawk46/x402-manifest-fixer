@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "rentcast.x402.paywithlocus.com",
+  "resources": [
+    {
+      "url": "https://rentcast.x402.paywithlocus.com/rentcast/properties",
+      "description": "Locus public pay-per-use API"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "tools.miniframe.com.br",
+  "resources": [
+    {
+      "url": "https://tools.miniframe.com.br/cep",
+      "description": "Use when a Brazilian postal code needs to become a real address — filling a form, validating a delivery, completing a customer record. JSON body { cep } (8 digits). Returns street, complement, neighborhood, city and state (UF). Queries BrasilAPI first and falls back to ViaCEP automatically, so one upstream outage does not fail the task; both sources return the same normalized shape. CEP is postal/geographic data, not personal data."
+    },
+    {
+      "url": "https://tools.miniframe.com.br/cnpj",
+      "description": "Use when you need a Brazilian company's official record from its CNPJ — checking a supplier is active, confirming a legal name, enriching a lead. JSON body { cnpj } (14 digits). Returns name, status, address, CNAE activities, share capital and the public partner list (QSA) with masked tax IDs. Personal contact fields omitted."
+    },
+    {
+      "url": "https://tools.miniframe.com.br/url-to-markdown",
+      "description": "Use when a page will not read correctly with a plain fetch — a single-page app, content loaded by JavaScript, or markup so noisy the text is buried. Fetches it with a headless browser (rendering JavaScript) and returns the main readable content as clean Markdown — ideal to feed an LLM as context. JSON body { url } (public http/https), optional include_images (default false). Returns title, final_url (after redirects), markdown and word_count. Private/internal targets are blocked."
+    },
+    {
+      "url": "https://tools.miniframe.com.br/pix/brcode",
+      "description": "Use when someone needs to receive money in Brazil — an invoice, a split bill, a donation, a checkout. Builds a Pix BR Code (\"Copia e Cola\" string payable in any Brazilian bank app) plus a QR PNG, per the Central Bank spec; the key is not stored. JSON body: key and merchant_name required; amount, merchant_city, txid, description optional. Returns brcode and qr_png_base64."
+    },
+    {
+      "url": "https://tools.miniframe.com.br/empresa",
+      "description": "Use when you need a Brazilian company profile ready to qualify a lead, not the raw registry. Looks up the CNPJ, completes the address via CEP, and adds derived flags: active, headquarters, age in years, MEI/Simples, size and risk signals. JSON body { cnpj } (14 digits). Personal fields omitted; partner tax IDs stay masked."
+    },
+    {
+      "url": "https://tools.miniframe.com.br/extract",
+      "description": "Use when you need the structured data a page already carries, not raw HTML. Renders JavaScript and returns JSON-LD, Open Graph, meta tags, headings, tables and links, plus any fields you pass as CSS selectors. JSON body { url }, optional selectors ({ name: cssSelector }). Private/internal targets are blocked."
+    }
+  ]
+}

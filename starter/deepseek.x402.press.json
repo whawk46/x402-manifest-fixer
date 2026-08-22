@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "deepseek.x402.press",
+  "resources": [
+    {
+      "url": "https://deepseek.x402.press/v1/chat/completions",
+      "description": "DeepSeek AI inference — pay in USDC/EURC on Base or USDC on Arbitrum"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "etherealgoodsco.store",
+  "resources": [
+    {
+      "url": "https://etherealgoodsco.store/comm/broadcast",
+      "description": "Broadcast a message to all registered agents (or tag-matched subset) on the agent communication relay"
+    },
+    {
+      "url": "https://etherealgoodsco.store/api/wallet-balance",
+      "description": "On-chain ETH + USDC + ERC-20 balance for any wallet"
+    },
+    {
+      "url": "https://etherealgoodsco.store/tool/github-repo",
+      "description": "GitHub repo stats: stars, forks, issues, language, license"
+    },
+    {
+      "url": "https://etherealgoodsco.store/crypto/token-detail",
+      "description": "Full CoinGecko token detail: ATH, supply, rank, links"
+    },
+    {
+      "url": "https://etherealgoodsco.store/finance/stock-quote",
+      "description": "Real-time stock quote (price, change, volume, day range)"
+    },
+    {
+      "url": "https://etherealgoodsco.store/agent/code-audit",
+      "description": "Smart contract security audit with vulnerability patterns"
+    },
+    {
+      "url": "https://etherealgoodsco.store/tool/article-extract",
+      "description": "Clean article text extraction — strips nav, ads, sidebars"
+    },
+    {
+      "url": "https://etherealgoodsco.store/finance/crypto-market",
+      "description": "Top 20 cryptocurrencies by market cap with 24h change"
+    },
+    {
+      "url": "https://etherealgoodsco.store/security/cve-lookup",
+      "description": "CVE lookup by ID from NVD (CVSS score, severity, description)"
+    },
+    {
+      "url": "https://etherealgoodsco.store/api/token-snapshot",
+      "description": "ERC-20 token snapshot on Base (symbol, decimals, contract)"
+    },
+    {
+      "url": "https://etherealgoodsco.store/api/contract-risk",
+      "description": "EVM contract risk screen"
+    },
+    {
+      "url": "https://etherealgoodsco.store/enrich/domain",
+      "description": "Domain enrichment bundle (DNS A/AAAA/MX/NS)"
+    },
+    {
+      "url": "https://etherealgoodsco.store/finance/market-movers",
+      "description": "Top stock market gainers and losers"
+    },
+    {
+      "url": "https://etherealgoodsco.store/tool/sentiment",
+      "description": "Rule-based market sentiment polarity scoring"
+    },
+    {
+      "url": "https://etherealgoodsco.store/finance/fx-rate",
+      "description": "Live FX currency conversion rates"
+    },
+    {
+      "url": "https://etherealgoodsco.store/agent/osint-recon",
+      "description": "Full OSINT recon report (domain or IP)"
+    },
+    {
+      "url": "https://etherealgoodsco.store/tool/:var1",
+      "description": "Paid tool invocation"
+    },
+    {
+      "url": "https://etherealgoodsco.store/agent/:var1",
+      "description": "Agent-for-hire task"
+    }
+  ]
+}

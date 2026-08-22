@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "spark-solana-oracle-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://spark-solana-oracle-production.up.railway.app/spark/activations",
+      "description": "Detect newly active Solana tokens after prolonged dormancy; returns mint, timestamps, dormancy duration, and evidence metadata. Empty results are valid."
+    }
+  ]
+}

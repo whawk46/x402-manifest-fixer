@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agents.actionlayer.io",
+  "resources": [
+    {
+      "url": "https://agents.actionlayer.io/zeroclick/tasks",
+      "description": "Accepts a task for asynchronous execution and returns the task object — poll `GET /zeroclick/tasks/{id}` for progress. Retried requests with the same `zc-request-id` return the original task and are never charged twice."
+    }
+  ]
+}

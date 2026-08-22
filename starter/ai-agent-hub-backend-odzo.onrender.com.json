@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ai-agent-hub-backend-odzo.onrender.com",
+  "resources": [
+    {
+      "url": "https://ai-agent-hub-backend-odzo.onrender.com/api/storage/:id",
+      "description": "Download a previously stored file by its fileId"
+    }
+  ]
+}

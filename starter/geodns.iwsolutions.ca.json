@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "geodns.iwsolutions.ca",
+  "resources": [
+    {
+      "url": "https://geodns.iwsolutions.ca/api/resolve",
+      "description": "Geo-located DNS resolution — resolve hostnames from specific countries to see how CDNs, geo-blocking, and DNS-based routing differ by region."
+    }
+  ]
+}

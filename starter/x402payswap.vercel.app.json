@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "x402payswap.vercel.app",
+  "resources": [
+    {
+      "url": "https://x402payswap.vercel.app/api/premium",
+      "description": "Premium alpha — Curated on-chain alpha: yield venues, mempool anomalies, and replayable agent trade intents."
+    }
+  ]
+}

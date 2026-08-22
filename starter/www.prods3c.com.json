@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.prods3c.com",
+  "resources": [
+    {
+      "url": "https://www.prods3c.com/x402/download/:doc_id",
+      "description": "Security and risk guidance for accepting stablecoin payments — regulatory gotchas, technical best practices, external risks."
+    }
+  ]
+}

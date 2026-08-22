@@ -1,0 +1,51 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.hoodgrow.com",
+  "resources": [
+    {
+      "url": "https://www.hoodgrow.com/api/agent/defi/:symbol",
+      "description": "HoodGrow — every Morpho lending market and Uniswap V3 pool involving AAPL on Robinhood Chain. Morpho market and Uniswap V3 pool state is read on-chain and snapshotted every 15 minutes; responses carry the snapshot timestamp."
+    },
+    {
+      "url": "https://www.hoodgrow.com/api/agent/token/:symbol",
+      "description": "HoodGrow — live price, corporate-action adjusted supply, and corporate-action history for NVDA on Robinhood Chain. Prices read from Chainlink feeds on-chain, refreshed every 15 min; observedAt gives each snapshot's age and priceSource the resolver. Supply is totalSupply x ERC-8056 uiMultiplier — adjusted, not raw. Corporate actions read from the contract's ERC-8056 state every minute — the multiplier change itself; the registry is mirrored for history."
+    },
+    {
+      "url": "https://www.hoodgrow.com/api/agent/tokens",
+      "description": "HoodGrow — machine-readable Robinhood Chain stock token data: live price, corporate-action adjusted supply, and pending/historical corporate actions. Prices read from Chainlink feeds on-chain, refreshed every 15 min; observedAt gives each snapshot's age and priceSource the resolver. Supply is totalSupply x ERC-8056 uiMultiplier — adjusted, not raw. Corporate actions read from the contract's ERC-8056 state every minute — the multiplier change itself; the registry is mirrored for history."
+    },
+    {
+      "url": "https://www.hoodgrow.com/api/agent/base/tokens",
+      "description": "HoodGrow — Base mainnet (chain 8453) B20 native-equity-token registry: verified on-chain metadata and a liveness signal (totalSupply()) for tokens that are currently PRE-LAUNCH."
+    },
+    {
+      "url": "https://www.hoodgrow.com/api/agent/markets",
+      "description": "HoodGrow — Robinhood Chain stock-token market movers: top gainers and losers by 24h price change, highest 24h swap volume, and deepest Uniswap V3 liquidity (TVL), ranked across the whole catalog."
+    },
+    {
+      "url": "https://www.hoodgrow.com/api/agent/defi/NVDA",
+      "description": "HoodGrow — every Morpho lending market and Uniswap V3 pool involving NVDA on Robinhood Chain. Morpho market and Uniswap V3 pool state is read on-chain and snapshotted every 15 minutes; responses carry the snapshot timestamp."
+    },
+    {
+      "url": "https://www.hoodgrow.com/api/agent/trades",
+      "description": "HoodGrow — recent large (whale) trades in Robinhood Chain stock-token Uniswap V3 pools: side (buy/sell), USD size, and transaction hash, newest first. Filter to a single token with ?symbol=."
+    },
+    {
+      "url": "https://www.hoodgrow.com/api/agent/holders/NVDA",
+      "description": "HoodGrow — holder count trend, 24h net supply change (mint/burn), and top-holder concentration for NVDA on Robinhood Chain. Holder data is explorer-sourced and refreshed every 4 hours; supply changes are derived from our own on-chain supply snapshots."
+    },
+    {
+      "url": "https://www.hoodgrow.com/api/corporate-actions",
+      "description": "HoodGrow — dedicated, filterable, paginated feed of Robinhood Chain corporate-action events (splits, dividends, oracle pauses), sourced from both on-chain detection and the official ledger."
+    },
+    {
+      "url": "https://www.hoodgrow.com/api/agent/token/COST",
+      "description": "HoodGrow — live price, corporate-action adjusted supply, and corporate-action history for COST on Robinhood Chain."
+    },
+    {
+      "url": "https://www.hoodgrow.com/api/agent/ping",
+      "description": "x402 test call ($0.001)."
+    }
+  ]
+}

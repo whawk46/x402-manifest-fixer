@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "faultcode-diagnostic-mcp.bowling-anthony.workers.dev",
+  "resources": [
+    {
+      "url": "https://faultcode-diagnostic-mcp.bowling-anthony.workers.dev/v1/device/catalog/dtcs/P0300",
+      "description": "FaultCode Diagnostics - lookup_dtc. $0.005 USDC per call. Source-attributed definitions for one P/B/C/U code, plus its real appearances in official manufacturer documents when no definition exists. Charged only when the catalog returns a definition or document evidence: a code it has neither of is answered in full and costs $0."
+    }
+  ]
+}

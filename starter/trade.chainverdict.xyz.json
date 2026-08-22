@@ -1,0 +1,39 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "trade.chainverdict.xyz",
+  "resources": [
+    {
+      "url": "https://trade.chainverdict.xyz/v1/gtin/validate",
+      "description": "Validate a GTIN-8/12/13/14, UPC-A or EAN-13: check digit, format, GTIN-14 normalization, packaging indicator."
+    },
+    {
+      "url": "https://trade.chainverdict.xyz/v1/hs/classify",
+      "description": "Deterministic HS-code triage: ranked candidate headings with official heading text, GRI note and broker disclaimer. Not a customs ruling."
+    },
+    {
+      "url": "https://trade.chainverdict.xyz/v1/imo/validate",
+      "description": "Validate an IMO ship identification number check digit."
+    },
+    {
+      "url": "https://trade.chainverdict.xyz/v1/container/validate",
+      "description": "Validate an ISO 6346 shipping container number (owner, category, serial, check digit)."
+    },
+    {
+      "url": "https://trade.chainverdict.xyz/v1/sscc/validate",
+      "description": "Validate an SSCC-18 logistics-unit serial shipping container code."
+    },
+    {
+      "url": "https://trade.chainverdict.xyz/v1/gtin/prefix",
+      "description": "Resolve a GTIN/EAN prefix to its GS1 Member Organisation (not country of origin)."
+    },
+    {
+      "url": "https://trade.chainverdict.xyz/v1/gtin/checkdigit",
+      "description": "Compute the GS1 check digit for a code body missing it."
+    },
+    {
+      "url": "https://trade.chainverdict.xyz/v1/gs1/decode",
+      "description": "Decode a GS1 element string (POST body { data })."
+    }
+  ]
+}

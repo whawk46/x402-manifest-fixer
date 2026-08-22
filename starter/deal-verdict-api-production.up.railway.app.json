@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "deal-verdict-api-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://deal-verdict-api-production.up.railway.app/verdict",
+      "description": "Resolve a plain-language product to canonical models, check every reachable retailer, and return a single deal verdict (deal / no deal / insufficient data) with a discount, confidence, and coverage report. Sells the answer, not the underlying listings. Human UI (connect a wallet in-browser): https://deal-verdict-frontend-production.up.railway.app"
+    }
+  ]
+}

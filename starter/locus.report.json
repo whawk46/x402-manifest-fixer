@@ -1,0 +1,35 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "locus.report",
+  "resources": [
+    {
+      "url": "https://locus.report/api/locus-parcel-lookup",
+      "description": "Parcel facts for an address. Perfect for: 'what is the lot size / acreage of this property', 'year built for an address', 'land use / zoning class of a parcel', 'look up parcel details'. Resolves a US street address to cited, PII-safe parcel facts (land use, acreage, year built, derived county/municipality) from wired official parcel sources. Owner/mailing never returned; assessed value, last sale, and tax are the paid place report. Charge-free when no parcel resolves."
+    },
+    {
+      "url": "https://locus.report/api/locus-electricity-context",
+      "description": "Mapped HIFLD transmission-line proximity plus EIA statewide residential price context. Perfect for: data-center, industrial, energy-development, and power-sensitive site screens before utility diligence. Returns up to 10 lines and state price context; never a service, capacity, reliability, tariff, interconnection, timing, or cost finding. Charge-free when the point is unresolved and when neither source answers."
+    },
+    {
+      "url": "https://locus.report/api/locus-nei-emissions-nearby",
+      "description": "EPA National Emissions Inventory facility and pollutant rows near an address. Perfect for: environmental diligence, facility emissions research, per-pollutant tonnage, and distance-ranked industrial context. Summary is bounded; detailLevel=full returns the large facility-pollutant matrix. Periodic inventory estimates only, not monitoring, ambient concentration, exposure, health evidence, or a burden score. Charge-free when no facility rows resolve."
+    },
+    {
+      "url": "https://locus.report/api/locus-pfas-occurrence",
+      "description": "EPA UCMR 5 PFAS results for an address or explicit PWSIDs. Perfect for: 'PFAS results for this address', 'was this utility tested for PFAS'. Addresses resolve via EPA service-area boundaries (point-in-polygon) with per-boundary provenance and confidence (provider vs machine-modeled); containment is evidence, not proof. Detection and non-detect counts stay distinct; lithium excluded. Entry-point samples, not a tap; no safe/unsafe verdict. Charge-free when out of coverage or unresolved."
+    },
+    {
+      "url": "https://locus.report/api/locus-wikipedia-place-context",
+      "description": "Geotagged English Wikipedia articles near a point. Perfect for: bounded community reference research with page, revision, distance, and license provenance. Geosearch is topic-agnostic and may return places, institutions, events, or people. Results are not official, property, resident, screening, or current-condition evidence. Charge-free when no article matches or the source is unavailable."
+    },
+    {
+      "url": "https://locus.report/api/locus-wikimedia-commons-area-context",
+      "description": "Geotagged Wikimedia Commons media with allowlisted item-level license metadata. Perfect for: reference research for a paid flyer, place narrative, landmark scan, or area-media shortlist. Returns source/image URLs plus license and attribution leads; Locus stores no pixels. Metadata is not reuse permission. Every item is nearby_context, never premises or condition proof. Charge-free when no eligible media returns or the source is unavailable."
+    },
+    {
+      "url": "https://locus.report/api/locus-workplace-employment-context",
+      "description": "Census LODES workplace jobs and broad industry sectors within a radius. Perfect for: commercial site selection, tenant diligence, daytime employment, and labor context near a selected site. Returns annual block-level aggregates only; excludes worker demographics. Jobs are not shoppers, visits, foot traffic, sales, demand, or a forecast. Charge-free when the state snapshot is missing, stale, unavailable, or no workplace block falls in the radius."
+    }
+  ]
+}

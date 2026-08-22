@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "fortune.fulinlabs.com",
+  "resources": [
+    {
+      "url": "https://fortune.fulinlabs.com/api/fortune",
+      "description": "Random fortune — fixed price, x402 exact"
+    }
+  ]
+}

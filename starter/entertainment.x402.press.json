@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "entertainment.x402.press",
+  "resources": [
+    {
+      "url": "https://entertainment.x402.press/entertainment/ask",
+      "description": "Multi-source AI entertainment reasoning via DeepSeek. Accepts any natural language question about movies, TV, music, games, or events."
+    }
+  ]
+}

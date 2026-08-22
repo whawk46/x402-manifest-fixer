@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "asn-lookup.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://asn-lookup.underscoredone.com/lookup",
+      "description": "Given an internet address (IP) or a network identification number (ASN), this tool returns who operates that piece of the internet: the network number, the owner's name, the country it's registered in, the regional registry that manages it, and the exact address range it belongs to."
+    }
+  ]
+}

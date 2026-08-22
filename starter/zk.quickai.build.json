@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "zk.quickai.build",
+  "resources": [
+    {
+      "url": "https://zk.quickai.build/prove",
+      "description": "Quick ZK Auth v1.0.1 — Semaphore ZK wallet ownership on Base plus USDC balance attestation at snapshot block (not ZK-hidden balance in v1). ERC-8004 bundles with x402 payment binding."
+    }
+  ]
+}

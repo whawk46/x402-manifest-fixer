@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "sitemap-url-extractor.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://sitemap-url-extractor.underscoredone.com/extract",
+      "description": "Give this API a link to any website's sitemap.xml file and it will fetch and parse it, returning every URL found inside. If the sitemap links to other sitemaps (called sitemap indexes), it will follow and extract those too. Each URL is returned with any extra information available, such as when the page was last updated and how often it changes. Useful for SEO audits, content inventories, broken link checks, and competitive research."
+    }
+  ]
+}

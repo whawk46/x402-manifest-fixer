@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "verify.clearsigned.com",
+  "resources": [
+    {
+      "url": "https://verify.clearsigned.com/verify/t1",
+      "description": "Clearsigned — the trust layer with no stake in the outcome. Submit {claim, evidence[]}, receive an Ed25519-SIGNED, evidence-bearing receipt (verify offline against GET /pubkey; every receipt is chained in the public ledger at GET /ledger/verify). Flat price, verdict-independent; refunds only for failure to deliver. Current mode is honestly labeled in each receipt."
+    }
+  ]
+}

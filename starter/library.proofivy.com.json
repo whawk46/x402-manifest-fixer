@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "library.proofivy.com",
+  "resources": [
+    {
+      "url": "https://library.proofivy.com/cryptoslate_list",
+      "description": "Get list of all available CryptoSlate content URLs with their last updated dates"
+    },
+    {
+      "url": "https://library.proofivy.com/cryptoslate",
+      "description": "Cryptoslate content lookup. Include the content URL or slug in the request using the content_url key"
+    },
+    {
+      "url": "https://library.proofivy.com/apple_devices/:content_proofivy_cid",
+      "description": "Content posted from an Apple device. Try it yourself by downloading Proofivy on the App Store"
+    }
+  ]
+}

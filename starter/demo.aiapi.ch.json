@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "demo.aiapi.ch",
+  "resources": [
+    {
+      "url": "https://demo.aiapi.ch/v1/analyze",
+      "description": "Financial Signal Intelligence for autonomous agents across crypto, stocks, ETFs, macro and global financial markets. Analyze financial news, market rumors, earnings announcements, central bank decisions, regulatory actions, exchange incidents, security events, stablecoins, macroeconomic events, fraud detection signals and market-moving developments to score financial risk, credibility and actionability."
+    },
+    {
+      "url": "https://demo.aiapi.ch/v2/analyze",
+      "description": "Financial Signal Intelligence for autonomous agents across crypto, stocks, ETFs, macro and global financial markets. Analyze financial news, market rumors, earnings announcements, central bank decisions, regulatory actions, exchange incidents, security events, stablecoins, macroeconomic events, fraud detection signals and market-moving developments to score financial risk, credibility and actionability."
+    }
+  ]
+}

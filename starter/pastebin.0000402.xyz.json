@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "pastebin.0000402.xyz",
+  "resources": [
+    {
+      "url": "https://pastebin.0000402.xyz/paste",
+      "description": "Pay $0.01 USDC to store up to 100 KB of text or code. Returns a token for free retrieval anytime via GET /paste/{token}. Network: Base Mainnet. Each request stores one text or code blob and returns a retrieval token, making it useful for notes, code snippets, logs, and debug-output sharing."
+    }
+  ]
+}

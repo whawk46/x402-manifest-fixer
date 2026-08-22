@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.pak-labs.com",
+  "resources": [
+    {
+      "url": "https://api.pak-labs.com/v1/catalysts",
+      "description": "Scored, classified catalyst events with direction, 8-factor score, and provenance."
+    }
+  ]
+}

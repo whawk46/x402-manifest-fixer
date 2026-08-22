@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "travelcheck-x402.fly.dev",
+  "resources": [
+    {
+      "url": "https://travelcheck-x402.fly.dev/v1/airport-risk",
+      "description": "Assess operational and weather disruption risk for a supported U.S. commercial airport near a requested time."
+    },
+    {
+      "url": "https://travelcheck-x402.fly.dev/v1/connection-risk",
+      "description": "Assess missed-connection risk from itinerary times, caller-supplied minimum connection time, and live airport conditions."
+    }
+  ]
+}

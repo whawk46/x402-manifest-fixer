@@ -1,0 +1,91 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "signalpulse.theaslangroupllc.com",
+  "resources": [
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/market",
+      "description": "SignalPulse cross-asset market scan (analysis tier) — institutional multi-layer read across FX majors, metals, and equity indices: regime, COT positioning, yield spreads, carry, real yields, VIX term structure, options gamma, and macro, with directional bias, confidence and reasoning. Executable entries/stops/targets and post-cost EV are premium-only."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/ask",
+      "description": "Ask any sports or prediction-market question in plain language — the front door to SignalPulse's deep engines. Returns a data-grounded answer with an explicit DATA-vs-OPINION split (every claim cites its stat), a betting or fantasy angle when relevant, and a pointer to the deepest named endpoint. Honest when a question is outside coverage — it routes, it doesn't bluff."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/crypto-lite",
+      "description": "Crypto market tick — BTC, ETH, SOL live price + 24h change, Fear & Greed index, and a deterministic regime verdict (RISK_ON / DRIFT_UP / CHOP / DRIFT_DOWN / RISK_OFF) in ONE $0.05 call. Built for agent loops that need a cheap market pulse every cycle; escalate to /api/scan/crypto ($2) for the institutional deep scan with technicals, derivatives and a directional call. 60s freshness, no LLM in the path."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/futures",
+      "description": "SignalPulse futures market scan (analysis tier) — institutional multi-layer read across the futures complex (equity index, rates, energy, metals, grains): COT positioning (disaggregated + financial), seasonality, term structure, and macro regime, with the best contract, directional bias, confidence and reasoning. Executable entries/stops/targets and post-cost EV are premium-only."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/signal/tokenized-eligibility",
+      "description": "Tokenized-stock / pre-IPO-perp jurisdiction-eligibility check for AI financial & advisor agents — given a user's ISO country and (optionally) a platform (Dinari, xStocks, Ondo Global Markets, Coinbase, Robinhood, Gemini), reports which tokenized-equity/pre-IPO-derivative products they can legally access: US-persons policy, named country exclusions, and confirmed-vs-uncertain launch geography, each with citations and an explicit as-of date. Not legal advice. Nobody else sells this."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/signal/tokenized",
+      "description": "Multi-platform tokenized-equity premium/discount intelligence for AI trading agents — 24/7 on-chain tokenized stocks (xStocks NVDAx, Ondo Global Markets NVDAon, Dinari dShares where readable) vs the underlying share: premium/discount in bps per platform, cross-platform spread when 2+ platforms trade the same name, US session state, on-chain liquidity, and a mean-reversion read. Loud about platforms with no live public price. Executable arbitrage (legs, entry/exit, net capture) is premium-only."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/signal/tokenization-radar",
+      "description": "Equity tokenization radar for AI financial & advisor agents — what is going on-chain and when: tokenization status for any US ticker (live / pending / none), on-chain dividend handling, and forward tokenization catalysts (new tokenized-stock listings, RWA issuance, DTCC pilots). The cheap top-of-funnel read for agents tracking tokenized equities."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/crypto",
+      "description": "SignalPulse crypto market scan (analysis tier) — institutional multi-layer read of BTC/ETH and the top-25: regime, market breadth, on-chain cycle, derivatives positioning, funding extremes, liquidation context, with directional bias, confidence and reasoning. Executable entries/stops/targets and post-cost EV are premium-only."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/signal/pre-ipo",
+      "description": "Pre-IPO intelligence for AI financial & trading agents — any private company, with live perp data (mark price, funding, open interest) where an active pre-IPO perp market exists, incl. the names in Coinbase 2026-06-16 launch (SpaceX, OpenAI, Anthropic). Synthesizes last private valuation, funding history, comp-implied range, perp-implied valuation vs private marks, mirror-token awareness, IPO timing, catalysts and risks into a decision-ready read. Executable perp trade is premium-only."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/signal/equities",
+      "description": "SignalPulse equities scan (analysis tier) — institutional single-name read for any US ticker: dealer-gamma regime, VWAP/ORB/momentum, short interest and borrow, options skew/VRP, fundamentals, earnings drift, sector relative strength, insider and macro tide, with directional signal, confidence, the primary edge and full rationale. The exact executable trade plan (entry, stop, target, sizing) is premium-only."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/event",
+      "description": "SignalPulse economic-event scan (analysis tier) — historical-reaction study for a scheduled macro release (NFP, CPI, FOMC, etc.): how the affected FX pairs have moved after similar surprises, the surprise read, macro context, and which pair has the cleanest reaction profile, with directional bias, confidence and reasoning. Exact executable entry/stop/target levels are premium-only."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/predmarket",
+      "description": "Calibrated superforecaster read of prediction markets across Polymarket, Manifold and PredictIt: cross-venue divergence, order-book/whale flow, base-rate priors, and for sports the de-vigged sportsbook consensus plus proprietary team-strength and weather engines. Full analysis, probabilities, edge and commentary on every mispriced market — props included."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/golf",
+      "description": "Whole-field golf scan for AI betting, fantasy & research agents — reads the ENTIRE tournament field (PGA ShotLink strokes-gained + ESPN) and surfaces the single highest-EV play across every bet type (outright / each-way / top-N / matchup / make-cut / first-round-leader), led by course-fit + the tee-time weather wave. Named golfers: use /api/scan/compare or /h2h."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/forex",
+      "description": "SignalPulse forex market scan (analysis tier) — institutional multi-layer read across the 28 majors and crosses: rate differentials, COT positioning, carry, policy divergence, yield spreads, and cross-asset macro regime, with directional bias, confidence and reasoning. Executable entries/stops/targets and post-cost EV are premium-only."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/player",
+      "description": "Single-player outlook for AI betting, fantasy & research agents — a stat-projected read of one named player: data-backed prop projections, the fantasy projection (points, floor/ceiling, start-worthiness) and the form/role/matchup read. Covers golf strokes-gained + course fit and NFL/MLB/NBA usage/role/matchup."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/fantasy",
+      "description": "DraftKings MLB & NFL DFS lineup optimizer — $50K salary-cap lineup built from live DK slates, Statcast xwOBA/xERA, confirmed MLB batting orders, Bovada run-environment overlay and GPP stacking strategy. Fantasy start/sit, waiver pickups and trade verdicts for NFL and MLB — the sports we grade projected-vs-actual on our public track record (golf analysis-only). Projections are baseline-anchored: empirical trailing baseline + named adjustment, floor/ceiling from real per-game distributions."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/compare",
+      "description": "Compare & rank 2+ named players against each other for AI betting, fantasy & research agents — golf 3-balls, DFS player pools, season-long start/sit, 'best of these'. Returns a ranked list (each with a projection + the case) plus the single best betting play AND the best fantasy/DFS value, off the deep engine: golf strokes-gained + course fit; tennis surface/form; combat style."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/h2h",
+      "description": "Player head-to-head for AI betting & research agents — a targeted read of TWO named players against each other in any matchup sport (golf, tennis, MMA …). Returns the betting matchup verdict (favoured side, EV, edge) AND the fantasy head-to-head plus data-backed props. Deep engine: golf strokes-gained + course fit + history; tennis surface/form; combat style matchup."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/racing",
+      "description": "Today's GB/IRE horse-racing card scanned for AI betting & research agents — the single highest expected-value pick plus value selections across every race. Fires the full engine: RPR/Topspeed, draw bias, pace, going×form and trainer/jockey records; live exchange/forecast prices for genuine EV. Sizing, alerts & the tracked record are premium."
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/game",
+      "description": "MLB & NFL game picks with Statcast-grade edge — MLB: Baseball Savant xERA luck regression, confirmed batting orders, xwOBA batter splits, park factors + Bovada run totals. NFL: EPA/nflverse participation + weather + injuries. De-vigged Bovada/FanDuel/Pinnacle consensus across MLB, NFL, NBA, soccer, tennis and MMA. Returns 3 ranked +EV plays with full reasoning. Verifiable track record: https://signalpulse.theaslangroupllc.com/track-record"
+    },
+    {
+      "url": "https://signalpulse.theaslangroupllc.com/api/scan/cmi",
+      "description": "SignalPulse CMI scanner (analysis tier) — one institutional multi-layer read across the commodities/metals/indices CFD group: real yields, EIA inventories, futures term structure, COT positioning, VIX structure, gamma exposure, breadth, session eligibility — with directional bias, confidence and reasoning. Executable entries/stops/targets are premium-only."
+    }
+  ]
+}

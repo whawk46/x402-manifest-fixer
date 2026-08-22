@@ -1,0 +1,95 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "gateway.stride20k.com",
+  "resources": [
+    {
+      "url": "https://gateway.stride20k.com/v1/category-breakdown",
+      "description": "Current x402 ecosystem composition: services per category (Agentic.Market taxonomy: Data, Inference, Search, Infra, Media, Social, Trading, Travel...), each with catalog share and 7-day delta, from our collector's latest observation run (~3x/day since 2026-07-06). Shows where x402 supply is concentrating and which categories are growing. Deterministic read from archived observations; no upstream calls at request time. Free snapshot: /v1/market-pulse."
+    },
+    {
+      "url": "https://gateway.stride20k.com/weather/us",
+      "description": "US weather forecast API: official National Weather Service forecast for any US lat/lon — next four periods (~48 hours, day/night): temperature, wind, short and detailed forecast text, plus resolved place name. UNITED STATES COVERAGE ONLY; points outside NWS coverage return an unpaid 404. Public-domain government data. Use for logistics, travel, and event-planning agents. Cached up to 10 minutes; nearby coordinates (within ~0.1°/11km) may share a cached forecast."
+    },
+    {
+      "url": "https://gateway.stride20k.com/v1/preflight",
+      "description": "Spend-guard preflight: deterministic 0-100 score for any x402 resource URL before an agent pays it. One SSRF-guarded probe of the live 402 (terms decode, payTo, price sanity) plus origin /.well-known/x402.json plus our collector's Bazaar presence and observed age. Rubric: start 50; +15 valid 402; +10 terms decode; +5 payTo; +5 price<=$5 (-10 above); +10 catalog; +15 Bazaar-listed; +10 age>=7d (+5 >=1d); -20 unreachable. Raw signals in every response; auditable. Not an endorsement."
+    },
+    {
+      "url": "https://gateway.stride20k.com/v1/run",
+      "description": "LLM inference over x402: POST a prompt (JSON body), get raw model output. Flat $0.05 per call (or metered pay-actual-usage when the upto scheme is on); every response prints tokens, upstream cost, margin, and the charge. Model: Anthropic Claude Haiku 4.5 via OpenRouter — no API key, bring a wallet. AI lane declared (aiUse: model-output): model output sold as model output, no system prompt injected. We never store prompts or completions; per-call and daily spend caps enforced."
+    },
+    {
+      "url": "https://gateway.stride20k.com/v1/endpoint-scorecard",
+      "description": "Due-diligence scorecard for a single x402 resource before an agent pays it: when we first observed it in public catalogs (CDP Bazaar, Agentic.Market), how consistently it has stayed listed, when it appeared as a new listing, and its recent observation history — from our collector archive (~3x/day since 2026-07-06). Presence and persistence in public catalogs, not an endorsement. Deterministic; public-source data only; no internal transaction data. Pass resource=<full URL as listed>."
+    },
+    {
+      "url": "https://gateway.stride20k.com/v1/market-trend",
+      "description": "x402 market intelligence time series: how many services/resources are listed per category (Agentic.Market taxonomy) or in total (CDP Bazaar ~23k resources, Agentic.Market ~1.5k services), sampled ~3x/day by our collector since 2026-07-06. Query category=Data|Inference|Search|... or category=all for catalog totals, days=1-30 window. Deterministic reads from our archived observation history; no upstream calls at request time. Free snapshot: /v1/market-pulse."
+    },
+    {
+      "url": "https://gateway.stride20k.com/risk/token/:chain/:address",
+      "description": "Token risk score API: deterministic, auditable 0-100 rug-check for any ERC-20 on Ethereum, Base, or Polygon. Fans out to on-chain reads (bytecode, symbol, decimals, supply), DefiLlama price + confidence, and Etherscan source verification and age. Returns score, flags[], and every rubric input. Published rubric, no AI: start 50; no bytecode=0; +15 price (+10 confidence>=0.9); +15 verified source (-10 unverified); -10 zero supply; -5 odd decimals; +10 age>=180d, -15 age<7d. NOT financial advice."
+    },
+    {
+      "url": "https://gateway.stride20k.com/news/tech-pulse",
+      "description": "Tech news API: the current Hacker News front page — 30 ranked stories as normalized JSON: rank, story id, title, outbound article URL (or HN discussion link for self-posts), points, author, comment count, ISO 8601 time. Single upstream call via the official Algolia HN API. Use for tech trend detection, topic monitoring, news agents, and content-pipeline seeding. Cached up to 2 minutes."
+    },
+    {
+      "url": "https://gateway.stride20k.com/web/extract",
+      "description": "Web scraping API: fetch any public web page and get its readable content as clean markdown — title, author, canonical URL, boilerplate stripped. Honest User-Agent, robots.txt honored (explicit Disallow returns an unpaid 403), private/internal targets refused, at most 3 safety-revalidated redirects, 1MB input / 100k character output caps. HTML pages only. Use for research agents, content extraction, summarization pipelines, and RAG ingestion. Cached up to 5 minutes per URL."
+    },
+    {
+      "url": "https://gateway.stride20k.com/email/validate/:email",
+      "description": "Email validation API: RFC-style syntax check plus live MX-record lookup (with RFC 5321 A-record fallback) over DNS-over-HTTPS — no third-party service, nothing stored. Returns parsed domain, sorted MX hosts, and a 'deliverable' flag meaning DNS will accept mail for the domain — it does NOT verify the mailbox exists. Use for lead cleaning, signup validation, and contact verification by agents. Cached up to 1 hour per address."
+    },
+    {
+      "url": "https://gateway.stride20k.com/domains/whois/:domain",
+      "description": "Domain WHOIS/RDAP lookup API: registration data for any domain from the authoritative registry's RDAP server, normalized: registration/expiry/update dates, registrar, EPP status codes, nameservers, and DNSSEC. Works for all gTLDs and most ccTLDs. Unregistered or RDAP-less domains return an unpaid 404. Use for domain availability checks, ownership research, expiry monitoring, and security screening by agents. Cached up to 24 hours."
+    },
+    {
+      "url": "https://gateway.stride20k.com/rates/us-treasury",
+      "description": "US Treasury yield curve API: the latest Daily Treasury Par Yield Curve — yields in percent for 13 maturities from 1 month to 30 years, plus curve date, straight from the US Department of the Treasury. Public-domain government data, published each business day. Use for interest rate benchmarks, bond analysis, discount rates, and macro signals. Slow upstream (~10s) so served from a 6-hour cache; meta.fetchedAt shows when the curve was retrieved."
+    },
+    {
+      "url": "https://gateway.stride20k.com/crypto/gas/:chain",
+      "description": "EVM gas price API: current gas fees for Ethereum, Base, and Polygon — node-reported gas price plus EIP-1559 estimates from the last 5 blocks: next base fee and 25th/50th/75th-percentile priority fees, in gwei. Read directly from public JSON-RPC nodes with automatic fallbacks. Use for transaction cost estimation, fee optimization, and timing on-chain actions. Cached up to 15 seconds."
+    },
+    {
+      "url": "https://gateway.stride20k.com/report/domain/:domain",
+      "description": "Domain due-diligence report API: one call composes WHOIS/RDAP registration data, DNS records (A, MX, TXT), live email deliverability, and homepage title + excerpt into a single dossier with deterministic risk flags (new registration, expiring soon, no DNSSEC, no mail service, unreachable homepage). Partial-success per section — charged only when the core identity sections resolve. Use for vendor vetting, KYC screening, phishing triage, and onboarding agents. Cached up to 1 hour."
+    },
+    {
+      "url": "https://gateway.stride20k.com/dev/pypi/:packageName",
+      "description": "PyPI package health API: dependency-hygiene facts from the official PyPI JSON API — latest version, upload time, total releases, yank status, declared dependency count, requires-python constraint, license, summary, and weekly downloads (pypistats). Names are PEP 503-normalized (dots/underscores/hyphens equivalent). Use for auditing requirements.txt and pyproject.toml, supply-chain security checks, and version freshness agents. Cached up to 1 hour per package."
+    },
+    {
+      "url": "https://gateway.stride20k.com/dev/npm/:packageName",
+      "description": "npm package health API: dependency-hygiene facts straight from the npm registry — latest version, all dist-tags, last-modified timestamp, total published versions, deprecation status with message, runtime dependency count, and weekly downloads. For scoped packages, URL-encode the slash in the name. Use for dependency auditing, supply-chain security checks, version freshness, and update agents maintaining package.json. Cached up to 1 hour per package."
+    },
+    {
+      "url": "https://gateway.stride20k.com/knowledge/wiki/:title",
+      "description": "Wikipedia summary API: the lead summary of any English Wikipedia article — title, one-line description, extract paragraph, thumbnail, canonical URL, and Wikidata item id; disambiguation pages labeled via 'kind'. Titles case-sensitive; spaces or underscores accepted. Content CC BY-SA 4.0 with attribution in meta.attribution of every response. Use for knowledge lookup, entity enrichment, and fact grounding by agents. Cached up to 24 hours."
+    },
+    {
+      "url": "https://gateway.stride20k.com/network/dns/:type/:name",
+      "description": "DNS lookup API: resolve any DNS record via Cloudflare's 1.1.1.1 DNS-over-HTTPS resolver with DNSSEC validation status. Types A, AAAA, CNAME, MX, NS, TXT, SOA, CAA, SRV, PTR; returns the full answer section (name, type code, TTL, data). NXDOMAIN returns an unpaid 404. Use for infrastructure checks, email deliverability, domain verification, and security tooling by agents. Cached up to 5 minutes."
+    },
+    {
+      "url": "https://gateway.stride20k.com/dex/pool/:chain/:poolAddress",
+      "description": "On-chain DEX pool data API: reads Uniswap v2/v3-compatible liquidity pools directly from Ethereum, Base, or Polygon via JSON-RPC — no third-party data vendor. Auto-detects pool type; returns token addresses, symbols, decimals, spot price both directions, v3 fee tier, sqrtPriceX96 and in-range liquidity, or v2 decimal-adjusted reserves. For price discovery, liquidity checks, and trading agents needing trustless pair state at the latest block. Cached up to 30 seconds."
+    },
+    {
+      "url": "https://gateway.stride20k.com/defi/tvl/:protocol",
+      "description": "DeFi TVL API: current total value locked in USD for any DeFi protocol by DefiLlama slug ('aave', 'uniswap', 'lido' — full list at defillama.com/protocols). Aggregates across every chain the protocol deploys on. Use for protocol health checks, DeFi rankings, risk screening, and market research by autonomous agents. Slugs are lowercase. Cached up to 5 minutes; freshness reported in meta.fetchedAt."
+    },
+    {
+      "url": "https://gateway.stride20k.com/crypto/price/:coinId",
+      "description": "Live cryptocurrency price API: current USD price for any coin by CoinGecko id ('bitcoin', 'ethereum') or DefiLlama id ('coingecko:bitcoin', 'chain:address' for tokens by contract address). Sourced from DefiLlama's aggregated market feed with the source's own confidence score (0-1) and the unix timestamp of the observation. Ideal for agents needing spot prices, portfolio valuation, or price checks before on-chain actions. Cached up to 60 seconds; freshness in meta.fetchedAt."
+    },
+    {
+      "url": "https://gateway.stride20k.com/fx/:base/:quote",
+      "description": "Foreign exchange rate API: official ECB reference rate for any fiat currency pair (USD/EUR, GBP/JPY — ~30 major ISO 4217 currencies) via the open-source Frankfurter API. Published once per business day around 16:00 CET — a daily reference rate for settlement and normalization, not a live trading feed. Use for currency conversion, pricing normalization, and financial reporting by agents. Cached up to 1 hour."
+    }
+  ]
+}

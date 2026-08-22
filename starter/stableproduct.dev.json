@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "stableproduct.dev",
+  "resources": [
+    {
+      "url": "https://stableproduct.dev/api/wirecutter/reviews",
+      "description": "List Wirecutter review URLs from the public Wirecutter review sitemaps. Defaults to recommendation-like review pages."
+    },
+    {
+      "url": "https://stableproduct.dev/api/channel3/brands/list",
+      "description": "List Channel3 brands with cursor pagination."
+    },
+    {
+      "url": "https://stableproduct.dev/api/channel3/v0/list-brands",
+      "description": "Legacy Channel3 brand list with cursor pagination."
+    },
+    {
+      "url": "https://stableproduct.dev/api/channel3/price-tracking/subscriptions",
+      "description": "List active Channel3 price tracking subscriptions."
+    },
+    {
+      "url": "https://stableproduct.dev/api/channel3/health",
+      "description": "Channel3 health check passthrough."
+    },
+    {
+      "url": "https://stableproduct.dev/api/channel3/categories/list",
+      "description": "List Channel3 categories with page pagination."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.trustsource.cc",
+  "resources": [
+    {
+      "url": "https://api.trustsource.cc/sslcheck",
+      "description": "Check whether a domain's TLS/SSL certificate is valid, trusted, and not expiring before connecting to it. Performs a live handshake and returns a 0–100 score and tier (VALID/WEAK/EXPIRING/EXPIRED/UNTRUSTED/INVALID) with chain trust, days-to-expiry, signature algorithm, TLS version, and cipher quality. Use before submitting credentials, posting to a webhook, or following a payment link, to catch expired, self-signed, or MITM-risk certificates."
+    },
+    {
+      "url": "https://api.trustsource.cc/headers",
+      "description": "Audit a site's HTTP security headers before embedding, scraping, or trusting it. Returns an A+ to F grade and 0–100 score with structured analysis of HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, and Cross-Origin headers, plus server-header disclosure. A defense-in-depth signal for agents reviewing a site's security posture — not a vulnerability scan."
+    },
+    {
+      "url": "https://api.trustsource.cc/trustscore",
+      "description": "Verify whether a domain is legitimate and safe before transacting with it. Returns a 0–100 trust score and tier (TRUSTED/MODERATE/CAUTION/HIGH_RISK) derived from WHOIS domain age, TLD risk, DNS presence, and registrar reputation. Use to vet an unfamiliar URL, redirect target, or payment destination before sending USDC or trusting its content."
+    },
+    {
+      "url": "https://api.trustsource.cc/robots",
+      "description": "robots.txt and AI crawler policy check. Tells an agent whether a website permits crawling and whether it blocks AI bots such as GPTBot, ClaudeBot, Google-Extended, PerplexityBot and CCBot, before scraping, RAG ingestion, training data collection or archiving. Parses robots.txt and returns a crawl-policy tier with per-bot allow and disallow rules and sitemap URLs."
+    },
+    {
+      "url": "https://api.trustsource.cc/emailtrust",
+      "description": "Grade a domain's email-authentication posture (SPF, DKIM, DMARC, BIMI, MX) and tell an agent whether the sender can be spoofed. Returns an A–F grade, a `spoofable` flag, the parsed DMARC policy and SPF qualifier, and specific misconfiguration issues. Use to judge a sender domain before trusting an email, or to confirm your own outreach domain won't be silently rejected by Gmail/Yahoo/Microsoft's 2026 authentication rules."
+    },
+    {
+      "url": "https://api.trustsource.cc/urlcheck",
+      "description": "Get a single CLEAR / REVIEW / BLOCK safety verdict on any URL before an agent clicks, fetches, submits data to, or transacts with it. Fuses domain trust (WHOIS age, TLD risk, DNS presence, registrar), a live TLS certificate check, and typosquat/lookalike-brand detection into one graded 0–100 answer with human-readable reasons — the go/no-go an agent can gate on instead of running and interpreting several separate checks itself."
+    },
+    {
+      "url": "https://api.trustsource.cc/safefetch",
+      "description": "Fetch a URL safely and get back sanitized, agent-ready page text plus a prompt-injection verdict (SAFE / REVIEW / BLOCK). Detects instructions hidden in markup, invisible Unicode, homoglyph and encoded payloads, delimiter spoofing and data-exfiltration bait — so an agent never ingests hostile content. Use before feeding any fetched page into an LLM."
+    }
+  ]
+}

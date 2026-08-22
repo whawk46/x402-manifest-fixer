@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.capminal.ai",
+  "resources": [
+    {
+      "url": "https://www.capminal.ai/api/x402/research",
+      "description": "AI-powered Token Deep Research API"
+    }
+  ]
+}

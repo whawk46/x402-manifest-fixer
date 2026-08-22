@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "taskfleet.net",
+  "resources": [
+    {
+      "url": "https://taskfleet.net/wallet-intel",
+      "description": "On-chain wallet analysis for any Base (EVM) address: native + token balances, transaction history summary, top counterparties, and rule-based activity classification. Guaranteed-valid JSON from free public RPC + Basescan. Input: { address, explain? (bool: add a plain-English narrative) }."
+    },
+    {
+      "url": "https://taskfleet.net/search",
+      "description": "Web search API — search the web and get clean ranked JSON results (title, url, snippet) via Serper with automatic Brave failover and cross-provider dedup. Optional cited answer. Input: { query, num? (1-20), answer? (bool) }."
+    },
+    {
+      "url": "https://taskfleet.net/scrape",
+      "description": "Scrape any website to clean Markdown, text, or structured JSON. Renders JavaScript/SPA pages with headless Chromium (captures content raw-fetch scrapers miss), handles PDFs, optional schema-driven extraction. Input: { url, format? (markdown|text|html), links? (bool), fields? OR schema? }."
+    }
+  ]
+}

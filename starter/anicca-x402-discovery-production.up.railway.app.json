@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "anicca-x402-discovery-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://anicca-x402-discovery-production.up.railway.app/rent-a-box",
+      "description": "Rent a GPU container for up to 60 minutes and get a public URL. You supply the image; we pay the market. No signup, no Solana wallet, no NOS token — pay USDC on Base and get a URL back in one call."
+    },
+    {
+      "url": "https://anicca-x402-discovery-production.up.railway.app/prompt-sanitizer",
+      "description": "Deterministic PII sanitizer for AI agents — masks emails, phones, SSNs, cards, IPs."
+    }
+  ]
+}

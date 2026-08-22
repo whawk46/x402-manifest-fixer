@@ -1,0 +1,59 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "cdo-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/solutions/supplier-approval",
+      "description": "Approve or hold a UK supplier before onboarding by combining Companies House identity/status with UK Sanctions List screening under a declared policy. Use for vendor onboarding; the decision is source-conditioned and never a universal approval."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/solutions/company-check",
+      "description": "Check a UK company by resolving its Companies House identity and verifying current legal-status and insolvency observations in one paid call. Use before onboarding or contracting. It reports filing limits and does not promise universal good standing."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/payments/authorize",
+      "description": "Authorize one bounded UK company payment by composing supplier, invoice, payee and optional vendor-change gates. Use immediately before releasing a payment. Any incomplete, unavailable or mismatched gate returns HOLD or DENY, not approval."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/vendors/authorize-payment-detail-change",
+      "description": "Authorize one UK vendor payment-detail change using current supplier controls, an existing authorization reference and a fresh independent challenge. Use before updating a payee record. The result is expiring and single-use; raw bank data is not accepted."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/suppliers/approve",
+      "description": "Screen a UK supplier before onboarding using Companies House status and the UK Sanctions List under the declared policy. Use for a bounded vendor decision. APPROVE is policy- and source-scoped, never a universal compliance approval."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/payees/match-business",
+      "description": "Evaluate a time-bound caller or provider payee-binding control for a UK company. Use before paying a known supplier. It accepts opaque fingerprints only and does not independently prove bank-account ownership; missing evidence returns REVIEW."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/invoices/match-company",
+      "description": "Compare UK invoice identity fields with Companies House before payment. Use to detect company-name or registered-postcode mismatches. This does not prove invoice authenticity or VAT registration, and UNKNOWN fields remain explicit."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/companies/legal-status",
+      "description": "Verify the current Companies House legal status, overdue filing indicators and recorded insolvency observations for a UK company. Use before onboarding or a material decision; the result is source-scoped, not a universal good-standing certificate."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/entities/resolve",
+      "description": "Resolve a UK Companies House entity before onboarding or contracting. Use a company number, or a legal name with optional postcode, to obtain source-scoped identity candidates. Ambiguity returns REVIEW; it does not imply good standing."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/solutions/vendor-change-continuous-authorization",
+      "description": "Authorize a scoped UK vendor payment-detail change with current company/sanctions controls and a fresh independent challenge. Use before changing the payee, then continue monitoring through separate technical controls. The authorization is expiring and single-use."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/solutions/payment-authorization",
+      "description": "Authorize one UK business payment by composing supplier, invoice and payee controls into a single decision and settlement. Use immediately before payment release. Missing or source-conditioned evidence produces HOLD; the token is bounded and single-use."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/gb/solutions/invoice-payee-verification",
+      "description": "Verify UK invoice-company consistency and a time-bound payee-binding control in one call before payment. Use when the invoice and payee are already known. It does not prove invoice authenticity or bank-account ownership."
+    },
+    {
+      "url": "https://cdo-production.up.railway.app/v1/agent/refresh",
+      "description": "Company Intelligence Reassessment — re-runs the FULL decision for a prior subject/passport, reports which domains changed vs unchanged, and issues a fresh signed receipt (and passport if still approving). Full recomputation at a flat price (not an incremental/delta engine). CNPJ only."
+    }
+  ]
+}

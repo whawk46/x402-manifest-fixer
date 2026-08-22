@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "depscout.vercel.app",
+  "resources": [
+    {
+      "url": "https://depscout.vercel.app/risk/package",
+      "description": "Check an npm package, PyPI package, or GitHub repo and return a DepScout install verdict."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "compliancecheck-x402.fly.dev",
+  "resources": [
+    {
+      "url": "https://compliancecheck-x402.fly.dev/v1/ai-regulatory-scan",
+      "description": "Deterministic, source-cited regulatory applicability and deadline checks for AI systems and automated decision tools."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "monitor.memoryapi.org",
+  "resources": [
+    {
+      "url": "https://monitor.memoryapi.org/x402/monitor/activity",
+      "description": "x402 API activity stats — top endpoints by paid calls, trend data, and unique payer counts from memoryapi.org nginx logs."
+    }
+  ]
+}

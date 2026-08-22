@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402endpoint-utiwoa54hq-uc.a.run.app",
+  "resources": [
+    {
+      "url": "https://x402endpoint-utiwoa54hq-uc.a.run.app/get-card",
+      "description": "Get a prepaid card for use inside the United States"
+    },
+    {
+      "url": "https://x402endpoint-utiwoa54hq-uc.a.run.app/auth",
+      "description": "Get a Firebase ID token for authenticating with the callable APIs"
+    }
+  ]
+}

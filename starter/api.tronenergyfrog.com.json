@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.tronenergyfrog.com",
+  "resources": [
+    {
+      "url": "https://api.tronenergyfrog.com/v1/x402/rentals/:quote_id",
+      "description": "Settle an unexpired TRON Energy quote with USDC. Create the quote first at POST /v1/x402/quotes; no account or API key is required."
+    }
+  ]
+}

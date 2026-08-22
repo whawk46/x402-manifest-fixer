@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "pulse.chainverdict.xyz",
+  "resources": [
+    {
+      "url": "https://pulse.chainverdict.xyz/v1/attest",
+      "description": "Fresh probe of your endpoint plus an Ed25519-signed quality attestation (compact JWS, 24h TTL) you can embed in your 402 responses to raise buyer conversion."
+    },
+    {
+      "url": "https://pulse.chainverdict.xyz/v1/feed",
+      "description": "Router-grade bulk quality feed: every tracked endpoint with score, grade, availability, latency percentiles, price, uptime streak and freshness in one pull. Designed for routers/aggregators to ingest."
+    },
+    {
+      "url": "https://pulse.chainverdict.xyz/v1/rankings",
+      "description": "Ranked directory of x402 endpoints by measured live quality (not by on-chain volume). Includes score, grade, latency and pricing per endpoint."
+    },
+    {
+      "url": "https://pulse.chainverdict.xyz/v1/verdict",
+      "description": "Live quality verdict for any x402 endpoint: availability, latency percentiles, 402-offer conformance, price-drift and payTo-stability flags. Deterministic and re-verifiable."
+    }
+  ]
+}

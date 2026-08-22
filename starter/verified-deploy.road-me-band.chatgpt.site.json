@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "verified-deploy.road-me-band.chatgpt.site",
+  "resources": [
+    {
+      "url": "https://verified-deploy.road-me-band.chatgpt.site/api/deploy",
+      "description": "Use when an agent needs to publish a multi-file HTML/CSS/JS site to a public URL without an account or API key. It verifies index.html, linked assets, and required selectors before publishing. Intro price is 0.01 USDC per successful publish until August 16, 2026 or 3 third-party payers. Failed checks neither publish nor settle payment. Successful releases are versioned for rollback."
+    }
+  ]
+}

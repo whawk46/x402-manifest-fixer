@@ -1,0 +1,15 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "openapi.aisa.one",
+  "resources": [
+    {
+      "url": "https://openapi.aisa.one/resource",
+      "description": "Access to protected resource"
+    },
+    {
+      "url": "https://openapi.aisa.one/res",
+      "description": "Access to protected resource"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "byshovel.com",
+  "resources": [
+    {
+      "url": "https://byshovel.com/api/x402/quote",
+      "description": "Submit a project to ByShovel for a custom research / data-acquisition quote. Lands in the same intake queue as the web form."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.tradesnack.com",
+  "resources": [
+    {
+      "url": "https://x402.tradesnack.com/ta",
+      "description": "Multi-indicator technical analysis (SMA/EMA crosses, Bollinger, RSI, candlestick patterns, support/resistance, trendlines, experimental Elliott Wave) for any crypto pair."
+    }
+  ]
+}

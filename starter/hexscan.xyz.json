@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "hexscan.xyz",
+  "resources": [
+    {
+      "url": "https://hexscan.xyz/scan",
+      "description": "Smart contract risk triage - honeypot detection, tax analysis, source verification. Not an audit."
+    }
+  ]
+}

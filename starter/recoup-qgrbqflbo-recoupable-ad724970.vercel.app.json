@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "recoup-qgrbqflbo-recoupable-ad724970.vercel.app",
+  "resources": [
+    {
+      "url": "https://recoup-qgrbqflbo-recoupable-ad724970.vercel.app/api/image/generate",
+      "description": "Access to protected content"
+    }
+  ]
+}

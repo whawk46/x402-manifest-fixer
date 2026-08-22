@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-repohealth-poc.theliminalguy.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-repohealth-poc.theliminalguy.workers.dev/repo-health/facebook/react",
+      "description": "Computed repo maintenance/abandonment verdict (score + reasoning) from live GitHub data"
+    }
+  ]
+}

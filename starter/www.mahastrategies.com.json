@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.mahastrategies.com",
+  "resources": [
+    {
+      "url": "https://www.mahastrategies.com/api/v1/compress",
+      "description": "Compress long documents and RAG inputs into token-budgeted, deduplicated context packs with source-linked provenance. Returns original and compiled token counts, so the saving is verifiable. Net-positive above N = fee / (r x p) tokens: r your reduction, p your input price. Extractive and budget-bound, so check includedPassages before relying on it. Ranks Latin, Cyrillic, Greek, Arabic and CJK; CJK coarser (bigrams). Not for tabular or heavily-structured payloads."
+    },
+    {
+      "url": "https://www.mahastrategies.com/api/v1/compress/evaluate",
+      "description": "Compile 1-8 documents into a token-budgeted context pack, then measure exact retention of 1-32 caller-labelled evidence spans. Returns the pack, source-linked passages, input and output hashes, original and compiled token estimates, tokensSaved, source coverage, and requiredEvidenceRetentionPercent. Retention is exact span matching only: not accuracy, answer quality, verification, or hallucination prevention. Extractive and budget-bound. Request content is not stored."
+    }
+  ]
+}

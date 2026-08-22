@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "box.guardianhobgoblin.com",
+  "resources": [
+    {
+      "url": "https://box.guardianhobgoblin.com/card/:product_id",
+      "description": "TCGPlayer product board the Box has actually touched. Does not advise."
+    }
+  ]
+}

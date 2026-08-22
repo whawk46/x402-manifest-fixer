@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "pro-api.coinmarketcap.com",
+  "resources": [
+    {
+      "url": "https://pro-api.coinmarketcap.com/x402/v3/cryptocurrency/quotes/latest",
+      "description": "Get the latest market quotes for one or more cryptocurrencies."
+    },
+    {
+      "url": "https://pro-api.coinmarketcap.com/x402/v1/dex/search",
+      "description": "Search for DEX tokens by keyword (name, symbol, or contract address)."
+    },
+    {
+      "url": "https://pro-api.coinmarketcap.com/x402/v4/dex/pairs/quotes/latest",
+      "description": "Get the latest quotes and trading data for specific DEX trading pairs."
+    }
+  ]
+}

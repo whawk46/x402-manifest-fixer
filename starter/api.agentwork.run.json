@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.agentwork.run",
+  "resources": [
+    {
+      "url": "https://api.agentwork.run/v1/jobs/job.quote",
+      "description": "Paid quote for a bounded custom job. Returns accept, map_to_existing, or reject plus a fixed run SKU and price. One counter then stop. We decline if we cannot make money."
+    },
+    {
+      "url": "https://api.agentwork.run/v1/jobs/web.brief",
+      "description": "Public URL research brief: 8 bullets plus caveats. Use when an agent needs a fast read of one page before acting."
+    },
+    {
+      "url": "https://api.agentwork.run/v1/jobs/host.report",
+      "description": "No-LLM host smoke: disk, load, memory, open_for_work. Cheapest settle test on dual-rail USDC."
+    },
+    {
+      "url": "https://api.agentwork.run/v1/jobs/code.fix_from_log",
+      "description": "CI/error log triage: paste a failing build or runtime log. Returns ordered diagnosis, likely root cause, and concrete fix steps. Rebuy on every new failure. Dual-rail USDC (Base + Algorand)."
+    },
+    {
+      "url": "https://api.agentwork.run/v1/jobs",
+      "description": "No-LLM host smoke: disk, load, memory, open_for_work. Cheapest settle test on dual-rail USDC."
+    }
+  ]
+}

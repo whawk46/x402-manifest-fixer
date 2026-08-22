@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.apify.com",
+  "resources": [
+    {
+      "url": "https://api.apify.com/v2/acts/:actorId/run-sync-get-dataset-items",
+      "description": "Apify Store is the largest marketplace of tools for AI agents. Extract data from any website and automate your workflows with thousands of scrapers, crawlers, and automation tools called Actors."
+    },
+    {
+      "url": "https://api.apify.com/v2/actors/:actorId/run-sync-get-dataset-items",
+      "description": "Apify Store is the largest marketplace of tools for AI agents. Extract data from any website and automate your workflows with thousands of scrapers, crawlers, and automation tools called Actors."
+    },
+    {
+      "url": "https://api.apify.com/v2/acts/:actorId/run-sync",
+      "description": "Apify Store is the largest marketplace of tools for AI agents. Extract data from any website and automate your workflows with thousands of scrapers, crawlers, and automation tools called Actors."
+    },
+    {
+      "url": "https://api.apify.com/v2/acts/:actorId/runs",
+      "description": "Apify Store is the largest marketplace of tools for AI agents. Extract data from any website and automate your workflows with thousands of scrapers, crawlers, and automation tools called Actors."
+    },
+    {
+      "url": "https://api.apify.com/v2/actors/:actorId/runs",
+      "description": "Apify Store is the largest marketplace of tools for AI agents. Extract data from any website and automate your workflows with thousands of scrapers, crawlers, and automation tools called Actors."
+    }
+  ]
+}

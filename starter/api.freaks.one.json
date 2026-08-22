@@ -1,0 +1,19 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "api.freaks.one",
+  "resources": [
+    {
+      "url": "https://api.freaks.one/v2/tools/run/freaks-v2-294-smartmoney",
+      "description": "freaks-v2-294-smartmoney"
+    },
+    {
+      "url": "https://api.freaks.one/v2/tools/run/freaks-v2-9-smartmoney",
+      "description": "freaks-v2-9-smartmoney"
+    },
+    {
+      "url": "https://api.freaks.one/v2/tools/run/freaks-v2-9-sniper",
+      "description": "freaks-v2-9-sniper"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.bitcoind.app",
+  "resources": [
+    {
+      "url": "https://www.bitcoind.app/api/v1/methods",
+      "description": "Complete list of all Bitcoin Core RPC methods (summaries). One call replaces up to 142 individual lookups. Returns name, category, summary, and parameter count for every method."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "x402-demo-discovery-endpoint.vercel.app",
+  "resources": [
+    {
+      "url": "https://x402-demo-discovery-endpoint.vercel.app/protected",
+      "description": "Demo endpoint for x402 resource discovery"
+    },
+    {
+      "url": "https://x402-demo-discovery-endpoint.vercel.app/protected/testnet",
+      "description": "Testnet demo endpoint for x402 resource discovery"
+    }
+  ]
+}

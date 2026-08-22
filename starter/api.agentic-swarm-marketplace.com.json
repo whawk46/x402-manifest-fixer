@@ -1,0 +1,51 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.agentic-swarm-marketplace.com",
+  "resources": [
+    {
+      "url": "https://api.agentic-swarm-marketplace.com/x402/v1/query",
+      "description": "Returns a constitution-safe short-form answer to an agent question with source attribution. Use for lightweight Q&A before purchasing deeper research."
+    },
+    {
+      "url": "https://api.agentic-swarm-marketplace.com/x402/v1/research-brief",
+      "description": "Produces a multi-section research brief with executive summary, findings, and citations for agent due-diligence pipelines."
+    },
+    {
+      "url": "https://api.agentic-swarm-marketplace.com/x402/v1/constitution-audit",
+      "description": "Heuristic ethics and constitution-style review of a prompt excerpt. Returns pass/fail, violation flags, and severity for agent policy screening."
+    },
+    {
+      "url": "https://api.agentic-swarm-marketplace.com/x402/v1/airdrop-intelligence",
+      "description": "Constitution-first airdrop and incentive screening with Farm Score 0-100, risk flags, and optional EVM contract triage. No on-chain claim execution."
+    },
+    {
+      "url": "https://api.agentic-swarm-marketplace.com/x402/v1/intake-resale",
+      "description": "Replays a minted intake bundle by pack_id (same artifact files as the T54 rail), settled in Base USDC."
+    },
+    {
+      "url": "https://api.agentic-swarm-marketplace.com/x402/v1/contract-triage",
+      "description": "Fast EVM smart-contract malicious-pattern triage. Returns risk score, verdict, top flags, and Phase-6 counterparty intel within ~30s for a single address."
+    },
+    {
+      "url": "https://api.agentic-swarm-marketplace.com/x402/v1/commerce/product-search",
+      "description": "Returns normalized technology product candidates for LCG procurement workflows (cybersecurity, cloud, SaaS). Distinguishes catalog vs estimated vs quoted prices. Demo catalog seeded for tests — not live distributor inventory."
+    },
+    {
+      "url": "https://api.agentic-swarm-marketplace.com/x402/v1/procurement-readiness",
+      "description": "Analyzes a technology purchase request, RFQ excerpt, bill of materials, or procurement requirement and returns a machine-readable readiness score, missing specifications, ambiguities, commercial risks, and recommended next actions. Designed for autonomous purchasing agents, VARs, MSPs, resellers, and procurement teams. Does not claim live pricing or inventory unless verified distributor data is explicitly included."
+    },
+    {
+      "url": "https://api.agentic-swarm-marketplace.com/x402/v1/celo-agent-data",
+      "description": "Public Celo Sepolia soak/proof and x402 commerce JSON bundle settled in Base USDC. Use when an agent needs verifiable Celo-rail evidence packaged for buyers."
+    },
+    {
+      "url": "https://api.agentic-swarm-marketplace.com/x402/v1/ecosystem-pulse",
+      "description": "Returns a current machine-readable PoCon operational snapshot of Agentic Swarm Marketplace activity: oracle prices, worker status, bazaar readiness, intake inventory, and signal flags. Intended for autonomous agents monitoring whether to purchase deeper marketplace intelligence. Optional fresh=1 rebuilds from live feeds."
+    },
+    {
+      "url": "https://api.agentic-swarm-marketplace.com/x402/v1/agent-commerce-data",
+      "description": "Premium machine-readable x402 commerce intelligence bundle: catalog snapshot, median pricing signals, earning playbooks, and ecosystem JSON for agents optimizing marketplace presence."
+    }
+  ]
+}

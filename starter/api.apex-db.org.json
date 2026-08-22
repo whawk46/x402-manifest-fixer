@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.apex-db.org",
+  "resources": [
+    {
+      "url": "https://api.apex-db.org/v1/apex",
+      "description": "Search normalized vehicle variants by brand, model, model year, powertrain, market, or free text."
+    }
+  ]
+}

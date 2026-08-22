@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.statemind.ai",
+  "resources": [
+    {
+      "url": "https://api.statemind.ai/v1/x402/static",
+      "description": "Check Python for syntax errors, lint and type mistakes, unsafe constructs and hardcoded credentials, and against the examples the caller supplies, without running it."
+    },
+    {
+      "url": "https://api.statemind.ai/v1/x402/execute",
+      "description": "Run Python in a throwaway container with no network and a read-only filesystem, and report what it did against the caller's examples."
+    },
+    {
+      "url": "https://api.statemind.ai/v1/x402/repair",
+      "description": "Return corrected Python for code that fails those checks: the fix is applied and re-checked, and only returned when it holds."
+    },
+    {
+      "url": "https://api.statemind.ai/mcp#execute_python",
+      "description": "Run Python in a throwaway container with no network and a read-only filesystem, and report what it did against the caller's examples."
+    },
+    {
+      "url": "https://api.statemind.ai/mcp#repair_python",
+      "description": "Return corrected Python for code that fails those checks: the fix is applied and re-checked, and only returned when it holds."
+    },
+    {
+      "url": "https://api.statemind.ai/mcp#repair_python#repair_python",
+      "description": "Return corrected Python for code that fails those checks: the fix is applied and re-checked, and only returned when it holds."
+    }
+  ]
+}

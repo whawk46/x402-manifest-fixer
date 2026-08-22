@@ -1,0 +1,319 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.relaystation.ai",
+  "resources": [
+    {
+      "url": "https://api.relaystation.ai/v1/screening/match",
+      "description": "$0.01/screen. Screen any name against OFAC, EU, and UK sanctions (UN included) plus Wikidata-derived PEP watchlists — fuzzy matching, instant JSON verdict. Compliance in one call, one of 155 Relaystation tools on one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/image/ocr",
+      "description": "$0.003/call. Extract text from an image — Tesseract, 10 languages, plain text out. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/idverify/verifications",
+      "description": "$0.10/verification. Full KYC in one call — government-ID verification, liveness detection, and face-to-ID matching. Pair with /v1/esigndoc for verify-then-sign and /v1/screening for sanctions. One of 155 Relaystation tools on one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/doc/parse-id",
+      "description": "$0.05/document. Parse a government ID (passport, license) into typed fields (Textract AnalyzeID). Parsing only — for verification + liveness use /v1/idverify. 155 tools, one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/llm/sentiment",
+      "description": "Provider cost + 6%, itemized. Score text positive / negative / neutral — reviews, tickets, social. ≈Opus-4.8 accuracy at ~1–5% of its cost. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/web/screenshot",
+      "description": "$0.01/screenshot. Screenshot any public web page to PNG/JPEG/WebP — headless Chromium, SSRF-guarded. 155 tools, one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/web/pdf",
+      "description": "$0.02/render. Render any public web page to PDF — headless Chromium, SSRF-guarded egress. 155 tools, one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/contracts",
+      "description": "$0.02/contract. Agents strike binding-by-goodwill agreements: create terms, add parties, sign, check signatures — with paid arbitration when disputes arise. The trust layer for agent-to-agent work, one of 155 Relaystation tools on one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/location/place-search",
+      "description": "$0.01/search. Free-text place and point-of-interest search — names, addresses, coordinates back as JSON. 155 tools, one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/office/rescue",
+      "description": "$0.008/call. Rescue exotic or legacy Office files into PDF via LibreOffice — opens what modern Office won't. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/location/route",
+      "description": "$0.01/route. Calculate a route between two points — distance, duration, and geometry back as JSON. 155 tools, one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/web/readability",
+      "description": "$0.005/extract. Extract the clean article text — title, byline, body — from any public URL. No boilerplate, no nav junk. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/from-office",
+      "description": "$0.005/call. Convert Word, Excel, or PowerPoint to PDF via LibreOffice — layout preserved. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/ocr-searchable",
+      "description": "$0.004/page. Add an invisible OCR text layer to a scanned PDF — looks identical, fully searchable. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/vision/detect-labels",
+      "description": "$0.005/image. Detect objects, scenes, and concepts in an image (Rekognition) — labels with confidence scores. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/vision/moderate",
+      "description": "$0.005/image. Flag unsafe or inappropriate image content (Rekognition moderation) — categories with confidence. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/vision/detect-ppe",
+      "description": "$0.005/image. Detect protective equipment — face, hand, head covers — on people in an image. Site-safety audits by API. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/image/from-html",
+      "description": "$0.003/call. Render HTML to an image — sandboxed headless Chromium screenshot of your markup. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/location/reverse-geocode",
+      "description": "$0.005/lookup. Reverse-geocode coordinates to the nearest address — lat/lng in, street address out. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/ocr",
+      "description": "$0.003/page. Extract text from a scanned PDF (Tesseract) — make paper searchable data. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/vision/detect-faces",
+      "description": "$0.005/image. Detect faces with attributes — age range, emotions, pose, landmarks (Rekognition). 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/vision/detect-celebrities",
+      "description": "$0.005/image. Recognize celebrities in an image (Rekognition) — names with confidence scores. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/extract-text",
+      "description": "$0.002/page. Pull text and structure out of a PDF — clean input for LLMs and search. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/location/geocode",
+      "description": "$0.005/lookup. Geocode a free-text address to coordinates (AWS Location Service) — lat/lng plus normalized address. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/images",
+      "description": "$0.001/page. Extract every embedded image from a PDF as PNGs. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/split",
+      "description": "$0.001/page. Split a PDF by page ranges or burst it into single pages. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/doc/ask-document",
+      "description": "$0.08/document. Ask natural-language questions of a document and get grounded answers (Textract Queries) — no OCR pipeline to build. 155 tools, one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/doc/parse-invoice",
+      "description": "$0.055/document. Parse invoices and receipts into summary fields plus line items (Textract AnalyzeExpense) — vendor, totals, dates, SKUs. 155 tools, one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/doc/extract-tables",
+      "description": "$0.08/document. Pull tables out of a document as structured rows and columns (Textract Tables) — not text soup. 155 tools, one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/doc/extract-form",
+      "description": "$0.28/document. Extract form fields as key→value pairs from scanned or digital documents (Textract Forms) — structured JSON out, no template needed. 155 tools, one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/compress",
+      "description": "$0.001/page. Recompress and linearize a PDF — smaller files, fast web view. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/pages",
+      "description": "$0.001/page. Delete, reorder, or insert PDF pages — restructure without desktop software. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/from-html",
+      "description": "$0.003/call. Render HTML to PDF — sandboxed headless Chromium, print-quality output. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/encrypt",
+      "description": "$0.001/page. Password-protect a PDF with 256-bit AES and set permissions. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/media/storyboard",
+      "description": "$0.0008/call. Frame-sampled thumbnail sprite sheet from a video — scrubbers and previews in one call. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/watermark",
+      "description": "$0.001/page. Stamp text watermarks across PDF pages — DRAFT, CONFIDENTIAL, or your own. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/doc/ocr-layout",
+      "description": "$0.010/document. OCR a document with line- and word-level layout coordinates (Textract) — position-aware text for downstream parsing. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/media/convert",
+      "description": "$0.0005/MB. Re-encode video/audio to another container or codec (H.264/AAC and more) — scale, crop, rotate in the same pass. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/generate/og-image",
+      "description": "$0.0005/call. Render social/OG card PNGs — titles, colors, branding — for links that get clicked. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/image/metadata",
+      "description": "$0.0005/call. Read dimensions, format, and EXIF presence — inspect before you process. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/bookmarks",
+      "description": "$0.001/call. Read a PDF's outline/bookmark tree as JSON — navigate structure before extracting. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/media/waveform",
+      "description": "$0.0005/call. Render audio as a waveform or spectrogram PNG — visualize any track. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/merge",
+      "description": "$0.001/page. Combine any number of PDFs into one, in the order you choose. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/diff",
+      "description": "$0.001/page. Text-compare two PDFs into a unified diff — spot every change between versions. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/media/audio-convert",
+      "description": "$0.0005/MB. Re-encode audio to another format, bitrate, or sample rate — mp3, aac, wav, flac and more. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/baton",
+      "description": "A baton is a durable storage object agents create, append, read, and cryptographically prove — then hand off to other agents or people. Presets: file drop, burn-after-read pass, shared scratchpad, state checkpoint, tamper-evident ledger. Metered by bytes, time, egress, writes; price frozen at purchase. 155 tools, one balance — relaystation.ai"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/attachments",
+      "description": "$0.0005/MB. List or extract files embedded inside a PDF — pull attachments out programmatically. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/media/silence",
+      "description": "$0.0005/call. Detect silent intervals as JSON or trim the silence out — tighter podcasts and voice notes. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/media/speed",
+      "description": "$0.0005/MB. Speed up or slow down audio/video — pitch-preserving by default. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/image/extend",
+      "description": "$0.0003/MP. Pad or extend an image's canvas on any side — aspect-ratio fixes without cropping. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/media/loudnorm",
+      "description": "$0.0005/MB. Normalize audio loudness to broadcast EBU R128 — LUFS, true-peak, and range targets. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/render",
+      "description": "$0.001/page. Rasterize PDF pages to PNG or JPEG — previews, thumbnails, vision-model input. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/data/sql",
+      "description": "$0.0005/MB. Query any CSV/JSON/parquet file with full SQL — sandboxed read-only DuckDB, parquet in and out. A serverless query engine for a fraction of a cent. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/generate/qr-logo",
+      "description": "$0.0002/call. QR code with your logo composited in the center (ECC H — still scans reliably). 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/repair",
+      "description": "$0.001/page. Diagnose and rewrite a damaged PDF — recover files other tools reject. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/media/trim",
+      "description": "$0.0005/MB. Cut a time range from audio/video by fast stream-copy — codecs preserved, no quality loss. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/image/blur",
+      "description": "$0.0003/MP. Gaussian-blur an image at the strength you set — backgrounds, redactions, thumbnails. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/data/explode",
+      "description": "$0.0002/MB. Unnest array cells into rows — flatten nested JSON for analysis. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/generate/invoice",
+      "description": "$0.0002/call. Render a clean invoice PDF from structured JSON — line items, totals, branding. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/generate/mock-data",
+      "description": "$0.0002/call. Generate realistic fake rows from a field→type schema (JSON/CSV/NDJSON) — test data on demand. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/media/thumbnail",
+      "description": "$0.0003/call. Grab a single video frame at any timestamp — PNG or JPEG out. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/text/markdown-to-html",
+      "description": "$0.0002/MB. Convert markdown to HTML — always whitelist-sanitized, safe to embed. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/data/to-xlsx",
+      "description": "$0.0002/MB. Write tables to styled, multi-sheet Excel (.xlsx) — formula-injection-safe. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/media/probe",
+      "description": "$0.0002/call. Inspect any media file via ffprobe — duration, container, streams, codecs, dimensions, bitrate as JSON. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/data/diff",
+      "description": "$0.0002/MB. Row-level changeset between two tables — added, removed, and changed rows. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/qr",
+      "description": "$0.0002/call. Generate QR codes as PNG or SVG — size, error-correction, and margin control. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/text/merge3",
+      "description": "$0.0002/MB. Three-way merge of two edits against a common base — conflict markers on overlap. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/data/schema-infer",
+      "description": "$0.0002/MB. Infer a JSON Schema or SQL DDL straight from your data — skip hand-writing schemas. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/text/diff",
+      "description": "$0.0002/MB. Unified diff of two strings — see exactly what changed. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/data/cast",
+      "description": "$0.0002/MB. Coerce column types (string, integer, number, boolean, date) — stop fighting stringly-typed data. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/codes/qr-decode",
+      "description": "$0.0002/call. Decode a QR code from an image — the embedded text or URL back as JSON. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/image/compress",
+      "description": "$0.0003/MP. Re-encode an image at lower quality to shrink file size — bandwidth-friendly output. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/archive/zip",
+      "description": "$0.0002/MB. Zip any set of files into one downloadable archive — pass URLs or payloads, get a link back. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/media/gif",
+      "description": "$0.0005/MB. Turn a video segment into a palette-optimized animated GIF — share-ready loops. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/utils/jwt-verify",
+      "description": "$0.0001/call. Verify a JWT signature — algorithm-pinned; the key is never logged. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/image/contact-sheet",
+      "description": "$0.0003/MP. Tile many images into one thumbnail-grid PNG — visual index in a single call. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/data/filter",
+      "description": "$0.0002/MB. Keep rows matching a structured predicate — injection-safe, no formula eval. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    },
+    {
+      "url": "https://api.relaystation.ai/v1/pdf/rotate",
+      "description": "$0.001/page. Rotate PDF pages — all or a selection, any multiple of 90°. 1¢ x402 min; remainder auto-credits — relaystation.ai/penny"
+    }
+  ]
+}

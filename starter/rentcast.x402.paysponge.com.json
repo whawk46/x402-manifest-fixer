@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "rentcast.x402.paysponge.com",
+  "resources": [
+    {
+      "url": "https://rentcast.x402.paysponge.com/markets",
+      "description": "Service: RentCast (https://rentcast.x402.paysponge.com/markets)"
+    },
+    {
+      "url": "https://rentcast.x402.paysponge.com/properties/random",
+      "description": "Service: RentCast (https://rentcast.x402.paysponge.com/properties/random)"
+    }
+  ]
+}

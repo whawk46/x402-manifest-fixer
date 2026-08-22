@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "eagle.quickai.build",
+  "resources": [
+    {
+      "url": "https://eagle.quickai.build/check",
+      "description": "Eagle Eye v1.0.0 — U.S. enterprise-grade wallet compliance screening. OFAC SDN + Circle USDC blacklist on Base. Signed audit receipts. Certified single-address check."
+    }
+  ]
+}

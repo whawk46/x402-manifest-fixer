@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "xx402.vercel.app",
+  "resources": [
+    {
+      "url": "https://xx402.vercel.app/weather",
+      "description": "获取任意位置的天气"
+    }
+  ]
+}

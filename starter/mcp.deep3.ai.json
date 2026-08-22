@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "mcp.deep3.ai",
+  "resources": [
+    {
+      "url": "https://mcp.deep3.ai/tools/wave-1",
+      "description": "Short-term price-movement forecast for any crypto token across 7 time horizons."
+    }
+  ]
+}

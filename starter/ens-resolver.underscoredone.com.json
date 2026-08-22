@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ens-resolver.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://ens-resolver.underscoredone.com/resolve",
+      "description": "Look up an ENS name or an Ethereum address and get back the matching one, automatically figuring out which direction you need."
+    }
+  ]
+}

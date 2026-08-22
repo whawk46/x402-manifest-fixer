@@ -1,0 +1,47 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "reg.chainverdict.xyz",
+  "resources": [
+    {
+      "url": "https://reg.chainverdict.xyz/v1/aiact/c2pa-check",
+      "description": "Structural check of a content-credential manifest: claim generator, assertions, the c2pa.actions history, whether a digitalSourceType actually declares trained-algorithmic media, and whether it is signed at all. Does not verify the signature or the certificate chain."
+    },
+    {
+      "url": "https://reg.chainverdict.xyz/v1/aiact/art50-check",
+      "description": "Check declared transparency controls against the Article 50 category they claim to satisfy, and get back precisely which ones are missing. Checks your assertions, not your system; not a conformity assessment."
+    },
+    {
+      "url": "https://reg.chainverdict.xyz/v1/aiact/art50",
+      "description": "Which AI Act Article 50 transparency controls apply to a given obligation category, with the exemption note and the applicable date. Article 50 has applied since 2 August 2026 and was NOT deferred by the AI Omnibus, which moved only the high-risk obligations."
+    },
+    {
+      "url": "https://reg.chainverdict.xyz/v1/eudr/geo-check",
+      "description": "Validate EUDR plot geolocation: coordinate bounds, ring closure, self-intersection, approximate area, and the rule that plots above 4 hectares require a polygon rather than a point. Catches the [lat, lon] versus [lon, lat] error that silently relocates a plot to the wrong continent."
+    },
+    {
+      "url": "https://reg.chainverdict.xyz/v1/eudr/dds-validate",
+      "description": "Structural validation of a draft Due Diligence Statement: required fields, HS-to-commodity consistency, EORI and ISO country formats, quantity units, per-plot geometry, and the deforestation-free cut-off assertion. Explicitly does NOT check deforestation against any satellite dataset and does not file anything."
+    },
+    {
+      "url": "https://reg.chainverdict.xyz/v1/eudr/scope",
+      "description": "Is this HS code inside the EU Deforestation Regulation? Returns the commodity (cattle, cocoa, coffee, oil palm, rubber, soya, wood) and the applicable enforcement deadline tier. A simplification package was in trilogue as of the asOf date; deadlines may move."
+    },
+    {
+      "url": "https://reg.chainverdict.xyz/v1/cbam/declaration-check",
+      "description": "Structural pre-submission check of a draft CBAM annual declaration: required fields, per-good completeness, CN scope consistency, ISO country format, EU-origin contradictions, reporting-year plausibility, de minimis cross-check. Not a submission and not a validation against the official Registry schema."
+    },
+    {
+      "url": "https://reg.chainverdict.xyz/v1/cbam/estimate",
+      "description": "Embedded emissions and indicative certificate cost, computed line by line with every arithmetic step echoed back. RegRails supplies no default emission factors on purpose — a stale factor produces a wrong liability — so intensities and certificate price are yours. Indicative only, never a basis for a declaration."
+    },
+    {
+      "url": "https://reg.chainverdict.xyz/v1/cbam/threshold",
+      "description": "Track a year of import lines against the CBAM 50-tonne de minimis and catch the retroactivity trap: crossing the threshold at any point pulls every in-scope import that year into scope, not just the excess. Electricity and hydrogen never benefit from the de minimis and are excluded from the count."
+    },
+    {
+      "url": "https://reg.chainverdict.xyz/v1/cbam/scope",
+      "description": "Is this CN code inside the CBAM Carbon Border Adjustment Mechanism? Returns the sector, whether the 50-tonne de minimis applies, and the declaration deadlines. Longest-prefix match against the bundled Annex I code list — a match is strong, a non-match is weak and never proof of exclusion."
+    }
+  ]
+}

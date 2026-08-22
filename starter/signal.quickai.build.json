@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "signal.quickai.build",
+  "resources": [
+    {
+      "url": "https://signal.quickai.build/signal",
+      "description": "Quick Signal TA v3.1.0 — Crypto technical analysis. Ten indicators with natural-language assessments. Query params: token (required), timeframe, bollinger_period, rsi_period."
+    }
+  ]
+}

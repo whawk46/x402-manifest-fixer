@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "apollo-contract-scan.vercel.app",
+  "resources": [
+    {
+      "url": "https://apollo-contract-scan.vercel.app/scan",
+      "description": "Heuristic Solidity risk scan: pattern-level red flags for a contract address (verified source via Sourcify) or raw source. Honest scoping: a fast pre-audit, not a formal security audit."
+    }
+  ]
+}

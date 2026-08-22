@@ -1,0 +1,10 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "peach.mypinata.cloud",
+  "resources": [
+    {
+      "url": "https://peach.mypinata.cloud/x402/cid/bafkreifqwob76i3msvcy7i5cevl7vjuode2kezzumvjxudnoarbuvwnw3y"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "rest.staging.wagmi.productions",
+  "resources": [
+    {
+      "url": "https://rest.staging.wagmi.productions/v3/agentFriendly/full_assets_by_slug",
+      "description": "Full asset data for one or more slugs (agent-optimized)."
+    },
+    {
+      "url": "https://rest.staging.wagmi.productions/v3/agentFriendly/assets_search",
+      "description": "Search CoinCap assets by name or symbol (agent-optimized)."
+    },
+    {
+      "url": "https://rest.staging.wagmi.productions/v3/agentFriendly/history/bitcoin",
+      "description": "Historical price series for an asset slug (capped data points)."
+    },
+    {
+      "url": "https://rest.staging.wagmi.productions/v3/agentFriendly/history/solana",
+      "description": "Historical price series for an asset slug (capped data points)."
+    },
+    {
+      "url": "https://rest.staging.wagmi.productions/v3/agentFriendly/history/ethereum",
+      "description": "Historical price series for an asset slug (capped data points)."
+    }
+  ]
+}

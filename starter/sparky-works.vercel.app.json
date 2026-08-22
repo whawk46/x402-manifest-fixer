@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "sparky-works.vercel.app",
+  "resources": [
+    {
+      "url": "https://sparky-works.vercel.app/api/bounty-truth",
+      "description": "Audit a public GitHub bounty issue for stale status, competing pull requests, claimant signals, and solver saturation."
+    }
+  ]
+}

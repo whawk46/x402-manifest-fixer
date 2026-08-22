@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "peptidesdirect.io",
+  "resources": [
+    {
+      "url": "https://peptidesdirect.io/api/v1",
+      "description": "PeptidesDirect full catalogue feed: every product with variants, EUR prices, live stock and lab reports (JSON)"
+    }
+  ]
+}

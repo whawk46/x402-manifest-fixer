@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "vn-gold-fx-x402-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://vn-gold-fx-x402-production.up.railway.app/v1/gold/world",
+      "description": "World gold spot price XAU/USD in real time (delayed quote), plus conversion to VND per luong (Vietnamese tael, 37.5g) and per gram. Clean JSON for portfolio trackers, commodity bots and price alert agents."
+    }
+  ]
+}

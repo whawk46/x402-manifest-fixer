@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "live-listing-proof.mattskowronis.workers.dev",
+  "resources": [
+    {
+      "url": "https://live-listing-proof.mattskowronis.workers.dev/v1/verify",
+      "description": "Verify a public product, classified, marketplace or auction listing immediately before an agent relies on or recommends it. Returns source-supported listing facts when retrievable, and explicit removed, blocked, unreachable, unsupported or insufficient-evidence states instead of inventing facts."
+    }
+  ]
+}

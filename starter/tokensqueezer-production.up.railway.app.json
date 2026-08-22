@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "tokensqueezer-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://tokensqueezer-production.up.railway.app/compress",
+      "description": "High-throughput text optimizer for agent data streams. Strips filler, collapses JSON, and densifies repetitive prose to cut upstream LLM token spend."
+    }
+  ]
+}

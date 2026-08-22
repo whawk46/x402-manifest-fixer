@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "poketpoker.com",
+  "resources": [
+    {
+      "url": "https://poketpoker.com/api/compare",
+      "description": "Exact head-to-head equity between any two specific Texas Hold'em hands, enumerated over all 1,712,304 remaining boards. No sampling and no approximation."
+    },
+    {
+      "url": "https://poketpoker.com/api/play/deal",
+      "description": "Deal one hand of Texas Hold'em against PoketPoker's bots and find out how your play compares. Five difficulty tiers; the top tier plays range-aware expected-value poker and beats every tier below it. Returns the table and a ticket; playing the hand out costs nothing more. Markdown by default, JSON with format=json."
+    },
+    {
+      "url": "https://poketpoker.com/api/advice",
+      "description": "Whether to open a specific Texas Hold'em starting hand from a named position against a given number of opponents, with the engine equity behind the answer."
+    },
+    {
+      "url": "https://poketpoker.com/api/hands/Ac5s",
+      "description": "The full record for one of the 1,326 specific Texas Hold'em starting hands: equity against modelled ranges, position-by-position opening guidance, exact head-to-head figures, and the exact card-removal effect of holding these specific two cards."
+    },
+    {
+      "url": "https://poketpoker.com/api/hands/AhKh",
+      "description": "The full record for one of the 1,326 specific Texas Hold'em starting hands: equity against modelled ranges, position-by-position opening guidance, exact head-to-head figures, and the exact card-removal effect of holding these specific two cards."
+    },
+    {
+      "url": "https://poketpoker.com/api/hands/QdQs",
+      "description": "The full record for one of the 1,326 specific Texas Hold'em starting hands: equity against modelled ranges, position-by-position opening guidance, exact head-to-head figures, and the exact card-removal effect of holding these specific two cards."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-observability-poc.theliminalguy.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-observability-poc.theliminalguy.workers.dev/trace/:var1/summary",
+      "description": "Computed session trace summary (calls, tokens, cost, error count, slowest call)"
+    }
+  ]
+}

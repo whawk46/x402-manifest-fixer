@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "vectorcache-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://vectorcache-production.up.railway.app/vector/cache",
+      "description": "High-speed semantic vector cache for multi-agent swarms. Redis-backed similarity lookup with in-memory fallback before expensive embedding pipelines."
+    }
+  ]
+}

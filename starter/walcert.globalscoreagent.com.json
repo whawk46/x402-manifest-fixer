@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "walcert.globalscoreagent.com",
+  "resources": [
+    {
+      "url": "https://walcert.globalscoreagent.com/v1/certificates/portfolio",
+      "description": "Grade wallet portfolio quality (usable vs spam/dust, concentration, tiers) A-F. POST wallet_address; signed certificate. $0.05 USDC."
+    },
+    {
+      "url": "https://walcert.globalscoreagent.com/v1/certificates/multichain",
+      "description": "Grade a wallet's chain footprint and longevity A-F across EVM networks. POST wallet_address; signed certificate. $0.05 USDC."
+    },
+    {
+      "url": "https://walcert.globalscoreagent.com/v1/certificates/activity",
+      "description": "Grade 15-day wallet activity (counterparties, HHI, velocity, bot-like) A-F before you transact. POST wallet_address; signed certificate. $0.05 USDC."
+    },
+    {
+      "url": "https://walcert.globalscoreagent.com/v1/certificates/origins",
+      "description": "Before hiring or paying an ERC-8004 agent, grade the controlling wallet's funding origins (CEX, bridge, mixer, organic) A-F. POST wallet_address; signed certificate + Celo on-chain anchor. $0.05 USDC."
+    }
+  ]
+}

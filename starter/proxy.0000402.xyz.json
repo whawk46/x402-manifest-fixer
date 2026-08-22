@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "proxy.0000402.xyz",
+  "resources": [
+    {
+      "url": "https://proxy.0000402.xyz/fetch",
+      "description": "Pay $0.01 USDC to make an outbound HTTP request through the proxy. Supports all standard HTTP methods, custom headers (including auth), and JSON or raw bodies. Responses are returned as text or base64-encoded binary. Max response size 10 MB, timeout 30s. Each request performs one upstream fetch and returns the final URL plus response metadata."
+    }
+  ]
+}

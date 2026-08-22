@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "diem-agent-workers.vercel.app",
+  "resources": [
+    {
+      "url": "https://diem-agent-workers.vercel.app/v1/jobs/transcribe-audio",
+      "description": "Transcribe a base64-encoded PCM WAV clip of at most 60 seconds into text. Input duration is verified before payment. Use constitutes acceptance of https://diem-agent-workers.vercel.app/terms."
+    },
+    {
+      "url": "https://diem-agent-workers.vercel.app/v1/jobs/extract-json",
+      "description": "Extract facts from supplied text into a caller-provided strict JSON Schema. Use for bounded text-to-JSON normalization when every output field must be machine-validated. Use constitutes acceptance of https://diem-agent-workers.vercel.app/terms."
+    },
+    {
+      "url": "https://diem-agent-workers.vercel.app/v1/jobs/text-to-speech",
+      "description": "Convert up to 1,000 characters of text into MP3 speech using a bounded private Venice voice model. Use constitutes acceptance of https://diem-agent-workers.vercel.app/terms."
+    },
+    {
+      "url": "https://diem-agent-workers.vercel.app/v1/jobs/generate-draft-image",
+      "description": "Generate one safe-mode 1024px WebP draft image from a bounded prompt, with search and prompt enhancement disabled. Use constitutes acceptance of https://diem-agent-workers.vercel.app/terms."
+    },
+    {
+      "url": "https://diem-agent-workers.vercel.app/v1/jobs/summarize-text",
+      "description": "Summarize bounded source text into a structured abstract and key points without web access or invented facts. Use constitutes acceptance of https://diem-agent-workers.vercel.app/terms."
+    },
+    {
+      "url": "https://diem-agent-workers.vercel.app/v1/jobs/classify-text",
+      "description": "Classify bounded text into exactly one caller-supplied label and return a short evidence-grounded rationale. Use constitutes acceptance of https://diem-agent-workers.vercel.app/terms."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "polymarketeer.vercel.app",
+  "resources": [
+    {
+      "url": "https://polymarketeer.vercel.app/api/x402/kalshi/events/specific",
+      "description": "Get detailed information for a specific Kalshi event by ticker symbol"
+    }
+  ]
+}

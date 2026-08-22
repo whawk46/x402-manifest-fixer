@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "health.getvda.ai",
+  "resources": [
+    {
+      "url": "https://health.getvda.ai/mcp-metered/10",
+      "description": "health metered execution"
+    }
+  ]
+}

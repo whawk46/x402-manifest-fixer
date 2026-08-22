@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "law-mcp.toulaw.workers.dev",
+  "resources": [
+    {
+      "url": "https://law-mcp.toulaw.workers.dev/api/v1/search",
+      "description": "Global law search across JP/US/UK/EU legislation databases"
+    }
+  ]
+}

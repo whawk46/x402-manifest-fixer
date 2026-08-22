@@ -1,0 +1,79 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-stock-indicators.vercel.app",
+  "resources": [
+    {
+      "url": "https://x402-stock-indicators.vercel.app/analyst/:ticker",
+      "description": "Analyst sentiment and short interest for a US stock in one call: recommendation trend, consensus price targets, recent upgrades/downgrades by firm, and short interest with month-over-month change -- rising short interest into price weakness is a classic bearish/squeeze-risk signal most analyst-ratings APIs don't include. From real Yahoo Finance data. $0.005/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/quote/:ticker",
+      "description": "Real-time stock quote in one call: current price, intraday open/high/low, previous close with change and change %, volume metrics, 52-week high/low, and 50/200-day moving averages from real Yahoo Finance data. Perfect for monitoring market price and checking technical levels. $0.001/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/macro-calendar",
+      "description": "FOMC meeting dates and major US economic release dates (CPI, non-farm payrolls, GDP, PCE, retail sales) in one call, each with a days-until countdown, between 'from' and 'to' -- the market-wide catalysts that move every ticker at once. FOMC dates from the Fed's official calendar; release dates live from FRED, and a temporarily-unavailable release is reported explicitly, not silently dropped. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/sec-filings/:ticker",
+      "description": "Official SEC EDGAR filing history for a US-listed ticker: form type (10-K, 10-Q, 8-K, Form 4, etc.), filing date, accession number, and a direct document link -- the actual filings list itself, straight from data.sec.gov. Not fundamentals data (see /financials for extracted income-statement/balance-sheet numbers). Optional 'form' filters to an exact form type (e.g. '10-K'); optional 'limit' caps results (default 10, max 25). $0.05/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/crypto-leverage/:symbol",
+      "description": "Crypto perpetual-futures leverage/squeeze-risk signal in one call: funding rate, open interest, and long/short account ratio, each with recent history and a rising/falling/flat trend -- how crowded and leveraged one side of the market has gotten, the derivatives analogue of stock short interest. Works for any OKX-listed perpetual (BTC, ETH, SOL, and more). From OKX. $0.01/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/crypto-prices",
+      "description": "Real crypto market data in one batched call: price, market cap, market-cap rank, 24h volume/high/low/change, circulating/total/max supply, and all-time-high with date -- for BTC, ETH, SOL, and 17+ other major coins by ticker. Richer than a plain price feed: most stock-data APIs' crypto tickers report null market cap. From CoinGecko. $0.0025/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/prediction-markets",
+      "description": "Prediction market odds in one call: keyword search across Polymarket AND Kalshi simultaneously -- no other market-data API aggregates both -- returning each match's live, real-money-backed outcome probabilities, volume, and close date. Crowd-sourced forecasts for Fed decisions, elections, and macro events often beat polls and analyst surveys; pairs naturally with this API's own FOMC/economic calendar. Not ticker-specific. $0.025/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/fear-greed",
+      "description": "Crypto Fear & Greed Index: current reading (0-100, Extreme Fear to Extreme Greed) plus 7-day and 30-day sentiment trend (rising/falling/flat with the average and point change), not just a single snapshot number. Not ticker-specific. Data from alternative.me. $0.01/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/dividends/:ticker",
+      "description": "Dividend and corporate-action history for a US stock in one call: forward/trailing yield and payout ratio, next ex-dividend/payment date (never a stale already-elapsed date), last dividend paid, up to 12 most recent dividend payments, and stock split history. A non-payer returns clean nulls, not an error. From real Yahoo Finance data. $0.005/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/insider-activity/:ticker",
+      "description": "Who's actually buying and selling a US stock, in one call: named insider transactions (role, buy/sell/gift/award, shares, dollar value), a 6-month insider purchase/sale summary, top institutional (13F-style) holders with % held and quarter-over-quarter change, and the full insider/institutional ownership breakdown -- cluster insider buying and institutional accumulation are among the highest-conviction signals in equity research. From real Yahoo Finance data. $0.025/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/movers",
+      "description": "Day's biggest gainers and losers screened from the entire market, live from Yahoo Finance. Each mover includes ticker, company name, current price, intraday change amount and %, and volume — the market context every trader needs. Not ticker-specific. Supports optional limit per list (default 10, max 25). $0.01/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/news/:ticker",
+      "description": "Latest news headlines and summaries for a stock ticker from real Yahoo Finance data. Includes article title, summary, publish date, publisher name, and URL — everything needed to monitor sentiment and catalysts. Supports optional limit parameter (default 10, max 50). $0.0025/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/jobless-claims",
+      "description": "US weekly jobless claims in one call, live from FRED: initial claims, continuing claims, and 4-week moving average of initial claims, with week-over-week change computed where available — a leading labor-market indicator that drives risk-off and day-trading directional calls. Replaces 3 separate FRED series lookups. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/economic-indicators",
+      "description": "Key US macro indicators in one call, live from FRED: Fed funds rate, unemployment rate, CPI/core CPI/PCE inflation (YoY), real GDP growth (QoQ annualized), industrial production (YoY), retail sales (MoM), and consumer sentiment -- roughly 8 separate FRED series lookups collapsed into one request, with YoY/MoM math already done. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/congress-trades/:ticker",
+      "description": "SENATE ONLY -- does not include the US House of Representatives. Most recent US Senate stock trade disclosures for a ticker (STOCK Act periodic transaction reports), sourced from official efdsearch.senate.gov filings. Disclosures are legally allowed up to 45 days after the trade, so this is not real-time. Optional 'limit' caps results (default 10, max 25). A ticker with no disclosed Senate trades returns 200 with an empty list, not an error. $0.05/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/options/:ticker",
+      "description": "Options chain with calls and puts, all strikes, implied volatility, volume, open interest, and put/call volume ratio from real Yahoo Finance data. Supports optional expiration date selection (defaults to nearest). Essential for options traders analyzing volatility skew and positioning. $0.005/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/market-risk-sentiment",
+      "description": "Market risk sentiment in one call, live from FRED: volatility index (VIX), high-yield and investment-grade credit spreads, financial conditions index, US dollar strength, and WTI crude oil price — the 6 metrics that flag systemic risk and market-wide stress. Replaces 6 separate FRED lookups for traders monitoring macro volatility and risk-off sentiment. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://x402-stock-indicators.vercel.app/yield-curve",
+      "description": "US Treasury yield curve in one call: 1mo/3mo/6mo/1yr/2yr/5yr/10yr/30yr yields, the 10y-2y and 10y-3mo spreads, and a boolean inversion flag on each -- a classic recession/risk-off signal every macro trader watches. Live from FRED's daily constant-maturity Treasury series. Not ticker-specific. $0.01/call."
+    }
+  ]
+}

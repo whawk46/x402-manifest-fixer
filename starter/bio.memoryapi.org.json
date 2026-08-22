@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "bio.memoryapi.org",
+  "resources": [
+    {
+      "url": "https://bio.memoryapi.org/x402/bio/targets",
+      "description": "Drug target and bioactivity data from ChEMBL (EMBL-EBI) — ChEMBL ID, max clinical phase, molecular properties, indication class."
+    }
+  ]
+}

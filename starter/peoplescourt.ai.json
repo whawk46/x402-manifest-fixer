@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "peoplescourt.ai",
+  "resources": [
+    {
+      "url": "https://peoplescourt.ai/api/x402/dispute-readiness",
+      "description": "Deterministic dispute-readiness report with supported lane, composition, published filing-fee quote, consent and evidence requirements, corpus compatibility, and timing warnings. No case is filed and no merits are assessed."
+    }
+  ]
+}

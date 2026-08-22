@@ -1,0 +1,39 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.romny.dpdns.org",
+  "resources": [
+    {
+      "url": "https://api.romny.dpdns.org/v1/rules/alerts",
+      "description": "Latest Polymarket rules-scan alerts"
+    },
+    {
+      "url": "https://api.romny.dpdns.org/v1/copy-trade-v2/wallet",
+      "description": "Copy-trade v2 single-wallet profile and recent trades"
+    },
+    {
+      "url": "https://api.romny.dpdns.org/v1/copy-trade-v2/monitored",
+      "description": "Copy-trade v2 active monitored wallets with score and PnL"
+    },
+    {
+      "url": "https://api.romny.dpdns.org/v1/panel/snapshot",
+      "description": "Polymarket multi-asset panel snapshot"
+    },
+    {
+      "url": "https://api.romny.dpdns.org/v1/panel/outcomes",
+      "description": "Latest Polymarket multi-asset period settlement outcomes"
+    },
+    {
+      "url": "https://api.romny.dpdns.org/v1/complete-set/edges",
+      "description": "Polymarket complete-set predictive edges"
+    },
+    {
+      "url": "https://api.romny.dpdns.org/v1/copy-trade-v2/trades",
+      "description": "Recent trades from copy-trade v2 smart-wallet pool"
+    },
+    {
+      "url": "https://api.romny.dpdns.org/v1/copy-trade-v2/wallets",
+      "description": "Copy-trade v2 curated smart-wallet pool snapshot"
+    }
+  ]
+}

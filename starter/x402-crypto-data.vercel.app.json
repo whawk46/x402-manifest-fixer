@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-crypto-data.vercel.app",
+  "resources": [
+    {
+      "url": "https://x402-crypto-data.vercel.app/api/yields",
+      "description": "Top DeFi yield pools with APY/TVL, filterable by chain (DefiLlama)."
+    }
+  ]
+}

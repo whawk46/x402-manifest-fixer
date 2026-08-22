@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.lmxcloud.io",
+  "resources": [
+    {
+      "url": "https://api.lmxcloud.io/v1/chat/completions",
+      "description": "Pay-per-request OpenAI-compatible chat completions on DePIN infrastructure. Generate text from Llama, Qwen, DeepSeek, and other models with USDC micropayments on Base — no prepaid API credits required."
+    }
+  ]
+}

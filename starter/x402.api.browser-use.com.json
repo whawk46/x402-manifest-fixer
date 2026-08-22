@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.api.browser-use.com",
+  "resources": [
+    {
+      "url": "https://x402.api.browser-use.com/api/v3/sessions",
+      "description": "Browser Use: AI browser automation agents in the cloud. POST a natural-language task and an agent navigates websites, fills forms, clicks buttons, extracts structured data, and completes multi-step workflows just like a human. Stealth-enabled remote browsers with CAPTCHA solving, residential proxies, live session view, and optional structured output. Payments top up your balance; managing your session is free — you only pay to open a new browser. Docs: https://docs.browser-use.com"
+    }
+  ]
+}

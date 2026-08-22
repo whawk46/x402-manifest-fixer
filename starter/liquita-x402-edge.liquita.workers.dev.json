@@ -1,0 +1,19 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "liquita-x402-edge.liquita.workers.dev",
+  "resources": [
+    {
+      "url": "https://liquita-x402-edge.liquita.workers.dev/v1/at-risk",
+      "description": "Real-time at-risk DeFi borrowers across Aave V3, Morpho, Comet, Euler V2, Fluid, Moonwell, Spark on 11 EVM chains. Returns health factor, collateral, debt, and protocol. Updated every 5 minutes from the liquita liquidation engine."
+    },
+    {
+      "url": "https://liquita-x402-edge.liquita.workers.dev/v1/leaderboard",
+      "description": "Liquidation execution leaderboard. Top liquidators by tx count, profit, and protocols hit. Useful for MEV searcher competitive intel and bot benchmarking."
+    },
+    {
+      "url": "https://liquita-x402-edge.liquita.workers.dev/v1/health/:address",
+      "description": "Borrower health-factor lookup by EVM address. Returns current health factor, collateral, debt, and protocol across all monitored lending markets."
+    }
+  ]
+}

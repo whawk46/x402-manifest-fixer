@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "play.0000402.xyz",
+  "resources": [
+    {
+      "url": "https://play.0000402.xyz/play",
+      "description": "Pay $0.10 USDC to play the game of chance. 8% chance to win 1.0 USDC. Network: Base Mainnet. Send one EVM wallet address for prize delivery; each request runs one immediate server-side random round and returns a win-or-lose result, making it useful as a lottery-style, raffle-style, or random reward API."
+    }
+  ]
+}

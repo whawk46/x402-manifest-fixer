@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "app-production-cd86.up.railway.app",
+  "resources": [
+    {
+      "url": "https://app-production-cd86.up.railway.app/v1/scout/find",
+      "description": "Find the best x402 paid API for your need across the CDP Bazaar catalog: full-text search by keyword, filter by max price per call and network, ranked by measured 24h uptime then price. Each result includes live health data (uptime percent, average latency) that the official catalog does not have. The comparison-shopping layer for agent commerce."
+    },
+    {
+      "url": "https://app-production-cd86.up.railway.app/v1/scout/check",
+      "description": "Live health check of any x402 endpoint BEFORE you pay it: probes the URL right now and reports alive/dead, HTTP status, latency in ms, whether the paywall responds correctly, and the current declared price, asset, network and payTo parsed from its 402 response. Avoid paying dead or misconfigured endpoints — x402 payments have no refunds."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "wolframalpha.x402.paysponge.com",
+  "resources": [
+    {
+      "url": "https://wolframalpha.x402.paysponge.com/v2/query",
+      "description": "Service: Wolfram Alpha (https://wolframalpha.x402.paysponge.com/v2/query)"
+    },
+    {
+      "url": "https://wolframalpha.x402.paysponge.com/v1/simple",
+      "description": "Service: Wolfram Alpha (https://wolframalpha.x402.paysponge.com/v1/simple)"
+    }
+  ]
+}

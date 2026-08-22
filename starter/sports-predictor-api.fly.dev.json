@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "sports-predictor-api.fly.dev",
+  "resources": [
+    {
+      "url": "https://sports-predictor-api.fly.dev/api/v1/probabilities",
+      "description": "Calibrated 1X2 probabilities plus derived markets (totals, BTTS, correct score) for every upcoming fixture across the big-five European leagues. Backed by a public, Brier-scored track record."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "www.qrbase.xyz",
+  "resources": [
+    {
+      "url": "https://www.qrbase.xyz/api/x402/ping",
+      "description": "Ping - 0.001 USDC on Base"
+    }
+  ]
+}

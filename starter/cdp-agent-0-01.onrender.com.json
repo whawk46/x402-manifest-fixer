@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "cdp-agent-0-01.onrender.com",
+  "resources": [
+    {
+      "url": "https://cdp-agent-0-01.onrender.com/",
+      "description": "AgentWire service card for webhook inbox relay and web fetch infrastructure."
+    }
+  ]
+}

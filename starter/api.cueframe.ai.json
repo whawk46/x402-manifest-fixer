@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.cueframe.ai",
+  "resources": [
+    {
+      "url": "https://api.cueframe.ai/v1/composition/validate",
+      "description": "Validate a composition body without saving it (dry-run)"
+    },
+    {
+      "url": "https://api.cueframe.ai/v1/media/import",
+      "description": "Import media into the project from a public https URL — the server fetches and mirrors the bytes (SSRF-filtered), then processes it (transcode + transcribe). Async: returns a media id that flips to ready when the mirror and processing finish; poll GET /media/:id or use a media.completed webhook."
+    },
+    {
+      "url": "https://api.cueframe.ai/v1/projects",
+      "description": "Create a video project — the container for a composition (the editable timeline), its media, brand kit, and renders. Every other authoring call (import or generate media, apply composition ops, compose, render, export) takes this project's id. Set the output format here (aspectRatio, fps, resolution)."
+    },
+    {
+      "url": "https://api.cueframe.ai/v1/me",
+      "description": "Return the caller's account: identity, plan, entitlements, cost ceilings"
+    }
+  ]
+}

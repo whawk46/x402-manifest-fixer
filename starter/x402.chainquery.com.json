@@ -1,0 +1,99 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.chainquery.com",
+  "resources": [
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/listbanned",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Currently banned peer IPs and subnets from chainquery's independent full node. Bitcoin Core listbanned."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/uptime",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Node uptime in seconds from chainquery's independent full node. Bitcoin Core uptime."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getrawmempool",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. All transaction ids in the mempool, or full entries when verbose, from chainquery's independent full node. Bitcoin Core getrawmempool."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getpeerinfo",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Per-peer connection details for every node connected to chainquery's independent full node. Bitcoin Core getpeerinfo."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/help",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. List of available RPC commands, or detailed help for one, from chainquery's independent full node. Bitcoin Core help."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getzmqnotifications",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Active ZMQ notification endpoints from chainquery's independent full node. Bitcoin Core getzmqnotifications."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getrpcinfo",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Active RPC commands and server state from chainquery's independent full node. Bitcoin Core getrpcinfo."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getnodeaddresses",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Known peer addresses from the node's address manager. Bitcoin Core getnodeaddresses."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getnetworkinfo",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Node network state from chainquery's independent full node: version, subversion, connections, relay fee. Bitcoin Core getnetworkinfo."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getnetworkhashps",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Estimated network hashes per second over a window of blocks, from chainquery's independent full node. Bitcoin Core getnetworkhashps."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getnettotals",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Cumulative network traffic totals, bytes in and out, from chainquery's independent full node. Bitcoin Core getnettotals."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getmininginfo",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Mining-related info from chainquery's independent full node: difficulty, network hashrate, mempool, and chain. Bitcoin Core getmininginfo."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getmempoolinfo",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Mempool summary from chainquery's independent full node: transaction count, size, and minimum fees. Bitcoin Core getmempoolinfo."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getmemoryinfo",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Node memory-usage statistics from chainquery's independent full node. Bitcoin Core getmemoryinfo."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getindexinfo",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Status of the node's optional indexes such as txindex, from chainquery's independent full node. Bitcoin Core getindexinfo."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getdifficulty",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Current proof-of-work difficulty from chainquery's independent full node. Bitcoin Core getdifficulty."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getdeploymentinfo",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Soft-fork deployment and activation status from chainquery's independent full node. Bitcoin Core getdeploymentinfo."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getconnectioncount",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Number of peer connections from chainquery's independent full node. Bitcoin Core getconnectioncount."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getchaintips",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. All known chain tips with height and branch status from chainquery's independent full node. Bitcoin Core getchaintips."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getblockcount",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Current block height of the chain tip from chainquery's independent full node. Bitcoin Core getblockcount."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getblockchaininfo",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Current Bitcoin (BTC) chain state from chainquery's independent full node: height, best block hash, difficulty, sync progress, on-disk size. Bitcoin Core getblockchaininfo."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getbestblockhash",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Hash of the current chain tip (best block) from chainquery's independent full node. Bitcoin Core getbestblockhash."
+    },
+    {
+      "url": "https://x402.chainquery.com/v1/rpc/getaddednodeinfo",
+      "description": "chainquery Bitcoin RPC: pay-per-call Bitcoin Core over x402, no API key. Status of manually added peer nodes from chainquery's independent full node. Bitcoin Core getaddednodeinfo."
+    }
+  ]
+}

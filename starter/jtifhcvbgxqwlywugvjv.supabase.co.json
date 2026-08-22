@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "jtifhcvbgxqwlywugvjv.supabase.co",
+  "resources": [
+    {
+      "url": "https://jtifhcvbgxqwlywugvjv.supabase.co/functions/v1/cortex402-mortgage-rates",
+      "description": "Live US mortgage and macro rates from the Federal Reserve. Returns 30-year and 15-year fixed mortgage rates, prime rate, fed funds rate, and CPI year-over-year. Sourced from FRED (Freddie Mac PMMS series)."
+    }
+  ]
+}

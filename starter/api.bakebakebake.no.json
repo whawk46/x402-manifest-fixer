@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.bakebakebake.no",
+  "resources": [
+    {
+      "url": "https://api.bakebakebake.no/buy/:recipient",
+      "description": "Buy the next Machine Relics Genesis ERC-721 on Base Sepolia. Pay test USDC over x402; the NFT is minted exactly once per accepted payment signature."
+    },
+    {
+      "url": "https://api.bakebakebake.no/mainnet/buy/:recipient",
+      "description": "Buy one Machine Relic Genesis ERC-721 from Dank i Halden AS on Base mainnet. The resource reserves a unique relic; minting finalizes automatically after $0.05 USDC settlement is observed."
+    }
+  ]
+}

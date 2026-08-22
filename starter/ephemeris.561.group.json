@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "ephemeris.561.group",
+  "resources": [
+    {
+      "url": "https://ephemeris.561.group/v1/ephemeris/moment/:date",
+      "description": "Moment Essentials: deterministic apparent tropical ephemeris for one exact UTC instant—10 bodies, signs, motion, lunar phase, major aspects, provenance, and audited error bounds."
+    }
+  ]
+}

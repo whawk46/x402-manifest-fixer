@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "retrynet.jack-labs.workers.dev",
+  "resources": [
+    {
+      "url": "https://retrynet.jack-labs.workers.dev/repair",
+      "description": "Returns safe, machine-readable repairs for failed MCP and API tool calls, including invalid arguments, missing fields, incorrect types and changed tool schemas."
+    }
+  ]
+}

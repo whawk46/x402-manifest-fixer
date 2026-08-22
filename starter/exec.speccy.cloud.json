@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "exec.speccy.cloud",
+  "resources": [
+    {
+      "url": "https://exec.speccy.cloud/v1/exec",
+      "description": "Run untrusted Python 3.12 code in an isolated Docker sandbox (no network, read-only FS, 0.5 CPU, 512MB RAM, 30s timeout). Returns stdout, stderr and exit code. Max code size 64KB."
+    }
+  ]
+}

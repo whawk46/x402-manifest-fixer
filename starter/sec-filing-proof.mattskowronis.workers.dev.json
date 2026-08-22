@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "sec-filing-proof.mattskowronis.workers.dev",
+  "resources": [
+    {
+      "url": "https://sec-filing-proof.mattskowronis.workers.dev/v1/verify",
+      "description": "Verify whether an official SEC filing supports a financial claim. Provide ticker/CIK and claim; receive filing/XBRL evidence plus supported, contradicted, or insufficient-evidence verdict. 10-Q / 10-K / XBRL fact verification. Not a data feed, stock picker, or investment advice."
+    }
+  ]
+}

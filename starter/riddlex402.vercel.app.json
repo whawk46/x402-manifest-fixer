@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "riddlex402.vercel.app",
+  "resources": [
+    {
+      "url": "https://riddlex402.vercel.app/api/riddle",
+      "description": "Pay a micro-fee in USDC on Base mainnet to receive a riddle and its answer."
+    }
+  ]
+}

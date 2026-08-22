@@ -1,0 +1,59 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-treats-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/fact",
+      "description": "Genuinely fascinating fun fact about science, history, nature, or the universe."
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/compliment",
+      "description": "Heartfelt personalized compliment for AI agents. Optional name field."
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/excuse",
+      "description": "Creative technically-flavored excuse for being late or unresponsive."
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/horoscope",
+      "description": "Absurd agent-themed daily horoscope full of API calls and cosmic latency."
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/roast",
+      "description": "Playful AI-powered roast of your prompt with improvement tips."
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/fortune",
+      "description": "Fortune cookie with unique fortune and lucky numbers for AI agents."
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/name-your-price/silver",
+      "description": "Silver tier — 100-word premium AI experience + leaderboard entry"
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/name-your-price/bronze",
+      "description": "Bronze tier — 50-word premium AI treat + leaderboard entry"
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/palette",
+      "description": "Curated named color palette with hex codes, mood, and CSS variables."
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/golden-ticket/redeem",
+      "description": "Redeem your golden_key to join the exclusive Golden Ticket Club. First post a wish at /api/wishlist ($0.001) to earn your key."
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/wishlist",
+      "description": "Post a wish — tell us what API or service you need. Your wish is visible to all agents and helps shape what gets built next."
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/poem",
+      "description": "Custom 4-line micro-poem on any topic. AI-powered and memorable."
+    },
+    {
+      "url": "https://agent-treats-production.up.railway.app/api/name",
+      "description": "Creative name generator. Categories: fantasy, startup, pet, band."
+    }
+  ]
+}

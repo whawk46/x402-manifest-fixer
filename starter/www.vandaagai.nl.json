@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "www.vandaagai.nl",
+  "resources": [
+    {
+      "url": "https://www.vandaagai.nl/artikel/vibecoden-naar-productie",
+      "description": "VandaagAI — volledige artikeltekst voor autonome agents (betaling per artikel)"
+    }
+  ]
+}

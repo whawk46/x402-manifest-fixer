@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "clado.x402.paywithlocus.com",
+  "resources": [
+    {
+      "url": "https://clado.x402.paywithlocus.com/clado/search",
+      "description": "Locus public pay-per-use API"
+    }
+  ]
+}

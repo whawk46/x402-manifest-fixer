@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "brokenkey-api-link-ruby.vercel.app",
+  "resources": [
+    {
+      "url": "https://brokenkey-api-link-ruby.vercel.app/api/brokenkeyremapperlink",
+      "description": "Purchase and download the Broken Key Remapper software (one-time license)."
+    }
+  ]
+}

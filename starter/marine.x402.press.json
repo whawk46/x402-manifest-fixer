@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "marine.x402.press",
+  "resources": [
+    {
+      "url": "https://marine.x402.press/marine/ask",
+      "description": "Multi-source marine intelligence via DeepSeek — wave conditions, port info, vessel types, maritime safety."
+    }
+  ]
+}

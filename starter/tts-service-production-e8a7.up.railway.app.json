@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "tts-service-production-e8a7.up.railway.app",
+  "resources": [
+    {
+      "url": "https://tts-service-production-e8a7.up.railway.app/speak",
+      "description": "ElevenLabs text-to-speech: send text (up to 4000 chars) with optional voice_id, model, format, and speed; get back a hosted audio_url plus size and content type. Send 'Accept: audio/mpeg' to stream raw audio bytes directly instead. Voice catalog with free preview clips at GET /voices (no payment). Priced per character; the 402 amount is computed from your text length."
+    }
+  ]
+}

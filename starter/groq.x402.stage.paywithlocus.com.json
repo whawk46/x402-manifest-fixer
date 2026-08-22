@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "groq.x402.stage.paywithlocus.com",
+  "resources": [
+    {
+      "url": "https://groq.x402.stage.paywithlocus.com/groq/chat",
+      "description": "Locus public pay-per-use API"
+    }
+  ]
+}

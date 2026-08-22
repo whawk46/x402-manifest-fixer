@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "numberintel.dev",
+  "resources": [
+    {
+      "url": "https://numberintel.dev/v1/number",
+      "description": "Phone number static intelligence: E.164 normalization, format validity, NANP plausibility checks, geography, timezones and current local time for any US/CA number."
+    },
+    {
+      "url": "https://numberintel.dev/v1/npa",
+      "description": "NANP area code lookup: region, state, country, timezones, current local time, toll-free/premium/geographic flags. Static authoritative dataset (450 NPAs), sub-10ms responses."
+    }
+  ]
+}

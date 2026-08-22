@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "rugsense.xyz",
+  "resources": [
+    {
+      "url": "https://rugsense.xyz/api/launches/latest",
+      "description": "Scored intelligence on freshly-launched Base tokens: safety + momentum → composite score and an AVOID/WATCH/HOT decision per launch. One call returns a ranked list."
+    }
+  ]
+}

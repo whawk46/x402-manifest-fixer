@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.vaults.fyi",
+  "resources": [
+    {
+      "url": "https://api.vaults.fyi/v2/vaults",
+      "description": "Retrieves a filtered list of vaults with their basic information including address, network, associated asset details, and transactional support status."
+    },
+    {
+      "url": "https://api.vaults.fyi/v2/portfolio/best-deposit-options/:userAddress",
+      "description": "Analyzes a user's existing wallet balances and recommends optimal vault deposit opportunities based on yield performance, risk parameters, and user-defined criteria."
+    },
+    {
+      "url": "https://api.vaults.fyi/v2/transactions/context/:userAddress/:network/:vaultId",
+      "description": "Retrieves the complete transactional context for a user's interaction with a specific vault, including available deposit/redeem steps, current balances, and claimable rewards."
+    },
+    {
+      "url": "https://api.vaults.fyi/v2/portfolio/positions/:userAddress",
+      "description": "Provides all vault positions for the user, with optional filters."
+    }
+  ]
+}

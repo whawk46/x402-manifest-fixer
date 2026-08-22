@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "signal.keelbase.io",
+  "resources": [
+    {
+      "url": "https://signal.keelbase.io/api/v1/daily/latest",
+      "description": "Complete latest daily Keelbase Signal records and full synthesis."
+    }
+  ]
+}

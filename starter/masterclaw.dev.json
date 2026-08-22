@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "masterclaw.dev",
+  "resources": [
+    {
+      "url": "https://masterclaw.dev/api/v1/chat/completions",
+      "description": "OpenAI-compatible chat completions backed by DeepSeek (GET probe variant). Answers open-ended questions and returns reasoned analysis."
+    }
+  ]
+}

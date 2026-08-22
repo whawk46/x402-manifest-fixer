@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "email-verify-api-production-d262.up.railway.app",
+  "resources": [
+    {
+      "url": "https://email-verify-api-production-d262.up.railway.app/domain-check",
+      "description": "Check whether a domain has valid MX records and is not on the disposable list; also reports free-provider."
+    },
+    {
+      "url": "https://email-verify-api-production-d262.up.railway.app/bulk-verify",
+      "description": "Verify up to 100 emails in one call; returns a per-email record matching /verify."
+    },
+    {
+      "url": "https://email-verify-api-production-d262.up.railway.app/mx-lookup",
+      "description": "Return raw MX records (preference + exchange host) for a domain, sorted by preference."
+    },
+    {
+      "url": "https://email-verify-api-production-d262.up.railway.app/verify",
+      "description": "Verify a single email: syntax, MX records, SMTP RCPT probe, catch-all, disposable, role-based, free-provider, typo suggestion, 0-100 score, and verdict."
+    }
+  ]
+}

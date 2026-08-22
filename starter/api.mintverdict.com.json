@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.mintverdict.com",
+  "resources": [
+    {
+      "url": "https://api.mintverdict.com/v1/mint/:mint/trade-summary",
+      "description": "Launch-window trade shape for a Solana mint: first buy slot, buy/sell counts, unique traders, early per-slot buy volume."
+    },
+    {
+      "url": "https://api.mintverdict.com/v1/mint/:mint/risk",
+      "description": "Rug/bundle risk verdict for a Solana mint: validation-gauntlet snapshot (mint/freeze authority, LP burn, holder clustering, RugCheck, composite score) plus a live launch-bundle re-check. Same verdicts a live sniper bot trades on."
+    }
+  ]
+}

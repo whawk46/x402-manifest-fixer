@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.runonproof.com",
+  "resources": [
+    {
+      "url": "https://api.runonproof.com/v1/gb/solutions/company-check",
+      "description": "Check a UK company by resolving its Companies House identity and verifying current legal-status and insolvency observations in one paid call. Use before onboarding or contracting. It reports filing limits and does not promise universal good standing."
+    }
+  ]
+}

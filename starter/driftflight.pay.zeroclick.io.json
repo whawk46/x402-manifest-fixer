@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "driftflight.pay.zeroclick.io",
+  "resources": [
+    {
+      "url": "https://driftflight.pay.zeroclick.io/v1/images/generate",
+      "description": "Generate an image from a text prompt"
+    }
+  ]
+}

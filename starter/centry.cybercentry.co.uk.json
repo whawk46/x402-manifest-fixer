@@ -1,0 +1,47 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "centry.cybercentry.co.uk",
+  "resources": [
+    {
+      "url": "https://centry.cybercentry.co.uk/api/services/quantum_cryptography_verification",
+      "description": "Encrypt text with quantum-resistant (post-quantum) cryptography, for secrets that must outlast classical encryption. Returns a record ID and a decrypt URL"
+    },
+    {
+      "url": "https://centry.cybercentry.co.uk/api/services/media_content_verification",
+      "description": "Check whether an image or video is authentic and where it came from: C2PA content credentials, provenance and metadata extraction, with an avatar and logo impersonation check. Detect AI-generated or tampered media before trusting it"
+    },
+    {
+      "url": "https://centry.cybercentry.co.uk/api/services/ethereum_token_verification",
+      "description": "Check an Ethereum or EVM token contract before buying: rug pull, hidden tax, liquidity legitimacy and holder concentration risk. Token due diligence returned as a scan report"
+    },
+    {
+      "url": "https://centry.cybercentry.co.uk/api/services/cyber_security_consultant",
+      "description": "Ask a cyber security question and get an expert answer backed by real-time threat intelligence, covering current threats, best practice and compliance"
+    },
+    {
+      "url": "https://centry.cybercentry.co.uk/api/services/wallet_verification",
+      "description": "Screen a wallet address for sanctions and risk: OFAC SDN sanctions screening, risk scoring and suspicious-activity detection across 31 EVM chains. Check a counterparty before you transact with it"
+    },
+    {
+      "url": "https://centry.cybercentry.co.uk/api/services/web_application_verification",
+      "description": "Scan a website or dApp frontend for vulnerabilities using OWASP checks, before connecting a wallet to it or trusting it with user data"
+    },
+    {
+      "url": "https://centry.cybercentry.co.uk/api/services/solidity_code_verification",
+      "description": "Audit Solidity smart contract source for vulnerabilities before you deploy or call it. Returns findings with a clear risk level"
+    },
+    {
+      "url": "https://centry.cybercentry.co.uk/api/services/private_data_verification",
+      "description": "Prove a fact about private data without revealing the data: validates text integrity and returns a zero-knowledge proof (ZKP) with a verification ID and URL"
+    },
+    {
+      "url": "https://centry.cybercentry.co.uk/api/services/base_token_verification",
+      "description": "Check a Base token contract before buying: detects honeypots, armed freeze-and-seize, a live pause, fake B20s and ticker-impersonation copycats, and separately discloses issuer controls (admin centralisation, supply cap, transfer policy, rebase) so a legitimate token is not mistaken for a scam"
+    },
+    {
+      "url": "https://centry.cybercentry.co.uk/api/services/openclaw_ai_agent_verification",
+      "description": "Audit an AI agent configuration for security holes: prompt injection exposure, missing authentication, over-broad tool permissions and unsafe gateway settings. Check an agent before you trust it or connect to it"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "oblique.markets",
+  "resources": [
+    {
+      "url": "https://oblique.markets/api/v1/paid/bazaar-pulse",
+      "description": "Live x402 Bazaar market pulse: trending services, call volumes, new listings — from daily full-catalogue snapshots"
+    },
+    {
+      "url": "https://oblique.markets/api/v1/paid/agent-readiness-audit",
+      "description": "Agent-readiness audit of a domain: parallel SSRF-guarded probes of the six discovery surfaces agents read (/.well-known/x402.json, /.well-known/agent.json, /openapi.json, /llms.txt, /robots.txt, /.well-known/mcp.json) with key-field validation, a weighted 0-100 score and specific fix-it recommendations"
+    },
+    {
+      "url": "https://oblique.markets/api/v1/paid/time",
+      "description": "Current server time"
+    },
+    {
+      "url": "https://oblique.markets/api/v1/paid/echo",
+      "description": "Echo service"
+    }
+  ]
+}

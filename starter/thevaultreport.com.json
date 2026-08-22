@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "thevaultreport.com",
+  "resources": [
+    {
+      "url": "https://thevaultreport.com/api/x402/comex/deliveries",
+      "description": "COMEX daily delivery notices: issues and stops with the house-vs-customer split, per CME product and contract month. Read from CME's daily Issues and Stops report and reconciled against its own printed totals. Contract counts are per product, so never sum across product_code -- a micro contract is a tenth or a fifth of the standard one. ounces_issued/ounces_stopped are NULL for copper and aluminium, which are not priced in ounces."
+    },
+    {
+      "url": "https://thevaultreport.com/api/x402/anomalies",
+      "description": "Ranked market anomalies: every tracked precious-metals and energy series scored by how far its latest reading sits from its own history — a composite of level extremity, 30-day z-score, and move velocity — sorted most-abnormal-first with record context. One call returns a scored anomaly watchlist that the free /snapshot omits. Optional ?limit=N for the top-N."
+    },
+    {
+      "url": "https://thevaultreport.com/api/x402/feature-request",
+      "description": "File a feature request against The Vault Report's data API: tell us which precious-metals, COMEX or LME series you wish existed and can't get. One cent per request — the price is a spam gate, not revenue, so the demand signal is real. Query param ?text= (max 1000 characters). Reading the resulting roadmap is free at /api/x402/feature-requests."
+    }
+  ]
+}

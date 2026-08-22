@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "witness.bnbot.ai",
+  "resources": [
+    {
+      "url": "https://witness.bnbot.ai/x/20",
+      "description": "Get tweet details with signed proof"
+    }
+  ]
+}

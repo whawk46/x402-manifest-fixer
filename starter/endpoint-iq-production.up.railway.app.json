@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "endpoint-iq-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://endpoint-iq-production.up.railway.app/v1/score",
+      "description": "Score how clearly an AI agent can discover, parse, and reason about a public API response."
+    }
+  ]
+}

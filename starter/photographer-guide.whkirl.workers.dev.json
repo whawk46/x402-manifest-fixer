@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "photographer-guide.whkirl.workers.dev",
+  "resources": [
+    {
+      "url": "https://photographer-guide.whkirl.workers.dev/plan",
+      "description": "Photographer Guide: plans a night-photography shoot from a GPS position using live cloud-cover forecasts, moon phase, astronomical darkness and the meteor-shower calendar. Returns scored shooting locations, a driving route with timing, en-route photo stops, a minute-by-minute schedule and an AI narrative."
+    }
+  ]
+}

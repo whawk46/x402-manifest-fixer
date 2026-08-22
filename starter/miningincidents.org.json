@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "miningincidents.org",
+  "resources": [
+    {
+      "url": "https://miningincidents.org/api/x402/fatalities",
+      "description": "MSHA mining fatalities feed, newest first, including OPEN preliminary notices (scraped 32–180 days ahead of the official dataset and flagged as preliminary). Filter by date, state, commodity."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "recalls.recordsforagents.com",
+  "resources": [
+    {
+      "url": "https://recalls.recordsforagents.com/recalls/search",
+      "description": "Search US federal product recalls (CPSC consumer products, FDA food/drug/device enforcement, USDA FSIS meat/poultry recalls, NHTSA vehicle campaigns) by free-text query, firm name, date range, and source."
+    }
+  ]
+}

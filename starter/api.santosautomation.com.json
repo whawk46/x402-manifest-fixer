@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.santosautomation.com",
+  "resources": [
+    {
+      "url": "https://api.santosautomation.com/api/audit",
+      "description": "Run a fast, lightweight audit of a single public web page: performance signals (fetch timing, page weight), SEO signals, basic HTML accessibility signals, and security-header checks. Returns 0-100 category scores, detailed pass/fail checks, detected issues, and plain-English remediation guidance."
+    }
+  ]
+}

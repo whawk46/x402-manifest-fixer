@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "bimi-checker.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://bimi-checker.underscoredone.com/check",
+      "description": "Checks one or more website addresses to see if they are properly set up to show a brand logo next to emails in inboxes like Gmail, Apple Mail, and Yahoo. It looks up the special settings the domain has published, checks that the logo picture follows the required format, checks that a security certificate for the logo (if any) is valid and not expired, and confirms the domain has strict enough email protection rules turned on. It returns a clear pass or fail for each domain along with a plain list of what is broken if something fails."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402tap.com",
+  "resources": [
+    {
+      "url": "https://x402tap.com/api/web-search",
+      "description": "Real-time web search (via Exa) — ranked results with title, URL, published date, author, and relevance score for a query"
+    },
+    {
+      "url": "https://x402tap.com/api/weather",
+      "description": "Live current weather conditions for any city, sourced from Open-Meteo"
+    },
+    {
+      "url": "https://x402tap.com/api/wallet-balance",
+      "description": "Native and (optional) ERC-20 token balance for a wallet address across major EVM chains (base, ethereum, polygon, arbitrum, optimism)"
+    },
+    {
+      "url": "https://x402tap.com/api/gas-price",
+      "description": "Current gas price and EIP-1559 fee estimate for a chain (base, ethereum, polygon, arbitrum, optimism)"
+    },
+    {
+      "url": "https://x402tap.com/api/rpc",
+      "description": "Safelisted read-only JSON-RPC proxy across major EVM chains (base, ethereum, polygon, arbitrum, optimism) — eth_call, eth_getBalance, eth_getTransactionReceipt, eth_getBlockByNumber, and more"
+    },
+    {
+      "url": "https://x402tap.com/api/ens-resolve",
+      "description": "Resolve an ENS name to an address, or reverse-resolve an address to its primary ENS name"
+    },
+    {
+      "url": "https://x402tap.com/api/ping",
+      "description": "Heartbeat endpoint billed via a batch-settlement payment channel"
+    },
+    {
+      "url": "https://x402tap.com/api/generate",
+      "description": "Usage-based text generation, billed by output length (max $0.05/request)"
+    },
+    {
+      "url": "https://x402tap.com/api/insights",
+      "description": "Trend insights for a topic, with a premium tier for the full breakdown"
+    },
+    {
+      "url": "https://x402tap.com/api/kalshi-market",
+      "description": "Get full detail (yes/no prices, volume, status, result) for a single Kalshi market by ticker"
+    },
+    {
+      "url": "https://x402tap.com/api/kalshi-markets",
+      "description": "Search or list open Kalshi prediction markets (regulated US event contracts)"
+    },
+    {
+      "url": "https://x402tap.com/api/polymarket-market",
+      "description": "Get full detail (prices, volume, liquidity, resolution) for a single Polymarket market by slug"
+    },
+    {
+      "url": "https://x402tap.com/api/polymarket-markets",
+      "description": "Search or list active Polymarket prediction markets, ranked by 24h volume"
+    },
+    {
+      "url": "https://x402tap.com/api/crypto-market",
+      "description": "Rich market data for one or more cryptocurrencies: rank, 24h high/low, volume, ATH, and more"
+    },
+    {
+      "url": "https://x402tap.com/api/crypto-trending",
+      "description": "Get the top trending cryptocurrencies right now, ranked by search interest"
+    },
+    {
+      "url": "https://x402tap.com/api/crypto-price",
+      "description": "Look up current price, 24h change, and market cap for one or more cryptocurrencies"
+    },
+    {
+      "url": "https://x402tap.com/api/defi-chains",
+      "description": "Rank blockchains by total DeFi value locked (TVL) across all protocols"
+    },
+    {
+      "url": "https://x402tap.com/api/defi-tvl",
+      "description": "Look up a DeFi protocol's current total value locked (TVL), by chain, plus market cap"
+    },
+    {
+      "url": "https://x402tap.com/api/prediction-arb",
+      "description": "Find prediction-market questions priced differently on Polymarket vs. Kalshi — a cross-platform divergence signal built from data no single-platform competitor has"
+    },
+    {
+      "url": "https://x402tap.com/protected",
+      "description": "Premium content"
+    }
+  ]
+}

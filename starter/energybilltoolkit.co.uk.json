@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "energybilltoolkit.co.uk",
+  "resources": [
+    {
+      "url": "https://energybilltoolkit.co.uk/places/api/tools/place-lookup",
+      "description": "Place Distance tool: Search for places by name — returns coordinates, population, country, and admin region."
+    },
+    {
+      "url": "https://energybilltoolkit.co.uk/text-metrics/api/tools/count-text",
+      "description": "Return deterministic structural counts: characters, words, sentences, paragraphs, headings, bullets, and averages."
+    },
+    {
+      "url": "https://energybilltoolkit.co.uk/waste/api/tools/get-waste-collections",
+      "description": "Resolve UK council waste collection dates from house number/name, postcode, and authority using safe address-to-UPRN mapping before calling council/HACS adapters."
+    },
+    {
+      "url": "https://energybilltoolkit.co.uk/air/api/tools/get-air-quality",
+      "description": "Resolve a UK postcode to current DEFRA UK-AIR pollutant readings from nearest monitoring stations."
+    },
+    {
+      "url": "https://energybilltoolkit.co.uk/m2m-trust/api/tools/spc-audit",
+      "description": "M2M Trust deterministic analysis tool: Lean Six Sigma SPC audit for a current value against control limits and recent history."
+    },
+    {
+      "url": "https://energybilltoolkit.co.uk/m2m-trust/api/tools/data-quality-audit",
+      "description": "M2M Trust deterministic analysis tool: Deterministic flat-JSON dataset audit for missingness, invalid values, duplicates, cardinality and numeric ranges."
+    }
+  ]
+}

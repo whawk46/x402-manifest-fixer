@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.ideafactorylab.org",
+  "resources": [
+    {
+      "url": "https://api.ideafactorylab.org/x402/github-user",
+      "description": "GitHub user public profile. Pass ?username=torvalds"
+    }
+  ]
+}

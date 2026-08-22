@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "leaderboard.0000402.xyz",
+  "resources": [
+    {
+      "url": "https://leaderboard.0000402.xyz/entry",
+      "description": "Pay $0.01 USDC to create a leaderboard or add, update, or delete one entry. Use a secret leaderboard_key UUID to continue writing to the same board. If value is null, the named entry is deleted. Public pages stay free at GET /leaderboard/{slug}. Network: Base Mainnet. Each request writes one named score and returns the board key and URLs."
+    }
+  ]
+}

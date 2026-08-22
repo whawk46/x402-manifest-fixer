@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "talkshi.com",
+  "resources": [
+    {
+      "url": "https://talkshi.com/api/shop/ads",
+      "description": "Buy 50 expected views of a clearly labeled sponsored placement on Talkshi."
+    },
+    {
+      "url": "https://talkshi.com/api/shop/ads/micro",
+      "description": "Buy 5 expected views of a clearly labeled sponsored placement on Talkshi."
+    }
+  ]
+}

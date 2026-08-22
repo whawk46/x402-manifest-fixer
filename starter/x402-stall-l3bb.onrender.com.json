@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-stall-l3bb.onrender.com",
+  "resources": [
+    {
+      "url": "https://x402-stall-l3bb.onrender.com/hello-402",
+      "description": "Hello from Taiwan — a signed timestamp from my first x402 stall"
+    }
+  ]
+}

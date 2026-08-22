@@ -1,0 +1,31 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "techforce-agents.onrender.com",
+  "resources": [
+    {
+      "url": "https://techforce-agents.onrender.com/api/business-leads",
+      "description": "Google Maps business leads on demand with key details including business name, category, phone, website, email, address, and operating hours. Get leads for $0.05 per record (minimum 1, up to 1,000). Simply enter your search query, target location, and required number of leads. Discover relevant business prospects in any city, anywhere in the world.\n\nPowered by Techforce Global — explore more at https://techforceglobal.com"
+    },
+    {
+      "url": "https://techforce-agents.onrender.com/api/all-jobs",
+      "description": "Job listings on demand from 26+ boards worldwide (Indeed, Adzuna, Reed, RemoteOK, Jooble, and more) — title, company, location, salary, job type, description, posting date, and apply URL. Get results for $0.01 per record (minimum 10, up to 100). Enter a keyword, optional location and job type, and how many jobs you want. One call, many boards.\n\nPowered by Techforce Global — explore more at https://techforceglobal.com"
+    },
+    {
+      "url": "https://techforce-agents.onrender.com/api/youtube-transcript",
+      "description": "Full YouTube video transcript on demand — every spoken segment with timestamps. Give a video URL and get clean, structured captions back, in 13 languages with optional auto-translation. Perfect for AI summarization, content repurposing, and research. One transcript per call.\n\nPowered by Techforce Global — explore more at https://techforceglobal.com"
+    },
+    {
+      "url": "https://techforce-agents.onrender.com/api/linkedin-candidates",
+      "description": "LinkedIn candidate search on demand — full name, job title/headline, profile URL, and bio snippet. Priced $0.05 per candidate (minimum 1, up to 50 per search). Enter a job role, optional location and seniority, and the number of candidates. Fast talent sourcing for recruiters and AI hiring agents.\n\nPowered by Techforce Global — explore more at https://techforceglobal.com"
+    },
+    {
+      "url": "https://techforce-agents.onrender.com/api/all-events",
+      "description": "Local events on demand from AllEvents — event name, category, date & time, venue, city, and ticket link. Get results for $0.005 per record (minimum 1, up to 100). Simply enter a city and the number of events you want. Discover concerts, workshops, festivals, and more.\n\nPowered by Techforce Global — explore more at https://techforceglobal.com"
+    },
+    {
+      "url": "https://techforce-agents.onrender.com/api/amazon-products",
+      "description": "Amazon product data on demand with key details including ASIN, title, brand, price, currency, rating, review count, availability, thumbnail, and product URL. Get results for $0.03 per record (minimum 1, up to 1,000). Enter your search keywords, optionally choose an Amazon marketplace (com, in, co.uk, de, ca, com.au, ae), and the number of products you need. Discover live Amazon product listings in seconds.\n\nPowered by Techforce Global — explore more at https://techforceglobal.com"
+    }
+  ]
+}

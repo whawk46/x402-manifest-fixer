@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "nostrpulse.xyz",
+  "resources": [
+    {
+      "url": "https://nostrpulse.xyz/nostr/zap-weighted",
+      "description": "Top Nostr notes and authors by sat-zap velocity over a rolling window. Surfaces real-money sentiment — who the BTC/Nostr economy is literally paying to amplify. Fundamentally different signal from reposts/likes: zaps cost sats. Query ?window=15m|1h|6h|24h &scope=notes|authors &limit=N."
+    },
+    {
+      "url": "https://nostrpulse.xyz/nostr/dvm-activity",
+      "description": "Rolling index of NIP-90 Data Vending Machine activity on Nostr. Shows what AI/data services agents are paying each other for right now — the sats-denominated agent-economy leading indicator. Per-kind breakdown of requests, responses, unique customers, unique providers. Query ?window=15m|1h|6h|24h."
+    }
+  ]
+}

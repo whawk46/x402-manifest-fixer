@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "banking-compliance-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://banking-compliance-production.up.railway.app/api/generate",
+      "description": "Generate a compliant social media post for a bank or credit union product. AI-powered with automatic compliance checking against 56 federal rules."
+    },
+    {
+      "url": "https://banking-compliance-production.up.railway.app/api/lookup",
+      "description": "Search the federal banking compliance rules database. 56 rules across Reg DD, Reg Z, UDAAP, ECOA, BSA/AML, and more."
+    },
+    {
+      "url": "https://banking-compliance-production.up.railway.app/api/check",
+      "description": "Check marketing or training content against 56 federal banking compliance rules. Returns violations with regulatory citations."
+    }
+  ]
+}

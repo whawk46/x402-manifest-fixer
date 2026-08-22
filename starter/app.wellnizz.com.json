@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "app.wellnizz.com",
+  "resources": [
+    {
+      "url": "https://app.wellnizz.com/labs/search",
+      "description": "Find nearby supported lab collection locations or official locator handoffs."
+    },
+    {
+      "url": "https://app.wellnizz.com/query",
+      "description": "Ask a grounded question across wellness data and analyses owned by the paying wallet."
+    },
+    {
+      "url": "https://app.wellnizz.com/providers",
+      "description": "Find labs, wearable integrations, and genetics providers across modalities and regions."
+    }
+  ]
+}

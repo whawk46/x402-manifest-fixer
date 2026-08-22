@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "sol-meme-intel.vercel.app",
+  "resources": [
+    {
+      "url": "https://sol-meme-intel.vercel.app/api/discover",
+      "description": "Discover newly surfaced meme tokens on Solana from DexScreener boosted (PAID-promoted) and newly profiled tokens, enriched with price, liquidity, volume. Discovery starting point; check /api/safety, /api/holders, /api/bundle before trading. Body: { limit? }."
+    }
+  ]
+}

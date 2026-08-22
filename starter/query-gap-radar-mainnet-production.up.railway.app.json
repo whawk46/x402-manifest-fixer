@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "query-gap-radar-mainnet-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://query-gap-radar-mainnet-production.up.railway.app/v1/gaps",
+      "description": "Rank aggregate agent-demand gaps with bounded, privacy-safe evidence."
+    }
+  ]
+}

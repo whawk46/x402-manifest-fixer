@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "timecapsule.0000402.xyz",
+  "resources": [
+    {
+      "url": "https://timecapsule.0000402.xyz/seal",
+      "description": "Pay $0.05 USDC to seal up to 100 KB of text until a future date. Content is inaccessible via GET /open/{token} until unlock_at passes. An optional label is visible before unlock via GET /status/{token}. Max unlock date: 10 years from now. Network: Base Mainnet. Each request stores one sealed text capsule and returns a token for later retrieval."
+    }
+  ]
+}

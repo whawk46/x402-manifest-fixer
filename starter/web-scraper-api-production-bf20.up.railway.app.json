@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "web-scraper-api-production-bf20.up.railway.app",
+  "resources": [
+    {
+      "url": "https://web-scraper-api-production-bf20.up.railway.app/scrape/structured",
+      "description": "Extract structured elements: heading hierarchy (h1-h6), lists, tables as 2D arrays, and images with alt text, plus element counts."
+    },
+    {
+      "url": "https://web-scraper-api-production-bf20.up.railway.app/scrape/metadata",
+      "description": "Extract page metadata: title, description, keywords, author, published/modified dates, canonical, language, favicon, and OpenGraph/Twitter card tags."
+    },
+    {
+      "url": "https://web-scraper-api-production-bf20.up.railway.app/scrape/links",
+      "description": "Extract all links from a page split into internal and external, each with anchor text and rel attribute, plus per-group counts."
+    },
+    {
+      "url": "https://web-scraper-api-production-bf20.up.railway.app/scrape/text",
+      "description": "Fetch a URL and extract clean main-content text with title, description, word count, and char count; boilerplate (nav/footer/sidebar/ads) is stripped."
+    }
+  ]
+}

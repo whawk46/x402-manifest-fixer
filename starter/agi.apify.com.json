@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agi.apify.com",
+  "resources": [
+    {
+      "url": "https://agi.apify.com/protocols/x402/prepaid-tokens",
+      "description": "Apify is the largest and most trusted marketplace of tools for web scraping, crawling, data extraction, and automation. Use these tools, called Actors, to extract structured data from social media, e-commerce sites, search engines, maps, travel sites, or any other website. Turn the open web into a real-time data source for your research, lead generation, and monitoring."
+    }
+  ]
+}

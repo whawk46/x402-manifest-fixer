@@ -1,0 +1,27 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.mydev-tools.tech",
+  "resources": [
+    {
+      "url": "https://api.mydev-tools.tech/agent/v1/reliability/analyze",
+      "description": "Operational reliability analysis for recurring tasks, jobs and pipelines: success rate, streak recovery, lapse risk and ranked remediation (USDC on Base)."
+    },
+    {
+      "url": "https://api.mydev-tools.tech/agent/v1/habits/recommend",
+      "description": "Next-best habit recommendations (USDC on Base)."
+    },
+    {
+      "url": "https://api.mydev-tools.tech/agent/v1/habits/insights",
+      "description": "Summarised insights for agent workflows."
+    },
+    {
+      "url": "https://api.mydev-tools.tech/agent/v1/habits/plan",
+      "description": "Habit plan generation (USDC on Base)."
+    },
+    {
+      "url": "https://api.mydev-tools.tech/agent/v1/habits/analyze",
+      "description": "Habit intelligence analysis (USDC on Base)."
+    }
+  ]
+}

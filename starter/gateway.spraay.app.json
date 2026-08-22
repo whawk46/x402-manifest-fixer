@@ -1,0 +1,71 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "gateway.spraay.app",
+  "resources": [
+    {
+      "url": "https://gateway.spraay.app/api/v1/prices",
+      "description": "Live token prices."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/notify/sms",
+      "description": "Send SMS notification for payment alerts."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/rpc/chains",
+      "description": "List supported RPC chains and methods."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/oracle/gas",
+      "description": "Gas prices on Base."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/swap/tokens",
+      "description": "Supported swap tokens."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/robots/list",
+      "description": "Discover RTP robots. Filter by capability, chain, price, status."
+    },
+    {
+      "url": "https://gateway.spraay.app/bittensor/v1/models",
+      "description": "List all AI models on Bittensor. OpenAI /v1/models compatible. Drop-in: just change base_url to gateway.spraay.app/bittensor/v1"
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/oracle/prices",
+      "description": "Multi-token price feed."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/models",
+      "description": "List AI models."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/storage/get",
+      "description": "Retrieve pinned content by CID."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/oracle/fx",
+      "description": "Stablecoin FX rates."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/logs/query",
+      "description": "Query structured logs by service, level, time."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/webhook/list",
+      "description": "List registered webhooks."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/payroll/tokens",
+      "description": "Payroll stablecoins."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/cron/list",
+      "description": "List scheduled jobs."
+    },
+    {
+      "url": "https://gateway.spraay.app/api/v1/bridge/chains",
+      "description": "Supported bridge chains."
+    }
+  ]
+}

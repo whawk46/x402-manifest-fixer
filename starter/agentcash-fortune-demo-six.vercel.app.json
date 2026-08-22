@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agentcash-fortune-demo-six.vercel.app",
+  "resources": [
+    {
+      "url": "https://agentcash-fortune-demo-six.vercel.app/api/fortune",
+      "description": "Random fortune — fixed price; x402 exact or MPP one-shot"
+    }
+  ]
+}

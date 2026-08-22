@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-fuelprice-poc.theliminalguy.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-fuelprice-poc.theliminalguy.workers.dev/price",
+      "description": "Current UK weekly average road fuel price (petrol + diesel, pence/litre), sourced live from DESNZ (UK gov)"
+    }
+  ]
+}

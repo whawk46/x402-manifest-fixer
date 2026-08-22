@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "cnvrt.ing",
+  "resources": [
+    {
+      "url": "https://cnvrt.ing/api/analyze-image",
+      "description": "Extract raw artifacts from images: OCR text and detected objects. No interpretation, just clean machine-readable data. Powered by GPT-4o Vision. Payment via USDC on base."
+    }
+  ]
+}

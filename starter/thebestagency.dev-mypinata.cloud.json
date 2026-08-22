@@ -1,0 +1,10 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "thebestagency.dev-mypinata.cloud",
+  "resources": [
+    {
+      "url": "https://thebestagency.dev-mypinata.cloud/x402/cid/bafybeifve5t7bs7dd2fim2z5xm5fjpeitc3kh45rja2xn2srvnxqspdcue"
+    }
+  ]
+}

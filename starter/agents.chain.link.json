@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agents.chain.link",
+  "resources": [
+    {
+      "url": "https://agents.chain.link/v1/operations/:workflowName",
+      "description": "Chainlink For Agents: execute a catalog workflow by workflow name."
+    },
+    {
+      "url": "https://agents.chain.link/v1/operations/:operationId/submit",
+      "description": "Chainlink For Agents: submit a signed operation payload."
+    },
+    {
+      "url": "https://agents.chain.link/v1/register",
+      "description": "Chainlink For Agents: update agent registration (ToS / execution mode). Onboarding: GET /v1/skills, GET /v1/terms-of-service, POST /v1/register."
+    }
+  ]
+}

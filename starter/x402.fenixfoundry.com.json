@@ -1,0 +1,23 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.fenixfoundry.com",
+  "resources": [
+    {
+      "url": "https://x402.fenixfoundry.com/repair-json",
+      "description": "Repair malformed JSON (trailing commas, single quotes, unquoted keys, code fences, truncated output) and optionally validate the result against a supplied JSON Schema. Returns the parsed value, the canonical text, a change log and validation errors."
+    },
+    {
+      "url": "https://x402.fenixfoundry.com/resolution",
+      "description": "Did it happen? Check whether a prediction market event has settled on Polymarket or Kalshi and get the resolved outcome, resolution time, source and market URL. A cheap oracle for agents that must verify a real-world outcome before acting."
+    },
+    {
+      "url": "https://x402.fenixfoundry.com/probability",
+      "description": "What does the market think? Ask any event question in plain English and get the implied probability from live Polymarket and Kalshi prediction markets: per-venue odds, a liquidity-weighted consensus forecast, and a cross-venue divergence flag."
+    },
+    {
+      "url": "https://x402.fenixfoundry.com/extract",
+      "description": "Scrape and fetch any public web page and return clean, LLM-ready Markdown plus metadata (title, author, published date, excerpt, outbound links, word count). A web reader and content extractor with boilerplate, nav and ads removed."
+    }
+  ]
+}

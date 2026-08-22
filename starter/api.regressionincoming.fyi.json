@@ -1,0 +1,10 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.regressionincoming.fyi",
+  "resources": [
+    {
+      "url": "https://api.regressionincoming.fyi/v1/bundle/purchase"
+    }
+  ]
+}

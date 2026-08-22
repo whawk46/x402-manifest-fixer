@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "web-production-2d1051.up.railway.app",
+  "resources": [
+    {
+      "url": "https://web-production-2d1051.up.railway.app/v1/classify",
+      "description": "Classify text or JSON into categories with AI: sentiment analysis, topic, intent detection, urgency triage, or a custom taxonomy. Returns labels with confidence scores and reasoning."
+    }
+  ]
+}

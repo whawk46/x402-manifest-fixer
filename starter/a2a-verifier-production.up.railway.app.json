@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "a2a-verifier-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://a2a-verifier-production.up.railway.app/verify",
+      "description": "Base L2 EVM token safety verifier: simulates buy/sell, transfer taxes, honeypot checks, proxy resolution, and liquidity. Pass ?token=<Base ERC-20 address>."
+    }
+  ]
+}

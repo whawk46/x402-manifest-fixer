@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.gazette.bot",
+  "resources": [
+    {
+      "url": "https://api.gazette.bot/credits",
+      "description": "Purchase Gazette API credits. $0.01 per credit. Use query param ?amount=N for custom amounts ($1-$1000). TRY FREE: POST /credits/free for 10 free credits first!"
+    }
+  ]
+}

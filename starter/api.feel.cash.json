@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.feel.cash",
+  "resources": [
+    {
+      "url": "https://api.feel.cash/v1/launches",
+      "description": "Deploy one Feel coin with a WETH pair"
+    }
+  ]
+}

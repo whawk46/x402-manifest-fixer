@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-orgauth-poc.theliminalguy.workers.dev",
+  "resources": [
+    {
+      "url": "https://x402-orgauth-poc.theliminalguy.workers.dev/orgs/:var1/tokens",
+      "description": "Issue a signed, scoped access token (JWT) for an org member"
+    },
+    {
+      "url": "https://x402-orgauth-poc.theliminalguy.workers.dev/orgs/:id/tokens",
+      "description": "Issue a signed, scoped access token (JWT) for an org member"
+    }
+  ]
+}

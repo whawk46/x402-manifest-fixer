@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "clanker-banker.agentfetcher.workers.dev",
+  "resources": [
+    {
+      "url": "https://clanker-banker.agentfetcher.workers.dev/v1/llm-pack",
+      "description": "Clanker Banker llm-pack: URL→token-budgeted LLM-ready markdown for AI agents. html-to-markdown, web scrape offload, RAG ingest pack. ~$0.005 USDC Base x402. Pay-to-probe on /v1/inspect|/v1/resolve. Quote: GET /v1/quote?tool=llm-pack."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "mysticapi.com",
+  "resources": [
+    {
+      "url": "https://mysticapi.com/v1/sky/today",
+      "description": "Live universal sky snapshot, no inputs: geocentric ecliptic longitudes for 13 bodies (Sun through Pluto, Chiron, lunar nodes) with zodiac sign/degree and 64-gate wheel placements, current moon phase and illumination, active retrogrades, and a 30-day almanac of upcoming stations and lunations. JPL-validated ephemeris. JSON. $0.01 USDC via x402, or API key."
+    }
+  ]
+}

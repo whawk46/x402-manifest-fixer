@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "memegeneratorx402.vercel.app",
+  "resources": [
+    {
+      "url": "https://memegeneratorx402.vercel.app/api/generate-meme",
+      "description": "Generate a captioned meme image. Pay per request in USDC on Base mainnet."
+    }
+  ]
+}

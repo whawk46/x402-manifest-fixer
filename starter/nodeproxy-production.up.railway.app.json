@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "nodeproxy-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://nodeproxy-production.up.railway.app/agent-lock",
+      "description": "Distributed lock / idempotency primitive for multi-agent swarms. claim(key) returns a token if free (with TTL); release(token) frees it; check(key) reports whether held. Stops multiple agents from double-processing the same work item."
+    }
+  ]
+}

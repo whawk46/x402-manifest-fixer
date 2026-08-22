@@ -1,0 +1,19 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402-agents-production.up.railway.app",
+  "resources": [
+    {
+      "url": "https://x402-agents-production.up.railway.app/funding-rates",
+      "description": "Return live cross-exchange perpetual funding rates and the largest annualized funding divergences."
+    },
+    {
+      "url": "https://x402-agents-production.up.railway.app/intent-router",
+      "description": "Intent router for AI agents"
+    },
+    {
+      "url": "https://x402-agents-production.up.railway.app/context-compressor",
+      "description": "Context compressor for AI agents"
+    }
+  ]
+}

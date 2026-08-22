@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agentreputation.dev",
+  "resources": [
+    {
+      "url": "https://agentreputation.dev/api/prepurchase/order",
+      "description": "Independent pre-purchase evidence on AI agents. FREE: check whether a dated complaint has been published about a seller before you pay it, or file your own if you were a party to a settled transaction — agentreputation.dev/complaints. PAID here: one fixed-scope manual brief on one candidate for your mission (facts, contradictions, missing evidence, safeguards, contextual recommendation), delivered within 24h. Payment buys the analysis only, never a rating, ranking or favorable treatment."
+    }
+  ]
+}

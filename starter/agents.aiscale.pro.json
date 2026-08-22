@@ -1,0 +1,39 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agents.aiscale.pro",
+  "resources": [
+    {
+      "url": "https://agents.aiscale.pro/api/v1/research",
+      "description": "AiScale Research Synthesizer: Deep research on any topic. Searches multiple sources and returns structured brief with findings, evidence, citations, and confidence scores."
+    },
+    {
+      "url": "https://agents.aiscale.pro/api/v1/review/code",
+      "description": "AiScale Code Reviewer: Reviews code for security vulnerabilities, bugs, code smells, and optimizations. Supports Python, JS, TS, Go, Rust, Solidity."
+    },
+    {
+      "url": "https://agents.aiscale.pro/api/v1/analyze/contract",
+      "description": "AiScale Contract Analyzer: Analyzes legal contracts/documents. Returns risk analysis, key terms, obligations, deadlines, red flags, and plain-English summary."
+    },
+    {
+      "url": "https://agents.aiscale.pro/api/v1/extract",
+      "description": "AiScale Data Extractor: Extracts structured data from a URL or raw HTML. Returns entities, facts, tables, and metadata as clean JSON."
+    },
+    {
+      "url": "https://agents.aiscale.pro/api/v1/news/summary",
+      "description": "AiScale News Summary: Summarizes recent news for a topic. Returns structured summaries with source, date, relevance score, and key takeaways."
+    },
+    {
+      "url": "https://agents.aiscale.pro/api/v1/enrich/email/:email",
+      "description": "AiScale Contact Enrichment: Given an email, returns full name, company, title, LinkedIn URL, and social profiles."
+    },
+    {
+      "url": "https://agents.aiscale.pro/api/v1/company/:domain",
+      "description": "AiScale Company Enrichment: Returns company name, industry, employee count, funding, tech stack, social links, and key executives for any domain."
+    },
+    {
+      "url": "https://agents.aiscale.pro/api/v1/sentiment/:ticker",
+      "description": "AiScale Sentiment: Real-time sentiment analysis for a stock ticker. Returns score (-1 to 1), mention volume, source breakdown, and trend direction."
+    }
+  ]
+}

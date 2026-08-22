@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "mcp.onharmony.net",
+  "resources": [
+    {
+      "url": "https://mcp.onharmony.net/base/stable-yield-gate",
+      "description": "Stablecoin yield opportunity screening with deterministic risk gates"
+    }
+  ]
+}

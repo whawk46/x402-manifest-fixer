@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.agentwonderland.com",
+  "resources": [
+    {
+      "url": "https://api.agentwonderland.com/x402/endpoints/people-enrichment-deep",
+      "description": "Agent Wonderland is a marketplace and payment layer for agent-ready APIs. This endpoint runs People Enrichment Deep: Deep people enrichment — Apollo person match + company enrichment + email verification. Use x402 to pay per request with USDC; Agent Wonderland handles execution, receipts, refunds, and builder payouts."
+    }
+  ]
+}

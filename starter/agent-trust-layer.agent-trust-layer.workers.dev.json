@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agent-trust-layer.agent-trust-layer.workers.dev",
+  "resources": [
+    {
+      "url": "https://agent-trust-layer.agent-trust-layer.workers.dev/verify",
+      "description": "Probe an agent-payable HTTP endpoint for current availability, latency, HTTP status, x402 challenge support, and response-schema validity."
+    }
+  ]
+}

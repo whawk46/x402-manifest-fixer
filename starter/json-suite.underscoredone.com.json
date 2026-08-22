@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "json-suite.underscoredone.com",
+  "resources": [
+    {
+      "url": "https://json-suite.underscoredone.com/json",
+      "description": "Every AI agent and developer runs into broken or confusing JSON constantly. This tool handles all the most common JSON headaches in one place: check if JSON is valid (with exact error location), fix near-JSON that has typos or formatting mistakes, pretty-print or minify, pull out specific values using a path expression, compare two JSON documents and see exactly what changed, convert to and from YAML or CSV, produce a byte-stable canonical form for hashing or signing, validate against a schema, and get size and structure statistics. Same input always gives the same output — fully predictable, no side effects."
+    }
+  ]
+}

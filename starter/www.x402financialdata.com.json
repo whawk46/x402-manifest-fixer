@@ -1,0 +1,251 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "www.x402financialdata.com",
+  "resources": [
+    {
+      "url": "https://www.x402financialdata.com/crypto-prices",
+      "description": "Real crypto market data in one batched call: price, market cap, market-cap rank, 24h volume/high/low/change, circulating/total/max supply, and all-time-high with date -- for BTC, ETH, SOL, and 17+ other major coins by ticker. Richer than a plain price feed: most stock-data APIs' crypto tickers report null market cap. From CoinGecko. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/crypto-leverage/:symbol",
+      "description": "Crypto perpetual-futures leverage/squeeze-risk signal in one call: funding rate, open interest, and long/short account ratio, each with recent history and a rising/falling/flat trend -- how crowded and leveraged one side of the market has gotten, the derivatives analogue of stock short interest. Works for any OKX-listed perpetual (BTC, ETH, SOL, and more). From OKX. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/fear-greed",
+      "description": "Crypto Fear & Greed Index: current reading (0-100, Extreme Fear to Extreme Greed) plus 7-day and 30-day sentiment trend (rising/falling/flat with the average and point change), not just a single snapshot number. Not ticker-specific. Data from alternative.me. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/news/:ticker",
+      "description": "Latest news headlines and summaries for a stock ticker from real Yahoo Finance data. Includes article title, summary, publish date, publisher name, and URL — everything needed to monitor sentiment and catalysts. Supports optional limit parameter (default 10, max 50). $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/macro-calendar",
+      "description": "FOMC meeting dates and major US economic release dates (CPI, non-farm payrolls, GDP, PCE, retail sales) in one call, each with a days-until countdown, between 'from' and 'to' -- the market-wide catalysts that move every ticker at once. FOMC dates from the Fed's official calendar; release dates live from FRED, and a temporarily-unavailable release is reported explicitly, not silently dropped. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/crypto-market-overview",
+      "description": "Global crypto market snapshot in one call: total market cap, 24h trading volume, 24h market-cap % change, BTC/ETH dominance, and active-coin/market counts -- the whole-market context behind any single coin's move. Not ticker-specific. From CoinGecko. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/gas-oracle",
+      "description": "Current gas price suggestions (safe/propose/fast, in gwei) plus the suggested EIP-1559 base fee for Ethereum, from Etherscan's V2 API. Not address-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/history/:ticker",
+      "description": "Historical OHLCV/candlestick bars for any US stock ticker over any date range — 1-minute intraday up to monthly at precise multipliers (1/2/5/15/30/60/90-minute, 1-hour, 1/5-day, 1-week, 1/3-month), from real Yahoo Finance data. Supports backtesting, charting, and multi-timeframe analysis. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/movers",
+      "description": "Day's biggest gainers and losers screened from the entire market, live from Yahoo Finance. Each mover includes ticker, company name, current price, intraday change amount and %, and volume — the market context every trader needs. Not ticker-specific. Supports optional limit per list (default 10, max 25). $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/indicators/:ticker",
+      "description": "US stock technical indicators for day trading in one call: SMA/EMA(20,50), RSI(14), Stochastic(14,3,3), Bollinger Bands(20,2), MACD(12,26,9), ATR(14), ADX(14) with +DI/-DI, relative volume, price change over 1d/5d/1mo, and distance from the 52-week high/low -- for AAPL, TSLA, MSFT, or any US ticker, from real Yahoo Finance daily bars. Includes a transparent bullish/bearish/neutral signal with a per-indicator reasoning breakdown, not an opaque AI black box. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/aviation/airport-check",
+      "description": "Status for one US airport by IATA code: any active FAA closure, ground stop, ground delay, or arrival/departure delay, or a clean 'normal' result when there's nothing active. Live from the FAA's official NAS status feed. $0.01/call. Query: ?airport=JFK"
+    },
+    {
+      "url": "https://www.x402financialdata.com/aviation/airport-status",
+      "description": "Every US airport currently under an active FAA advisory in one call: closures, ground stops, ground delay programs, and arrival/departure delays, each with its reason and timing. Live from the FAA's own public National Airspace System status feed -- the same source air traffic control uses. Not airport-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/amazon-product/:asin",
+      "description": "Live Amazon.com product page data by ASIN: title, current price, star rating, review count, availability, product images, and bullet points -- scraped directly from the public product page, not a third-party product-data API. US marketplace (amazon.com) only. Best-effort: Amazon may occasionally rate-limit or block scraping requests, which surfaces as a 502 rather than stale or fake data. $0.05/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/crypto-correlation/:symbol",
+      "description": "Rolling correlation between a crypto asset's daily returns and a stock/index ticker's (default SPY) over a lookback window (default 90 days, range 14-365) -- a cross-asset signal, e.g. is ETH still trading like a risk asset correlated with QQQ. Combines CoinGecko and Yahoo Finance daily closes. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/prediction-market-series/:series_ticker",
+      "description": "Every open market under one exact Kalshi series ticker (e.g. Fed rate decisions, recession odds) -- the reliable, exhaustive complement to /prediction-markets' best-effort keyword scan. Unlike keyword search, series_ticker is a genuine exact server-side filter. An empty result can mean an unknown series_ticker OR a real series with nothing open right now -- Kalshi's API returns the same response for both, flagged via the 'note' field. Supports optional limit (default 25, max 50). $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/defi-dex-volume",
+      "description": "Top DeFi protocols by DEX trading volume, live from DeFiLlama: 24h/7d volume with % change, across ~1,300 tracked protocols. Optionally filter to one chain. Not ticker-specific. Supports optional limit (default 10, max 25). $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/crypto-movers",
+      "description": "Top crypto gainers and losers by 24h % change among the top 250 coins by market cap -- the crypto analogue of /movers, scoped to liquid, real assets rather than micro-cap noise. Supports optional limit (default 10, max 25). From CoinGecko. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/crypto-history/:symbol",
+      "description": "Daily price/market-cap/volume history for one coin -- the crypto analogue of /history, for BTC, ETH, SOL, and 17+ other major coins by ticker. Optional 'days' controls the lookback window (default 30, max 365); CoinGecko auto-picks point granularity from 'days' (roughly hourly under 90 days, daily above). From CoinGecko. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/sec-filings/:ticker",
+      "description": "Official SEC EDGAR filing history for a US-listed ticker: form type (10-K, 10-Q, 8-K, Form 4, etc.), filing date, accession number, and a direct document link -- the actual filings list itself, straight from data.sec.gov. Not fundamentals data (see /financials for extracted income-statement/balance-sheet numbers). Optional 'form' filters to an exact form type (e.g. '10-K'); optional 'limit' caps results (default 10, max 25). $0.05/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/producer-prices",
+      "description": "US Producer Price Index (PPI) in one call, live from FRED: headline Final Demand PPI and core PPI (ex food & energy), both YoY -- a leading inflation indicator that moves ahead of the consumer-side CPI/PCE already in /economic-indicators, since producer cost changes flow through to consumer prices with a lag. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/trending-markets",
+      "description": "Top active prediction markets by 24h trading volume on Polymarket -- what's trending right now, no keyword needed. Pairs with /prediction-markets (keyword search) and /prediction-market (exact-ID lookup): use this one when you don't already know what to search for. Not ticker-specific. Supports optional limit (default 10, max 25). $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/defi-yields",
+      "description": "Top DeFi yield-farming pools by APY across ~15,800 tracked pools, live from DeFiLlama: TVL, base/reward APY split, 7d APY change, impermanent-loss risk, and exposure type, with a $1M TVL floor to filter out illiquid noise. Optionally filter to one chain or stablecoin-only pools. Not ticker-specific. Supports optional limit (default 10, max 25). $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/defi-protocol/:slug",
+      "description": "DeFi protocol TVL snapshot by exact DeFiLlama slug (e.g. 'uniswap', 'aave', 'lido'): total value locked with 1d/7d % change, market cap, and top chains by TVL -- from DeFiLlama, the standard source for cross-chain DeFi TVL data. Not a search; requires the exact slug. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/wallet-overview/:address",
+      "description": "Wallet activity overview for an Ethereum address in one call: native ETH balance, transaction count, contract-vs-EOA detection, and first/last transaction activity with computed wallet age -- from Etherscan's V2 API. Bundles 5 separate lookups (balance, nonce, eth_getCode, earliest tx, latest tx) that a caller would otherwise have to stitch together from /wallet-balance, /transaction-count, and two /wallet-transactions calls. $0.02/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/volatility/:ticker",
+      "description": "Realized (historical) volatility for a US stock across 10/20/30/60/90-day lookback windows -- annualized standard deviation of daily log returns from real Yahoo Finance closes, the backward-looking analogue of options implied volatility. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/company-profile/:ticker",
+      "description": "Basic company/fund profile for a US ticker: name, sector/industry (or fund category for ETFs), country, exchange, employee count, market cap, and a short business summary. From real Yahoo Finance data. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/money-supply",
+      "description": "US money supply and bank credit snapshot in one call, live from FRED: M2 money stock (level + YoY change), M1 money stock, and commercial & industrial loan volume (level + YoY change) -- liquidity/credit-conditions indicators distinct from the price-level inflation series in /economic-indicators. Replaces 3 separate FRED series lookups. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/prediction-market/:source/:market_id",
+      "description": "A single prediction market's current odds, volume, and close date by exact ID -- from Polymarket (slug) or Kalshi (ticker), whichever you pass as `source`. Pairs with /prediction-markets: search there first to find an ID, then re-fetch it here for the freshest odds without re-searching. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/labor-market",
+      "description": "US labor market snapshot in one call, live from FRED: nonfarm payrolls (level + MoM change), JOLTS job openings, average hourly earnings (YoY), and labor force participation rate -- the monthly labor picture that complements /jobless-claims' weekly initial/continuing claims. Replaces 4 separate FRED series lookups. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/financials/:ticker",
+      "description": "Core financial statement line items for a US stock in one call: revenue, gross/operating/net income, EPS, total assets/liabilities, stockholders equity, cash and debt, and operating/free cash flow -- across the last several annual or quarterly periods. From real Yahoo Finance data. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/transaction-count/:address",
+      "description": "Transaction count (nonce) for a wallet address on Ethereum -- how many transactions it has sent, from Etherscan's V2 API. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/housing-market",
+      "description": "US housing market snapshot in one call, live from FRED: housing starts, building permits, the Case-Shiller home price index with YoY change, and the 30-year fixed mortgage rate -- replaces 4 separate FRED series lookups. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/eth-price",
+      "description": "Current ETH price in USD and BTC, from Etherscan's V2 API. A quick single-value price check -- for market cap/volume/supply detail use /crypto-prices instead. Not address-specific. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/token-supply/:contract_address",
+      "description": "Total supply for an ERC-20 token contract, from Etherscan's V2 API. Raw value only, no market data -- for price/market cap use /crypto-prices instead. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/multi-balance",
+      "description": "Native ETH balance for up to 20 wallet addresses in one call, from Etherscan's V2 API -- a portfolio-style batch lookup instead of N separate /wallet-balance calls. Not address-scoped in the path; pass addresses as a comma-separated query param. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/contract-creator/:address",
+      "description": "Deployer address and creation transaction for a contract address, from Etherscan's V2 API -- who deployed it and when, pairs naturally with /contract-source. A non-contract or unrecorded address returns found=false rather than an error. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/transaction-status/:tx_hash",
+      "description": "Success/failure status for an Ethereum transaction hash in one call: post-Byzantium receipt status plus contract execution error detail, from Etherscan's V2 API -- catches the 'transaction confirmed but the contract call actually reverted' case a bare confirmation check misses. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/block-by-timestamp",
+      "description": "Nearest Ethereum block number to a given Unix timestamp, from Etherscan's V2 API -- anchors a point in time to a specific block for historical on-chain lookups (e.g. state as of a given date). Not address-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/eth-supply",
+      "description": "Total ETH supply, from Etherscan's V2 API. Not address-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/nft-transfers/:address",
+      "description": "Recent ERC-721 NFT transfer events for a wallet address on Ethereum in one call: token ID, collection name/symbol, and counterparties -- from Etherscan's V2 API. Supports optional limit (default 25, max 100). $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/contract-source/:address",
+      "description": "Verified contract source code, parsed ABI, and compiler metadata for a contract address on Ethereum, from Etherscan's V2 API -- including proxy detection with the implementation contract address, so you're not left guessing why a proxy's own source looks empty. An unverified contract returns verified=false with null source/ABI rather than an error. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/token-balance/:address",
+      "description": "ERC-20 token balance for a wallet against one token contract, on Ethereum, from Etherscan's V2 API. Requires contract_address as a query param. Returns the raw balance in the token's smallest unit (decimals aren't included in this endpoint's response). $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/token-transfers/:address",
+      "description": "Recent ERC-20 token transfer events for a wallet address on Ethereum in one call: token name/symbol, decimal-adjusted value, and counterparties -- from Etherscan's V2 API. Optionally filter to one token via contract_address. Supports optional limit (default 25, max 100). $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/internal-transactions/:address",
+      "description": "Recent internal transactions (value transfers triggered by a contract call -- swaps, withdrawals, contract creations) for a wallet or contract address on Ethereum, from Etherscan's V2 API. These never show up in a normal txlist but often carry the actual fund movement. Supports optional limit (default 25, max 100). $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/wallet-transactions/:address",
+      "description": "Recent normal (external) transactions for a wallet address on Ethereum in one call: hash, block, timestamp, from/to, value, gas, and decoded function name where available -- from Etherscan's V2 API. Supports optional limit (default 25, max 100). $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/wallet-balance/:address",
+      "description": "Native ETH balance for any wallet address on Ethereum, from Etherscan's V2 API. Returns both raw wei and a rounded human-readable ETH amount. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/crypto-pair/:base/:quote",
+      "description": "Price of one crypto in terms of another -- BTC/USD, ETH/BTC, SOL/ETH, or any pair from 21+ major coins by ticker. Handles crypto/crypto pairs (e.g. how many ETH is 1 BTC worth) as well as a plain USD quote. Returns each leg's own 24h % change vs USD rather than a synthetic ratio change. From CoinGecko. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/prediction-markets",
+      "description": "Prediction market odds in one call: keyword search across Polymarket AND Kalshi simultaneously -- no other market-data API aggregates both -- returning each match's live, real-money-backed outcome probabilities, volume, and close date. Crowd-sourced forecasts for Fed decisions, elections, and macro events often beat polls and analyst surveys; pairs naturally with this API's own FOMC/economic calendar. Not ticker-specific. $0.025/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/dividends/:ticker",
+      "description": "Dividend and corporate-action history for a US stock in one call: forward/trailing yield and payout ratio, next ex-dividend/payment date (never a stale already-elapsed date), last dividend paid, up to 12 most recent dividend payments, and stock split history. A non-payer returns clean nulls, not an error. From real Yahoo Finance data. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/insider-activity/:ticker",
+      "description": "Who's actually buying and selling a US stock, in one call: named insider transactions (role, buy/sell/gift/award, shares, dollar value), a 6-month insider purchase/sale summary, top institutional (13F-style) holders with % held and quarter-over-quarter change, and the full insider/institutional ownership breakdown -- cluster insider buying and institutional accumulation are among the highest-conviction signals in equity research. From real Yahoo Finance data. $0.025/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/options/:ticker",
+      "description": "Options chain with calls and puts, all strikes, implied volatility, volume, open interest, and put/call volume ratio from real Yahoo Finance data. Supports optional expiration date selection (defaults to nearest). Essential for options traders analyzing volatility skew and positioning. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/quote/:ticker",
+      "description": "Real-time quote in one call: current price, intraday open/high/low, previous close with change and change %, volume metrics, 52-week high/low, and 50/200-day moving averages from real Yahoo Finance data. Works for stocks, forex pairs (e.g. EURUSD=X), and commodity futures (e.g. GC=F gold, CL=F oil), not just equities. $0.001/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/jobless-claims",
+      "description": "US weekly jobless claims in one call, live from FRED: initial claims, continuing claims, and 4-week moving average of initial claims, with week-over-week change computed where available — a leading labor-market indicator that drives risk-off and day-trading directional calls. Replaces 3 separate FRED series lookups. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/market-risk-sentiment",
+      "description": "Market risk sentiment in one call, live from FRED: volatility index (VIX), high-yield and investment-grade credit spreads, financial conditions index, US dollar strength, and WTI crude oil price — the 6 metrics that flag systemic risk and market-wide stress. Replaces 6 separate FRED lookups for traders monitoring macro volatility and risk-off sentiment. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/economic-indicators",
+      "description": "Key US macro indicators in one call, live from FRED: Fed funds rate, unemployment rate, CPI/core CPI/PCE inflation (YoY), real GDP growth (QoQ annualized), industrial production (YoY), retail sales (MoM), and consumer sentiment -- roughly 8 separate FRED series lookups collapsed into one request, with YoY/MoM math already done. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/yield-curve",
+      "description": "US Treasury yield curve in one call: 1mo/3mo/6mo/1yr/2yr/5yr/10yr/30yr yields, the 10y-2y and 10y-3mo spreads, and a boolean inversion flag on each -- a classic recession/risk-off signal every macro trader watches. Live from FRED's daily constant-maturity Treasury series. Not ticker-specific. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/analyst/:ticker",
+      "description": "Analyst sentiment and short interest for a US stock in one call: recommendation trend, consensus price targets, recent upgrades/downgrades by firm, and short interest with month-over-month change -- rising short interest into price weakness is a classic bearish/squeeze-risk signal most analyst-ratings APIs don't include. From real Yahoo Finance data. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/earnings/:ticker",
+      "description": "Earnings intelligence for a US stock in one call, not just a calendar: next earnings date with EPS/revenue estimates, the last 4 quarters' actual-vs-estimate surprises, and whether Wall Street's estimates are being revised up or down over 7/30/60/90 days -- a leading sentiment signal most earnings-calendar APIs don't offer. From real Yahoo Finance data. $0.005/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/prediction-market-event/:slug",
+      "description": "A full multi-outcome Polymarket event (e.g. every candidate in an election) as one ranked probability list, by exact event slug -- instead of stitching together each candidate's individual binary market via /prediction-markets search. Polymarket-only. $0.01/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/congress-trades/:ticker",
+      "description": "SENATE ONLY -- does not include the US House of Representatives. Most recent US Senate stock trade disclosures for a ticker (STOCK Act periodic transaction reports), sourced from official efdsearch.senate.gov filings. Disclosures are legally allowed up to 45 days after the trade, so this is not real-time. Optional 'limit' caps results (default 10, max 25). A ticker with no disclosed Senate trades returns 200 with an empty list, not an error. $0.05/call."
+    },
+    {
+      "url": "https://www.x402financialdata.com/stablecoins",
+      "description": "Top USD-pegged stablecoins by circulating market cap, live from DeFiLlama: current peg price with deviation from $1 (a live depeg monitor), plus 1d/7d % change in circulating supply. Not ticker-specific -- a market-wide screener. Supports optional limit (default 10, max 25). $0.01/call."
+    }
+  ]
+}

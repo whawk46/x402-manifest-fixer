@@ -1,0 +1,39 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "agents.withzero.xyz",
+  "resources": [
+    {
+      "url": "https://agents.withzero.xyz/api/v1/audio/speech/gemini-3.1-flash-tts",
+      "description": "Convert text to natural-sounding speech with Google Gemini 3.1 Flash TTS and return a hosted audio URL."
+    },
+    {
+      "url": "https://agents.withzero.xyz/api/v1/pixelart/canvas",
+      "description": "Create a new pixel art canvas. Returns editing, manifest, full-spec, guide, and interactive-view URLs. Optionally pre-load base64 RGBA pixels. Full agent guide: https://pixelart.withzero.xyz/llms.txt"
+    },
+    {
+      "url": "https://agents.withzero.xyz/api/v1/deploy/apps",
+      "description": "Node.js hosting: ship the Node app you built locally, unchanged — full server runtime on Cloud Run with a dedicated Postgres. Native modules OK. App reads DATABASE_URL + listens on PORT. Filesystem is writable but ephemeral (scale-to-zero) — keep durable state in Postgres. Durable /data file storage (1 GiB included)."
+    },
+    {
+      "url": "https://agents.withzero.xyz/api/v1/audio/songs/lyria-3-pro",
+      "description": "Generate a complete, full-length song from a text prompt with Google's Lyria 3 Pro and return a hosted audio URL."
+    },
+    {
+      "url": "https://agents.withzero.xyz/api/v1/image/images/nano-banana-2",
+      "description": "Generate images from a text prompt with Google's Nano Banana 2 (Gemini 3.1 Flash Image) — fast, high-quality generation. Returns hosted image URLs."
+    },
+    {
+      "url": "https://agents.withzero.xyz/api/v1/memory/memories",
+      "description": "Remember a fact or context in durable agent memory."
+    },
+    {
+      "url": "https://agents.withzero.xyz/api/v1/crustdata/company/identify",
+      "description": "Core workflow route: normalize company inputs from domains, names, professional-network company URLs, or Crustdata IDs before account enrichment or people search. Minimum-charge route: $0.01 on successful upstream calls."
+    },
+    {
+      "url": "https://agents.withzero.xyz/api/v1/image/images/nano-banana-pro",
+      "description": "Generate images from a text prompt with Google's Nano Banana Pro (Gemini 3 Pro Image) — highest-quality photorealistic output. Returns hosted image URLs."
+    }
+  ]
+}

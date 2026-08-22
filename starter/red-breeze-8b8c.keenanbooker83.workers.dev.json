@@ -1,0 +1,47 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "red-breeze-8b8c.keenanbooker83.workers.dev",
+  "resources": [
+    {
+      "url": "https://red-breeze-8b8c.keenanbooker83.workers.dev/verify-citation",
+      "description": "Verify whether a cited source supports an exact factual claim"
+    },
+    {
+      "url": "https://red-breeze-8b8c.keenanbooker83.workers.dev/extract-evidence",
+      "description": "CitationVerifier evidence extraction: extract factual evidence, quotations, dates, names, organizations, and numbers from a source"
+    },
+    {
+      "url": "https://red-breeze-8b8c.keenanbooker83.workers.dev/generate-research-questions",
+      "description": "Generate prioritized research questions and evidence needs from a topic and optional source"
+    },
+    {
+      "url": "https://red-breeze-8b8c.keenanbooker83.workers.dev/check-statistics",
+      "description": "Evaluate whether a statistical claim is supported and properly framed by its cited source"
+    },
+    {
+      "url": "https://red-breeze-8b8c.keenanbooker83.workers.dev/detect-conflicts",
+      "description": "Detect factual conflicts, scope differences, and unresolved tensions across supplied sources"
+    },
+    {
+      "url": "https://red-breeze-8b8c.keenanbooker83.workers.dev/extract-timeline",
+      "description": "Extract and organize dated events from one to three supplied sources"
+    },
+    {
+      "url": "https://red-breeze-8b8c.keenanbooker83.workers.dev/fact-check",
+      "description": "Fact-check a claim against one to three supplied sources"
+    },
+    {
+      "url": "https://red-breeze-8b8c.keenanbooker83.workers.dev/research-brief",
+      "description": "Create a structured research brief from one to three sources with findings, evidence, conflicts, risks, and unanswered questions"
+    },
+    {
+      "url": "https://red-breeze-8b8c.keenanbooker83.workers.dev/score-source",
+      "description": "Evaluate a source for credibility, transparency, evidence quality, bias signals, and limitations"
+    },
+    {
+      "url": "https://red-breeze-8b8c.keenanbooker83.workers.dev/compare-claims",
+      "description": "Compare two factual claims and their cited sources for agreement, contradiction, and missing context"
+    }
+  ]
+}

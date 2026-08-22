@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "x402.tavily.com",
+  "resources": [
+    {
+      "url": "https://x402.tavily.com/search",
+      "description": "Tavily Search - advanced mode"
+    }
+  ]
+}

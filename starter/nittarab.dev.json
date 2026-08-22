@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "nittarab.dev",
+  "resources": [
+    {
+      "url": "https://nittarab.dev/secret",
+      "description": "Access to The Little Secret"
+    }
+  ]
+}

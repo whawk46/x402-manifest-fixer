@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.preflightstack.com",
+  "resources": [
+    {
+      "url": "https://api.preflightstack.com/v1/dependency-preflight",
+      "description": "Screen up to 10 exact npm or PyPI package versions before installation. Returns a deterministic allow, review, or block decision under the current policy with known-vulnerability, lifecycle, declared-license, release-age, and npm install-lifecycle evidence."
+    }
+  ]
+}

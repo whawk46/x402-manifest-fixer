@@ -1,0 +1,11 @@
+{
+  "x402Version": 1,
+  "kind": "resource-server",
+  "name": "api.recoupable.dev",
+  "resources": [
+    {
+      "url": "https://api.recoupable.dev/api/x402/image/generate",
+      "description": "Generate an image from a text prompt using AI"
+    }
+  ]
+}

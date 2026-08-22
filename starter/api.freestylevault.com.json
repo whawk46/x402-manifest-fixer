@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.freestylevault.com",
+  "resources": [
+    {
+      "url": "https://api.freestylevault.com/v1/rates",
+      "description": "Committed IFTA tax rates for a quarter (?quarter=2026-Q2&fuel_type=diesel&jurisdiction=WA), grouped by jurisdiction × fuel type with effective periods clipped to the quarter — mid-quarter revisions read as separate periods. Human-reviewed against iftach.org every quarter."
+    }
+  ]
+}

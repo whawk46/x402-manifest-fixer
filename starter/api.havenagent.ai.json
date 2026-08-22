@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.havenagent.ai",
+  "resources": [
+    {
+      "url": "https://api.havenagent.ai/x402/api/v1/music",
+      "description": "Generate a music track. Poll statusUrl, download at resultUrl. SFW only."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "rpc.nodeflare.app",
+  "resources": [
+    {
+      "url": "https://rpc.nodeflare.app/base/x402",
+      "description": "Base RPC (chain 8453): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/eth/x402",
+      "description": "Ethereum RPC (chain 1): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/plasma/x402",
+      "description": "Plasma RPC (chain 9745): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/mode/x402",
+      "description": "Mode RPC (chain 34443): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/cronos/x402",
+      "description": "Cronos RPC (chain 25): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/ink/x402",
+      "description": "Ink RPC (chain 57073): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/bob/x402",
+      "description": "BOB RPC (chain 60808): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/nova/x402",
+      "description": "Arbitrum Nova RPC (chain 42170): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/soneium/x402",
+      "description": "Soneium RPC (chain 1868): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/xlayer/x402",
+      "description": "XLayer RPC (chain 196): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/robinhood/x402",
+      "description": "Robinhood Chain RPC (chain 4663): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/zircuit/x402",
+      "description": "Zircuit RPC (chain 48900): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/mantle/x402",
+      "description": "Mantle RPC (chain 5000): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/linea/x402",
+      "description": "Linea RPC (chain 59144): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/polygon/x402",
+      "description": "Polygon PoS RPC (chain 137): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/sonic/x402",
+      "description": "Sonic RPC (chain 146): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/unichain/x402",
+      "description": "Unichain RPC (chain 130): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/avax/x402",
+      "description": "Avalanche C-Chain RPC (chain 43114): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/hl/x402",
+      "description": "HyperEVM RPC (chain 999): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units. One of the first independent x402 RPC providers for this chain."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/op/x402",
+      "description": "Optimism RPC (chain 10): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/arb/x402",
+      "description": "Arbitrum One RPC (chain 42161): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/bnb/x402",
+      "description": "BNB Chain RPC (chain 56): JSON-RPC over HTTPS on NodeFlare's own bare-metal nodes. Pay per request in USDC, no account or API key - built for AI agents. All methods including eth_getLogs, eth_call, trace, and debug (archive) - good for indexing, event queries, and simulation. Simple calls $0.001; heavy calls priced by compute units."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/answer/x402",
+      "description": "Onchain Answer Engine: ask a natural-language question about any wallet or token across 23 EVM chains (incl. young chains like Zircuit, Robinhood, Plasma that big indexers omit) and get a cited verdict - 'is this token a scam?', 'what does this wallet hold?' - synthesized from live on-chain data in one call. Built for AI agents."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/data/simulate/x402",
+      "description": "Transaction pre-flight: will it revert (and why), gas, and which tokens/ETH move - before you send. Built for agents."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/data/wallet-report/x402",
+      "description": "One call: a wallet's balances, USD portfolio, and active token approvals (revoke risk) across 23 chains - the full agent-ready wallet report."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/data/portfolio/x402",
+      "description": "Multi-chain portfolio API: USD-valued native + ERC-20 balances for one address across up to 23 EVM chains (incl. young chains like Robinhood, Plasma, Ink that Alchemy/Moralis omit), with a rolled-up total USD value and per-chain breakdown sorted by value. Pay per call in USDC, no account or API key - built for AI agents."
+    },
+    {
+      "url": "https://rpc.nodeflare.app/data/token-safety/x402",
+      "description": "ERC-20 token risk check: ownership, holder concentration, and a transfer/honeypot simulation, with a risk score - before an agent trades it."
+    }
+  ]
+}

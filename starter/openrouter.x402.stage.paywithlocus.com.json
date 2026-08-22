@@ -1,0 +1,11 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "openrouter.x402.stage.paywithlocus.com",
+  "resources": [
+    {
+      "url": "https://openrouter.x402.stage.paywithlocus.com/openrouter/chat",
+      "description": "Locus public pay-per-use API"
+    }
+  ]
+}

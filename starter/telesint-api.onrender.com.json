@@ -1,0 +1,63 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "telesint-api.onrender.com",
+  "resources": [
+    {
+      "url": "https://telesint-api.onrender.com/ioc",
+      "description": "IOC feed from Telegram CTI channels. Filters: type(ip|domain|url|hash|cve), severity, min_confidence, since, tlp, tag, channel, limit, offset. Returns items[] with iocs[], ttps[], confidence, severity, tlp, tags[]."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/vulnerability",
+      "description": "CVE and exploitation-in-the-wild signals from Telegram CTI channels. Filters: severity, min_confidence, since, tag(cve|exploit|poc|patch), ttp, type(cve), limit, offset. Returns CVE IDs, affected products, exploit status."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/artifact",
+      "description": "CTI artifact export from a TeleSint record. Required: id (record UUID), format (sigma|stix|report). Returns Sigma rule, STIX 2.1 bundle, or structured analyst report built from real enriched intel."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/source",
+      "description": "Raw source verification for a TeleSint record. Pass id (UUID from any items[].id). Returns original defanged message text and source language alongside the AI summary for provenance checks."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/feed",
+      "description": "Full intel feed across all categories. Filters: category(ioc|c2|actor|breach|intent|vulnerability), severity, min_confidence, since, tag, tlp, limit, offset. Returns all record types newest first. Use for SIEM ingestion."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/intent",
+      "description": "Pre-attack intent signals from Telegram: access sales, 0days, ransomware targeting. Filters: sector, country, organization, intent_type(access_sale|0day|ransomware|exploit), limit. Signals appear before attacks."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/ransomware",
+      "description": "Ransomware group activity from Telegram: victim posts, leak site announcements, extortion demands. Filters: severity, min_confidence, since, tag(lockbit|blackcat|cl0p|ransomhub), sector, country, limit, offset."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/search",
+      "description": "Cross-category pivot across all TeleSint intel. Use ?q= for broad keyword or combine filters: category, severity, sector, country, tag, ttp, name, organization, min_confidence, since. Returns items[] across any category."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/asn",
+      "description": "ASN threat intel from Telegram CTI channels. Pass ?asn=AS215540. Returns C2/phishing-kit associations, threat actor mentions, bulletproof hosting flag, blocking recommendation with WAF hint, and record IDs for pivoting into /c2 or /ioc."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/darkweb",
+      "description": "Dark web intelligence from Telegram: marketplace listings, forum chatter, access broker posts, credential shops, Tor site activity. Filters: severity, min_confidence, since, tag, sector, country, organization, limit, offset."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/breach",
+      "description": "Breach disclosures from Telegram. Filters: sector, country, organization, severity, min_confidence, since, limit. Returns items[] with target{sectors,countries,organizations}, leak iocs[], confidence."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/malware",
+      "description": "Malware family intelligence from Telegram: new sample drops, behavior analysis, loader/stealer/RAT/backdoor writeups. Filters: severity, min_confidence, since, tag(stealer|loader|rat|backdoor), limit, offset."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/actor",
+      "description": "Threat actor profiles from Telegram. Filters: name, nation_state(kp|ru|cn|ir), motivation(financial|espionage|hacktivism), ttp, severity, limit. Returns items[] with actor{}, ttps[], target{sectors,countries}."
+    },
+    {
+      "url": "https://telesint-api.onrender.com/c2",
+      "description": "C2 infrastructure from Telegram. Filters: framework(cobalt_strike|sliver|havoc|brute_ratel), severity, min_confidence, since, tag, limit, offset. Returns items[] with C2 IPs/domains, MITRE TTPs, confidence."
+    }
+  ]
+}

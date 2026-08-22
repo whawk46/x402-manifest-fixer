@@ -1,0 +1,35 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.hyperd.ai",
+  "resources": [
+    {
+      "url": "https://api.hyperd.ai/api/privacy/mixer-risk",
+      "description": "Mixer-adjacency risk screening. Returns 0-100 risk score + structured evidence for an EVM address's interactions with major privacy protocols (Tornado Cash, Railgun, Privacy Pools, Aztec Connect) within 2 graph hops across 7 EVM chains. Defensible compliance-screening signal for DeFi protocols and AI agents — alternative to enterprise contracts. Information service, not transaction facilitation."
+    },
+    {
+      "url": "https://api.hyperd.ai/api/yield/allocation",
+      "description": "Composed yield allocation recommender. Fans out 3 parallel /api/yield calls at low/medium/high risk tiers for the same amount + duration, then returns a recommended portfolio split + 2-sentence rationale. Allowed bands: conservative / balanced / aggressive / bespoke. 6h Upstash cache bucketed by amount tier × duration × chain."
+    },
+    {
+      "url": "https://api.hyperd.ai/api/gov/translate",
+      "description": "Composed DAO governance translator. Takes a Snapshot or Tally proposal URL, fetches structured data + summary via /api/governance/summarize, then produces a 2-3 sentence plain-language translation + domain band (economic_param / treasury / code_upgrade / governance_meta / social_signal). 1-year cache — proposals are immutable."
+    },
+    {
+      "url": "https://api.hyperd.ai/api/wallet/threat_brief",
+      "description": "Composed wallet threat brief. Fans out to wallet_risk, wallet_anomaly, privacy_mixer_risk, budget_guardian, and wallet_persona and returns a 2-3 sentence security verdict + band (clean / watch / elevated / critical). Replaces a manual 5-call security audit walk."
+    },
+    {
+      "url": "https://api.hyperd.ai/api/wallet/thesis",
+      "description": "Composed wallet behavioral thesis. Fans out to balance, wallet_persona, wallet_pnl, wallet_anomaly and returns a plain-language summary of the wallet's investing posture plus archetype (trader / hodler / yield_farmer / mev_bot / compromised / inactive)."
+    },
+    {
+      "url": "https://api.hyperd.ai/api/token/archetype",
+      "description": "Composed token classification. Fans out to token_info, token_security, protocol_tvl and returns a single archetype (stablecoin / blue_chip / mid_cap / memecoin / wrapped / governance / unverified) plus a plain-language verdict."
+    },
+    {
+      "url": "https://api.hyperd.ai/api/risk/full_audit",
+      "description": "Composed wallet risk verdict. Fans out to balance, wallet_risk, wallet_persona, contract_audit, privacy_mixer_risk and returns a Haiku 4.5-authored summary + confidence + band. One verdict replaces a manual 5-call audit walk."
+    }
+  ]
+}

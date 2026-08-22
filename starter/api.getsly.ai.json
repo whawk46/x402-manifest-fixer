@@ -1,0 +1,15 @@
+{
+  "x402Version": 2,
+  "kind": "resource-server",
+  "name": "api.getsly.ai",
+  "resources": [
+    {
+      "url": "https://api.getsly.ai/x402/demo/test",
+      "description": "HTTPBin Test Echo - a Sly-published x402 service running on Sly's gateway (api.getsly.ai). Used to validate the publish + gateway flow end-to-end. Powered by Sly (https://getsly.ai). Buyer agents call this URL with x402 payment and get a JSON slideshow back. Sly Treasury account, Demo Fintech tenant, demo/test slug."
+    },
+    {
+      "url": "https://api.getsly.ai/x402/demo/poem",
+      "description": "Get a random classical poem (title, author, lines, line count) wrapped from poetrydb.org. Powered by Sly (https://getsly.ai)."
+    }
+  ]
+}
