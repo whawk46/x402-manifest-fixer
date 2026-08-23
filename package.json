@@ -10,7 +10,7 @@
     "init": "tsx init.ts",
     "starters": "tsx init.ts --all",
     "validate-starters": "tsx validate-starters.ts",
-    "verify-vendor": "curl -fsS https://raw.githubusercontent.com/whawk46/flareclaw-x402-trust/main/src/discovery.ts -o /tmp/canonical-discovery.ts && diff -q src/discovery.ts /tmp/canonical-discovery.ts && echo 'vendored copy matches the canonical source'"
+    "verify-vendor": "gh api repos/whawk46/flareclaw-x402-trust/contents/src/discovery.ts --jq .content | base64 -d > /tmp/canonical-discovery.ts && test -s /tmp/canonical-discovery.ts && diff -q src/discovery.ts /tmp/canonical-discovery.ts && echo 'vendored copy matches the canonical source (read via the API, which is not CDN-cached)'"
   },
   "devDependencies": {
     "tsx": "^4.19.0",
